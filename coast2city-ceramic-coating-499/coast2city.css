@@ -315,10 +315,14 @@ body.c2c-page .review-controls button:disabled { border-color: #dcd8d2; color: #
 /* Quote on black: the form card sits a shade darker than its panel. */
 body.c2c-page .daylight-dark .quote-actions { box-shadow: none; }
 
-/* Hero photo from the client's site (red Range Rover being detailed): lighter veil so the car shows. */
+/* Hero photo (BMW M2 + Porsche inside the shop): darker veil on the left for the headline, cars show through the middle. */
 body.c2c-page .daylight-backdrop { object-position: center 62%; }
 body.c2c-page .daylight-hero::before { background: linear-gradient(90deg, #0d0c0bf0 0%, #0d0c0bc7 32%, #0d0c0b59 55%, #0d0c0b73 100%), linear-gradient(0deg, #0d0c0bb3 0%, transparent 30%); }
 @media (max-width: 760px) {
   body.c2c-page .daylight-backdrop { object-position: center 62%; }
   body.c2c-page .daylight-hero::before { background: linear-gradient(180deg, #0d0c0b66 0%, #0d0c0bcc 45%, #0d0c0bf2 100%); }
 }
+body.c2c-page .daylight-backdrop { object-position: center 66%; }
+body.c2c-page .daylight-hero::before { background: linear-gradient(90deg, #0d0c0bf5 0%, #0d0c0bd9 30%, #0d0c0b66 55%, #0d0c0b8c 100%), linear-gradient(0deg, #0d0c0bcc 0%, transparent 35%); }
+/* Portfolio photos come in different sizes; keep every tile the same 3:4 frame. */
+body.c2c-page .portfolio-grid img { aspect-ratio: 3 / 4; height: auto; object-fit: cover; }

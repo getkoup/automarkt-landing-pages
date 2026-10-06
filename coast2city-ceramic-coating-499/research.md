@@ -23,7 +23,7 @@ Collected 2026-10-07. Layout follows the Diamond Auto Restoration page (https://
 - CARFAX-registered coatings
 - 9H surface hardness, hydrophobic/self-cleaning, deep gloss, "never wax again"
 - Paint is prepped/corrected before coating
-- Shop or mobile service (mobile needs water and electricity); background-checked detailers
+- Ceramic coating is done **in the shop only**: no mobile or at-home coating (client instruction, 2026-10-07). Cures in a controlled environment (site).
 - "No BS guarantee": coatings come with a warranty, and re-service is available at the shop
 - Maintenance: hand wash or touchless wash only; no tunnel/brush washes
 - "Wilmington's ceramic coating choice since 2023"
@@ -50,9 +50,9 @@ Other ceramic reviews that could be used later: Eric Simms (Camry, 4 photos), Ro
 Every "Read reviews on Google" link points to the business's Google listing. Direct links to individual reviews weren't collected.
 
 ## Site images used (from coast2citydetail.com, the client's own shop photos)
-- hero-range-rover-detailing.webp: hero photo from their homepage (red Range Rover being detailed in a driveway)
+- hero-shop-bmw-m2-porsche.webp: hero, gray BMW M2 + blue Porsche 911 inside the shop (photo supplied by client)
 - studio-polishing.webp: detailer polishing under hexagon lights
-- bmw-m3-blue, lamborghini-black, bmw-m2-gray, defender-black: portfolio
+- portfolio: bmw-m3-blue, lamborghini-black (site); land-cruiser-gold, corvette-yellow (supplied by client)
 - coast2city-logo.png: logo from the site header
 
 ## Brand palette (sampled from the logo)
