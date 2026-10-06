@@ -36,6 +36,6 @@ Repeat for each folder: one Vercel project per landing page.
 
 ## Pages
 
-| Folder | Client | Service / Offer | Vercel URL | Status |
+| Folder | Client | Service / Offer | Live URL | Status |
 |---|---|---|---|---|
-| `coast2city-ceramic-coating-499` | Coast 2 City Detailing & Ceramic Coatings (Wilmington, NC) | Ceramic coating · $499 5-year | _(not deployed)_ | Built; form needs endpoint, tracking pending |
+| `coast2city-ceramic-coating-499` | Coast 2 City Detailing & Ceramic Coatings (Wilmington, NC) | Ceramic coating · $499 5-year | [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/coast2city-ceramic-coating-499/) | Live; form needs endpoint, tracking pending |
