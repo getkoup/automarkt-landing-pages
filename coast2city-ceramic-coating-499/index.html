@@ -12,16 +12,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="variant-f.css">
-  <link rel="stylesheet" href="coast2city.css">
-  <link rel="stylesheet" href="review-variants.css">
-  <script src="site.js" defer></script>
-  <script src="review-variants.js" defer></script>
-  <script src="lead-form.js" defer></script>
+  <link rel="stylesheet" href="base.css?v=3">
+  <link rel="stylesheet" href="variant-f.css?v=3">
+  <link rel="stylesheet" href="coast2city.css?v=3">
+  <link rel="stylesheet" href="review-variants.css?v=3">
+  <script src="site.js?v=3" defer></script>
+  <script src="review-variants.js?v=3" defer></script>
+  <script src="lead-form.js?v=3" defer></script>
 </head>
 <body class="variant-f c2c-page">
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="sticky-header">
   <header class="site-header container">
     <a class="brand" href="#" aria-label="Coast 2 City Detailing home">
       <img src="assets/coast2city-logo.png" alt="Coast 2 City Detailing" width="400" height="191">
@@ -31,6 +32,7 @@
     </nav>
     <a class="header-call" href="tel:+19109017361"><span class="phone-symbol" aria-hidden="true">↗</span> (910) 901-7361</a>
   </header>
+  </div>
 
   <main id="main">
     <section class="daylight-hero" aria-labelledby="daylight-title">
@@ -44,7 +46,7 @@
           <div class="hero-buttons"><a class="button" href="tel:+19109017361">(910) 901-7361 <span aria-hidden="true">↗</span></a><a class="text-link" href="#portfolio">See the finish <span aria-hidden="true">↗</span></a></div>
           <div class="hero-assurance"><span>CARFAX-registered coating</span><span>Applied in our Wilmington shop</span></div>
         </div>
-        <aside class="daylight-card" aria-labelledby="hero-quote-title">
+        <aside id="claim" class="daylight-card" aria-labelledby="hero-quote-title">
           <h2 id="hero-quote-title">Claim your $499 coating.</h2>
           <p>Start with your name, number, and vehicle.</p>
           <!-- FORM: set data-endpoint to this client's webhook URL, or replace this <form> with the GHL embed. -->
@@ -253,5 +255,11 @@
     </div>
     <div class="container footer-bottom"><span>Coast 2 City Detailing &amp; Ceramic Coatings · Wilmington, North Carolina</span><span>Ceramic coating · $499 5-year offer</span></div>
   </footer>
+
+  <!-- Phones only: address line + quote button, always pinned to the bottom. -->
+  <div class="mobile-cta" aria-label="Get your quote">
+    <a class="mobile-cta-address" href="https://www.google.com/maps/dir/?api=1&amp;destination=2955+Orville+Wright+Way+Suite+120+Wilmington+NC+28405" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>2955 Orville Wright Way, Suite 120, Wilmington, NC</span></a>
+    <a class="button mobile-cta-button" href="#claim">Get Your $499 Quote <span aria-hidden="true">↗</span></a>
+  </div>
 </body>
 </html>
