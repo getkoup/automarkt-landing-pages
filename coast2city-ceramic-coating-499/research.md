@@ -58,6 +58,6 @@ Every "Read reviews on Google" link points to the business's Google listing. Dir
 ## Brand palette (sampled from the logo)
 Warm black #0d0c0b · gold #e3a33b / #cd952a · copper #a36624 · chrome #d4d4d4 / #a4a4a3 · sky blue #96c8ed / #6a9ce0. Gold is used for buttons, prices and highlights; sky blue is the second accent; the reviews band is light chrome silver.
 
-## Pending
-- **Lead form not connected yet.** Both forms (hero + #quote) are built and validate input, but they don't send anything until `data-endpoint` is set on each `<form class="lead-form">` (a webhook that accepts JSON), or the `<form>` is swapped for the GHL embed. Until then, submitting tells the visitor to call or text. A successful submit goes to `thank-you.html`.
-- Tracking (GTM / Google Ads / Meta pixel). Look for `<!-- TRACKING: -->` in `index.html` and `thank-you.html`.
+## Lead form & tracking
+- Lead form: GHL "Ceramic Coating (Google) - 499" (form H9RhuH2sBTiS099kT9G1, location t5M0EkA7AvyHxGLkEtXB), embedded in hero + #quote. On submit → thank-you.html.
+- Tracking: Google Ads AW-11444469400 + GTM-MK5FGXVX on both pages. See tracking.md.
