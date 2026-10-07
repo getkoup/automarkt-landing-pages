@@ -50,7 +50,7 @@ Other ceramic reviews that could be used later: Eric Simms (Camry, 4 photos), Ro
 Every "Read reviews on Google" link points to the business's Google listing. Direct links to individual reviews weren't collected.
 
 ## Site images used (from coast2citydetail.com, the client's own shop photos)
-- hero-shop-bmw-m2-porsche.webp: hero, gray BMW M2 + blue Porsche 911 inside the shop (photo supplied by client)
+- hero-shop-bmw-porsche-wide.webp: hero, wide shot of gray BMW M2 + blue Porsche 911 under the shop hex lights (photo supplied by client)
 - studio-polishing.webp: detailer polishing under hexagon lights
 - portfolio: bmw-m3-blue, lamborghini-black (site); land-cruiser-gold, corvette-yellow (supplied by client)
 - coast2city-logo.png: logo from the site header

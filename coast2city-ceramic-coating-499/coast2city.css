@@ -343,3 +343,7 @@ body.c2c-page .mobile-cta { display: none; }
   body.c2c-page .mobile-cta-address span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-decoration: underline; text-decoration-color: #e3a33b66; text-underline-offset: 3px; }
   body.c2c-page .mobile-cta-button { width: 100%; min-height: 52px; justify-content: center; gap: 12px; font-size: 14px; }
 }
+
+/* Wide shop hero (BMW M2 + Porsche 911 under hex lights): keep both cars in frame. */
+body.c2c-page .daylight-backdrop { object-position: center 55%; }
+@media (max-width: 760px) { body.c2c-page .daylight-backdrop { object-position: 42% center; } }
