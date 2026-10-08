@@ -1,0 +1,392 @@
+/* Detail Now brand: near-black #050508 / #13131a, champagne gold #c9a96e, off-white #eeeef4 (from austindetailnow.com).
+   base.css and variant-f.css are local copies; nothing here is shared with other client folders. */
+body.dn-page {
+  --bg: #fff;
+  --surface: #f3f3f6;
+  --text: #13131a;
+  --muted: #5b5b6c;
+  --line: #e0e0e8;
+  --accent: #c9a96e;
+  --accent-ink: #b39560;
+  --on-accent: #fff;
+}
+body.dn-page .section { padding-block: 74px; }
+body.dn-page .site-header { height: 92px; }
+body.dn-page .brand img { width: 54px; height: 54px; border-radius: 9px; object-fit: contain; }
+body.dn-page .brand small { letter-spacing: .17em; }
+body.dn-page .button { min-height: 48px; }
+body.dn-page .button:hover { background: #b39560; }
+body.dn-page .daylight-hero { background: #0b0b10; }
+body.dn-page .daylight-backdrop { object-position: center 56%; }
+body.dn-page .daylight-hero::before { background: linear-gradient(90deg, #0b0b10f5 0%, #0b0b10e0 37%, #0b0b1080 70%, #0b0b1040 100%); }
+body.dn-page .daylight-grid { gap: 60px; padding-block: 42px; }
+body.dn-page .daylight-card { border-color: #262631; border-top: 3px solid var(--accent); padding: 28px; box-shadow: 0 15px 45px #0000004d; }
+body.dn-page .daylight-card > p { font-size: 12px; }
+body.dn-page .daylight-card .button { width: 100%; gap: 12px; }
+body.dn-page .daylight-dark,
+body.dn-page .site-footer {
+  --bg: #050508;
+  --surface: #13131a;
+  --text: #eeeef4;
+  --muted: #a0a0b2;
+  --line: #22222c;
+  --accent: #c9a96e;
+  --accent-ink: #c9a96e;
+  --on-accent: #0b0b10;
+}
+body.dn-page .daylight-dark .button { background: #c9a96e; color: #0b0b10; }
+body.dn-page .daylight-dark .button:hover { background: #d8bd88; }
+body.dn-page .studio-trust { grid-template-columns: 1.1fr 1fr 1.15fr 1.1fr; }
+body.dn-page .studio-trust strong { font-size: 14px; }
+body.dn-page .studio-trust small a { text-decoration: underline; text-underline-offset: 3px; }
+body.dn-page .daylight-story { padding-top: 40px; }
+body.dn-page .studio-statement { grid-template-columns: .85fr 1.15fr; }
+/* The complete vehicle stays visible, including at intermediate desktop widths. */
+body.dn-page .studio-statement > img { height: auto; max-height: none; object-fit: contain; align-self: center; }
+body.dn-page .studio-statement > div { padding: 40px; }
+body.dn-page .studio-statement h2 { font-size: clamp(34px, 3.7vw, 48px); }
+body.dn-page .portfolio-grid img { height: auto; border-radius: 0; }
+body.dn-page .benefit { border-radius: 0; }
+.reviews-section { background: #f3f3f6; border-block: 1px solid var(--line); }
+.review-summary { align-self: end; justify-self: end; }
+.review-summary > strong { display: block; font-size: 36px; font-weight: 700; letter-spacing: -.04em; }
+.review-summary .stars { font-size: 18px; letter-spacing: 1px; vertical-align: middle; }
+.review-summary > a { font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.reviews-toolbar { display: flex; justify-content: space-between; gap: 18px; margin-block: -12px 20px; }
+.reviews-toolbar p { font-size: 10px; }
+.reviews-toolbar > span { color: #7a6033; font-size: 9px; font-weight: 800; letter-spacing: .12em; white-space: nowrap; }
+.review-track { display: flex; gap: 18px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding: 3px 2px 20px; scrollbar-color: #c9a96e #e0e0e8; scrollbar-width: auto; }
+.review-track:focus-visible { outline: 3px solid #c9a96e; outline-offset: 5px; }
+.review-track::-webkit-scrollbar { height: 8px; }
+.review-track::-webkit-scrollbar-track { background: #e0e0e8; border-radius: 5px; }
+.review-track::-webkit-scrollbar-thumb { background: #c9a96e; border-radius: 5px; }
+.review-card { display: flex; flex-direction: column; flex: 0 0 calc((100% - 36px) / 3); min-width: 0; scroll-snap-align: start; padding: 25px; border: 1px solid #e0e0e8; background: #fff; }
+.review-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 6px; }
+.vehicle-tag { padding: 5px 8px; background: #f4efe4; color: #7a6033; font-size: 9px; font-weight: 800; letter-spacing: .08em; }
+body.dn-page .review-card .google-letter { color: #c9a96e; font-size: 24px; line-height: 1; }
+.review-card > .stars { font-size: 13px; letter-spacing: 2px; margin-bottom: 16px; }
+.review-card blockquote { margin: 0 0 24px; font-size: 13px; line-height: 1.9; color: #26262f; }
+.review-author { display: flex; align-items: center; gap: 11px; margin-top: auto; }
+.avatar { display: grid; place-items: center; flex: 0 0 35px; height: 35px; background: #f4efe4; color: #7a6033; border-radius: 50%; font-weight: 700; font-size: 11px; }
+.review-author strong { font-size: 11px; }
+.review-author small { display: block; color: #6b6b7c; font-size: 9px; }
+.review-source { font-size: 9px; color: #7a6033; text-decoration: underline; text-underline-offset: 3px; margin-top: 18px; }
+body.dn-page .quote-layout { gap: 60px; padding: 44px; border-radius: 0; }
+body.dn-page .ghl-quote { padding: 24px; border: 1px solid #262631; border-top: 3px solid #c9a96e; }
+body.dn-page .ghl-form-frame { min-height: 0; border-radius: 4px; }
+body.dn-page .faq-list p a { text-decoration: underline; text-underline-offset: 3px; }
+body.dn-page .site-footer { padding-bottom: 35px; }
+@media (max-width: 1100px) {
+  body.dn-page .daylight-grid { gap: 30px; }
+  body.dn-page .desktop-nav { gap: 20px; }
+  body.dn-page .studio-trust > div { padding-left: 16px; }
+  body.dn-page .studio-trust > div:first-child { padding-left: 0; }
+  body.dn-page .studio-trust strong { font-size: 12px; }
+  body.dn-page .quote-layout { gap: 35px; padding: 30px; }
+  body.dn-page .studio-statement > div { padding: 28px; }
+}
+@media (max-width: 850px) and (min-width: 761px) {
+  body.dn-page .desktop-nav { gap: 12px; font-size: 10px; }
+  body.dn-page .site-header { gap: 16px; }
+  body.dn-page .brand > span { font-size: 14px; }
+}
+@media (max-width: 760px) {
+  body.dn-page .container { padding-inline: 20px; }
+  body.dn-page .section { padding-block: 54px; }
+  body.dn-page .site-header { height: 80px; gap: 12px; }
+  body.dn-page .brand img { width: 42px; height: 42px; }
+  body.dn-page .brand > span { font-size: 12px; }
+  body.dn-page .brand small { font-size: 6px; letter-spacing: .11em; }
+  body.dn-page .phone-symbol { display: none; }
+  body.dn-page .header-call { font-size: 11px; }
+  body.dn-page .daylight-grid { gap: 26px; padding-block: 30px; }
+  body.dn-page .daylight-backdrop { height: 365px; object-position: center 60%; }
+  body.dn-page .daylight-hero::before { background: linear-gradient(90deg, #0b0b10f2 0%, #0b0b10d9 55%, #0b0b1099 100%); }
+  body.dn-page .daylight-card { padding: 24px 20px; }
+  body.dn-page .daylight-card h2 { font-size: 26px; }
+  body.dn-page .studio-trust { grid-template-columns: 1fr 1fr; }
+  body.dn-page .studio-trust > div:nth-child(3) { padding-left: 0; }
+  body.dn-page .studio-statement { grid-template-columns: 1fr; }
+  body.dn-page .studio-statement > img { width: 100%; max-height: 500px; }
+  body.dn-page .studio-statement > div { padding: 30px 24px; }
+  body.dn-page .studio-statement h2 { font-size: 39px; }
+  .review-summary { margin-top: 24px; }
+  .review-summary > strong { font-size: 30px; }
+  .reviews-toolbar { margin-top: 0; }
+  .reviews-toolbar > span { display: none; }
+  .review-card { flex-basis: 86%; padding: 22px; }
+  body.dn-page .quote-layout { padding: 26px 20px; gap: 30px; }
+  body.dn-page .ghl-quote { padding: 20px; }
+}
+@media (max-width: 380px) {
+  body.dn-page .container { padding-inline: 16px; }
+  body.dn-page .site-header { gap: 8px; }
+  body.dn-page .brand { gap: 7px; }
+  body.dn-page .brand img { width: 37px; height: 37px; }
+  body.dn-page .brand > span { font-size: 11px; }
+  body.dn-page .header-call { font-size: 10px; }
+  body.dn-page .quote-layout { padding: 24px 14px; }
+  .review-card { flex-basis: 94%; padding: 20px; }
+}
+
+/* One-shot entrances and restrained hover feedback; no carousel auto-play. */
+@keyframes dn-reveal {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .daylight-copy > *, .motion-reveal { animation: dn-reveal 550ms cubic-bezier(.2, .7, .2, 1) both; }
+  .daylight-copy > :nth-child(2), .motion-reveal:nth-child(2) { animation-delay: 60ms; }
+  .daylight-copy > :nth-child(3), .motion-reveal:nth-child(3) { animation-delay: 120ms; }
+  .daylight-copy > :nth-child(n+4), .motion-reveal:nth-child(n+4) { animation-delay: 180ms; }
+  body.dn-page .button { transition: background-color 180ms, box-shadow 180ms, translate 180ms; }
+  .button > span, .text-link > span { display: inline-block; transition: translate 180ms; }
+  .portfolio-grid img { transition: filter 250ms; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  body.dn-page .button:hover { translate: 0 -2px; box-shadow: 0 7px 18px #c9a96e40; }
+  .button:hover > span, .text-link:hover > span { translate: 2px -2px; }
+  .portfolio-grid figure:hover img { filter: brightness(1.06); }
+}
+
+/* Wordmark brand + CTA cards (call/text) until this client's lead form embed is provided. */
+body.dn-page .brand img { width: auto; height: 58px; border-radius: 0; object-fit: contain; }
+body.dn-page .site-footer .brand img { height: 74px; }
+body.dn-page .daylight-offer.discount-offer > span,
+body.dn-page .quote-copy .discount-offer > span { color: var(--muted); }
+body.dn-page .discount-offer s { font-size: 15px; color: var(--muted); font-weight: 600; letter-spacing: 0; }
+body.dn-page .offer-actions { display: grid; gap: 12px; margin-top: 22px; }
+body.dn-page .offer-actions .button { width: 100%; }
+body.dn-page .offer-actions .button.secondary { color: var(--text); border-color: var(--line); background: transparent; }
+body.dn-page .offer-actions .button.secondary:hover { background: var(--surface); }
+body.dn-page .offer-list { list-style: none; margin: 20px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 9px; font-size: 12px; color: var(--muted); }
+body.dn-page .offer-list li::before { content: '✓'; color: var(--accent); font-weight: 800; margin-right: 9px; }
+body.dn-page .quote-actions { min-width: 0; align-self: start; padding: 28px; background: #fff; color: #13131a; border: 1px solid #262631; border-top: 3px solid #c9a96e; --text: #13131a; --muted: #5b5b6c; --line: #e0e0e8; --surface: #f3f3f6; --accent: #c9a96e; }
+body.dn-page .quote-actions h3 { font-size: 24px; letter-spacing: -.04em; }
+body.dn-page .quote-actions > p { font-size: 12px; margin-top: 8px; }
+body.dn-page .quote-actions .button:not(.secondary) { background: #c9a96e; color: #fff; }
+body.dn-page .quote-actions .button:not(.secondary):hover { background: #b39560; }
+@media (max-width: 760px) {
+  body.dn-page .brand img { height: 46px; }
+  body.dn-page .quote-actions { padding: 22px 18px; }
+}
+@media (max-width: 380px) {
+  body.dn-page .brand img { height: 40px; }
+}
+/* The portrait shop photo is cropped to the detailer and car, not shown full height. */
+body.dn-page .studio-statement > img { height: 100%; max-height: 560px; object-fit: cover; object-position: center 40%; align-self: stretch; }
+@media (max-width: 760px) { body.dn-page .studio-statement > img { height: 380px; } }
+
+/* ---- Brand palette (from austindetailnow.com) ----
+   champagne gold #c9a96e · deep champagne #8a6d3b (on light) · off-white #eeeef4 · near-black #0b0b10 / #050508 */
+body.dn-page {
+  --bg: #0b0b10;
+  --surface: #17171f;
+  --text: #eeeef4;
+  --muted: #a0a0b2;
+  --line: #262631;
+  --accent: #c9a96e;
+  --accent-ink: #c9a96e;
+  --on-accent: #0b0b10;
+  --gold-grad: linear-gradient(180deg, #dcc08a 0%, #c9a96e 45%, #a98a52 100%);
+  --sky: #c9a96e;
+  --chrome-grad: linear-gradient(180deg, #ffffff 0%, #d6d6de 55%, #a4a4b0 100%);
+  background: var(--bg);
+}
+body.dn-page .site-header { border-bottom: 1px solid var(--line); }
+body.dn-page .desktop-nav a:hover, body.dn-page .header-call:hover { color: var(--accent); }
+body.dn-page .phone-symbol { border-color: #c9a96e66; color: var(--accent); }
+
+/* Gold buttons, like the car swoosh in the logo. */
+body.dn-page .button,
+body.dn-page .daylight-dark .button,
+body.dn-page .quote-actions .button:not(.secondary) { background: var(--gold-grad); color: #0b0b10; border: 0; }
+body.dn-page .button:hover,
+body.dn-page .daylight-dark .button:hover,
+body.dn-page .quote-actions .button:not(.secondary):hover { background: linear-gradient(180deg, #e6cd9c, #d2b37a 50%, #b39560); }
+body.dn-page .button.secondary,
+body.dn-page .offer-actions .button.secondary { background: transparent; color: var(--text); border: 1px solid #3a3a48; }
+body.dn-page .offer-actions .button.secondary:hover { background: #ffffff0d; border-color: var(--accent); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  body.dn-page .button:hover { box-shadow: 0 8px 22px #c9a96e33; }
+}
+
+/* Hero: dark studio, off-white headline, champagne second line and price. */
+body.dn-page .daylight-hero { background: var(--bg); border-bottom-color: var(--line); }
+body.dn-page .daylight-backdrop { object-position: center 70%; }
+body.dn-page .daylight-hero::before { background: linear-gradient(90deg, #0b0b10f7 0%, #0b0b10e6 38%, #0b0b108c 70%, #0b0b1059 100%); }
+body.dn-page .daylight-copy h1 { color: #ffffff; text-shadow: 0 2px 24px #00000080; }
+body.dn-page .daylight-copy h1 span { color: var(--sky); }
+body.dn-page .daylight-copy > p, body.dn-page .hero-assurance { color: var(--muted); }
+body.dn-page .eyebrow { color: var(--accent); }
+body.dn-page .discount-offer > strong,
+body.dn-page .daylight-offer.discount-offer > strong,
+body.dn-page .daylight-dark .discount-offer > strong { color: #d4b67f; }
+body.dn-page .daylight-card { background: #13131aee; border: 1px solid var(--line); border-top: 3px solid var(--accent); box-shadow: 0 20px 60px #00000080; backdrop-filter: blur(6px); }
+body.dn-page .daylight-card h2 { color: var(--text); }
+body.dn-page .offer-list li::before, body.dn-page .hero-assurance span::before { color: var(--sky); }
+
+/* Dark sections alternate a shade deeper, with chrome headings. */
+body.dn-page .daylight-dark, body.dn-page .site-footer { --bg: #050508; --surface: #13131a; --line: #22222c; background: var(--bg); }
+body.dn-page .studio-trust strong { color: var(--accent); }
+body.dn-page .google-rating .stars, body.dn-page .stars { color: var(--accent); }
+body.dn-page .google-letter { color: var(--sky); }
+body.dn-page .section-heading h2, body.dn-page .studio-statement h2, body.dn-page .quote-copy h2, body.dn-page h3 { color: var(--heading, #eeeef4); }
+body.dn-page .benefit { background: var(--surface); border-color: var(--line); }
+body.dn-page .benefit-icon { color: var(--sky); }
+body.dn-page .reason-number { color: var(--accent); }
+body.dn-page .reason { border-top-color: #c9a96e55; }
+body.dn-page .portfolio-grid img { filter: none; }
+body.dn-page .text-link { border-bottom-color: #c9a96e88; }
+body.dn-page .text-link:hover { color: var(--accent); }
+body.dn-page summary::after { color: var(--accent); }
+body.dn-page .studio-statement { background: var(--surface); border: 1px solid var(--line); }
+
+/* Quote card matches the hero card. */
+body.dn-page .quote-layout { background: var(--surface); border-color: var(--line); }
+body.dn-page .quote-actions { background: #0b0b10; color: var(--text); border: 1px solid #22222c; border-top: 3px solid var(--accent); --text: #eeeef4; --muted: #a0a0b2; --line: #262631; --surface: #17171f; --accent: #c9a96e; }
+
+/* Reviews: a light chrome-silver band so real customer photos read clearly. */
+body.dn-page .reviews-section { --text: #13131a; --muted: #5b5b6c; --line: #e0e0e8; --accent: #8a6d3b; background: linear-gradient(180deg, #f3f3f6, #e7e7ee); color: var(--text); border-block: 0; }
+body.dn-page .reviews-section .section-heading h2, body.dn-page .reviews-section h3 { color: #13131a; }
+body.dn-page .reviews-section .eyebrow { color: #8a6d3b; }
+body.dn-page .reviews-section .stars { color: #c9a96e; }
+body.dn-page .reviews-section .review-summary > strong { color: #13131a; }
+body.dn-page .reviews-section .review-card .google-letter { color: #c9a96e; }
+body.dn-page .review-carousel::before { background: linear-gradient(90deg, #ececf199, #ececf110); }
+body.dn-page .review-carousel::after { background: linear-gradient(270deg, #ececf199, #ececf110); }
+
+/* Lead form on dark cards. */
+body.dn-page .lead-form { margin-top: 18px; gap: 13px; }
+body.dn-page .lead-form label { color: var(--text); font-weight: 600; }
+body.dn-page .lead-form label > span { color: var(--accent); }
+body.dn-page .lead-form input { background: #0b0b10; border-color: #33333f; color: #eeeef4; font-size: 14px; }
+body.dn-page .lead-form input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+body.dn-page .lead-form input[aria-invalid="true"] { border-color: #e2554f; }
+body.dn-page .lead-form .button { width: 100%; margin-top: 4px; }
+body.dn-page .lead-form .form-note { color: var(--muted); }
+body.dn-page .lead-form .form-note a { color: var(--accent); }
+body.dn-page .lead-form .form-status { border-color: var(--accent); color: var(--text); background: #c9a96e14; }
+@media (max-width: 760px) { body.dn-page .lead-form input { font-size: 16px; } }
+
+/* ---- Alternating bands: black header/hero, then white and black sections in turn. ---- */
+body.dn-page .dn-light {
+  --bg: #ffffff; --surface: #f3f3f6; --text: #13131a; --muted: #5b5b6c; --line: #e2e2ea;
+  --accent: #8a6d3b; --accent-ink: #8a6d3b; --heading: #13131a; --sky: #8a6d3b;
+  background: var(--bg); color: var(--text);
+}
+body.dn-page .dn-light .benefit { background: var(--surface); }
+body.dn-page .dn-light .text-link { border-bottom-color: #8a6d3b88; }
+body.dn-page .dn-light .quote-layout { background: var(--surface); border-color: var(--line); }
+body.dn-page .dn-light .discount-offer > strong { color: #8a6d3b; }
+body.dn-page .dn-light .discount-offer > span { color: var(--muted); }
+body.dn-page .dn-light .quote-actions { --heading: #eeeef4; box-shadow: 0 20px 50px #0000002e; }
+
+/* Reviews sit on black; the cards stay white so the customers' photos read clearly. */
+body.dn-page .reviews-section { --bg: #0b0b10; --text: #eeeef4; --muted: #a0a0b2; --line: #262631; --accent: #c9a96e; --heading: #eeeef4; background: var(--bg); color: var(--text); }
+body.dn-page .reviews-section .section-heading h2, body.dn-page .reviews-section .review-summary > strong { color: #eeeef4; }
+body.dn-page .reviews-section .eyebrow { color: #c9a96e; }
+body.dn-page .review-summary { border-left-color: var(--line); }
+body.dn-page .reviews-section .review-summary > a, body.dn-page .reviews-toolbar p, body.dn-page .review-position, body.dn-page .reviews-section .fine-print { color: var(--muted); }
+body.dn-page .reviews-section .review-card { --text: #13131a; --muted: #5b5b6c; --heading: #13131a; color: var(--text); border-color: #262631; }
+body.dn-page .review-carousel::before { background: linear-gradient(90deg, #0b0b10cc, #0b0b1010); }
+body.dn-page .review-carousel::after { background: linear-gradient(270deg, #0b0b10cc, #0b0b1010); }
+body.dn-page .review-controls button:disabled { border-color: #33333f; color: #6b6b7c; }
+
+/* FAQ and footer close out on black. */
+body.dn-page #faq { color: var(--text); }
+body.dn-page .site-footer { border-top: 1px solid #22222c; }
+
+/* Strict alternation: hero B · benefits W · story B · why W · work B · reviews W · quote B · FAQ W · footer B. */
+body.dn-page .dn-dark { background: var(--bg); }
+body.dn-page .daylight-story { padding-block: 74px; }
+body.dn-page .dn-light .reason { border-top-color: #8a6d3b55; }
+body.dn-page .dn-light summary::after { color: var(--accent); }
+
+/* Reviews: light band; cards white with a soft edge. */
+body.dn-page .reviews-section { --bg: #f3f3f6; --text: #13131a; --muted: #5b5b6c; --line: #e0e0e8; --accent: #8a6d3b; --heading: #13131a; background: var(--bg); color: var(--text); }
+body.dn-page .reviews-section .section-heading h2, body.dn-page .reviews-section .review-summary > strong { color: #13131a; }
+body.dn-page .reviews-section .eyebrow { color: #8a6d3b; }
+body.dn-page .reviews-section .review-card { border-color: #e2e2ea; box-shadow: 0 6px 24px #13131a10; }
+body.dn-page .review-carousel::before { background: linear-gradient(90deg, #f3f3f6cc, #f3f3f610); }
+body.dn-page .review-carousel::after { background: linear-gradient(270deg, #f3f3f6cc, #f3f3f610); }
+body.dn-page .review-controls button:disabled { border-color: #e0e0e8; color: #a6a6b4; }
+
+/* Quote on black: the form card sits a shade darker than its panel. */
+body.dn-page .daylight-dark .quote-actions { box-shadow: none; }
+
+/* Hero photo: darker veil on the left for the headline, the car shows through the middle. */
+body.dn-page .daylight-backdrop { object-position: center 62%; }
+body.dn-page .daylight-hero::before { background: linear-gradient(90deg, #0b0b10f0 0%, #0b0b10c7 32%, #0b0b1059 55%, #0b0b1073 100%), linear-gradient(0deg, #0b0b10b3 0%, transparent 30%); }
+@media (max-width: 760px) {
+  body.dn-page .daylight-backdrop { object-position: center 62%; }
+  body.dn-page .daylight-hero::before { background: linear-gradient(180deg, #0b0b1066 0%, #0b0b10cc 45%, #0b0b10f2 100%); }
+}
+body.dn-page .daylight-backdrop { object-position: center 66%; }
+body.dn-page .daylight-hero::before { background: linear-gradient(90deg, #0b0b10f5 0%, #0b0b10d9 30%, #0b0b1066 55%, #0b0b108c 100%), linear-gradient(0deg, #0b0b10cc 0%, transparent 35%); }
+/* Portfolio photos come in different sizes; keep every tile the same 3:4 frame. */
+body.dn-page .portfolio-grid img { aspect-ratio: 3 / 4; height: auto; object-fit: cover; }
+
+/* Sticky header: stays pinned on every screen size, blurred so it reads over photos. */
+html { scroll-padding-top: 104px; }
+body.dn-page .sticky-header { position: sticky; top: 0; z-index: 40; background: #0b0b10db; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid #262631; }
+body.dn-page .sticky-header .site-header { border-bottom: 0; }
+
+/* Mobile bottom bar: always visible; address line over a full-width quote button. */
+body.dn-page .mobile-cta { display: none; }
+@media (max-width: 760px) {
+  html { scroll-padding-top: 90px; }
+  body.dn-page { padding-bottom: 112px; }
+  body.dn-page .mobile-cta { display: grid; gap: 8px; position: fixed; z-index: 45; left: 0; right: 0; bottom: 0; padding: 10px 16px calc(12px + env(safe-area-inset-bottom)); background: #0b0b10f0; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid #262631; box-shadow: 0 -10px 30px #00000059; }
+  body.dn-page .mobile-cta-address { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 24px; color: #d6d6de; font-size: 12px; font-weight: 600; text-align: center; }
+  body.dn-page .mobile-cta-address svg { width: 15px; height: 15px; flex: 0 0 15px; color: var(--accent); }
+  body.dn-page .mobile-cta-address span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-decoration: underline; text-decoration-color: #c9a96e66; text-underline-offset: 3px; }
+  body.dn-page .mobile-cta-button { width: 100%; min-height: 52px; justify-content: center; gap: 12px; font-size: 14px; }
+}
+
+/* Studio hero (Mercedes under track lights): keep the car in frame. */
+body.dn-page .daylight-backdrop { object-position: center 55%; }
+@media (max-width: 760px) { body.dn-page .daylight-backdrop { object-position: 42% center; } }
+
+/* GHL form embed: dark card behind it, no white flash while it loads. */
+body.dn-page .ghl-form-frame { display: block; width: 100%; min-height: 464px; border: 0; background: transparent; color-scheme: normal; margin-top: 14px; }
+/* GHL form: clip away GHL's own padding, inner border and the empty strip it reserves under the button.
+   Offsets measured from the live form (fields 41px in, first label 80px down, button ends 458px down).
+   The iframe still auto-grows (e.g. validation messages), so only fixed GHL chrome is hidden. */
+body.dn-page .ghl-clip { overflow: hidden; margin-top: 18px; }
+body.dn-page .ghl-form-frame { width: calc(100% + 82px); max-width: none; margin: -66px -41px -148px; min-height: 0; }
+body.dn-page .daylight-card, body.dn-page .quote-actions { padding-bottom: 24px; }
+/* Form cards are solid #13131a (matches a dark GHL form when one is embedded). */
+body.dn-page .daylight-card, body.dn-page .quote-actions, body.dn-page .daylight-dark .quote-actions { background: #13131a; -webkit-backdrop-filter: none; backdrop-filter: none; }
+
+/* ---- Detail Now typography: Bebas Neue display, DM Sans body (same as austindetailnow.com). ---- */
+body.dn-page, body.dn-page button, body.dn-page input { font-family: 'DM Sans', 'Manrope', sans-serif; }
+body.dn-page h1, body.dn-page h2, body.dn-page .discount-offer > strong, body.dn-page .studio-trust strong, body.dn-page .reason h3, body.dn-page .benefit h3, body.dn-page .review-summary > strong, body.dn-page .footer-phone {
+  font-family: 'Bebas Neue', 'DM Sans', sans-serif; font-weight: 400; letter-spacing: .02em; line-height: 1;
+}
+body.dn-page .daylight-copy h1 { font-size: clamp(52px, 6.4vw, 88px); }
+body.dn-page .section-heading h2, body.dn-page .studio-statement h2, body.dn-page .quote-copy h2 { font-size: clamp(42px, 4.8vw, 64px); }
+body.dn-page .reviews-section .section-heading h2 { font-size: clamp(40px, 4.4vw, 58px); }
+body.dn-page .discount-offer > strong, body.dn-page .daylight-offer.discount-offer > strong { font-size: clamp(84px, 8.5vw, 120px); letter-spacing: .01em; }
+body.dn-page .studio-trust strong { font-size: 22px; }
+body.dn-page .reason h3, body.dn-page .benefit h3 { font-size: 26px; }
+body.dn-page .daylight-card h2, body.dn-page .quote-actions h3 { font-family: 'Bebas Neue', 'DM Sans', sans-serif; font-weight: 400; font-size: 38px; letter-spacing: .02em; line-height: 1; }
+body.dn-page .eyebrow { letter-spacing: .22em; }
+
+/* Wordmark: DN monogram + DETAIL NOW in Bebas Neue, like the site header. */
+body.dn-page .brand { gap: 12px; }
+body.dn-page .brand img { width: 46px; height: 46px; border-radius: 10px; }
+body.dn-page .brand-word { display: flex; flex-direction: column; line-height: 1; }
+body.dn-page .brand-word b { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 32px; letter-spacing: 3px; color: #eeeef4; }
+body.dn-page .brand-word small { margin-top: 3px; font-size: 8px; font-weight: 700; letter-spacing: .26em; color: #c9a96e; }
+body.dn-page .site-footer .brand img { width: 56px; height: 56px; }
+@media (max-width: 760px) {
+  body.dn-page .brand img { width: 38px; height: 38px; }
+  body.dn-page .brand-word b { font-size: 25px; letter-spacing: 2px; }
+  body.dn-page .brand-word small { font-size: 6.5px; }
+  body.dn-page .daylight-copy h1 { font-size: 56px; }
+}
+
+/* Studio hero (dark Mercedes under track lights). */
+body.dn-page .daylight-backdrop { object-position: 70% 60%; }
+@media (max-width: 760px) { body.dn-page .daylight-backdrop { object-position: 62% center; } }
