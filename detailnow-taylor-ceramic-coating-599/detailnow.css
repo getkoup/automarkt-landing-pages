@@ -396,3 +396,8 @@ body.dn-page .daylight-backdrop { object-position: 70% 60%; }
 body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer { margin-top: 16px; margin-bottom: 30px; gap: 32px; }
 body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer > strong { padding-top: 2px; }
 @media (max-width: 760px) { body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer { margin-top: 12px; margin-bottom: 26px; gap: 28px; } }
+
+/* Price: bigger, with open letter-spacing between the digits (per client reference).
+   Doubled class beats review-variants.css, which loads later and sets letter-spacing: -.065em. */
+body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer > strong { font-size: clamp(104px, 9.6vw, 140px); letter-spacing: .06em; color: #d6b87c; line-height: .95; }
+@media (max-width: 760px) { body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer > strong { font-size: 92px; } }
