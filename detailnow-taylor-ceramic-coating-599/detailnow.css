@@ -393,6 +393,6 @@ body.dn-page .daylight-backdrop { object-position: 70% 60%; }
 
 /* More breathing room around the price: headline → label → $599 → paragraph.
    Extra specificity because review-variants.css (loaded later) resets this gap to 6px. */
-body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer { margin-top: 34px; margin-bottom: 30px; gap: 22px; }
+body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer { margin-top: 16px; margin-bottom: 30px; gap: 32px; }
 body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer > strong { padding-top: 2px; }
-@media (max-width: 760px) { body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer { margin-top: 28px; margin-bottom: 26px; gap: 20px; } }
+@media (max-width: 760px) { body.dn-page :is(.daylight-copy, .quote-copy) .discount-offer.discount-offer { margin-top: 12px; margin-bottom: 26px; gap: 28px; } }
