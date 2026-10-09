@@ -390,3 +390,8 @@ body.dn-page .site-footer .brand img { width: 56px; height: 56px; }
 /* Studio hero (dark Mercedes under track lights). */
 body.dn-page .daylight-backdrop { object-position: 70% 60%; }
 @media (max-width: 760px) { body.dn-page .daylight-backdrop { object-position: 62% center; } }
+
+/* More breathing room above the price: headline → label → $599. */
+body.dn-page .discount-offer, body.dn-page .daylight-offer.discount-offer { margin-top: 34px; gap: 14px; }
+body.dn-page .discount-offer > strong { padding-top: 4px; }
+@media (max-width: 760px) { body.dn-page .discount-offer, body.dn-page .daylight-offer.discount-offer { margin-top: 26px; gap: 10px; } }
