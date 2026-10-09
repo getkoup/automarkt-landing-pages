@@ -4,4 +4,5 @@ This page has no tracking yet. When tags or links are provided, paste them at th
 
 | Type | ID / URL | Where | Pages |
 |---|---|---|---|
-| _(none yet)_ | | | |
+| GHL form submit event | `dataLayer.push({event: 'ghl_form_submit', formId: 'cMYd2dCbjNJDHWCzQito'})` | inline listener in index.html, fired just before redirect | index.html |
+| Google Ads / GTM | _(none yet)_ | | |

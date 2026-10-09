@@ -6,19 +6,41 @@
   <meta name="description" content="$599 10-year ceramic coating in Taylor, TX from Detail Now. 5.0 on Google, Owner's Pride Select-Level installer, Carfax-registered warranty, full paint prep included.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#0b0b10">
+  <link rel="preconnect" href="https://api.leadconnectorhq.com">
+  <link rel="preconnect" href="https://link.msgsndr.com">
+  <script>
+    // GHL form submission → thank-you.html.
+    // On a successful submit the GHL iframe posts ["set-sticky-contacts", userDataKey, frameIdOrContactJSON, locationId, fingerprint]
+    // (format from GHL's form_embed.js). Slot 2 is either our iframe id or a JSON string of the new contact. Loads/resizes never redirect.
+    window.addEventListener('message', event => {
+      if (event.origin !== 'https://api.leadconnectorhq.com' || !Array.isArray(event.data)) return;
+      const frame = [...document.querySelectorAll('iframe.ghl-form-frame')].find(frame => event.source === frame.contentWindow);
+      if (!frame || frame.dataset.formId !== 'cMYd2dCbjNJDHWCzQito') return;
+      const [action, , frameIdOrContact, locationId, fingerprint] = event.data;
+      if (action !== 'set-sticky-contacts' || locationId !== 'IO1XccMiZ8nXQAppRzmn' || typeof fingerprint !== 'string' || !fingerprint) return;
+      let submitted = frameIdOrContact === frame.id;
+      if (!submitted && typeof frameIdOrContact === 'string') {
+        try { const contact = JSON.parse(frameIdOrContact); submitted = !!contact && typeof contact === 'object'; } catch { submitted = false; }
+      }
+      if (!submitted) return;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'ghl_form_submit', formId: frame.dataset.formId });
+      window.location.assign(new URL('thank-you.html', window.location.href).href);
+    });
+  </script>
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
   <!-- TRACKING: paste this client's tags here when provided, and log them in tracking.md. -->
   <title>$599 10-Year Ceramic Coating in Taylor, TX | Detail Now</title>
   <link rel="icon" href="assets/detailnow-monogram.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="base.css?v=7">
-  <link rel="stylesheet" href="variant-f.css?v=7">
-  <link rel="stylesheet" href="detailnow.css?v=7">
-  <link rel="stylesheet" href="review-variants.css?v=7">
-  <script src="site.js?v=7" defer></script>
-  <script src="review-variants.js?v=7" defer></script>
-  <script src="lead-form.js?v=7" defer></script>
+  <link rel="stylesheet" href="base.css?v=9">
+  <link rel="stylesheet" href="variant-f.css?v=9">
+  <link rel="stylesheet" href="detailnow.css?v=9">
+  <link rel="stylesheet" href="review-variants.css?v=9">
+  <script src="site.js?v=9" defer></script>
+  <script src="review-variants.js?v=9" defer></script>
 </head>
 <body class="variant-f dn-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,16 +72,14 @@
         <aside id="claim" class="daylight-card" aria-labelledby="hero-quote-title">
           <h2 id="hero-quote-title">Claim your $599 coating.</h2>
           <p>Start with your name, number, and vehicle.</p>
-          <!-- FORM (temporary): validates but sends nothing until data-endpoint is set or this <form> is replaced with the GHL embed. -->
-          <form class="quote-form lead-form" action="#" method="post" data-endpoint="" novalidate>
-            <label for="name-0">Full name <span>*</span><input id="name-0" name="name" type="text" autocomplete="name" required placeholder="Your name"></label>
-            <label for="phone-0">Phone <span>*</span><input id="phone-0" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(737) 555-0123"></label>
-            <label for="vehicle-0">Vehicle year, make &amp; model <span>*</span><input id="vehicle-0" name="vehicle" type="text" required placeholder="2024 Toyota Tacoma"></label>
-            <input type="hidden" name="offer" value="$599 10-year ceramic coating">
-            <button class="button" type="submit">Claim my $599 coating <span aria-hidden="true">↗</span></button>
-            <p class="form-note">By submitting, you agree Detail Now may call or text you about your quote. Msg &amp; data rates may apply. Prefer to talk? <a href="tel:+17373992779">(737) 399-2779</a></p>
-            <p class="form-status" role="status" aria-live="polite" hidden></p>
-          </form>
+          <!-- FORM: GHL "Ceramic Coating (Google) - 599" (location IO1XccMiZ8nXQAppRzmn). -->
+          <div class="ghl-clip">
+          <iframe class="ghl-form-frame" id="inline-cMYd2dCbjNJDHWCzQito-0"
+            src="https://api.leadconnectorhq.com/widget/form/cMYd2dCbjNJDHWCzQito"
+            title="Ceramic Coating (Google) - 599" height="462" loading="eager"
+            data-form-id="cMYd2dCbjNJDHWCzQito" data-form-name="Ceramic Coating (Google) - 599"
+            data-height="462" data-cookie-consent="true" data-cookie-consent-provider="auto"></iframe>
+          </div>
         </aside>
       </div>
     </section>
@@ -212,16 +232,14 @@
           <div class="quote-actions">
             <h3>Claim the $599 offer.</h3>
             <p>Tell us about your vehicle and we'll get you on the schedule.</p>
-          <!-- FORM (temporary): validates but sends nothing until data-endpoint is set or this <form> is replaced with the GHL embed. -->
-          <form class="quote-form lead-form" action="#" method="post" data-endpoint="" novalidate>
-            <label for="name-1">Full name <span>*</span><input id="name-1" name="name" type="text" autocomplete="name" required placeholder="Your name"></label>
-            <label for="phone-1">Phone <span>*</span><input id="phone-1" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(737) 555-0123"></label>
-            <label for="vehicle-1">Vehicle year, make &amp; model <span>*</span><input id="vehicle-1" name="vehicle" type="text" required placeholder="2024 Toyota Tacoma"></label>
-            <input type="hidden" name="offer" value="$599 10-year ceramic coating">
-            <button class="button" type="submit">Claim my $599 coating <span aria-hidden="true">↗</span></button>
-            <p class="form-note">By submitting, you agree Detail Now may call or text you about your quote. Msg &amp; data rates may apply. Prefer to talk? <a href="tel:+17373992779">(737) 399-2779</a></p>
-            <p class="form-status" role="status" aria-live="polite" hidden></p>
-          </form>
+          <!-- FORM: GHL "Ceramic Coating (Google) - 599" (location IO1XccMiZ8nXQAppRzmn). -->
+          <div class="ghl-clip">
+          <iframe class="ghl-form-frame" id="inline-cMYd2dCbjNJDHWCzQito-1"
+            src="https://api.leadconnectorhq.com/widget/form/cMYd2dCbjNJDHWCzQito"
+            title="Ceramic Coating (Google) - 599" height="462" loading="eager"
+            data-form-id="cMYd2dCbjNJDHWCzQito" data-form-name="Ceramic Coating (Google) - 599"
+            data-height="462" data-cookie-consent="true" data-cookie-consent-provider="auto"></iframe>
+          </div>
           </div>
         </div>
       </section>

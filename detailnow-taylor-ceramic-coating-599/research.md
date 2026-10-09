@@ -52,6 +52,6 @@ Long reviews are trimmed; "…" marks removed sentences. Other ceramic reviews w
 Near-black #050508 / #0e0e14 / #13131a, champagne gold #c9a96e, off-white #eeeef4, muted #77778a. Fonts: Bebas Neue (headings), DM Sans (body). Sections alternate black / white like the Coast 2 City page.
 
 ## Pending
-- Lead form: temporary form (name, phone, vehicle) in hero + quote section. It validates but sends nothing (lead-form.js, empty data-endpoint) and tells visitors to call/text. Swap for the GHL embed when provided.
+- Lead form: GHL "Ceramic Coating (Google) - 599" (form cMYd2dCbjNJDHWCzQito, location IO1XccMiZ8nXQAppRzmn), embedded in hero + quote section; on submit → thank-you.html (+ dataLayer ghl_form_submit).
 - Tracking: none yet (see tracking.md).
 - Confirm the phone number and the 10-year product/warranty terms.

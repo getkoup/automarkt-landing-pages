@@ -351,10 +351,10 @@ body.dn-page .daylight-backdrop { object-position: center 55%; }
 /* GHL form embed: dark card behind it, no white flash while it loads. */
 body.dn-page .ghl-form-frame { display: block; width: 100%; min-height: 464px; border: 0; background: transparent; color-scheme: normal; margin-top: 14px; }
 /* GHL form: clip away GHL's own padding, inner border and the empty strip it reserves under the button.
-   Offsets measured from the live form (fields 41px in, first label 80px down, button ends 458px down).
+   Offsets measured from Detail Now's GHL form cMYd2dCbjNJDHWCzQito (fields 42px in, first label ~76px down, button ends ~453px down).
    The iframe still auto-grows (e.g. validation messages), so only fixed GHL chrome is hidden. */
 body.dn-page .ghl-clip { overflow: hidden; margin-top: 18px; }
-body.dn-page .ghl-form-frame { width: calc(100% + 82px); max-width: none; margin: -66px -41px -148px; min-height: 0; }
+body.dn-page .ghl-form-frame { width: calc(100% + 84px); max-width: none; margin: -62px -42px -151px; min-height: 0; }
 body.dn-page .daylight-card, body.dn-page .quote-actions { padding-bottom: 24px; }
 /* Form cards are solid #13131a (matches a dark GHL form when one is embedded). */
 body.dn-page .daylight-card, body.dn-page .quote-actions, body.dn-page .daylight-dark .quote-actions { background: #13131a; -webkit-backdrop-filter: none; backdrop-filter: none; }
