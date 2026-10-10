@@ -53,5 +53,5 @@ Near-black #050508 / #0e0e14 / #13131a, champagne gold #c9a96e, off-white #eeeef
 
 ## Pending
 - Lead form: GHL "Ceramic Coating (Google) - 599" (form cMYd2dCbjNJDHWCzQito, location IO1XccMiZ8nXQAppRzmn), embedded in hero + quote section; on submit → thank-you.html (+ dataLayer ghl_form_submit).
-- Tracking: none yet (see tracking.md).
+- Tracking: Google Ads AW-11146644582 + GTM-KVP98TG2 on both pages (see tracking.md).
 - Confirm the phone number and the 10-year product/warranty terms.
