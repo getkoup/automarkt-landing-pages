@@ -12,7 +12,9 @@ Collected 2026-10-12. Layout copied from the live 1TakeTints $299 ceramic tint p
 - **GHL location:** 1TakeTints, fN2r559vBsi49zNFKJMB. No residential form exists yet (forms checked 2026-10-12: Tint-$299, PPF, Ceramic Coating x2, Window Tinting, Body Sculpting).
 
 ## Offer / CTA
-- **No price.** The client's page has no price for this service; the user asked to build without one.
+- **Up to 20% OFF** (client request via WhatsApp, 2026-10-13, for both commercial and residential pages). No other terms given; the page says "ask about the offer at your consultation" and doesn't invent conditions.
+- H1 must name the service clearly in Title Case ("Residential Window Tint For San Diego Homes"), per the client's sample screenshots.
+- **No price.** The client's page has no price for this service.
 - **CTA:** schedule an in-person consultation. The client's site says a consultation is needed to take measurements and meter the glass; the wrong film for the glass type can crack or shatter it. The page does not call the consultation "free" (not stated by the client).
 
 ## Claims used (all from the client's page)
