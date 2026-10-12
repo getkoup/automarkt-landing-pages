@@ -9,7 +9,7 @@ Collected 2026-10-12. Layout copied from the live 1TakeTints $299 ceramic tint p
 - **Phone:** (619) 845-5558
 - **Area:** San Diego & Chula Vista (site title: "Home Window Tinting San Diego & Chula Vista")
 - **Google:** 5.0 ★, 79 reviews (checked 2026-10-12). Listing: https://www.google.com/maps/place/1TakeTints/data=!4m2!3m1!1s0x0:0xe1d74cbeca37678e
-- **GHL location:** 1TakeTints, fN2r559vBsi49zNFKJMB. No residential form exists yet (forms checked 2026-10-12: Tint-$299, PPF, Ceramic Coating x2, Window Tinting, Body Sculpting).
+- **GHL location:** 1TakeTints, fN2r559vBsi49zNFKJMB. Form: Tint-residential(Google), HVW3vuObzumvhKRxNnkF (added 2026-10-13).
 
 ## Offer / CTA
 - **Up to 20% OFF** (client request via WhatsApp, 2026-10-13, for both commercial and residential pages). No other terms given; the page says "ask about the offer at your consultation" and doesn't invent conditions.
@@ -38,4 +38,6 @@ No reviews section. The Google reviews that loaded were all from automotive cust
 - These look like stock or showcase images rather than documented 1TakeTints installs, so captions don't claim they are 1TakeTints jobs.
 
 ## Lead form
-- Temporary native form (name, phone, city or ZIP) in the hero and #quote. It validates but sends nothing until `data-endpoint` is set or it is replaced with a GHL embed (then copy the thank-you redirect from the $299 page's ghl-thanks.js). Until then a submit shows "call (619) 845-5558".
+- GHL form **Tint-residential(Google)** (HVW3vuObzumvhKRxNnkF), embedded in the hero (iframe id `inline-HVW3vuObzumvhKRxNnkF`) and #quote (`inline-HVW3vuObzumvhKRxNnkF-footer`), using the $299 page's crop CSS (the form has the same baked-in padding and dashed outline).
+- `ghl-thanks.js` redirects to thank-you.html after a successful submit (GHL `set-sticky-contacts` message for location fN2r559vBsi49zNFKJMB).
+- As of 2026-10-13 the form's third field is still "Car Details" (Vehicle Model/Year/Make), copied from the $299 form. It should be changed in GHL to fit residential work.
