@@ -40,3 +40,7 @@ No reviews section. The Google reviews that loaded were all from automotive cust
 - GHL form **Tint-comercial(Google)** (dbfXgOJyCv3uEdf3eaB5), embedded in the hero (iframe id `inline-dbfXgOJyCv3uEdf3eaB5`) and #quote (`inline-dbfXgOJyCv3uEdf3eaB5-footer`), using the $299 page's crop CSS (the form has the same baked-in padding and dashed outline).
 - `ghl-thanks.js` redirects to thank-you.html after a successful submit (GHL `set-sticky-contacts` message for location fN2r559vBsi49zNFKJMB).
 - As of 2026-10-13 the form's third field is still "Car Details" (Vehicle Model/Year/Make), copied from the $299 form. It should be changed in GHL to fit commercial work.
+
+## Hosting
+- Vercel project `1taketints-commercial-tint`: Git-linked to this repo, Root Directory = this folder, skips builds when the folder is unchanged. Also at https://1taketints-commercial-tint.vercel.app/
+- Public URL: **https://1taketints.getkoup.com/commercial-tint/**. It is served through `vercel.json` rewrites in the getkoup/1taketints repo (the $299 page's Vercel project), and `/commercial-tint` redirects to `/commercial-tint/` so relative asset paths resolve. Set up 2026-10-13.
