@@ -299,20 +299,9 @@ details p a { text-decoration: underline; }
   html, .review-track { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
-/* Service pages (no price offer): hero tagline, temporary lead form, consultation steps, text-only reviews. */
+/* Service pages (no price offer): hero tagline, GHL form crop, consultation steps, text-only reviews. */
 .daylight-copy h1 { margin-bottom: 22px; }
 .daylight-copy > .included { max-width: 430px; }
-.lead-form { display: grid; gap: 14px; }
-.lead-form label { display: block; font-size: 12px; font-weight: 700; color: var(--text); }
-.lead-form label > span { color: var(--accent-ink); }
-.lead-form input, .lead-form select { display: block; width: 100%; margin-top: 6px; min-height: 48px; padding: 12px 14px; border: 1px solid var(--line); background: #fbfbf8; color: var(--text); font: inherit; font-size: 14px; font-weight: 500; border-radius: 0; }
-.lead-form select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--accent-ink) 50%), linear-gradient(135deg, var(--accent-ink) 50%, transparent 50%); background-position: calc(100% - 20px) 21px, calc(100% - 15px) 21px; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 40px; }
-.lead-form input:focus-visible, .lead-form select:focus-visible { outline: 3px solid var(--accent-ink); outline-offset: 1px; }
-.lead-form input[aria-invalid="true"] { border-color: #b3261e; }
-.lead-form .button { width: 100%; margin-top: 4px; }
-.form-note { font-size: 11px; line-height: 1.6; }
-.form-note a { text-decoration: underline; }
-.form-status { font-size: 13px; font-weight: 600; color: var(--text); padding: 12px 14px; background: #f5edd2; border-left: 3px solid var(--accent); }
 .quote-steps { list-style: none; counter-reset: step; padding: 0; margin: 26px 0; display: grid; gap: 14px; }
 .quote-steps li { counter-increment: step; display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: baseline; font-size: 14px; color: var(--muted); }
 .quote-steps li::before { content: counter(step, decimal-leading-zero); color: var(--accent); font-weight: 800; font-size: 13px; }
