@@ -322,3 +322,14 @@ details p a { text-decoration: underline; }
 @media (max-width: 760px) {
   .review-card--text blockquote { font-size: 14px; }
 }
+/* Up to 20% OFF offer (hero + quote section). */
+.daylight-offer { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 22px; }
+.daylight-offer span { color: var(--accent-ink); font-size: 20px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.daylight-offer strong { font-size: clamp(64px, 6.2vw, 96px); letter-spacing: -.05em; white-space: nowrap; }
+.quote-price strong small { display: block; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; line-height: 1; margin-bottom: 6px; }
+@media (max-width: 760px) {
+  .daylight-offer { margin-bottom: 16px; }
+  .daylight-offer span { font-size: 16px; }
+  .daylight-offer strong { font-size: clamp(54px, 17vw, 72px); }
+  .quote-price strong { font-size: 52px; }
+}
