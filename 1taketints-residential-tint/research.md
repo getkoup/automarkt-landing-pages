@@ -41,3 +41,7 @@ No reviews section. The Google reviews that loaded were all from automotive cust
 - GHL form **Tint-residential(Google)** (HVW3vuObzumvhKRxNnkF), embedded in the hero (iframe id `inline-HVW3vuObzumvhKRxNnkF`) and #quote (`inline-HVW3vuObzumvhKRxNnkF-footer`), using the $299 page's crop CSS (the form has the same baked-in padding and dashed outline).
 - `ghl-thanks.js` redirects to thank-you.html after a successful submit (GHL `set-sticky-contacts` message for location fN2r559vBsi49zNFKJMB).
 - As of 2026-10-13 the form's third field is still "Car Details" (Vehicle Model/Year/Make), copied from the $299 form. It should be changed in GHL to fit residential work.
+
+## Hosting
+- Vercel project `1taketints-residential-tint`: Git-linked to this repo, Root Directory = this folder, skips builds when the folder is unchanged. Also at https://1taketints-residential-tint.vercel.app/
+- Public URL: **https://1taketints.getkoup.com/res-tint/**. It is served through `vercel.json` rewrites in the getkoup/1taketints repo (the $299 page's Vercel project), and `/res-tint` redirects to `/res-tint/` so relative asset paths resolve. Set up 2026-10-13.
