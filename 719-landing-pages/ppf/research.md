@@ -8,6 +8,7 @@
 - Audience and selling points: Drivers protecting paint from highway gravel and winter road exposure. Coverage quiz and package selector.
 - CTA: request a quote using the supplied GHL PPf (Google) form (`IF89UosER0YD5RTlnSGx`), or call/text (719) 437-8333.
 - Original copy, layout, testimonials, and interactive features preserved. Claims have not been independently verified.
+- Displayed Google review count updated to **5,000+** at the user's request; the existing **4.9** rating is unchanged. The new count is user-provided, not independently verified.
 - Assets and lead script are local to this service folder; no sibling-folder dependencies.
 - Existing PPF package imagery uses the supplied external CDN URLs. Google Fonts remains external.
 - GHL form location: `u0zdecOvugwYiWUUOmTI`, read from the published form configuration.
