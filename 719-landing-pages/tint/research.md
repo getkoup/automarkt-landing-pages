@@ -8,7 +8,7 @@
 - Audience and selling points: Drivers seeking cabin heat, glare, and UV reduction. Shade finder and LLumar film comparisons.
 - CTA: request a quote using the supplied GHL Tint (Google) form (`P0i3pnWcoKaPYcm7UuQe`), or call/text (719) 437-8333.
 - Original copy, layout, testimonials, and interactive features preserved. Claims have not been independently verified.
-- Displayed Google review count updated to **5,000+** at the user's request; the existing **4.9** rating is unchanged. The new count is user-provided, not independently verified.
+- Displayed Google review count corrected to **1,500+** following the user's clarification; the existing **4.9** rating is unchanged. The count is user-provided, not independently verified.
 - Assets and lead script are local to this service folder; no sibling-folder dependencies.
 - Google Fonts and the GHL form are external.
 - GHL form location: `u0zdecOvugwYiWUUOmTI`, read from the published form configuration.
