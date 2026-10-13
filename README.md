@@ -42,6 +42,32 @@ Repeat for each folder: one Vercel project per landing page.
 | `detailnow-taylor-ceramic-coating-599` | Detail Now – Taylor Ceramic Coatings (Taylor, TX) | Ceramic coating · $599 10-year | [detailnow.getkoup.com](https://detailnow.getkoup.com/) · [Vercel](https://detailnow-taylor-ceramic-coating-59.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/detailnow-taylor-ceramic-coating-599/) | Live; GHL form + Google Ads/GTM tags |
 | `1taketints-commercial-tint` | 1TakeTints (National City / San Diego, CA) | Commercial window tint · consultation, no price | [Live](https://1taketints.getkoup.com/commercial-tint/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/1taketints-commercial-tint/) | Live; GHL form; GTM-PP5PP8FZ + AW-18115164065 (shared with $299 page); no reviews |
 | `1taketints-residential-tint` | 1TakeTints (National City / San Diego, CA) | Residential window tint · consultation, no price | [Live](https://1taketints.getkoup.com/res-tint/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/1taketints-residential-tint/) | Live; GHL form; GTM-PP5PP8FZ + AW-18115164065 (shared with $299 page); no reviews |
+| `719-landing-pages/tint` | 719 Auto Customs (Colorado Springs, CO) | LLumar ceramic window tint · vehicle quote | [Vercel](https://719-tint.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/tint/) | Live; GHL Tint (Google) form + original Google Ads tag |
+| `719-landing-pages/ppf` | 719 Auto Customs (Colorado Springs, CO) | PPF · $599 Highway Protection package | [Vercel](https://719-ppf.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/ppf/) | Live; GHL PPf (Google) form + original Google Ads tag |
+| `719-landing-pages/ceramic` | 719 Auto Customs (Colorado Springs, CO) | Ceramic coating · $499 10-year double application | — | Imported; original Google Ads tag and live quote endpoint retained |
+
+### 719 landing pages
+
+The imported 719 collection is grouped under `719-landing-pages/`, with an `index.html` service selector and independent `tint/`, `ppf/`, and `ceramic/` pages. Each service contains its own assets, media, lead script, research, and tracking notes; no page references sibling-folder files.
+
+Local preview from the repository root:
+
+```sh
+python3 -m http.server 7190 --bind 127.0.0.1 --directory 719-landing-pages
+```
+
+Open `http://127.0.0.1:7190/`, or `/tint/`, `/ppf/`, and `/ceramic/`. Tint and PPF use the supplied live GHL embeds; Ceramic retains the original Cloudflare quote endpoint. All retain the original Google Ads tag. Submitting a quote reaches the shop.
+
+Tint and PPF are published as independent, GitHub-linked Vercel projects `719-tint` and `719-ppf`, with root directories set to their service paths and skipping unaffected-root deployments enabled. Per the user's explicit hosting decision, they use the existing `sachita007s-projects` Hobby team; no upgrade or transfer was performed. GitHub Pages publishes this repo from `main`. The existing Ceramic project at `719cc.getkoup.com` was not modified.
+
+Recommended custom domains are `719tint.getkoup.com` and `719ppf.getkoup.com`; they are not yet attached to the projects, and DNS has not been changed. First add each domain in its Vercel project's Settings → Domains, then add these project-specific CNAME records at the DNS provider for `getkoup.com`:
+
+| Type | Host | Target |
+|---|---|---|
+| CNAME | `719tint` | `858de8226fb1bfba.vercel-dns-017.com` |
+| CNAME | `719ppf` | `b64f50a3d19e8f05.vercel-dns-017.com` |
+
+These targets were obtained from Vercel's domain-configuration API for the respective projects. Do not change the existing Ceramic record or the domain's nameservers.
 
 ## Ad click tracking (gclid + UTMs → GHL)
 
