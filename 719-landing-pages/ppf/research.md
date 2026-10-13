@@ -1,0 +1,17 @@
+# 719 Auto Customs — Paint protection film (PPF)
+
+- Source: `/home/sachita/Videos/719-Updated_landing-pages/landing-pages/ppf/index.html`; imported as supplied, not independently researched.
+- Client: 719 Auto Customs.
+- Location: 7215 US-24 #130, Colorado Springs, CO 80915.
+- Service: Paint protection film (PPF).
+- Offer: $599 Highway Protection: front bumper, mirror caps, door edges, door cups; front windshield ceramic coating included.
+- Audience and selling points: Drivers protecting paint from highway gravel and winter road exposure. Coverage quiz and package selector.
+- CTA: request a quote using the supplied GHL PPf (Google) form (`IF89UosER0YD5RTlnSGx`), or call/text (719) 437-8333.
+- Original copy, layout, testimonials, and interactive features preserved. Claims have not been independently verified.
+- Assets and lead script are local to this service folder; no sibling-folder dependencies.
+- Existing PPF package imagery uses the supplied external CDN URLs. Google Fonts remains external.
+- GHL form location: `u0zdecOvugwYiWUUOmTI`, read from the published form configuration.
+- Replaced the custom Cloudflare quote form; fields, consent, validation, submission, and field styling are now managed in GHL. The supplied form contains Full Name, Phone, Email, Car Details, and consent; it does not expose the original PPF-coverage dropdown.
+- The outer card and `#quote` CTA anchor remain on the landing page. GHL's embed script automatically resizes the iframe. Successful-submit measurement is described in `tracking.md`.
+- Loading priority: `lead.js` and GHL's loader are fetched from the document head with `defer`, keeping attribution setup before embed initialization without blocking HTML parsing. The GHL loader has a high fetch-priority hint. Early preconnections target the form, embed loader, and GHL asset CDN.
+- The hero form is explicitly eager-loaded; below-fold imagery is lazy-loaded, including the proof-strip logo, quiz-result image, and footer logos. GHL's remote response and hydration still determine when its fields appear.
