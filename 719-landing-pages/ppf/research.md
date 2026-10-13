@@ -18,4 +18,4 @@
 - Published Vercel project: `719-ppf`, root directory `719-landing-pages/ppf`, GitHub-linked to `getkoup/automarkt-landing-pages` on `main`; static/Other preset and unaffected-root deployment skipping enabled.
 - Live URLs: https://719-ppf.vercel.app/ and https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/ppf/ . Both public pages and GHL embeds were verified without submitting a live lead.
 - Uses the existing `sachita007s-projects` Hobby team at the user's explicit request; no plan upgrade or account transfer.
-- Recommended custom domain, not yet attached: `719ppf.getkoup.com`. Vercel's preferred CNAME target for this project: `b64f50a3d19e8f05.vercel-dns-017.com`. DNS was not changed.
+- Live custom domain: https://719ppf.getkoup.com/ . The user added the CNAME to `b64f50a3d19e8f05.vercel-dns-017.com`; the hostname was attached to `719-ppf` and verified by Vercel. Valid HTTPS, HTTP 200, and the rendered GHL form were confirmed. No DNS records were modified by the assistant.

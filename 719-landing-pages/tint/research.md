@@ -18,4 +18,4 @@
 - Published Vercel project: `719-tint`, root directory `719-landing-pages/tint`, GitHub-linked to `getkoup/automarkt-landing-pages` on `main`; static/Other preset and unaffected-root deployment skipping enabled.
 - Live URLs: https://719-tint.vercel.app/ and https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/tint/ . Both public pages and GHL embeds were verified without submitting a live lead.
 - Uses the existing `sachita007s-projects` Hobby team at the user's explicit request; no plan upgrade or account transfer.
-- Recommended custom domain, not yet attached: `719tint.getkoup.com`. Vercel's preferred CNAME target for this project: `858de8226fb1bfba.vercel-dns-017.com`. DNS was not changed.
+- Live custom domain: https://719tint.getkoup.com/ . The user added the CNAME to `858de8226fb1bfba.vercel-dns-017.com`; the hostname was attached to `719-tint` and verified by Vercel. Valid HTTPS, HTTP 200, and the rendered GHL form were confirmed. No DNS records were modified by the assistant.
