@@ -15,3 +15,7 @@
 - The outer card and `#quote` CTA anchor remain on the landing page. GHL's embed script automatically resizes the iframe. Successful-submit measurement is described in `tracking.md`.
 - Loading priority: `lead.js` and GHL's loader are fetched from the document head with `defer`, keeping attribution setup before embed initialization without blocking HTML parsing. The GHL loader has a high fetch-priority hint. Early preconnections target the form, embed loader, and GHL asset CDN.
 - The hero form is explicitly eager-loaded; below-fold imagery is lazy-loaded, including the shade-finder photograph and footer logos. GHL's remote response and hydration still determine when its fields appear.
+- Published Vercel project: `719-tint`, root directory `719-landing-pages/tint`, GitHub-linked to `getkoup/automarkt-landing-pages` on `main`; static/Other preset and unaffected-root deployment skipping enabled.
+- Live URLs: https://719-tint.vercel.app/ and https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/tint/ . Both public pages and GHL embeds were verified without submitting a live lead.
+- Uses the existing `sachita007s-projects` Hobby team at the user's explicit request; no plan upgrade or account transfer.
+- Recommended custom domain, not yet attached: `719tint.getkoup.com`. Vercel's preferred CNAME target for this project: `858de8226fb1bfba.vercel-dns-017.com`. DNS was not changed.
