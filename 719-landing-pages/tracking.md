@@ -9,3 +9,4 @@
 - The same shared routing is live on `719.getkoup.com`, with valid HTTPS and the correct deployed content verified. Both branded service forms were visually checked, both shared redirects were exercised, and direct common-page visits showed zero explicit conversion events. The default Vercel alias remains live.
 - Existing standalone domains and GitHub Pages retain their service-local confirmations; their hosting arrangement is not migrated or removed. Python's static local server and GitHub Pages do not process `vercel.json`.
 - No real GHL test lead, synthetic message to a live embed, or live quote conversion was sent. Live GHL submission and Google Ads receipt remain unverified.
+- GTM container `GTM-WHZLPNRQ` (supplied 2026-10-15 via Google Doc; same container as `/cc`) added to the head (after `<meta charset>`) and body noscript of the common `thank-you.html`. Existing Ads pageview config unchanged.
