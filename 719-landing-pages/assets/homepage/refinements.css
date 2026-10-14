@@ -1,0 +1,11 @@
+.hero .pill{font-weight:800;letter-spacing:.12em}
+.hero-benefits{margin:20px auto 16px;padding-top:16px;font-weight:800;color:#f5f7fa}
+.hero-benefits li{font-weight:800}
+.hero-bonus{margin:14px auto 24px;font-weight:700}
+.live-video{position:relative}
+.video-intro{position:absolute;inset:0;display:flex;flex-direction:column;gap:20px;align-items:center;justify-content:center;padding:24px 28px;background:linear-gradient(180deg,#0309107d,#030910c7)}
+.video-play{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 24px;min-height:48px;border:0;border-radius:8px;background:#21b8e5;color:#051117;font:800 16px Arial,sans-serif;cursor:pointer}
+.video-play:hover{background:#73ddfa}.video-play:focus-visible{outline:3px solid white;outline-offset:5px}.video-play:disabled{cursor:wait;opacity:.7}.video-status{font-size:13px;color:white;margin:0}.video-status:empty{display:none}
+.video-intro-text{max-width:580px;font-size:clamp(20px,3vw,36px);font-weight:800;line-height:1.2;text-align:center;color:white;text-shadow:0 2px 12px #000}
+.live-video.has-started .video-intro{display:none}
+@media(max-width:650px){.hero-benefits{font-size:14px;gap:14px 9px;margin-top:18px;padding-top:14px}.hero .pill{font-size:12px}.hero-bonus{font-size:18px}.video-intro{padding:16px;gap:12px}.video-intro-text{font-size:18px}.video-play{padding:10px 20px;font-size:14px;min-height:44px}}
