@@ -42,14 +42,14 @@ Repeat for each folder: one Vercel project per landing page.
 | `detailnow-taylor-ceramic-coating-599` | Detail Now – Taylor Ceramic Coatings (Taylor, TX) | Ceramic coating · $599 10-year | [detailnow.getkoup.com](https://detailnow.getkoup.com/) · [Vercel](https://detailnow-taylor-ceramic-coating-59.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/detailnow-taylor-ceramic-coating-599/) | Live; GHL form + Google Ads/GTM tags |
 | `1taketints-commercial-tint` | 1TakeTints (National City / San Diego, CA) | Commercial window tint · consultation, no price | [Live](https://1taketints.getkoup.com/commercial-tint/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/1taketints-commercial-tint/) | Live; GHL form; GTM-PP5PP8FZ + AW-18115164065 (shared with $299 page); no reviews |
 | `1taketints-residential-tint` | 1TakeTints (National City / San Diego, CA) | Residential window tint · consultation, no price | [Live](https://1taketints.getkoup.com/res-tint/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/1taketints-residential-tint/) | Live; GHL form; GTM-PP5PP8FZ + AW-18115164065 (shared with $299 page); no reviews |
-| `719-landing-pages` | 719 Auto Customs (Colorado Springs, CO) | Shared Tint and PPF site | [Vercel](https://719-landing-pages.vercel.app/) | Live; shared thank-you page; `719.getkoup.com` attached, DNS pending; Ceramic excluded |
+| `719-landing-pages` | 719 Auto Customs (Colorado Springs, CO) | Original PPF homepage + new Tint and PPF pages | [719.getkoup.com](https://719.getkoup.com/) · [Vercel](https://719-landing-pages.vercel.app/) | Live HTTPS; original homepage restored; shared service thank-you page; Ceramic excluded |
 | `719-landing-pages/tint` | 719 Auto Customs (Colorado Springs, CO) | LLumar ceramic window tint · vehicle quote | [719tint.getkoup.com](https://719tint.getkoup.com/) · [Vercel](https://719-tint.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/tint/) | Live; GHL Tint (Google) form + original Google Ads tag + thank-you page |
 | `719-landing-pages/ppf` | 719 Auto Customs (Colorado Springs, CO) | PPF · $599 Highway Protection package | [719ppf.getkoup.com](https://719ppf.getkoup.com/) · [Vercel](https://719-ppf.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/ppf/) | Live; GHL PPf (Google) form + original Google Ads tag + thank-you page |
 | `719-landing-pages/ceramic` | 719 Auto Customs (Colorado Springs, CO) | Ceramic coating · $499 10-year double application | — | Imported; original Google Ads tag and live quote endpoint retained |
 
 ### 719 landing pages
 
-The imported 719 collection is grouped under `719-landing-pages/`, with independent `tint/`, `ppf/`, and `ceramic/` source folders. The selector currently offers Tint and PPF only, as requested. Each service contains its own assets, media, lead script, research, and tracking notes; no page references sibling-folder files. The common `thank-you.html` has its own collection-local imagery in `assets/`.
+The 719 collection is grouped under `719-landing-pages/`, with independent `tint/`, `ppf/`, and `ceramic/` source folders. At the user's request, `index.html` restores the original Hostinger $599 PPF homepage rather than the temporary service chooser. Its original styles, script, images, and promotional video are isolated in `assets/homepage/`; the original GHL quote popup and Elfsight reviews embed are retained. Each service keeps its own assets, media, lead script, research, and tracking notes; no page references sibling-folder files. The common `thank-you.html` has separate collection-local imagery in `assets/`.
 
 Local preview from the repository root:
 
@@ -59,19 +59,21 @@ python3 -m http.server 7190 --bind 127.0.0.1 --directory 719-landing-pages
 
 Open `http://127.0.0.1:7190/`, or `/tint/`, `/ppf/`, and `/ceramic/`. Tint and PPF use the supplied live GHL embeds; Ceramic retains the original Cloudflare quote endpoint. All retain the original Google Ads tag. Submitting a quote reaches the shop.
 
-The shared site is live at [719-landing-pages.vercel.app](https://719-landing-pages.vercel.app/), with [Tint](https://719-landing-pages.vercel.app/tint/), [PPF](https://719-landing-pages.vercel.app/ppf/), and one [thank-you page](https://719-landing-pages.vercel.app/thank-you.html). Project `719-landing-pages` publishes the collection root from `main`, using the existing `sachita007s-projects` Hobby team, static/Other preset, no build command, and unaffected-root deployment skipping. This group-level project is the user's requested shared-domain arrangement; the independent service projects are retained.
+The branded site is live at [719.getkoup.com](https://719.getkoup.com/), with the original PPF homepage at `/`, [Tint](https://719.getkoup.com/tint/), the new [PPF page](https://719.getkoup.com/ppf/), and one shared [service thank-you page](https://719.getkoup.com/thank-you.html). The default [Vercel alias](https://719-landing-pages.vercel.app/) remains working. Project `719-landing-pages` publishes the collection root from `main`, using the existing `sachita007s-projects` Hobby team, static/Other preset, no build command, and unaffected-root deployment skipping. This group-level project is the user's requested shared-domain arrangement; the independent service projects are retained.
 
 On the shared Vercel project, `vercel.json` normalizes service paths with trailing slashes and redirects both service-local thank-you requests to `/thank-you.html`. Each form navigates only after its validated GHL success notification, allowing the existing Ads conversion to send before navigation, with a two-second fallback. Direct thank-you visits do not emit the quote conversion. The live service pages, GHL forms, common confirmation, HTTP redirects, and local desktop/mobile-width layouts were verified without submitting a lead.
 
 Ceramic is explicitly excluded from this shared project for now: `/ceramic` and its child paths return HTTP 404. Its existing source and independent hosting are unchanged. Python's local server and GitHub Pages do not apply Vercel routing rules; the local common page is `/thank-you.html`, while those hosts retain the service-local thank-you pages.
 
-`719.getkoup.com` is attached to the shared project and ownership-verified by Vercel, but **DNS is pending**. Add this record at the existing DNS provider for `getkoup.com`, with Auto/default TTL:
+`719.getkoup.com` is attached to the shared project and ownership-verified by Vercel. Hostinger's separately managed **`719.getkoup.com` DNS zone** masked the originally recommended parent-zone CNAME. The user disabled CDN for that hostname, changed its zone-apex A record from the Hostinger origin to Vercel, and removed its Hostinger AAAA record. The active record is:
 
-| Type | Host | Target |
-|---|---|---|
-| CNAME | `719` | `b1be66401e36d68c.vercel-dns-017.com` |
+| DNS zone | Type | Host | Target | TTL |
+|---|---|---|---|---|
+| `719.getkoup.com` | A | `@` | `216.198.79.1` | 1800 |
 
-The target is the project's rank-1 recommendation from Vercel's domain-configuration API. Once DNS and HTTPS are ready, the branded routes are `https://719.getkoup.com/tint/`, `/ppf/`, and `/thank-you.html`. Do not change existing service records or nameservers. No DNS records were modified by the assistant.
+The address is this project's rank-1 IPv4 recommendation from Vercel's domain-configuration API. **Do not apply this `@` change to the parent `getkoup.com` zone.** Keep Hostinger CDN disabled for the `719` hostname; other website records, mail records, and nameservers are unchanged. The assistant issued a Vercel-managed certificate for `719.getkoup.com` only, without a plan upgrade. Valid HTTPS and the expected content were verified at `/`, `/tint/`, `/ppf/`, and `/thank-you.html`; both new service forms were visually checked and both shared thank-you redirects were exercised without submitting a lead.
+
+The DNS cutover moves the entire hostname, including `/`, to Vercel. The user subsequently chose to retain the original PPF homepage at `/` while keeping the new service paths. Its HTML and resources were recovered directly from the old Hostinger origin without reverting DNS or deleting Hostinger files. The original quote popup, Escape-to-close behavior, and actual muted video playback were smoke-tested locally. Existing independent service domains are not moved by this cutover.
 
 The existing independent thank-you pages at [719tint.getkoup.com/thank-you.html](https://719tint.getkoup.com/thank-you.html) and [719ppf.getkoup.com/thank-you.html](https://719ppf.getkoup.com/thank-you.html) remain working, as do their default Vercel and GitHub Pages routes.
 
