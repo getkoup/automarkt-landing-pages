@@ -10,3 +10,4 @@
 - Existing standalone domains and GitHub Pages retain their service-local confirmations; their hosting arrangement is not migrated or removed. Python's static local server and GitHub Pages do not process `vercel.json`.
 - No real GHL test lead, synthetic message to a live embed, or live quote conversion was sent. Live GHL submission and Google Ads receipt remain unverified.
 - GTM container `GTM-WHZLPNRQ` (supplied 2026-10-15 via Google Doc; same container as `/cc`) added to the head (after `<meta charset>`) and body noscript of the common `thank-you.html`. Existing Ads pageview config unchanged.
+- 2026-10-15: at the user's request the two `vercel.json` redirects were removed. On `719.getkoup.com`, Tint and PPF now finish on their own `/tint/thank-you.html` and `/ppf/thank-you.html` (each links back to its own service page). The common `/thank-you.html` is no longer used by either service; it is left in place.

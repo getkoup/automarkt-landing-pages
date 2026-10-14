@@ -1,18 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
-  "redirects": [
-    {
-      "source": "/tint/thank-you.html",
-      "destination": "/thank-you.html",
-      "permanent": false
-    },
-    {
-      "source": "/ppf/thank-you.html",
-      "destination": "/thank-you.html",
-      "permanent": false
-    }
-  ],
   "routes": [
     {
       "src": "/ceramic(?:/.*)?",
