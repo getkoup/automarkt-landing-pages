@@ -19,3 +19,4 @@
 - The event contract was inspected in GHL's current form runtime and embed loader. Google Ads receipt and live GHL submission have not been verified; no live test lead or conversion was sent.
 - The custom Cloudflare form endpoint and its submit handler were removed from this page. Ceramic is unchanged.
 - Local preview uses the real GHL form and existing Ads tag. Submitting the form creates a real lead.
+- GTM container `GTM-WHZLPNRQ` (supplied 2026-10-15 via Google Doc; same container as `/cc`) added to the head (after `<meta charset>`) and body noscript of `index.html` and `thank-you.html`. Existing direct Ads tag and `lead.js` conversion are unchanged; if a GTM tag also fires the quote conversion on the thank-you URL, conversions may double-count — check the container.
