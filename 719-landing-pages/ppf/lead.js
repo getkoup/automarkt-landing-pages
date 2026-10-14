@@ -69,7 +69,7 @@
   });
 
   if (!frame) return;
-  var submissions = new Set();
+  var submitted = false;
   window.addEventListener('message', function (event) {
     if (event.origin !== 'https://api.leadconnectorhq.com' ||
         event.source !== frame.contentWindow || !Array.isArray(event.data)) return;
@@ -78,12 +78,27 @@
     // Its paired contact-JSON notification, loads, and resizes are not conversions.
     if (data[0] !== 'set-sticky-contacts' || data[1] !== 'embedded_iframe_' + frame.id ||
         data[2] !== frame.id || data[3] !== frame.dataset.locationId ||
-        typeof data[4] !== 'string' || !data[4] || submissions.has(data[4])) return;
-    submissions.add(data[4]);
+        typeof data[4] !== 'string' || !data[4] || submitted) return;
+    submitted = true;
     dl('generate_lead', { lp_page: page, form_id: frame.dataset.formId });
     var destination = document.getElementById('quote').dataset.conversion;
+    var thankYouUrl = new URL('thank-you.html', window.location.href).href;
+    var redirected = false;
+    var redirectTimer;
+    function goToThankYou() {
+      if (redirected) return;
+      redirected = true;
+      window.clearTimeout(redirectTimer);
+      window.location.assign(thankYouUrl);
+    }
     if (destination && typeof window.gtag === 'function') {
-      window.gtag('event', 'conversion', { send_to: destination, transaction_id: data[4] });
+      // Allow the conversion to send; an ad blocker must not strand a successful lead.
+      redirectTimer = window.setTimeout(goToThankYou, 2000);
+      window.gtag('event', 'conversion', {
+        send_to: destination, transaction_id: data[4], event_callback: goToThankYou
+      });
+    } else {
+      goToThankYou();
     }
   });
 })();
