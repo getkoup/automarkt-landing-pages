@@ -14,6 +14,7 @@
 - GHL form location: `u0zdecOvugwYiWUUOmTI`, read from the published form configuration.
 - Replaced the custom Cloudflare quote form; fields, consent, validation, submission, and field styling are now managed in GHL. The supplied form contains Full Name, Phone, Email, Car Details, and consent; it does not expose the original tint-coverage dropdown.
 - The outer card and `#quote` CTA anchor remain on the landing page. GHL's embed script automatically resizes the iframe. Successful-submit measurement is described in `tracking.md`.
+- Confirmed GHL submissions open the service-local `thank-you.html`, with a tint-specific confirmation, the existing same-business-day reply promise, a call link, and a return link. It explains that a quote request is not a confirmed appointment. No GHL editor changes are required for the parent-page redirect.
 - Loading priority: `lead.js` and GHL's loader are fetched from the document head with `defer`, keeping attribution setup before embed initialization without blocking HTML parsing. The GHL loader has a high fetch-priority hint. Early preconnections target the form, embed loader, and GHL asset CDN.
 - The hero form is explicitly eager-loaded; below-fold imagery is lazy-loaded, including the shade-finder photograph and footer logos. GHL's remote response and hydration still determine when its fields appear.
 - Published Vercel project: `719-tint`, root directory `719-landing-pages/tint`, GitHub-linked to `getkoup/automarkt-landing-pages` on `main`; static/Other preset and unaffected-root deployment skipping enabled.
