@@ -55,10 +55,15 @@ If the client name is long, shorten it sensibly (e.g. "Diamond Automotive Detail
 4. Build `index.html` (mobile-first, fast, a clear CTA above the fold).
 5. Add tracking only when the user provides it, and log it in `tracking.md`.
 6. Add the page to the table in `README.md`.
-7. When the user says "make it live", commit and push to `main`, then give the Vercel setup steps above (or set it up if you have Vercel CLI access).
+7. When the user says "make it live", commit on a working branch, push that branch, open a pull request targeting `main`, and merge through GitHub after required checks and reviews pass. Never push directly to `main`. Then sync the local `main` checkout with `origin/main`, verify deployment, and give the live link or the Vercel setup steps above.
 
 ## 5. Git
 
 - Default branch: `main`.
+- **Hard rule: every change reaches `main` through a GitHub pull request.** Work on a separate branch, push that branch, open a PR targeting `main`, and merge the PR through GitHub. This applies to every agent, worktree, client page, tracking edit, documentation change, and urgent fix.
+- **Never push directly to remote `main`.** Commands such as `git push origin main`, `git push origin HEAD:main`, force pushes, and any equivalent ref update that bypasses a PR are prohibited. Do not disable or bypass branch protection or use an admin override to avoid this rule.
+- Agents may create and merge the PR automatically for completed, user-authorized work when GitHub permits it and required checks/reviews have passed. No extra permission question is needed for that normal workflow. If required checks or reviews block merging, report the blocker; never bypass it.
+- After a PR merges, fetch `origin` and fast-forward the local `main` checkout to `origin/main`. If `main` is checked out in another worktree, sync it there. Preserve uncommitted work; never reset, overwrite, or force-update a dirty or diverged checkout. If it cannot fast-forward, report the divergence and resolve it without discarding work.
+- Before reporting publication complete, verify the merged change is on `origin/main`, the local `main` checkout is synced, and the deployment succeeds.
 - Commit messages should name the folder, e.g. `test2-tint: add landing page` or `test2-tint: add Meta pixel`.
 - Keep each commit to one folder so the per-project Vercel deploys stay clean.
