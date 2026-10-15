@@ -1,0 +1,76 @@
+{
+  "checked": "2026-10-15",
+  "business": "A&A Quality Auto Spa",
+  "profile": "https://share.google/fkKTXEMhBbJTzeqmd",
+  "official_site": "https://aaqualityautospa.com/",
+  "assets": {
+    "logo.webp": "https://www.hitekmarketing.com/api/public/dealer-file/ae3855cf-b39c-4029-9217-de2f6083cbcf",
+    "hero.webp": "https://www.hitekmarketing.com/api/public/dealer-file/7fa87918-5afd-4f5e-b83e-0bf11235d15d",
+    "tint-install.webp": "https://www.hitekmarketing.com/api/public/dealer-file/8ca0980c-6558-4f5c-9818-bbe7b0935490",
+    "manrope-latin.woff2": "Copied as a local asset from the existing repo; Manrope by Mikhail Sharanda (SIL OFL).",
+    "shop-gallery-3.webp": "https://www.hitekmarketing.com/api/public/dealer-file/66a99dae-4a58-49cc-b3d1-3672561a3a7b",
+    "shop-gallery-4.webp": "https://www.hitekmarketing.com/api/public/dealer-file/bf6f1d25-b15e-4470-aaac-32398edfcefd"
+  },
+  "reviews": [
+    {
+      "author": "Simon Longer",
+      "initials": "SL",
+      "type": "Tint / cabin comfort",
+      "quote": "Looks amazing, interiors way less hot",
+      "photo": "review-simon-longer.webp",
+      "alt": "Gray Ford hatchback in the customer photo uploaded with Simon Longer\u2019s Google review",
+      "photo_source": "https://lh3.googleusercontent.com/grass-cs/AABkmLeCsb_muQ2PnxKYSwnA3uWY1f8C_6L0gD0ClgRa7r_kl-92ZYDFlsn1f7KCgqvbLdOj-C110SehkWkWvgxqgoRUwXnpx0oqbUICjuc8JJL5B_Z_OuKNKQRcnheZtDN6TcDcUqsXB5_AJB8=s3728-w3728-h1934-rw",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214R1FXb3pTa0o2TFhCT1ZYRnhTMWMzWVhseE5YYxAB!2m1!1s0x0:0x9853607c58e67a80!3m1!1s2@1:CAIQACodChtycF9oOmxGQWozSkJ6LXBOVXFxS1c3YXlxNXc%7C%7C?hl=en-GB",
+      "stars": 5,
+      "checked": "2026-10-15"
+    },
+    {
+      "author": "Jose Garcia",
+      "initials": "JG",
+      "type": "Shop experience",
+      "quote": "I want to thank Abraham and his team 1, for the customer service 2, for the attention to detail",
+      "photo": "review-jose-garcia.webp",
+      "alt": "A&A shop bay with vehicles and honeycomb lights, uploaded with Jose Garcia\u2019s Google review",
+      "photo_source": "https://lh3.googleusercontent.com/grass-cs/AABkmLesLwtWHBKHxYU9SbRODEBleYtaBlfbWzcn_mZnzkWb4jx9tHME3uNh3SY6q18_G13AEdYHIg8XehrBfqrRyZknNq0CIXr7keLG1D62tqBZQaiQgvACeOplJ-0H2rAWSG1DJHio38gXTOs=s3728-w3728-h1934-rw",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGbmFtWktSWEZHYlZOU2FsaDRPSEZtZFVZeFowRRAB!2m1!1s0x0:0x9853607c58e67a80!3m1!1s2@1:CAIQACodChtycF9oOkFnamZKRXFGbVNSalh4OHFmdUYxZ0E%7C%7C?hl=en-GB",
+      "stars": 5,
+      "checked": "2026-10-15"
+    },
+    {
+      "author": "Rosie -",
+      "initials": "R",
+      "type": "Tint consultation \u00b7 Ceramic Ultra",
+      "quote": "Abraham took his time in explaining the levels of tint and options.",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSbFNFOURiM2h4TFV4aVZtMUtabVF0WWs1SmJIYxAB!2m1!1s0x0:0x9853607c58e67a80!3m1!1s2@1:CAIQACodChtycF9oOjRlSE9Db3hxLUxiVm1KZmQtYk5JbHc%7C%7C?hl=en-GB",
+      "stars": 5,
+      "checked": "2026-10-15"
+    },
+    {
+      "author": "Ryan Clark",
+      "initials": "RC",
+      "type": "Truck tint & ceramic coating",
+      "quote": "I had a ceramic coating and window tint done for my truck. They did a great job",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4R1YwRkNla1p1WHpkUE1VZDJXa0ZQT1ZSelRXYxAB!2m1!1s0x0:0x9853607c58e67a80!3m1!1s2@1:CAIQACodChtycF9oOkxGV0FCekZuXzdPMUd2WkFPOVRzTWc%7C%7C?hl=en-GB",
+      "stars": 5,
+      "checked": "2026-10-15"
+    },
+    {
+      "author": "Paul Ruffino",
+      "initials": "PR",
+      "type": "Window tint & vehicle care",
+      "quote": "Had both of my cars detailed, ceramic-coated, and with the latest tech in window tint replaced.",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201R2JWZFZaMWg2Ym1sWWNtVnFSVTlmVmsxb1EzYxAB!2m1!1s0x0:0x9853607c58e67a80!3m1!1s2@1:CAIQACodChtycF9oOm5GbVdVZ1h6bmlYcmVqRU9fVk1oQ3c%7C%7C?hl=en-GB",
+      "stars": 5,
+      "checked": "2026-10-15"
+    },
+    {
+      "author": "Manohar Perumal",
+      "initials": "MP",
+      "type": "Tesla Model Y windshield tint",
+      "quote": "He is very knowledgeable, professional, and offers very reasonable prices. Highly recommended!",
+      "source": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wNmFGOUdPR0ZyUTNKSlZpMUNPWGg2TFZsQmJuYxAB!2m1!1s0x0:0x9853607c58e67a80!3m1!1s2@1:CAIQACodChtycF9oOmp6aF9GOGFrQ3JJVi1COXh6LVlBbnc%7C%7C?hl=en-GB",
+      "stars": 5,
+      "checked": "2026-10-15"
+    }
+  ]
+}
