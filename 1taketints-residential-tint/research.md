@@ -29,6 +29,11 @@ Collected 2026-10-12. Layout copied from the live 1TakeTints $299 ceramic tint p
 ## Reviews
 No reviews section. The Google reviews that loaded were all from automotive customers, so the user had the section removed (2026-10-13). Add one only with real home/commercial tint reviews from Google, each with that reviewer's own photo. The trust strip still shows the real listing rating (5.0 ★, 79 reviews).
 
+## Copy review (2026-10-15)
+- Client flagged the gallery sentence about keeping light and heat. Corrected it to say the film lets in the light you love while keeping unwanted heat out.
+- Clarified that unwanted heat can drive up energy bills in the comfort benefit.
+- Replaced the gallery's source-note label with "WINDOW FILM APPLICATIONS"; retained "Every window. Every room."
+
 ## Images (from the client's residential tint page; framerusercontent.com originals, resized to WebP)
 - living-room-windows.webp: room with large windows and sliding door (hero, portfolio 01, thank-you)
 - house-front.webp: two-story home with many windows (story section)
