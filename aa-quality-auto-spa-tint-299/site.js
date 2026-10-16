@@ -8,17 +8,9 @@
     nearest.scrollIntoView({ block: 'start' });
     nearest.focus({ preventScroll: true });
   });
-  // No client CRM endpoint supplied: compose a text locally for the visitor to send.
+  // Dummy forms until A&A supplies its own GHL embed. Never submit or open SMS.
   document.querySelectorAll('.enquiry-form').forEach(form => {
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      const data = new FormData(form);
-      const message = `Hi A&A Quality Auto Spa! I'm ${String(data.get('name')).trim()}. I'd like to ask about your $299 HITEK Ceramic IR sedan tint offer. Vehicle: ${String(data.get('vehicle')).trim()} (${data.get('type')}). Please confirm vehicle pricing, glass coverage, removal charges/taxes and appointment availability.`;
-      const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-      window.location.href = `sms:+18329938411${isiOS ? '&' : '?'}body=${encodeURIComponent(message)}`;
-      form.querySelector('.form-status').hidden = false;
-    });
+    form.addEventListener('submit', event => event.preventDefault());
   });
   const track = document.getElementById('review-track');
   const previous = document.getElementById('review-prev');
