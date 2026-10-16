@@ -1,10 +1,29 @@
 (() => {
   'use strict';
+  const lowerForm = document.getElementById('inline-Vvz6NYhE1pelkUjTVOGo-lower');
+  const warmLowerForm = () => {
+    if (!lowerForm.dataset.src) return;
+    lowerForm.src = lowerForm.dataset.src;
+    delete lowerForm.dataset.src;
+  };
+  // GHL temporarily moves initializing iframes offscreen. Observe the stable
+  // card wrapper and assign its source before visitors reach it.
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      warmLowerForm();
+      observer.disconnect();
+    }, { rootMargin: '1200px 0px' });
+    observer.observe(lowerForm.closest('.ghl-crop'));
+  } else {
+    warmLowerForm();
+  }
   // Same mobile CTA behavior as the 1TakeTints reference: select the nearest enquiry panel.
   const panels = [...document.querySelectorAll('.daylight-card, .quote-panel')];
   document.querySelector('[data-form-jump]').addEventListener('click', event => {
     event.preventDefault();
     const nearest = panels.reduce((a, b) => Math.abs(a.getBoundingClientRect().top) <= Math.abs(b.getBoundingClientRect().top) ? a : b);
+    if (nearest.contains(lowerForm)) warmLowerForm();
     nearest.scrollIntoView({ block: 'start' });
     nearest.focus({ preventScroll: true });
   });
