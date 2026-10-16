@@ -323,7 +323,12 @@ details p a { text-decoration: underline; }
 .daylight-offer{flex-direction:column;align-items:flex-start;gap:4px;margin-block:22px}
 .daylight-offer span{font-size:12px;letter-spacing:.16em}
 .daylight-offer strong{font-size:clamp(82px,7vw,106px);color:var(--accent-ink)}
-.ghl-form-frame{display:block;width:100%;border:0;background:#fff;border-radius:4px}
+/* GHL's narrow layout adds 40px top/20px side padding and bottom whitespace.
+   Its wide layout uses the form's configured zero top margin instead.
+   The loader still controls height so consent/errors/confirmation can grow. */
+.ghl-crop{display:flow-root;overflow:clip;container-type:inline-size;min-height:340px}
+.ghl-form-frame{display:block;width:calc(100% + 40px);max-width:none;margin:-40px -20px -106px;border:0;background:#fff;border-radius:0}
+@container (width > 440px){.ghl-form-frame{margin-top:0;margin-bottom:-6px}}
 .card-alternative{display:inline-block;font-size:11px;text-decoration:underline;text-underline-offset:3px;margin-top:18px}
 .studio-statement>img{height:100%;max-height:530px;object-fit:cover}
 .review-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}

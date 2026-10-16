@@ -15,6 +15,14 @@ Researched 2026-10-15 before page implementation.
 - Rechecked https://aaqualityautospa.com/automotive-window-tinting before editing. Ceramic IR is $299 for sedans, up to 75% infrared rejection at 5% shade, 99% UV protection, non-metallic and signal-safe, with a lifetime manufacturer warranty. Other vehicles are quoted individually.
 - Kept all claims specific to A&A's Ceramic IR package. The reference's $399 price, included windows and Naples details do not apply to A&A.
 
+## GHL embed spacing correction — 2026-10-16
+- User reported excessive whitespace inside the form card. Compared the existing 1TakeTints crop wrapper and measured the live A&A iframe, which now renders in browser automation.
+- GHL's embedded `.hl_form-builder--main` adds 40px vertical/20px horizontal padding; `.ghl-form-wrap` adds a 60px bottom margin. Its final field wrapper and resize allowance add further space below the button.
+- Added page-local crop wrappers around both iframe positions: expand iframe width by 40px, trim 20px from each side, and trim the empty vertical surround. GHL uses different configured desktop/mobile margins: narrow frames trim 40px top/106px bottom; frames wider than 480px retain zero top offset and trim only 6px from the bottom. A container query selects the offsets using the wrapper width plus the 40px iframe expansion. Retained space below submit for its focus outline. Removed the inline width that would override the stylesheet.
+- The crop uses `display: flow-root` and `overflow: clip` so focusing iframe fields cannot scroll the wrapper and hide the first label. Versioned the CSS URL to refresh cached styles.
+- GHL's existing script continues to resize both iframes; no fixed content height, field/consent removal or submission changes.
+- Verified both positions at desktop and 390px mobile width: first labels, all fields, consent and submit buttons remain visible; no page/form horizontal overflow or wrapper scrolling. At the tested desktop width the hero card reduced from about 804px to 639px. No test lead submitted.
+
 ## GHL form integration — 2026-10-16
 - User supplied form `Vvz6NYhE1pelkUjTVOGo` (“Ceramic Tint - (google)”) and requested replacing the placeholders. Installed in both the hero and lower quote panels, with one shared GHL embed loader and unique iframe/layout IDs.
 - Preserved the supplied layout, trigger, activation, deactivation and cookie-consent attributes. Initial height is 498px and the GHL loader resizes each iframe.
