@@ -15,6 +15,13 @@ Researched 2026-10-15 before page implementation.
 - Rechecked https://aaqualityautospa.com/automotive-window-tinting before editing. Ceramic IR is $299 for sedans, up to 75% infrared rejection at 5% shade, 99% UV protection, non-metallic and signal-safe, with a lifetime manufacturer warranty. Other vehicles are quoted individually.
 - Kept all claims specific to A&A's Ceramic IR package. The reference's $399 price, included windows and Naples details do not apply to A&A.
 
+## GHL loading improvement — 2026-10-16
+- User requested faster form loading. Both iframe copies previously used default eager loading, so the lower duplicate could compete with the hero form's initial download and JavaScript work.
+- Added early preconnect hints for the GHL form origin, its embed-loader origin, and its static CDN (anonymous CORS connection for module assets). Preload the exact supplied loader URL as a high-priority script and mark the existing deferred script high priority; the loader still runs once.
+- Explicitly load the hero iframe eagerly. Defer assigning the lower iframe’s source until its stable crop wrapper is within 1200px of the viewport, or immediately when the mobile CTA targets it. The source assignment is idempotent; browsers without IntersectionObserver load it immediately. GHL’s existing message handler discovers and initializes the form when the deferred document loads. This avoids its offscreen initialization styles interfering with native iframe lazy loading. The original endpoint, consent/activation attributes and automatic resizing remain intact.
+- A diagnostic request observed about 0.9s for GHL's HTML response and 1.3s for its loader, excluding the form's additional JavaScript/styles and hydration. These are individual network samples, not an end-to-end benchmark or guaranteed improvement. GHL server/runtime latency remains outside this static page's control.
+- References: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload ; https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Speculative_loading ; https://web.dev/learn/performance/lazy-load-images-and-iframe-elements .
+
 ## GHL embed spacing correction — 2026-10-16
 - User reported excessive whitespace inside the form card. Compared the existing 1TakeTints crop wrapper and measured the live A&A iframe, which now renders in browser automation.
 - GHL's embedded `.hl_form-builder--main` adds 40px vertical/20px horizontal padding; `.ghl-form-wrap` adds a 60px bottom margin. Its final field wrapper and resize allowance add further space below the button.
