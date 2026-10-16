@@ -7,7 +7,7 @@ Researched 2026-10-15 before page implementation.
 - GitHub repository: `getkoup/automarkt-landing-pages`, production branch `main`, root directory `aa-quality-auto-spa-tint-299`, Other/static preset, empty build/install commands and default output directory. Skipping deployments for unaffected roots is enabled; files outside the root directory are excluded.
 - User selected `aaquality.getkoup.com`. Domain attached to this project and ownership verified; DNS configuration is pending the user's Hostinger change.
 - Add a CNAME in the parent `getkoup.com` DNS zone: name `aaquality`, target `9299a590fd1ae006.vercel-dns-017.com`, default TTL. Target obtained from Vercel's domain-configuration API, rank-1 recommended CNAME. Keep the existing Hostinger nameservers. Only replace conflicting A/AAAA/CNAME records for `aaquality` if present.
-- Production HTML and JavaScript were fetched over HTTPS and match the approved page. Both enquiry forms remain dummy placeholders until the user supplies A&A's GHL embed.
+- Production HTML and JavaScript were fetched over HTTPS and match the approved page. Both enquiry panels now use the user-supplied A&A GHL form, added below.
 
 ## Ceramic tint content update — 2026-10-16
 - User requested replacing the screenshot's “What to expect” installation checklist with the offer-and-details approach at https://tamiami.getkoup.com/ and a local preview. Clarified that ceramic tint must be explicit in the heading and content.
@@ -15,7 +15,13 @@ Researched 2026-10-15 before page implementation.
 - Rechecked https://aaqualityautospa.com/automotive-window-tinting before editing. Ceramic IR is $299 for sedans, up to 75% infrared rejection at 5% shade, 99% UV protection, non-metallic and signal-safe, with a lifetime manufacturer warranty. Other vehicles are quoted individually.
 - Kept all claims specific to A&A's Ceramic IR package. The reference's $399 price, included windows and Naples details do not apply to A&A.
 
-## Form placeholder update — 2026-10-16
+## GHL form integration — 2026-10-16
+- User supplied form `Vvz6NYhE1pelkUjTVOGo` (“Ceramic Tint - (google)”) and requested replacing the placeholders. Installed in both the hero and lower quote panels, with one shared GHL embed loader and unique iframe/layout IDs.
+- Preserved the supplied layout, trigger, activation, deactivation and cookie-consent attributes. Initial height is 498px and the GHL loader resizes each iframe.
+- Read the supplied form before integration: First Name, Car Details, Phone, consent checkbox and “Claim my $299 ceramic tint ↗” button. The A&A gold/Manrope CSS is present in the form.
+- Removed the dummy inputs and placeholder submit-prevention JavaScript. Native GHL field validation, consent and submission remain within its iframe. No parent-page success handler, redirect or ad conversion was added.
+
+## Form placeholder update — 2026-10-16 (superseded by GHL integration)
 - User requested matching the Tamiami form, removing the vehicle-type selector and making the forms dummy until they supply GHL.
 - Inspected the reference form: Full Name, Car Details, Phone, marketing consent and preview button. Matched the three enquiry fields and preview button at both A&A positions; consent setup is deferred to the client’s GHL embed.
 - Removed SMS composition and submission behavior. Preview buttons do nothing and a visible note explains the placeholder state.
@@ -28,7 +34,7 @@ Researched 2026-10-15 before page implementation.
 - Offer: $299, as requested by the user. The official website confirms Ceramic IR at $299 **for sedans**; SUVs and trucks are quoted by vehicle. Exact glass coverage, old-film removal and tax are not confirmed; the page asks visitors to confirm coverage with the shop and does not invent inclusions, savings or deadlines.
 - Audience: Richmond and Fort Bend County drivers who want lower cabin heat, less glare, UV protection and privacy.
 - Selling points verified on the official tint page: up to 75% infrared rejection for Ceramic IR (at 5% shade), 99% UV protection, non-metallic film, lifetime manufacturer warranty, professional installation, typical 2–4 hour appointment / 3–5 days before rolling down windows.
-- Primary CTA: on-page dummy enquiry form awaiting the client’s GHL embed. Fields: Full Name, Car Details, Phone, matching the Tamiami reference. No vehicle-type selector. Buttons perform no action; no form values are stored or transmitted. Alternate call and official booking/contact links remain available.
+- Primary CTA: user-supplied GHL enquiry form `Vvz6NYhE1pelkUjTVOGo` in both enquiry panels. Fields: First Name, Car Details and Phone, plus GHL consent controls. No vehicle-type selector. GHL handles submitted enquiries. Alternate call and official booking/contact links remain available.
 
 ## Sources
 - User-supplied Google profile: https://share.google/fkKTXEMhBbJTzeqmd
@@ -42,10 +48,10 @@ Researched 2026-10-15 before page implementation.
 
 ## Structure and brand
 - Corrected to use the existing `1taketints-commercial-tint/index.html` / `page.css` as the actual template, following the user's clarification. The first iteration changed too much and has been replaced.
-- Preserve its layout and section sequence: header → light photo hero, offer copy left / dummy enquiry right → four-column trust strip → four benefit cards → dark shop story and six reasons → four-image gallery → repo-style Google review carousel → lower quote section with second enquiry panel → FAQ → shop footer → mobile fixed address/CTA.
+- Preserve its layout and section sequence: header → light photo hero, offer copy left / GHL enquiry right → four-column trust strip → four benefit cards → dark shop story and six reasons → four-image gallery → repo-style Google review carousel → lower quote section with second enquiry panel → FAQ → shop footer → mobile fixed address/CTA.
 - Google review carousel uses the existing repo's review-card pattern, also present in Detail Now's page.
 - Base stylesheet is copied locally from the 1TakeTints page. Typography, spacing, grids, hero composition and responsive behavior retained. A&A's gold, navy, silver and blue replace the other client's brand colors. A&A's actual logo is local.
-- No other client's photos, quotes, film brands, contacts, tracking or submission endpoints copied. No client CRM was supplied; both enquiry positions are non-submitting placeholders awaiting A&A's GHL form.
+- No other client's photos, quotes, film brands, contacts, tracking or submission endpoints copied. Both enquiry positions use only the user-supplied A&A GHL form; form identifiers and external scripts are recorded in `tracking.md`.
 - No competitor claims or unsupported price comparisons needed for this brief.
 
 ## Review handling
