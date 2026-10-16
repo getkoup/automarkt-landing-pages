@@ -5,8 +5,8 @@ Researched 2026-10-15 before page implementation.
 ## Vercel hosting — 2026-10-16
 - Project: `aa-quality-auto-spa-tint-299` in the existing `sachita007s-projects` team. Public production URL: https://aa-quality-auto-spa-tint-299.vercel.app/.
 - GitHub repository: `getkoup/automarkt-landing-pages`, production branch `main`, root directory `aa-quality-auto-spa-tint-299`, Other/static preset, empty build/install commands and default output directory. Skipping deployments for unaffected roots is enabled; files outside the root directory are excluded.
-- User selected `aaquality.getkoup.com`. Domain attached to this project and ownership verified; DNS configuration is pending the user's Hostinger change.
-- Add a CNAME in the parent `getkoup.com` DNS zone: name `aaquality`, target `9299a590fd1ae006.vercel-dns-017.com`, default TTL. Target obtained from Vercel's domain-configuration API, rank-1 recommended CNAME. Keep the existing Hostinger nameservers. Only replace conflicting A/AAAA/CNAME records for `aaquality` if present.
+- User selected `aaquality.getkoup.com`. Domain attached to this project and ownership verified. The user’s Hostinger CNAME is now configured; Vercel reports no DNS misconfiguration and the custom URL returns HTTPS 200.
+- Configured CNAME in the parent `getkoup.com` DNS zone: name `aaquality`, target `9299a590fd1ae006.vercel-dns-017.com`, default TTL. Target obtained from Vercel's domain-configuration API, rank-1 recommended CNAME. Keep the existing Hostinger nameservers. Only replace conflicting A/AAAA/CNAME records for `aaquality` if present.
 - Production HTML and JavaScript were fetched over HTTPS and match the approved page. Both enquiry panels now use the user-supplied A&A GHL form, added below.
 
 ## Ceramic tint content update — 2026-10-16
@@ -20,6 +20,7 @@ Researched 2026-10-15 before page implementation.
 - Preserved the supplied layout, trigger, activation, deactivation and cookie-consent attributes. Initial height is 498px and the GHL loader resizes each iframe.
 - Read the supplied form before integration: First Name, Car Details, Phone, consent checkbox and “Claim my $299 ceramic tint ↗” button. The A&A gold/Manrope CSS is present in the form.
 - Removed the dummy inputs and placeholder submit-prevention JavaScript. Native GHL field validation, consent and submission remain within its iframe. No parent-page success handler, redirect or ad conversion was added.
+- Validation: static embed/ID/consent/asset checks and JavaScript syntax passed; Vercel preview deployment passed. The supplied form renders directly in Chrome. Browser automation held embedded documents at `about:blank` with a paused-document-response error, so embedded visual verification was inconclusive. No test lead was submitted.
 
 ## Form placeholder update — 2026-10-16 (superseded by GHL integration)
 - User requested matching the Tamiami form, removing the vehicle-type selector and making the forms dummy until they supply GHL.
