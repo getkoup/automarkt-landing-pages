@@ -2,6 +2,13 @@
 
 Researched 2026-10-15 before page implementation.
 
+## Vercel hosting — 2026-10-16
+- Project: `aa-quality-auto-spa-tint-299` in the existing `sachita007s-projects` team. Public production URL: https://aa-quality-auto-spa-tint-299.vercel.app/.
+- GitHub repository: `getkoup/automarkt-landing-pages`, production branch `main`, root directory `aa-quality-auto-spa-tint-299`, Other/static preset, empty build/install commands and default output directory. Skipping deployments for unaffected roots is enabled; files outside the root directory are excluded.
+- User selected `aaquality.getkoup.com`. Domain attached to this project and ownership verified; DNS configuration is pending the user's Hostinger change.
+- Add a CNAME in the parent `getkoup.com` DNS zone: name `aaquality`, target `9299a590fd1ae006.vercel-dns-017.com`, default TTL. Target obtained from Vercel's domain-configuration API, rank-1 recommended CNAME. Keep the existing Hostinger nameservers. Only replace conflicting A/AAAA/CNAME records for `aaquality` if present.
+- Production HTML and JavaScript were fetched over HTTPS and match the approved page. Both enquiry forms remain dummy placeholders until the user supplies A&A's GHL embed.
+
 ## Ceramic tint content update — 2026-10-16
 - User requested replacing the screenshot's “What to expect” installation checklist with the offer-and-details approach at https://tamiami.getkoup.com/ and a local preview. Clarified that ceramic tint must be explicit in the heading and content.
 - Matched the reference's ceramic-tint details section with the heading “Ceramic tint. The details matter.” Wrote A&A-specific copy in the existing six-card layout: $299 ceramic tint sedan offer, HITEK Ceramic IR film, Richmond shop, shop gallery/customer reviews, lifetime film warranty, and ceramic tint aftercare.
