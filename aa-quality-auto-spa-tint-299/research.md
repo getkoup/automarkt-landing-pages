@@ -81,3 +81,8 @@ Researched 2026-10-15 before page implementation.
 ## Validation after template correction
 - Desktop and 390px mobile visual checks completed with the actual 1TakeTints CSS and layout. Two enquiry panels and all six Google review cards present.
 - Local resource/anchor/ID checks, JavaScript syntax, folder isolation and git whitespace checks pass. No test enquiry sent.
+
+## Thank-you page and Google scripts — 2026-10-16
+- Added `thank-you.html` with the existing page’s local CSS, font, logo, shop photo, navy/gold header and footer, phone number and Richmond address. Confirmation explains follow-up and does not promise an appointment before the team confirms it.
+- Both embedded forms navigate to this page after GHL’s verified submission-success message. Confirmed A&A location ID from the current form configuration and the frame-specific message from the current GHL runtime; no GHL account setting changes or test lead needed.
+- Installed the user’s Google Ads/GTM header and noscript body snippets on the landing page and thank-you page. IDs and source are recorded in `tracking.md`.
