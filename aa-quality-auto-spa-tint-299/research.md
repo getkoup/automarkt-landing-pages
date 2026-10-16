@@ -2,6 +2,17 @@
 
 Researched 2026-10-15 before page implementation.
 
+## Ceramic tint content update — 2026-10-16
+- User requested replacing the screenshot's “What to expect” installation checklist with the offer-and-details approach at https://tamiami.getkoup.com/ and a local preview. Clarified that ceramic tint must be explicit in the heading and content.
+- Matched the reference's ceramic-tint details section with the heading “Ceramic tint. The details matter.” Wrote A&A-specific copy in the existing six-card layout: $299 ceramic tint sedan offer, HITEK Ceramic IR film, Richmond shop, shop gallery/customer reviews, lifetime film warranty, and ceramic tint aftercare.
+- Rechecked https://aaqualityautospa.com/automotive-window-tinting before editing. Ceramic IR is $299 for sedans, up to 75% infrared rejection at 5% shade, 99% UV protection, non-metallic and signal-safe, with a lifetime manufacturer warranty. Other vehicles are quoted individually.
+- Kept all claims specific to A&A's Ceramic IR package. The reference's $399 price, included windows and Naples details do not apply to A&A.
+
+## Form placeholder update — 2026-10-16
+- User requested matching the Tamiami form, removing the vehicle-type selector and making the forms dummy until they supply GHL.
+- Inspected the reference form: Full Name, Car Details, Phone, marketing consent and preview button. Matched the three enquiry fields and preview button at both A&A positions; consent setup is deferred to the client’s GHL embed.
+- Removed SMS composition and submission behavior. Preview buttons do nothing and a visible note explains the placeholder state.
+
 ## Client and offer
 - Client: A&A Quality Auto Spa (the business behind the user's Google share link; not a client named “End A”).
 - Address: 1810 First Oaks St, Suite 190, Richmond, TX 77406.
@@ -10,7 +21,7 @@ Researched 2026-10-15 before page implementation.
 - Offer: $299, as requested by the user. The official website confirms Ceramic IR at $299 **for sedans**; SUVs and trucks are quoted by vehicle. Exact glass coverage, old-film removal and tax are not confirmed; the page asks visitors to confirm coverage with the shop and does not invent inclusions, savings or deadlines.
 - Audience: Richmond and Fort Bend County drivers who want lower cabin heat, less glare, UV protection and privacy.
 - Selling points verified on the official tint page: up to 75% infrared rejection for Ceramic IR (at 5% shade), 99% UV protection, non-metallic film, lifetime manufacturer warranty, professional installation, typical 2–4 hour appointment / 3–5 days before rolling down windows.
-- Primary CTA: local on-page vehicle enquiry that opens a text message draft to the verified shop number. Visitor must send it in their messaging app. Alternate call and official booking/contact page. No client CRM form/webhook was supplied; no borrowed endpoint or simulated success message is used.
+- Primary CTA: on-page dummy enquiry form awaiting the client’s GHL embed. Fields: Full Name, Car Details, Phone, matching the Tamiami reference. No vehicle-type selector. Buttons perform no action; no form values are stored or transmitted. Alternate call and official booking/contact links remain available.
 
 ## Sources
 - User-supplied Google profile: https://share.google/fkKTXEMhBbJTzeqmd
@@ -24,10 +35,10 @@ Researched 2026-10-15 before page implementation.
 
 ## Structure and brand
 - Corrected to use the existing `1taketints-commercial-tint/index.html` / `page.css` as the actual template, following the user's clarification. The first iteration changed too much and has been replaced.
-- Preserve its layout and section sequence: header → light photo hero, offer copy left / enquiry right → four-column trust strip → four benefit cards → dark shop story and six reasons → four-image gallery → repo-style Google review carousel → lower quote section with second enquiry panel → FAQ → shop footer → mobile fixed address/CTA.
+- Preserve its layout and section sequence: header → light photo hero, offer copy left / dummy enquiry right → four-column trust strip → four benefit cards → dark shop story and six reasons → four-image gallery → repo-style Google review carousel → lower quote section with second enquiry panel → FAQ → shop footer → mobile fixed address/CTA.
 - Google review carousel uses the existing repo's review-card pattern, also present in Detail Now's page.
 - Base stylesheet is copied locally from the 1TakeTints page. Typography, spacing, grids, hero composition and responsive behavior retained. A&A's gold, navy, silver and blue replace the other client's brand colors. A&A's actual logo is local.
-- No other client's photos, quotes, film brands, contacts, tracking or submission endpoints copied. No client CRM was supplied; both enquiry positions compose an SMS draft, with a link to A&A's official booking form.
+- No other client's photos, quotes, film brands, contacts, tracking or submission endpoints copied. No client CRM was supplied; both enquiry positions are non-submitting placeholders awaiting A&A's GHL form.
 - No competitor claims or unsupported price comparisons needed for this brief.
 
 ## Review handling
