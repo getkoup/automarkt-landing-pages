@@ -8,10 +8,6 @@
     nearest.scrollIntoView({ block: 'start' });
     nearest.focus({ preventScroll: true });
   });
-  // Dummy forms until A&A supplies its own GHL embed. Never submit or open SMS.
-  document.querySelectorAll('.enquiry-form').forEach(form => {
-    form.addEventListener('submit', event => event.preventDefault());
-  });
   const track = document.getElementById('review-track');
   const previous = document.getElementById('review-prev');
   const next = document.getElementById('review-next');

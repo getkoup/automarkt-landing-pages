@@ -1,7 +1,15 @@
 # Tracking — A&A Quality Auto Spa $299 tint
 
-No advertising pixels, GTM, GA, conversion IDs, analytics, cookies, localStorage attribution capture or webhooks were supplied or installed.
+## User-supplied GHL form — 2026-10-16
+- Form ID: `Vvz6NYhE1pelkUjTVOGo`.
+- Form name/title: `Ceramic Tint - (google)`.
+- Endpoint: https://api.leadconnectorhq.com/widget/form/Vvz6NYhE1pelkUjTVOGo.
+- Embed loader: https://link.msgsndr.com/js/form_embed.js, loaded once per page.
+- Placement: hero and lower quote panels. Unique iframe IDs: `inline-Vvz6NYhE1pelkUjTVOGo` and `inline-Vvz6NYhE1pelkUjTVOGo-lower`; each has a matching `data-layout-iframe-id` and the same client form ID.
+- Preserved supplied INLINE layout, alwaysShow/alwaysActivated/neverDeactivate settings, `data-cookie-consent="true"` and `data-cookie-consent-provider="auto"`.
+- Initial iframe height is 498px; GHL's loader manages resizing. Fields and submission are handled by the user's GHL form, including its consent controls and configured follow-up behavior. The page adds no separate submission handler or conversion event. No test lead submitted.
 
-Contact destinations: tel:+18329938411; https://aaqualityautospa.com/contact.
-Both on-page forms are non-submitting preview placeholders with Full Name, Car Details and Phone fields. Their buttons perform no action. No SMS link, form endpoint or GHL embed is installed; the user will supply the client’s GHL form later. No form values are stored or transmitted.
-Google profile/review links are evidence and navigation links, not tracking pixels. All images/fonts/CSS/JS used by the landing page are local.
+No separate advertising pixels, GTM, GA or conversion IDs have been supplied or installed on this page. GHL's supplied third-party embed manages its own storage/cookie behavior; the landing page adds no custom attribution capture.
+
+Other contact destinations: tel:+18329938411; https://aaqualityautospa.com/contact.
+Google profile/review links are evidence and navigation links. Images/fonts and page CSS/JavaScript are local; the user-supplied GHL form and its embed loader are external.
