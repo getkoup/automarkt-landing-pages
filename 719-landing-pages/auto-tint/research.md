@@ -12,7 +12,7 @@
 - Do not invent an expiry, savings amount, eligibility restrictions, or extra inclusions. Front windshield is outside the user-supplied side/rear coverage.
 - CTA: request a vehicle quote using the user-supplied **Tint (Google)  - 275** GHL form (`dSQWLbhJ81Ee7vepKlz5`), added 2026-10-17 in `#offer-form-slot` inside `#quote`. Call/text remains beneath the form as an alternative.
 - GHL owns fields, validation, consent, submission and follow-up. Published location matches 719 (`u0zdecOvugwYiWUUOmTI`). Its native redirect is https://719autocustoms.com/thank-you/; that setting is retained without adding a competing page redirect. No test lead submitted.
-- Page-level advertising tracking IDs are pending. The supplied form and embed loader are documented in `tracking.md`.
+- User authorized the existing 719 tracking on this page on 2026-10-17: Google Ads `AW-11364267259` and GTM `GTM-WHZLPNRQ`. The page uses the same base snippets as Tint, PPF and CC; no custom conversion event or GHL submission redirect is added. Details are in `tracking.md`.
 - Existing review excerpts, 4.9 rating and user-confirmed 1,500+ count are retained from the reference, not newly collected or independently reverified.
 - Shade preview illustrates film VLT only. Legal suitability depends on the vehicle/glass and is confirmed by the installer; no automatic legality guarantees are copied.
 
@@ -20,4 +20,4 @@
 
 - Desktop and mobile-width visual checks passed. No broken local image references or page-wide horizontal overflow observed.
 - Shade selection updates the scene and VLT label. Coverage FAQ opens; quote CTA returns to the contact panel.
-- Inline JavaScript syntax, relative asset paths, CTA anchors, single H1, and absence of copied tracking/form IDs checked.
+- Inline JavaScript syntax, relative asset paths, CTA anchors, single H1, supplied form ID and explicitly authorized 719 tracking IDs checked.
