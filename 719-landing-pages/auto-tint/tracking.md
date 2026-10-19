@@ -1,6 +1,6 @@
-# Tracking and contact — Auto tint $275
+# Tracking and contact — Auto tint $249
 
-- User-supplied GHL form added 2026-10-17: **Tint (Google)  - 275**, ID `dSQWLbhJ81Ee7vepKlz5`.
+- User-supplied GHL form added 2026-10-17: **Tint (Google)  - 249** (originally named “Tint (Google) - 275”; renamed in GHL before this offer update), ID `dSQWLbhJ81Ee7vepKlz5`.
 - Form URL: https://api.leadconnectorhq.com/widget/form/dSQWLbhJ81Ee7vepKlz5.
 - Placement: `#offer-form-slot` inside `#quote`, iframe ID `inline-dSQWLbhJ81Ee7vepKlz5`. Supplied INLINE layout, activation and cookie-consent attributes retained; initial height 534px, eager loading, GHL-managed resizing.
 - Loader: https://link.msgsndr.com/js/form_embed.js, once per page with `defer`.
@@ -14,3 +14,5 @@
 - Text: `sms:+17194378333`.
 - Existing Tint page tracking and form remain untouched. No test lead submitted.
 - Static and isolated runtime checks confirm one Ads configuration, the expected GTM loader URL and startup event, one noscript iframe, and one GHL loader. Verification sends no advertising events or leads.
+
+- 2026-10-20: offer updated to premium tint starting at $249. Form ID, submit destination, embed loader and both Google tracking IDs remain unchanged.
