@@ -58,3 +58,19 @@ Latest browser check: the GHL button now reads `Claim My $299 Coating ↗` (pric
 - Added `thank-you.html` and `thank-you.css`, matching the original Detail Now confirmation layout with local fonts, monogram, near-black/champagne styling, phone CTA and Taylor address. Describes follow-up and does not promise a confirmed appointment.
 - Added verified GHL success-message handling for both supplied tint embeds. Future public URL: https://detailnow.getkoup.com/tint/thank-you.html. Existing wildcard rewrite includes this page and its local assets.
 - Supersedes the initial local-preview decision to retain only GHL's native confirmation. No real test lead submitted.
+
+## Google tracking update — local only, 2026-10-21
+- User requested the same Google tracking as https://detailnow.getkoup.com/ and explicitly withheld deployment.
+- Added Google Ads `AW-11146644582` and GTM `GTM-KVP98TG2` on tint and thank-you pages, plus the original site's `ghl_form_submit` event with this tint form's ID. IDs verified against live original HTML.
+- Existing source uses the coating form ID; the tint event correctly uses `CT04c62yNk47Gkfgmq1C`. No container/account settings modified.
+- This update remains local on a separate branch; no push, PR, merge or deployment until user authorization.
+
+## User-provided image update — local only, 2026-10-21
+- Replaced the shop-story reflection photo with the first supplied image (red Alfa Romeo). CSS uses a bottom-aligned square crop to exclude the unrelated empty pavement strip at its top and retain the whole vehicle. Original bitmap framing is preserved in the WebP file.
+- Replaced all four gallery photos with the remaining supplied images in the provided order: black Toyota coupe, purple sports coupe, black Toyota front view, gray Lexus sedan. Updated alt text and captions to describe the actual vehicles. Gallery copy no longer describes every photo as inside the Taylor studio.
+- All five files converted to optimized page-local WebP assets at their original 732×1024 dimensions. Original source paths are recorded in assets/sources.json.
+- Existing local Google tracking changes retained. No push, merge or deployment; user has not authorized publishing these pending updates.
+
+## Publication approval — 2026-10-21
+- User authorized making the Google tracking and supplied image changes live. Publish through a new GitHub PR targeting main, then deploy the merged commit and verify the public tint/thank-you pages. This supersedes the earlier local-only hold.
+- Local browser checks completed at 1440px, 390px and 320px for the new image framing; all five files load without horizontal overflow. Tracking checks intercepted Google requests, validated both IDs and confirmed a single `ghl_form_submit` event from each verified form success before thank-you navigation. No lead was submitted.

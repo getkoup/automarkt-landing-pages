@@ -13,6 +13,8 @@
         frameId !== frame.id || storageKey !== `embedded_iframe_${frameId}` ||
         typeof fingerprint !== 'string' || !fingerprint) return;
     redirected = true;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'ghl_form_submit', formId: frame.dataset.formId });
     window.location.assign(new URL('thank-you.html', window.location.href).href);
   });
 })();
