@@ -27,7 +27,7 @@
 ## Structure and brand
 - Copy A&A's section sequence and responsive layout: header; hero with offer/form; trust strip; four benefits; dark shop story; six details; four-photo gallery; review carousel; lower form/CTA; FAQ; footer; mobile pinned CTA.
 - Detail Now palette: near-black #050508/#13131a, champagne gold #c9a96e and off-white #eeeef4. Bebas Neue headings and DM Sans body, matching the existing client page.
-- Forms: user-provided CT04c62yNk47Gkfgmq1C, displayed in both positions with unique iframe IDs and one loader. Native GHL submission/validation/consent/confirmation retained; no invented redirect or custom conversion event.
+- Forms: user-provided CT04c62yNk47Gkfgmq1C, displayed in both positions with unique iframe IDs and one loader. Native GHL submission/validation/consent retained. The later user-requested success redirect is documented below; no custom conversion event.
 - No ad pixels or IDs copied. Tracking is documented separately.
 
 ## Local validation — 2026-10-21
@@ -53,3 +53,8 @@ Latest browser check: the GHL button now reads `Claim My $299 Coating ↗` (pric
 - Own GitHub-linked project `detailnow-ceramic-tint-299` (`prj_eFMhKaPDDUZ21jNQ6kV1NeDgNSZ4`), team `sachita007s-projects`; root `detailnow-ceramic-tint-299`, Other/static preset, no build or install command. Production branch `main`; skip unaffected-root deployments enabled. Public project alias https://detailnow-ceramic-tint-299.vercel.app/.
 - Existing coating project serves `/tint/` and `/tint/:path+` using external rewrites to the tint project. `/tint` redirects to `/tint/` so page-local asset URLs resolve. This follows the repository's existing 1TakeTints shared-domain arrangement. No DNS change or existing domain reassignment.
 - Tint project has public deployment access so the existing project's external rewrite can fetch its static files. All assets remain self-contained in this folder. The coating homepage and its tracking/form remain unchanged.
+
+## Thank-you page and success redirect — 2026-10-21
+- Added `thank-you.html` and `thank-you.css`, matching the original Detail Now confirmation layout with local fonts, monogram, near-black/champagne styling, phone CTA and Taylor address. Describes follow-up and does not promise a confirmed appointment.
+- Added verified GHL success-message handling for both supplied tint embeds. Future public URL: https://detailnow.getkoup.com/tint/thank-you.html. Existing wildcard rewrite includes this page and its local assets.
+- Supersedes the initial local-preview decision to retain only GHL's native confirmation. No real test lead submitted.
