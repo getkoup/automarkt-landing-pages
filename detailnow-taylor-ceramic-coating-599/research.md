@@ -55,3 +55,8 @@ Near-black #050508 / #0e0e14 / #13131a, champagne gold #c9a96e, off-white #eeeef
 - Lead form: GHL "Ceramic Coating (Google) - 599" (form cMYd2dCbjNJDHWCzQito, location IO1XccMiZ8nXQAppRzmn), embedded in hero + quote section; on submit → thank-you.html (+ dataLayer ghl_form_submit).
 - Tracking: Google Ads AW-11146644582 + GTM-KVP98TG2 on both pages (see tracking.md).
 - Confirm the phone number and the 10-year product/warranty terms.
+
+## Shared-domain tint route — 2026-10-21
+- User requested the new $299 ceramic window tint landing page at `detailnow.getkoup.com/tint`.
+- Added `vercel.json`: `/tint` redirects to `/tint/`; `/tint/` and its descendants proxy to `https://detailnow-ceramic-tint-299.vercel.app/`.
+- Tint has its own project and isolated source folder `detailnow-ceramic-tint-299`. Existing coating homepage, local assets, form, tracking and domain binding are unchanged.
