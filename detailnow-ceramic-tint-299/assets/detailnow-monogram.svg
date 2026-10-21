@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Detail Now">
+  <rect width="64" height="64" rx="14" fill="#13131a"/>
+  <rect x="1.75" y="1.75" width="60.5" height="60.5" rx="12.25" fill="none" stroke="#c9a96e" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Georgia, 'Playfair Display', 'Times New Roman', serif" font-weight="700" font-size="30" letter-spacing="0.5" fill="#c9a96e">DN</text>
+</svg>
