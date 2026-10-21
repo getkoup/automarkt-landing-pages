@@ -6,5 +6,40 @@
   "hero-studio-mercedes.webp": "Client asset copied locally from Detail Now coating page; original https://austindetailnow.com/images/hero-bg.webp",
   "studio-coating-reflection.webp": "Client asset copied locally from Detail Now coating page; original https://austindetailnow.com/images/cc-hero.webp",
   "review-matt-brown.webp": "Matt Brown own Google review photo, documented in existing Detail Now page research",
-  "fonts": "Bebas Neue and DM Sans from Google Fonts CSS API, downloaded 2026-10-21"
+  "fonts": "Bebas Neue and DM Sans from Google Fonts CSS API, downloaded 2026-10-21",
+  "red-alfa-romeo-tint.webp": {
+    "source": "/home/sachita/Downloads/f9a30cc0-9a8a-4d8e-88ae-ab7ca7b1f628.png",
+    "provided_by": "user",
+    "added": "2026-10-21",
+    "usage": "Shop story image",
+    "notes": "Converted to WebP at original dimensions; visual framing controlled in page CSS."
+  },
+  "black-toyota-coupe.webp": {
+    "source": "/home/sachita/Downloads/d6ba960c-1cb4-4215-9707-7d74ca6269d2.png",
+    "provided_by": "user",
+    "added": "2026-10-21",
+    "usage": "Vehicle gallery",
+    "notes": "Converted to WebP at original dimensions; visual framing controlled in page CSS."
+  },
+  "purple-sports-coupe.webp": {
+    "source": "/home/sachita/Downloads/9983c700-ab78-4e3f-ad54-b35c1731f73b.png",
+    "provided_by": "user",
+    "added": "2026-10-21",
+    "usage": "Vehicle gallery",
+    "notes": "Converted to WebP at original dimensions; visual framing controlled in page CSS."
+  },
+  "black-toyota-front.webp": {
+    "source": "/home/sachita/Downloads/314bc0c8-0538-4d1e-b6c1-18c6574859cd.png",
+    "provided_by": "user",
+    "added": "2026-10-21",
+    "usage": "Vehicle gallery",
+    "notes": "Converted to WebP at original dimensions; visual framing controlled in page CSS."
+  },
+  "gray-lexus-sedan.webp": {
+    "source": "/home/sachita/Downloads/8d8c6316-c556-4abc-946b-5c317bb6c281.png",
+    "provided_by": "user",
+    "added": "2026-10-21",
+    "usage": "Vehicle gallery",
+    "notes": "Converted to WebP at original dimensions; visual framing controlled in page CSS."
+  }
 }

@@ -423,3 +423,8 @@ h1,h2{font-family:'Bebas Neue','Arial Narrow',sans-serif;font-weight:400!importa
  .daylight-hero::before{background:linear-gradient(180deg,#0b0b10c9 0%,#0b0b10e6 500px,#0b0b10 700px)}
 }
 @media(max-width:380px){.daylight-copy h1{font-size:48px}}
+
+/* User-supplied vehicle photos: square story framing removes the first
+   photo's empty pavement strip while keeping the complete car visible. */
+.studio-statement>img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center bottom;align-self:center}
+.portfolio-grid img,.portfolio-grid figure:first-child img{object-position:center;aspect-ratio:3/4}
