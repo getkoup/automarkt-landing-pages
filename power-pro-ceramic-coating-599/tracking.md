@@ -1,6 +1,6 @@
 # Tracking — Power Pro Studios ceramic coating $599
 
-No separate advertising pixels, analytics IDs, tag managers, or webhooks have been supplied. The user-provided GHL form is embedded as recorded below.
+User-provided Google Tag Manager and Google Ads tags are installed on the landing page and thank-you page. The user-provided GHL form is embedded as recorded below.
 
 - User approved call/text buttons for this preview, 2026-10-26.
 - Telephone links: `tel:+17206054910`.
@@ -28,10 +28,19 @@ No tracking from the structure-reference pages or the official source website wa
 
 ## Hosting
 - Netlify hosts this isolated page. Site configuration and the external DNS record are documented in `hosting.md`.
-- Netlify’s project-wide Powered by Netlify badge is disabled. No additional analytics/pixel was installed during publication.
+- Netlify’s project-wide Powered by Netlify badge is disabled. User-supplied Google tracking was added on 2026-10-27 as recorded below.
 
 ## Successful form submission
 - `form-submit.js` listens for GHL’s `set-sticky-contacts` message, matching the primary embed runtime’s message format and the existing ceramic landing pages.
 - It verifies the exact `https://api.leadconnectorhq.com` origin, the sending iframe window, the Power Pro form ID, and the success payload. It accepts either the submitting iframe ID or a nonempty contact JSON object, together with the native location ID and fingerprint.
 - Valid messages redirect the parent page once to the same-site `thank-you.html`. Load, resize, and other messages do not redirect. No contact information is logged or passed in the redirect URL.
-- No analytics or conversion pixels were added.
+- The redirect itself does not emit an advertising conversion event. Account-side conversion actions are controlled by the supplied GTM/Google Ads configuration.
+
+## User-supplied Google tracking — 2026-10-27
+- Google Tag Manager container: `GTM-W9HGV9C4`.
+- Google Ads tag ID: `AW-17964444807`.
+- Installed on both `index.html` and `thank-you.html`.
+- GTM bootstrap and asynchronous Google Ads `gtag.js` loader/config are in each page’s `<head>`.
+- GTM’s hidden noscript iframe is immediately after each opening `<body>` tag.
+- User supplied the exact snippets and authorized installation/redeployment. No other client’s tracking IDs were copied.
+- No conversion label or additional event snippet was provided, so no additional conversion event was invented.
