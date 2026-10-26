@@ -29,3 +29,9 @@ No tracking from the structure-reference pages or the official source website wa
 ## Hosting
 - Netlify hosts this isolated page. Site configuration and the external DNS record are documented in `hosting.md`.
 - Netlify’s project-wide Powered by Netlify badge is disabled. No additional analytics/pixel was installed during publication.
+
+## Successful form submission
+- `form-submit.js` listens for GHL’s `set-sticky-contacts` message, matching the primary embed runtime’s message format and the existing ceramic landing pages.
+- It verifies the exact `https://api.leadconnectorhq.com` origin, the sending iframe window, the Power Pro form ID, and the success payload. It accepts either the submitting iframe ID or a nonempty contact JSON object, together with the native location ID and fingerprint.
+- Valid messages redirect the parent page once to the same-site `thank-you.html`. Load, resize, and other messages do not redirect. No contact information is logged or passed in the redirect URL.
+- No analytics or conversion pixels were added.
