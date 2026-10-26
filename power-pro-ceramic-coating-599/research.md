@@ -125,3 +125,8 @@ Inspected existing `detailnow-taylor-ceramic-coating-599` and `coast2city-cerami
 ## Thank-you layout match
 - At the user’s request, matched Coast 2 City and Detail Now’s centered, unboxed thank-you structure: a 560px content column, request-received eyebrow, two-line heading, short confirmation text, phone button, and back-to-offer link. Removed the additional bordered card and check icon.
 - Retained Power Pro’s logo, typography, blue accent, phone number, and $599 10-year offer. Submission redirect logic is unchanged.
+
+## Google tracking update — 2026-10-27
+- User supplied and authorized Google Tag Manager `GTM-W9HGV9C4` and Google Ads `AW-17964444807`.
+- Added the supplied header scripts and body noscript iframe to both the landing page and thank-you page. Updated `tracking.md` to record the IDs, placement, and scope.
+- The page layout and GHL submission redirect are unchanged by this tracking update.
