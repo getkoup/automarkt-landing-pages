@@ -121,3 +121,7 @@ Inspected existing `detailnow-taylor-ceramic-coating-599` and `coast2city-cerami
 - Added origin/source/form validation for GHL’s current success message format, following the primary `form_embed.js` runtime and the existing landing-page implementation without copying other clients’ identifiers or tracking.
 - Added both the redirect script and thank-you page to the isolated Netlify publish package.
 - Verification: 18 isolated message-handler checks passed, covering both iframe instances and both success payload formats, duplicate-message handling, and rejection of unrelated messages/origins/windows/forms. These tests use synthetic messages and do not submit a real lead.
+
+## Thank-you layout match
+- At the user’s request, matched Coast 2 City and Detail Now’s centered, unboxed thank-you structure: a 560px content column, request-received eyebrow, two-line heading, short confirmation text, phone button, and back-to-offer link. Removed the additional bordered card and check icon.
+- Retained Power Pro’s logo, typography, blue accent, phone number, and $599 10-year offer. Submission redirect logic is unchanged.
