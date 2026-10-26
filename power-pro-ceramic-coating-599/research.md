@@ -114,3 +114,10 @@ Inspected existing `detailnow-taylor-ceramic-coating-599` and `coast2city-cerami
 - Disabled the project-wide Powered by Netlify badge in Netlify settings.
 - Added `build.mjs` and `netlify.toml` to package only public static files. Private/local QA, research, and the GHL styling kit are excluded from the upload. Removed the local-preview noindex tag and set the canonical URL to the chosen custom hostname.
 - Hosting details and the exact CNAME record are in `hosting.md`.
+
+## Thank-you page
+- User requested a thank-you page and automatic parent-page navigation after a successful native GHL submission.
+- Added a Power Pro-branded `thank-you.html` with request confirmation, a phone CTA, and a link back to the offer. It does not claim that an appointment has been booked.
+- Added origin/source/form validation for GHL’s current success message format, following the primary `form_embed.js` runtime and the existing landing-page implementation without copying other clients’ identifiers or tracking.
+- Added both the redirect script and thank-you page to the isolated Netlify publish package.
+- Verification: 18 isolated message-handler checks passed, covering both iframe instances and both success payload formats, duplicate-message handling, and rejection of unrelated messages/origins/windows/forms. These tests use synthetic messages and do not submit a real lead.
