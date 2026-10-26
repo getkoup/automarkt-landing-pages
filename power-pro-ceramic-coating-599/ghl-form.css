@@ -1,0 +1,147 @@
+/* POWER PRO STUDIOS — NATIVE GHL FORM
+   Paste into Form Builder > Styles > Advanced > Custom CSS, without <style> tags.
+   Layout: Full Name / Phone / Car Details / native submit button.
+   Selectors checked against the rendered Detail Now GHL reference form.
+   Use a single-column form. Keep native validation, consent, and submission. */
+:root {
+  --pp-bg: #111926;
+  --pp-blue: #0057e1;
+  --pp-accent: #79b2ff;
+  --pp-text: #f5f7fc;
+  --pp-muted: #bdc8d9;
+  --pp-input: #e9ecef;
+  --pp-ink: #111926;
+}
+html, body {
+  margin: 0 !important;
+  background: var(--pp-bg) !important;
+  color: var(--pp-text);
+  font-family: Arial, Helvetica, sans-serif !important;
+  color-scheme: light;
+}
+/* Remove GHL's outer gutters and dashed frame. The landing page supplies the card. */
+.hl-app, .hl_form-builder--main, .ghl-form-wrap, #_builder-form {
+  background: transparent !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.hl_form-builder--main { padding: 0 !important; }
+.ghl-form-wrap, #_builder-form {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#_builder-form .fields-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+#_builder-form .form-field-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  padding: 0 !important;
+  margin: 0 0 16px !important;
+}
+#_builder-form .form-field-wrapper:last-child { margin-bottom: 0 !important; }
+#_builder-form .form-builder--item {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+#_builder-form .field-label {
+  display: block !important;
+  margin: 0 0 8px !important;
+  color: var(--pp-text) !important;
+  font: 600 14px/1.6 Arial, Helvetica, sans-serif !important;
+}
+#_builder-form .field-label * { color: inherit !important; font: inherit !important; }
+/* Native text fields only: leave checkboxes, radio buttons and CAPTCHA intact. */
+#_builder-form input:is([type="text"], [type="tel"], [type="email"], [type="number"], [type="url"], [type="date"]),
+#_builder-form textarea,
+#_builder-form select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 54px !important;
+  background: var(--pp-input) !important;
+  color: var(--pp-ink) !important;
+  border: 1px solid transparent !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  font: 400 16px/1.5 Arial, Helvetica, sans-serif !important;
+  padding: 14px 20px !important;
+}
+#_builder-form textarea { min-height: 100px !important; resize: vertical; }
+#_builder-form .iti { width: 100% !important; }
+/* Leave room for the native country picker; its positioning and behavior remain GHL's. */
+#_builder-form .iti--allow-dropdown input[type="tel"] { padding-left: 52px !important; }
+#_builder-form .iti__country-list { background: #fff !important; color: var(--pp-ink) !important; }
+#_builder-form .iti__selected-dial-code { color: var(--pp-ink) !important; }
+#_builder-form input::placeholder,
+#_builder-form textarea::placeholder { color: #535f70 !important; opacity: 1 !important; }
+#_builder-form input:focus-visible,
+#_builder-form textarea:focus-visible,
+#_builder-form select:focus-visible {
+  outline: 2px solid var(--pp-accent) !important;
+  outline-offset: 2px !important;
+}
+#_builder-form input:-webkit-autofill {
+  -webkit-text-fill-color: var(--pp-ink) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--pp-input) inset !important;
+  caret-color: var(--pp-ink);
+}
+#_builder-form input[type="checkbox"],
+#_builder-form input[type="radio"] { accent-color: var(--pp-blue); }
+#_builder-form .form-builder--btn-submit { margin-top: 8px !important; }
+#_builder-form button[type="submit"] {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 14px 16px !important;
+  background: var(--pp-blue) !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  font: 800 15px/1.6 Arial, Helvetica, sans-serif !important;
+  text-align: center !important;
+  white-space: normal !important;
+  cursor: pointer;
+}
+/* GHL's rich-text button label can carry inline fonts and colors. */
+#_builder-form button[type="submit"] .button-text,
+#_builder-form button[type="submit"] .button-text * {
+  color: inherit !important;
+  font: inherit !important;
+  line-height: inherit !important;
+}
+#_builder-form button[type="submit"] .button-text p { margin: 0 !important; }
+#_builder-form button[type="submit"]:hover { background: #126af4 !important; }
+#_builder-form button[type="submit"]:focus-visible {
+  outline: 2px solid var(--pp-accent) !important;
+  outline-offset: 3px !important;
+}
+#_builder-form button[type="submit"]:disabled { opacity: .65; cursor: wait; }
+#_builder-form .error,
+#_builder-form .error-message,
+#_builder-form .hl-error,
+#_builder-form [role="alert"] { color: #ffb2b8 !important; font-size: 12px; }
+#_builder-form a { color: var(--pp-accent); text-underline-offset: 3px; }
+/* Optional HTML blocks. Omit if the landing-page card already supplies this copy. */
+.pp-form-intro { margin: 0 0 22px; text-align: left; }
+.pp-form-eyebrow { margin: 0 0 14px; color: var(--pp-accent) !important; font: 700 9px/1.7 Arial, Helvetica, sans-serif !important; letter-spacing: .16em; }
+.pp-form-title { margin: 0 0 12px; color: var(--pp-text) !important; font: 700 32px/1.12 Arial, Helvetica, sans-serif !important; letter-spacing: -.045em; }
+.pp-form-description { margin: 0; color: var(--pp-muted) !important; font: 400 12px/1.8 Arial, Helvetica, sans-serif !important; }
+.pp-form-footer { margin-top: 18px; text-align: center; }
+.pp-form-footer p { margin: 0 0 8px; color: var(--pp-muted) !important; font: 400 11px/1.7 Arial, Helvetica, sans-serif !important; }
+.pp-form-footer a { color: var(--pp-accent) !important; text-underline-offset: 3px; }
+@media (max-width: 480px) {
+  .pp-form-title { font-size: 28px !important; }
+}

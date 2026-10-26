@@ -1,0 +1,171 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Power Pro — GHL form CSS &amp; HTML</title><style>
+*{box-sizing:border-box}body{margin:0;background:#080c14;color:#f5f7fc;font:15px/1.7 Arial,Helvetica,sans-serif}a{color:#79b2ff}button{cursor:pointer;background:#0057e1;border:0;color:#fff;padding:12px 18px;font:700 13px Arial}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid #79b2ff;outline-offset:4px}.shell{max-width:1250px;padding:35px 25px;margin:auto}header{border-bottom:1px solid #263144;padding-bottom:25px;margin-bottom:30px}header img{width:180px;height:auto}h1{font-size:36px;line-height:1.15;letter-spacing:-.04em;margin:25px 0 15px}h2{font-size:20px;margin:0}p{color:#bdc8d9}.layout{display:grid;grid-template-columns:minmax(0,1fr) 430px;gap:35px;align-items:start}.code-panel,.setup{padding:24px;background:#111926;border:1px solid #263144;margin-bottom:22px}.panel-title{display:flex;align-items:center;justify-content:space-between;gap:20px}.code-panel p,.setup{font-size:13px}.code-panel>a{font-size:12px}textarea{display:block;width:100%;height:220px;resize:vertical;padding:16px;background:#080e18;color:#d9e6fa;border:1px solid #41516a;font:12px/1.7 monospace;white-space:pre;margin:20px 0 10px}aside{position:sticky;top:25px}iframe{width:100%;height:640px;border:0;background:#080c14}aside>p{font-size:12px;margin-top:0}.small{font-size:12px}#copy-status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#eaf2ff;color:#111c2d;padding:10px 18px;box-shadow:0 4px 30px #0005}#copy-status:empty{display:none}li{margin-bottom:8px}code{color:#e1ecff}ol{padding-left:20px}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:12px}td,th{text-align:left;padding:10px 8px;border-bottom:1px solid #344053}th{color:#79b2ff}.native-note{padding:14px 16px;border-left:3px solid #0057e1;background:#0057e110}@media(max-width:950px){.layout{grid-template-columns:1fr}aside{position:static;max-width:480px;width:100%;margin:auto;grid-row:1}}@media(max-width:500px){.shell{padding:24px 16px}h1{font-size:30px}.panel-title{align-items:start}button{font-size:11px;padding:10px 12px}.code-panel,.setup{padding:20px}iframe{height:660px}}
+</style></head><body><div class="shell"><header><img src="assets/power-pro-logo.png" alt="Power Pro Studios"><h1>The reference form. Power Pro’s colors.</h1><p>Three stacked fields, light inputs, and a full-width $599 offer button—matched to the rendered Detail Now GHL form, with Power Pro blue and typography.</p><a href="index.html">← Back to the landing page</a></header><div class="layout"><main><div class="setup"><h2>Build the native GHL form</h2><ol><li>Open <strong>Sites → Form Builder</strong>, then create or edit the <strong>Power Pro</strong> form.</li><li>Choose <strong>one column</strong>. Use background <code>#111926</code>. The CSS removes GHL’s outer gutters and border; the landing-page card provides its own padding.</li><li>Add the following <strong>native GHL fields</strong>, in order:</li></ol>
+<table><thead><tr><th>Field label</th><th>Type</th><th>Required</th></tr></thead><tbody><tr><td>Full Name</td><td>Full Name</td><td>Yes</td></tr><tr><td>Phone</td><td>Phone</td><td>Yes</td></tr><tr><td>Car Details</td><td>Custom single-line text</td><td>Yes</td></tr></tbody></table>
+<p>Car Details placeholder: <strong>Enter Your Vehicle Model/Year/Make</strong>. Set the phone field’s default country to <strong>United States</strong>.</p>
+<ol start="4"><li>Use the <strong>native submit button</strong>. Set its text to <strong>Claim My $599 Coating ↗</strong>, background <code>#0057e1</code>, and white text.</li><li>Paste the CSS below into <strong>Styles → Advanced → Custom CSS</strong>. Keep any configured consent, terms, and CAPTCHA elements.</li><li>The header/footer HTML is optional. Use it when the form stands alone. For an embedded form, keep the heading and contact note once, in the surrounding landing-page card.</li><li>Save and publish the form, then check its desktop/mobile previews. Configure the native success message or redirect.</li><li>Copy this Power Pro form’s <strong>Integrate → Embed</strong> code to connect it to the landing page.</li></ol>
+<p class="native-note"><strong>CSS and decorative HTML belong in different places.</strong> CSS goes in the form’s Custom CSS field; HTML goes in an HTML element. Create the input fields and submit button in GHL so the form retains CRM submission and validation.</p>
+<p>Website-level Custom CSS cannot style fields inside a GHL iframe. The local landing page keeps the approved call/text buttons until a Power Pro form embed is supplied.</p>
+<p class="small">Verified: official HighLevel instructions and the reference form’s rendered labels, inputs, wrappers, spacing, and submit-button markup. This local preview tests those selectors with sample markup; Power Pro’s own published form and lead delivery still require a check after setup.</p></div><section class="code-panel"><div class="panel-title"><h2>1. Form Custom CSS</h2><button type="button" data-copy="css">Copy CSS</button></div><p>Paste inside the form: <strong>Styles → Advanced → Custom CSS</strong>. Paste only CSS, without &lt;style&gt; tags. This handles GHL’s outer spacing, native fields, and nested button text.</p><textarea id="css" readonly spellcheck="false" aria-label="1. Form Custom CSS">/* POWER PRO STUDIOS — NATIVE GHL FORM
+   Paste into Form Builder &gt; Styles &gt; Advanced &gt; Custom CSS, without &lt;style&gt; tags.
+   Layout: Full Name / Phone / Car Details / native submit button.
+   Selectors checked against the rendered Detail Now GHL reference form.
+   Use a single-column form. Keep native validation, consent, and submission. */
+:root {
+  --pp-bg: #111926;
+  --pp-blue: #0057e1;
+  --pp-accent: #79b2ff;
+  --pp-text: #f5f7fc;
+  --pp-muted: #bdc8d9;
+  --pp-input: #e9ecef;
+  --pp-ink: #111926;
+}
+html, body {
+  margin: 0 !important;
+  background: var(--pp-bg) !important;
+  color: var(--pp-text);
+  font-family: Arial, Helvetica, sans-serif !important;
+  color-scheme: light;
+}
+/* Remove GHL&#x27;s outer gutters and dashed frame. The landing page supplies the card. */
+.hl-app, .hl_form-builder--main, .ghl-form-wrap, #_builder-form {
+  background: transparent !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.hl_form-builder--main { padding: 0 !important; }
+.ghl-form-wrap, #_builder-form {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#_builder-form .fields-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+#_builder-form .form-field-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  padding: 0 !important;
+  margin: 0 0 16px !important;
+}
+#_builder-form .form-field-wrapper:last-child { margin-bottom: 0 !important; }
+#_builder-form .form-builder--item {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+#_builder-form .field-label {
+  display: block !important;
+  margin: 0 0 8px !important;
+  color: var(--pp-text) !important;
+  font: 600 14px/1.6 Arial, Helvetica, sans-serif !important;
+}
+#_builder-form .field-label * { color: inherit !important; font: inherit !important; }
+/* Native text fields only: leave checkboxes, radio buttons and CAPTCHA intact. */
+#_builder-form input:is([type=&quot;text&quot;], [type=&quot;tel&quot;], [type=&quot;email&quot;], [type=&quot;number&quot;], [type=&quot;url&quot;], [type=&quot;date&quot;]),
+#_builder-form textarea,
+#_builder-form select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 54px !important;
+  background: var(--pp-input) !important;
+  color: var(--pp-ink) !important;
+  border: 1px solid transparent !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  font: 400 16px/1.5 Arial, Helvetica, sans-serif !important;
+  padding: 14px 20px !important;
+}
+#_builder-form textarea { min-height: 100px !important; resize: vertical; }
+#_builder-form .iti { width: 100% !important; }
+/* Leave room for the native country picker; its positioning and behavior remain GHL&#x27;s. */
+#_builder-form .iti--allow-dropdown input[type=&quot;tel&quot;] { padding-left: 52px !important; }
+#_builder-form .iti__country-list { background: #fff !important; color: var(--pp-ink) !important; }
+#_builder-form .iti__selected-dial-code { color: var(--pp-ink) !important; }
+#_builder-form input::placeholder,
+#_builder-form textarea::placeholder { color: #535f70 !important; opacity: 1 !important; }
+#_builder-form input:focus-visible,
+#_builder-form textarea:focus-visible,
+#_builder-form select:focus-visible {
+  outline: 2px solid var(--pp-accent) !important;
+  outline-offset: 2px !important;
+}
+#_builder-form input:-webkit-autofill {
+  -webkit-text-fill-color: var(--pp-ink) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--pp-input) inset !important;
+  caret-color: var(--pp-ink);
+}
+#_builder-form input[type=&quot;checkbox&quot;],
+#_builder-form input[type=&quot;radio&quot;] { accent-color: var(--pp-blue); }
+#_builder-form .form-builder--btn-submit { margin-top: 8px !important; }
+#_builder-form button[type=&quot;submit&quot;] {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 14px 16px !important;
+  background: var(--pp-blue) !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  font: 800 15px/1.6 Arial, Helvetica, sans-serif !important;
+  text-align: center !important;
+  white-space: normal !important;
+  cursor: pointer;
+}
+/* GHL&#x27;s rich-text button label can carry inline fonts and colors. */
+#_builder-form button[type=&quot;submit&quot;] .button-text,
+#_builder-form button[type=&quot;submit&quot;] .button-text * {
+  color: inherit !important;
+  font: inherit !important;
+  line-height: inherit !important;
+}
+#_builder-form button[type=&quot;submit&quot;] .button-text p { margin: 0 !important; }
+#_builder-form button[type=&quot;submit&quot;]:hover { background: #126af4 !important; }
+#_builder-form button[type=&quot;submit&quot;]:focus-visible {
+  outline: 2px solid var(--pp-accent) !important;
+  outline-offset: 3px !important;
+}
+#_builder-form button[type=&quot;submit&quot;]:disabled { opacity: .65; cursor: wait; }
+#_builder-form .error,
+#_builder-form .error-message,
+#_builder-form .hl-error,
+#_builder-form [role=&quot;alert&quot;] { color: #ffb2b8 !important; font-size: 12px; }
+#_builder-form a { color: var(--pp-accent); text-underline-offset: 3px; }
+/* Optional HTML blocks. Omit if the landing-page card already supplies this copy. */
+.pp-form-intro { margin: 0 0 22px; text-align: left; }
+.pp-form-eyebrow { margin: 0 0 14px; color: var(--pp-accent) !important; font: 700 9px/1.7 Arial, Helvetica, sans-serif !important; letter-spacing: .16em; }
+.pp-form-title { margin: 0 0 12px; color: var(--pp-text) !important; font: 700 32px/1.12 Arial, Helvetica, sans-serif !important; letter-spacing: -.045em; }
+.pp-form-description { margin: 0; color: var(--pp-muted) !important; font: 400 12px/1.8 Arial, Helvetica, sans-serif !important; }
+.pp-form-footer { margin-top: 18px; text-align: center; }
+.pp-form-footer p { margin: 0 0 8px; color: var(--pp-muted) !important; font: 400 11px/1.7 Arial, Helvetica, sans-serif !important; }
+.pp-form-footer a { color: var(--pp-accent) !important; text-underline-offset: 3px; }
+@media (max-width: 480px) {
+  .pp-form-title { font-size: 28px !important; }
+}
+</textarea><a href="ghl-form.css" download>Download ghl-form.css ↗</a></section><section class="code-panel"><div class="panel-title"><h2>2. Optional header HTML</h2><button type="button" data-copy="header">Copy HTML</button></div><p>For a standalone form, add an <strong>HTML element</strong> above the native fields and choose <strong>Edit HTML</strong>. Skip this block when the landing-page card already supplies the heading.</p><textarea id="header" readonly spellcheck="false" aria-label="2. Optional header HTML">&lt;!-- OPTIONAL: Add a GHL HTML element ABOVE native fields when using the form alone.
+     Skip this block when the landing-page card already supplies the heading. --&gt;
+&lt;div class=&quot;pp-form-intro&quot;&gt;
+  &lt;p class=&quot;pp-form-eyebrow&quot;&gt;POWER PRO STUDIOS · NORTHGLENN, CO&lt;/p&gt;
+  &lt;h2 class=&quot;pp-form-title&quot;&gt;Claim your $599 coating.&lt;/h2&gt;
+  &lt;p class=&quot;pp-form-description&quot;&gt;Start with your name, number, and vehicle.&lt;/p&gt;
+&lt;/div&gt;
+</textarea><a href="ghl-form-header.html" download>Download ghl-form-header.html ↗</a></section><section class="code-panel"><div class="panel-title"><h2>3. Optional footer HTML</h2><button type="button" data-copy="footer">Copy HTML</button></div><p>Add an <strong>HTML element</strong> below the native submit button. Skip this block when the landing-page card already supplies the contact note.</p><textarea id="footer" readonly spellcheck="false" aria-label="3. Optional footer HTML">&lt;!-- OPTIONAL: Add a GHL HTML element BELOW the native submit button.
+     Skip this block if the landing-page card already displays the contact note. --&gt;
+&lt;div class=&quot;pp-form-footer&quot;&gt;
+  &lt;p&gt;Prefer to talk? &lt;a href=&quot;tel:+17206054910&quot;&gt;Call (720) 605-4910&lt;/a&gt; or &lt;a href=&quot;sms:+17206054910&quot;&gt;text us&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;10475 Irma Dr, Unit 17 · Northglenn&lt;/p&gt;
+&lt;/div&gt;
+</textarea><a href="ghl-form-footer.html" download>Download ghl-form-footer.html ↗</a></section><p class="small">Official GHL documentation: <a href="https://help.gohighlevel.com/support/solutions/articles/155000006727-how-to-add-custom-css-to-forms-surveys-and-quizzes-" target="_blank" rel="noopener noreferrer">Custom CSS placement</a> · <a href="https://help.gohighlevel.com/support/solutions/articles/155000007400-html-editor-security-validation" target="_blank" rel="noopener noreferrer">HTML elements</a> · <a href="https://help.gohighlevel.com/support/solutions/articles/155000004524-embedding-highlevel-forms-on-non-highlevel-websites" target="_blank" rel="noopener noreferrer">Embedding a form</a></p></main><aside><p><strong>Power Pro design preview</strong> · same three-field structure</p><iframe src="ghl-form-preview.html" title="Power Pro GHL form design preview"></iframe><p>The heading and contact note are shown as part of the card. The blue button uses the native GHL button’s markup structure.</p><a class="small" href="ghl-form-preview.html" target="_blank" rel="noopener noreferrer">Open full preview ↗</a></aside></div></div><div id="copy-status" role="status"></div><script>
+for(const button of document.querySelectorAll('[data-copy]'))button.addEventListener('click',async()=>{const field=document.getElementById(button.dataset.copy);const status=document.getElementById('copy-status');try{await navigator.clipboard.writeText(field.value);status.textContent='Copied. Paste it into the matching GHL field.';}catch{field.focus();field.select();status.textContent='Code selected. Press Ctrl+C (or Cmd+C) to copy.';}setTimeout(()=>status.textContent='',4500);});
+</script></body></html>
