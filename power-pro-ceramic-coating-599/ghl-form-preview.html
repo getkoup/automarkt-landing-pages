@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Power Pro — form design preview</title><link rel="stylesheet" href="ghl-form.css"><style>
+body{padding:24px!important;background:#080c14!important}.preview-card{max-width:460px;margin:0 auto;padding:28px;background:#111926;border:1px solid #344053;border-top:3px solid #0057e1}.preview-note{max-width:460px;margin:18px auto 0;color:#bdc8d9;font:11px/1.7 Arial;text-align:center}.preview-country{position:absolute;top:17px;left:15px;font-size:17px;line-height:20px}.iti{position:relative}input{display:block}.fields-container{display:flex;flex-direction:column}.form-builder--item{border:1px solid transparent}.field-label{display:block}button{white-space:normal}form{margin:0}@media(max-width:480px){body{padding:0!important}.preview-card{padding:24px}.preview-note{padding:0 16px}}
+</style></head><body><main class="preview-card"><!-- OPTIONAL: Add a GHL HTML element ABOVE native fields when using the form alone.
+     Skip this block when the landing-page card already supplies the heading. -->
+<div class="pp-form-intro">
+  <p class="pp-form-eyebrow">POWER PRO STUDIOS · NORTHGLENN, CO</p>
+  <h2 class="pp-form-title">Claim your $599 coating.</h2>
+  <p class="pp-form-description">Start with your name, number, and vehicle.</p>
+</div>
+<div class="hl-app"><section class="hl_form-builder--main"><div class="ghl-form-wrap"><form id="_builder-form" class="form-builder--wrap"><div class="form-side"><div class="flex-col row fields-container remove-extra-padding">
+<div class="col-12 form-field-wrapper"><div class="form-field-container"><div class="field-container"><div class="form-builder--item"><label class="field-label" for="demo-name">Full Name <span>*</span></label><div class="flex-col"><input class="form-control" id="demo-name" type="text" placeholder="Full Name" autocomplete="name" required></div></div></div></div></div>
+<div class="col-12 form-field-wrapper"><div class="form-field-container"><div class="field-container"><div class="form-builder--item"><label class="field-label" for="demo-phone">Phone <span>*</span></label><div class="iti iti--allow-dropdown"><span class="preview-country" aria-hidden="true">🇺🇸</span><input class="countryphone" id="demo-phone" type="tel" placeholder="Phone" autocomplete="tel" required></div></div></div></div></div>
+<div class="col-12 form-field-wrapper"><div class="form-field-container"><div class="field-container"><div class="form-builder--item"><label class="field-label" for="demo-vehicle">Car Details <span>*</span></label><div class="flex-col"><input class="form-control" id="demo-vehicle" type="text" placeholder="Enter Your Vehicle Model/Year/Make" required></div></div></div></div></div>
+<div class="col-12 form-field-wrapper"><div class="form-field-container"><div class="form-builder--item form-builder--btn-submit"><div style="display:inline-block;position:relative;width:100%"><button type="submit" class="btn btn-dark button-element"><div class="button-content button-content--center"><div class="button-text button-text--full"><div><p style="text-align:center;margin:0"><span style="color:#0b0b10;font-family:serif"><strong>Claim My $599 Coating ↗</strong></span></p></div></div></div></button></div></div></div></div>
+</div></div></form></div></section></div><!-- OPTIONAL: Add a GHL HTML element BELOW the native submit button.
+     Skip this block if the landing-page card already displays the contact note. -->
+<div class="pp-form-footer">
+  <p>Prefer to talk? <a href="tel:+17206054910">Call (720) 605-4910</a> or <a href="sms:+17206054910">text us</a>.</p>
+  <p>10475 Irma Dr, Unit 17 · Northglenn</p>
+</div>
+</main><p class="preview-note" role="status" id="preview-status">Design preview using local sample fields. No information is submitted or saved.</p><script>document.querySelector('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('preview-status').textContent='Preview only — nothing was sent. The live form uses GHL’s native submission.';});</script></body></html>
