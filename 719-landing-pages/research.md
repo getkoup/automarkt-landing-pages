@@ -15,3 +15,8 @@
 - Custom hostname `719.getkoup.com` is attached and ownership-verified by Vercel, with valid branded HTTPS verified. The user disabled Hostinger CDN, changed A `@` in the separate `719.getkoup.com` zone to `216.198.79.1` (TTL 1800), and removed the Hostinger AAAA record. The parent-zone CNAME recommendation had been masked by that child zone. The A address is Vercel's rank-1 recommendation for this project; the parent `getkoup.com` apex and nameservers were not changed. The assistant issued a managed certificate for this hostname only; no DNS records were modified by the assistant.
 - Existing independent Tint and PPF domains and their service-local thank-you pages were checked and remain working. The old thank-you files are still required by those independent projects and GitHub Pages.
 - 2026-10-15: at the user's request the two `vercel.json` redirects were removed. On `719.getkoup.com`, Tint and PPF now finish on their own `/tint/thank-you.html` and `/ppf/thank-you.html` (each links back to its own service page). The common `/thank-you.html` is no longer used by either service; it is left in place.
+
+## Base homepage tracking update — 2026-10-27
+- Checked the live base homepage and `/tint/`, `/ppf/`, `/auto-tint/`, `/cc/`, existing thank-you pages, and the independent 719 service subdomains. The base homepage alone was missing the supplied Google Ads/GTM tags.
+- At the user’s request, added Google Ads `AW-11364267259` and GTM `GTM-WHZLPNRQ` to the base homepage, with the noscript fallback in the body.
+- The original homepage content, assets, Elfsight widget, GHL popup, and controller were preserved byte-for-byte apart from insertion of the supplied tracking snippets. No service-page files were edited.

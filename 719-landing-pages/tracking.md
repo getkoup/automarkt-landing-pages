@@ -1,6 +1,6 @@
 # Shared Tint and PPF tracking
 
-- The restored original homepage retains its original GHL popup form `N4aOdMsxWmfjzy0Rh8Aq` and Elfsight reviews app `0480c4ff-4da0-4b1f-91d9-161f044242e1`, loaded by `https://elfsightcdn.com/platform.js`. Its recovered parent markup/controller contain no Google Ads tag; none was added during restoration. Its original form behavior is unchanged. The common service `thank-you.html` retains page configuration for the existing Google Ads tag `AW-11364267259`; loader: `https://www.googletagmanager.com/gtag/js?id=AW-11364267259`.
+- The restored original homepage retains its original GHL popup form `N4aOdMsxWmfjzy0Rh8Aq` and Elfsight reviews app `0480c4ff-4da0-4b1f-91d9-161f044242e1`, loaded by `https://elfsightcdn.com/platform.js`. Its recovered parent markup/controller originally had no Google Ads tag; the user-supplied Google Ads and GTM tags were added to the base homepage on 2026-10-27 as recorded below. Its original form behavior is unchanged. The common service `thank-you.html` retains page configuration for the existing Google Ads tag `AW-11364267259`; loader: `https://www.googletagmanager.com/gtag/js?id=AW-11364267259`.
 - Existing quote conversion destination remains `AW-11364267259/y0-PCOe_6eccEPvp86oq`. It is emitted by each new service page's unchanged `lead.js` after the validated GHL success notification, not by the restored homepage or common thank-you page.
 - Tint GHL form: `P0i3pnWcoKaPYcm7UuQe`, Tint (Google). PPF GHL form: `IF89UosER0YD5RTlnSGx`, PPf (Google). Both use location `u0zdecOvugwYiWUUOmTI` and the supplied LeadConnector embeds. No new tracking ID, pixel, or webhook was added.
 - Existing origin/source/form/location/fingerprint checks, one-submission guard, transaction fingerprint, conversion callback, and two-second navigation fallback are unchanged. Attribution forwarding and other service analytics are described in each service's `tracking.md`.
@@ -11,3 +11,9 @@
 - No real GHL test lead, synthetic message to a live embed, or live quote conversion was sent. Live GHL submission and Google Ads receipt remain unverified.
 - GTM container `GTM-WHZLPNRQ` (supplied 2026-10-15 via Google Doc; same container as `/cc`) added to the head (after `<meta charset>`) and body noscript of the common `thank-you.html`. Existing Ads pageview config unchanged.
 - 2026-10-15: at the user's request the two `vercel.json` redirects were removed. On `719.getkoup.com`, Tint and PPF now finish on their own `/tint/thank-you.html` and `/ppf/thank-you.html` (each links back to its own service page). The common `/thank-you.html` is no longer used by either service; it is left in place.
+
+## Base homepage tracking — 2026-10-27
+- User supplied and authorized Google Ads `AW-11364267259` and GTM `GTM-WHZLPNRQ` for `https://719.getkoup.com/`. These match the existing 719 service-page IDs.
+- Added the supplied asynchronous Google Ads loader/config and GTM bootstrap to the base `index.html` head, immediately after the charset. Added GTM’s hidden noscript iframe immediately after the opening body tag.
+- Only the base homepage required the snippets. Existing service and thank-you pages already have these tags, so no duplicate tags were added to them.
+- No explicit conversion event, new conversion label, or form behavior was added to the restored homepage.
