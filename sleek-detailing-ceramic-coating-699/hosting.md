@@ -32,6 +32,8 @@ This is Netlify's documented apex fallback address. Replace conflicting A/AAAA/A
 
 **Do not put this @ record in the parent getkoup.com zone.** The connected Hostinger session currently exposes only the parent domain and fcknbuild.com; direct access to the child-zone screen returns to the domain portfolio. DNS handoff therefore requires the account managing the existing Sleek hosting/child zone. No DNS edits have been made by the agent.
 
+The new page normalizes a bare /cc browser URL to /cc/ before loading relative assets, preserving query parameters and fragments. Netlify Pretty URLs remains disabled to retain the explicit thank-you.html route. Do not add a Netlify /cc → /cc/ redirect rule: Netlify normalizes both paths during matching and can loop.
+
 Netlify provisions HTTPS after DNS points to its site. Do not report the custom domain migrated until authoritative DNS, expected page content and HTTPS are verified.
 
 ## Publication workflow

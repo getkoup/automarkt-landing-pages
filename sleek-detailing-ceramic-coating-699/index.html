@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script>
+    // Netlify can serve the directory without a slash when Pretty URLs is off.
+    // Normalize before relative styles, assets and the form script are requested.
+    if (window.location.pathname === '/cc') {
+      const offerUrl = new URL(window.location.href);
+      offerUrl.pathname += '/';
+      window.location.replace(offerUrl.href);
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="10-Year Ceramic Coating only $699 at Sleek Detailing in Boynton Beach, FL. Deep gloss, easier washes, and lasting paint protection. Call or text (561) 236-6091.">
