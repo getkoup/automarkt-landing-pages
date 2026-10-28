@@ -1,0 +1,40 @@
+{
+  "index.html": {
+    "source": "https://sleek.getkoup.com/",
+    "bytes": 8255,
+    "sha256": "148bcfcee7008b1a26220e84c9d3c928028b930c08f17698ed38146b282596fe"
+  },
+  "logo.png": {
+    "source": "https://sleek.getkoup.com/logo.png",
+    "bytes": 9186,
+    "sha256": "4eeb885e0364d51ca5cfb9304f9ee43ea52969a5d4799125c287e118f424c9aa"
+  },
+  "styles.css": {
+    "source": "https://sleek.getkoup.com/styles.css",
+    "bytes": 20316,
+    "sha256": "10bd6a98927ad7409d20af47a697989e308f19665851676af8a066c24cf93771"
+  },
+  "video.css": {
+    "source": "https://sleek.getkoup.com/video.css",
+    "bytes": 309,
+    "sha256": "2cdbae3107a98aba313f98995a283ced4cf4975b520971b15e2f013631be6f17"
+  },
+  "form-popup.css": {
+    "source": "https://sleek.getkoup.com/form-popup.css",
+    "bytes": 1514,
+    "sha256": "dfc91664ab678991b234c7e1eb95fc493a5fbdf4bf5502d57a0bc7abb5d615a8"
+  },
+  "coating-video.mp4": {
+    "source": "https://sleek.getkoup.com/coating-video.mp4",
+    "bytes": 78327096,
+    "sha256": "26b3bfcb00d58c9518e8fcdbed3858fe5104f08ced04ade5e28b855ff1958203",
+    "published_bytes": 15719226,
+    "published_sha256": "bfa1dffbeb10996c384dceff6cbdee883229dd6555cae0736eef267f673f841c",
+    "optimization": "H.264 at 3 Mbps, same 1920x1080 dimensions and duration; original AAC audio copied; MP4 faststart."
+  },
+  "hero.jpg": {
+    "source": "https://sleek.getkoup.com/hero.jpg",
+    "bytes": 116640,
+    "sha256": "d5c3b01562b34dc9dc7f45823ad910268c1e744f5112fb57407d96704cb329e7"
+  }
+}

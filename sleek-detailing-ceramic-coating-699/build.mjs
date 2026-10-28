@@ -1,5 +1,5 @@
 // Package public static files only; research and GHL handoff files stay private to the repo.
-import { readFile, mkdir, rm, copyFile } from 'node:fs/promises';
+import { readFile, mkdir, rm, copyFile, readdir } from 'node:fs/promises';
 import { dirname, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -32,8 +32,15 @@ while (pending.length) {
 
 await rm(output, { recursive: true, force: true });
 for (const file of files) {
-  const destination = resolve(output, file);
+  const destination = resolve(output, 'cc', file);
   await mkdir(dirname(destination), { recursive: true });
   await copyFile(resolve(root, file), destination);
 }
-console.log(`Packaged ${files.size} public files in ${output}`);
+// Preserve the existing $499 homepage and its own assets at the shared domain root.
+const original = resolve(root, 'original-homepage');
+for (const entry of await readdir(original, { withFileTypes: true })) {
+  if (!entry.isFile()) throw new Error(`Unexpected homepage directory: ${entry.name}`);
+  await copyFile(resolve(original, entry.name), resolve(output, entry.name));
+}
+await copyFile(resolve(root, '_redirects'), resolve(output, '_redirects'));
+console.log(`Packaged ${files.size} ceramic-page files under cc/ plus the preserved homepage in ${output}`);
