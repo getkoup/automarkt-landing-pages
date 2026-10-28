@@ -1,0 +1,90 @@
+/* Visual refinement only. Reference grids, section order and CTA positions stay intact. */
+:root{--line:rgba(221,215,231,.15)}
+.sticky-header{background:linear-gradient(115deg,rgba(18,19,24,.82),rgba(8,10,13,.78));border-bottom:1px solid rgba(255,255,255,.13);box-shadow:0 8px 32px #00000016;backdrop-filter:blur(24px) saturate(135%);-webkit-backdrop-filter:blur(24px) saturate(135%)}
+.desktop-nav a{position:relative;padding-block:9px;transition:color .2s}
+.desktop-nav a::after{content:"";position:absolute;bottom:1px;left:0;right:0;height:1px;background:linear-gradient(90deg,#fc01a8,#00d7e8);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.desktop-nav a:hover::after,.desktop-nav a:focus-visible::after{transform:scaleX(1)}
+.header-call{padding:9px 14px 9px 9px;background:linear-gradient(120deg,#ffffff0d,#ffffff03);border:1px solid #ffffff21;border-radius:40px;box-shadow:inset 0 1px #ffffff0b;transition:border-color .2s,background .2s}
+.header-call:hover{border-color:#00d7e866;background:#00d7e80a}
+.header-call svg{background:#00d7e80a;border-color:#00d7e833}
+
+/* Restore the earlier photographic framing: the technician and reflective bodywork on the right. */
+.hero-backdrop{inset:0 0 0 auto;width:66%;height:100%;object-position:50% 46%;mask-image:none}
+.daylight-hero::before{background:linear-gradient(90deg,#08090b 4%,#08090bee 29%,#08090b68 57%,#08090b40 100%),linear-gradient(0deg,#08090be0,transparent 48%)}
+.daylight-hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 85% 5%,#fc01a80b,transparent 50%),radial-gradient(ellipse at 88% 100%,#00d7e80a,transparent 42%)}
+.hero-copy h1{font-weight:500;letter-spacing:-.055em;text-wrap:balance}
+.hero-copy h1>span{color:#15deec}
+.hero-copy>p{color:#c4c6ce}
+.hero-copy .eyebrow{color:#b4ecf0}
+.status-dot{background:#00d7e8;box-shadow:0 0 0 4px #00d7e810,0 0 15px #00d7e84d}
+.discount-offer>strong{font-weight:500;letter-spacing:-.065em;color:#15deec;text-shadow:0 6px 35px #00d7e80c}
+.discount-offer>strong>span{color:#fc01a8}
+.hero-assurance{color:#c2c5cd}
+.button{border-radius:7px;background:linear-gradient(115deg,#fc01a8,#e50099);border-color:#ffffff16;box-shadow:inset 0 1px #ffffff25,0 8px 25px #00000015;transition:background .2s,transform .2s,box-shadow .2s}
+.button:hover{background:linear-gradient(115deg,#ff23b6,#ec00a0);border-color:#ffffff35;box-shadow:inset 0 1px #ffffff30,0 8px 28px #fc01a820}
+.text-link{transition:color .2s,border-color .2s}
+.offer-card,.quote-actions{background:linear-gradient(135deg,rgba(50,52,61,.66),rgba(17,19,26,.8));border:1px solid #ffffff30;border-top:3px solid #fc01a8;border-radius:14px;box-shadow:0 22px 65px #00000038,inset 0 1px #ffffff12;backdrop-filter:blur(22px) saturate(125%);-webkit-backdrop-filter:blur(22px) saturate(125%)}
+.offer-card h2{font-weight:500;letter-spacing:-.045em}
+.offer-card>p,.quote-actions>p{color:#c0c4cf}
+.enquiry-form label{color:#e5e7ed;font-weight:500}
+.enquiry-form input{background:linear-gradient(120deg,#ffffff0d,#ffffff06);color:#fff;border:1px solid #ffffff2b;border-radius:7px;box-shadow:inset 0 1px 6px #0000000d;transition:border-color .2s,background .2s,box-shadow .2s}
+.enquiry-form input::placeholder{color:#aeb4c0}
+.enquiry-form input:focus{background:#ffffff10;border-color:#00d7e894;box-shadow:0 0 0 3px #00d7e80b;outline:none}
+.enquiry-form .form-note{color:#b4bac6}
+.dark-band{background:linear-gradient(110deg,#111319,#090b0f);border-color:#ffffff13}
+.studio-trust strong{color:#f3f6fb}
+.studio-trust small,.google-rating a{color:#acb4c3}
+
+.light-section{background:radial-gradient(ellipse at 0 0,#fc01a803,transparent 55%),#fcfcfd}
+.light-section,.reviews-section{--line:#e5e4eb;--text:#191b22;--muted:#646774;--accent:#b6007a}
+.section-heading h2,.story-copy h2,.quote-copy h2{font-weight:500;letter-spacing:-.05em}
+.benefit{background:linear-gradient(145deg,#fff,#fbfbfd);border-color:#e7e6ee;border-radius:12px;box-shadow:0 8px 28px #18203504,inset 0 1px #fff;transition:box-shadow .2s,border-color .2s}
+.benefit:hover{border-color:#e6c7dc;box-shadow:0 12px 32px #22263809}
+.benefit-icon svg{width:45px;height:45px;padding:9px;background:#fc01a808;border:1px solid #fc01a80b;border-radius:11px;stroke-width:1.5}
+.benefit:nth-child(odd) .benefit-icon svg{background:#00a7ba0a;border-color:#00a7ba0c;color:#007a89}
+.reason-number{display:inline-block;min-width:32px;padding:4px 9px;border:1px solid #b6007a10;background:#b6007a06;border-radius:6px;text-align:center}
+.reason h3{font-weight:500}
+.story-band{background:radial-gradient(ellipse at 95% 10%,#00d7e80b,transparent 55%),#0b0d12}
+.studio-statement{background:linear-gradient(120deg,#1b1e25,#12151c);border-color:#ffffff20;border-radius:16px;box-shadow:0 20px 65px #00000020}
+.story-copy .eyebrow{color:#91dfe5}
+.story-copy p{color:#b5bdcb}
+.portfolio-grid img{border-color:#ffffff1c;border-radius:10px;box-shadow:0 10px 30px #00000012}
+.portfolio-grid figcaption{color:#afb7c6}
+.reviews-section{background:radial-gradient(ellipse at 95% 5%,#00b8cd06,transparent 55%),radial-gradient(ellipse at 3% 100%,#fc01a806,transparent 60%),#f6f7fa}
+.review-version-cards .review-card{border-color:#e4e5ec;box-shadow:0 8px 30px #242d4805;background:linear-gradient(145deg,#fff,#fffffff2)}
+.review-carousel::before{background:linear-gradient(90deg,#f6f7fa99,#f6f7fa10)}
+.review-carousel::after{background:linear-gradient(270deg,#f6f7fa99,#f6f7fa10)}
+.review-summary{border-color:#dde1e9}
+.review-source{color:#9a0069}
+.quote-band{background:radial-gradient(ellipse at 10% 0,#fc01a80a,transparent 55%),#080a0e}
+.quote-layout{background:radial-gradient(ellipse at 0 100%,#00d7e807,transparent 60%),linear-gradient(125deg,#1b1d25,#10131b);border-color:#ffffff21;border-radius:16px;box-shadow:0 20px 60px #00000025}
+.quote-actions{background:linear-gradient(135deg,#ffffff08,#ffffff03);box-shadow:inset 0 1px #ffffff0a,0 10px 30px #00000012}
+.quote-actions h3{font-weight:500}
+.faq-list details{border-color:#e1e3e9}
+.faq-list summary{font-weight:500}
+.site-footer{background:radial-gradient(ellipse at 0 0,#fc01a804,transparent 50%),#080a0e;border-color:#ffffff14}
+.mobile-cta{background:linear-gradient(115deg,#14161eea,#0a0d13f5);border-color:#ffffff25;backdrop-filter:blur(22px) saturate(125%);-webkit-backdrop-filter:blur(22px) saturate(125%)}
+
+@media(max-width:1100px){.header-call{font-size:12px;padding-right:11px;gap:9px}}
+@media(max-width:760px){
+  .header-call{font-size:11px;padding:7px 10px 7px 7px;gap:7px}
+  .hero-backdrop{width:100%;height:560px;object-position:50% 32%;opacity:.78;mask-image:linear-gradient(#000 65%,transparent 100%)}
+  .daylight-hero::before{background:linear-gradient(90deg,#08090bf0,#08090b75 78%,#08090b45),linear-gradient(0deg,#08090b 35%,transparent 85%)}
+  .offer-card,.quote-actions{border-radius:12px;background:linear-gradient(135deg,#282d36d9,#131721eb)}
+  .hero-copy h1{letter-spacing:-.055em}
+  .benefit-icon svg{width:39px;height:39px;padding:7px;border-radius:9px}
+  .studio-statement,.quote-layout{border-radius:12px}
+  .portfolio-grid img{border-radius:7px}
+  .hero-buttons .button{border-radius:6px}
+}
+@media(max-width:380px){.header-call{font-size:10px;padding:9px 11px}.benefit{border-radius:9px}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.sticky-header{background:#101218f5}.offer-card,.quote-actions{background:#1c202a}.mobile-cta{background:#11151ef7}}
+
+/* Transparent logo: display the complete mark without blending or square-image cropping. */
+.brand img{width:148px;height:74px;object-fit:contain;mix-blend-mode:normal}.footer-grid .brand img{width:166px;height:83px;object-fit:contain;mix-blend-mode:normal}
+@media(max-width:850px){.brand img{width:138px;height:69px}}
+@media(max-width:760px){.brand img{width:126px;height:63px}.footer-grid .brand img{width:150px;height:75px}}
+@media(max-width:380px){.brand img{width:120px;height:60px}}
+
+/* Supplied native GHL embed: the surrounding panel supplies the glass treatment. */
+.ghl-form-frame{display:block;width:100%;max-width:100%;border:0;border-radius:7px;background:transparent;color-scheme:normal}.ghl-clip{min-width:0}
