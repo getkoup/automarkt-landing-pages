@@ -18,23 +18,25 @@ The original $499 homepage and all seven linked local files are captured under o
 
 The build publishes the original homepage at / and the isolated new $699 page at /cc/. The previous /thank-you.html URL redirects to /cc/thank-you.html. Do not replace the homepage with the $699 page again.
 
-## Active Hostinger DNS zone — important correction
+## Active DNS and HTTPS — October 28, 2026
 
-Authoritative DNS responses reveal a separate **sleek.getkoup.com** zone (SOA and NS at that name). The CNAME `sleek` in the parent getkoup.com zone is visible in Hostinger but does not control the delegated child apex. Do not repeatedly edit the parent CNAME expecting the active child zone to change.
+The user's screen recording confirmed the exact Hostinger setup: getkoup.com → DNS / Nameservers → Subdomains → sleek.getkoup.com has its own zone, with ALIAS @ pointing to sleek.getkoup.com.cdn.hstgr.net. The parent-zone CNAME sleek already pointed to the correct Netlify app, but the child-zone CDN record controlled the active host.
 
-In the **sleek.getkoup.com DNS zone**, point its apex to Netlify:
+**Correction to earlier advice:** removing the child zone is unnecessary and would risk its mail records. Disable Hostinger CDN for the Sleek website only, then replace its child-zone apex website record with Netlify's recommended ALIAS target:
 
-| Type | Name / host | Value | TTL |
+| Type | Name / host | Target | TTL |
 |---|---|---|---|
-| A | @ | 75.2.60.5 | Default / 300 |
+| ALIAS | @ | apex-loadbalancer.netlify.com | 300 |
 
-This is Netlify's documented apex fallback address. Replace conflicting A/AAAA/ALIAS records for the **child zone apex only**, as needed; leave parent getkoup.com apex, mail records, other hosts and nameservers intact. Hostinger CDN must not continue routing this hostname to its old origin after the migration.
+Hostinger's editor creates an ALIAS when CNAME is selected with @. Its CDN must be disabled first because it manages/locks the website records while enabled. If disabling CDN restores old A/AAAA records, replace only the child apex website records, retaining MX/TXT and unrelated hosts. A @ → 75.2.60.5 is Netlify's fallback, not the only valid configuration. **Never apply these @ changes in the parent getkoup.com zone.**
 
-**Do not put this @ record in the parent getkoup.com zone.** The connected Hostinger session currently exposes only the parent domain and fcknbuild.com; direct access to the child-zone screen returns to the domain portfolio. DNS handoff therefore requires the account managing the existing Sleek hosting/child zone. No DNS edits have been made by the agent.
+The user applied the DNS change. Verified authoritative/public DNS now resolves sleek.getkoup.com to Netlify load balancers 75.2.60.5 and 99.83.231.61. The old $499 homepage at /, new $699 page at /cc/, and /cc/thank-you.html all return HTTP 200 from Netlify. No DNS account edits were made by the agent.
+
+HTTPS initially failed hostname validation because Netlify had no custom-domain certificate. Requested a Netlify-managed certificate using provisionSiteTLSCertificate with only the site ID (no custom certificate/key). Certificate issuance is pending; do not claim HTTPS verified until normal certificate validation succeeds. Do not change DNS again merely because certificate provisioning follows the DNS migration.
 
 The new page normalizes a bare /cc browser URL to /cc/ before loading relative assets, preserving query parameters and fragments. Netlify Pretty URLs remains disabled to retain the explicit thank-you.html route. Do not add a Netlify /cc → /cc/ redirect rule: Netlify normalizes both paths during matching and can loop.
 
-Netlify provisions HTTPS after DNS points to its site. Do not report the custom domain migrated until authoritative DNS, expected page content and HTTPS are verified.
+Primary guidance: [Hostinger CDN DNS control](https://www.hostinger.com/support/hostinger-cdn-and-your-dns-records/), [Hostinger ALIAS editing](https://www.hostinger.com/support/10067986-how-to-manage-alias-records-at-hostinger/), [Netlify ALIAS target](https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/).
 
 ## Publication workflow
 
