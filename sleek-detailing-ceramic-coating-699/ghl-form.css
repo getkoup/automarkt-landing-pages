@@ -1,0 +1,119 @@
+/* SLEEK DETAILING — COMPLETE REPLACEMENT CSS.
+   Replace ALL CSS in the FORM's Advanced > Custom CSS with this file.
+   No <style> tags. Intended for the landing page's existing dark glass card.
+   Single-column native GHL form; no fields, consent or validation are hidden. */
+:root {
+  --sleek-pink: #fc01a8;
+  --sleek-cyan: #00d7e8;
+  --sleek-text: #f5f7fc;
+  --sleek-muted: #aeb4c0;
+  --sleek-font: "Satoshi", Arial, Helvetica, sans-serif;
+}
+html, body {
+  margin: 0 !important;
+  background: transparent !important;
+}
+.hl-app, .hl_form-builder--main, .ghl-form-wrap, #_builder-form {
+  background: transparent !important;
+  font-family: var(--sleek-font) !important;
+  color: var(--sleek-text);
+}
+.hl_form-builder--main { padding: 0 !important; }
+.ghl-form-wrap, #_builder-form {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#_builder-form .fields-container { margin: 0 !important; padding: 0 !important; gap: 0 !important; }
+#_builder-form .form-field-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  padding: 0 !important;
+  margin: 0 0 16px !important;
+}
+#_builder-form .form-builder--item { margin: 0 !important; padding: 0 !important; }
+#_builder-form label, #_builder-form .field-label {
+  color: #e5e7ed !important;
+  font-family: var(--sleek-font) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+}
+#_builder-form .field-label { display: block !important; margin-bottom: 8px !important; }
+#_builder-form .field-label * { color: inherit !important; font: inherit !important; }
+.ghl-form-wrap #_builder-form .form-builder--item input[type]:is([type="text"], [type="email"], [type="tel"], [type="number"], [type="url"], [type="date"], [type="search"]),
+.ghl-form-wrap #_builder-form .form-builder--item textarea,
+.ghl-form-wrap #_builder-form .form-builder--item select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 54px !important;
+  padding: 14px 12px !important;
+  color: #fff !important;
+  background-color: #252b35 !important;
+  background-image: linear-gradient(120deg, rgba(255,255,255,.025), rgba(255,255,255,0)) !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
+  border-radius: 7px !important;
+  box-shadow: inset 0 1px 6px rgba(0,0,0,.05) !important;
+  font: 400 16px/1.5 var(--sleek-font) !important;
+  caret-color: var(--sleek-cyan);
+}
+#_builder-form textarea { min-height: 110px !important; resize: vertical; }
+#_builder-form select option { background: #1c202a; color: #fff; }
+#_builder-form input::placeholder, #_builder-form textarea::placeholder {
+  color: var(--sleek-muted) !important;
+  font: inherit !important;
+  opacity: 1 !important;
+}
+.ghl-form-wrap #_builder-form .form-builder--item input:focus-visible,
+.ghl-form-wrap #_builder-form .form-builder--item textarea:focus-visible,
+.ghl-form-wrap #_builder-form .form-builder--item select:focus-visible {
+  border-color: var(--sleek-cyan) !important;
+  outline: 2px solid rgba(0,215,232,.65) !important;
+  outline-offset: 2px !important;
+}
+.ghl-form-wrap #_builder-form .form-builder--item input[type]:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0 1000px #252b35 inset !important;
+  caret-color: var(--sleek-cyan);
+}
+/* Keep GHL's phone country selector usable. */
+#_builder-form .iti { width: 100% !important; }
+.ghl-form-wrap #_builder-form .form-builder--item .iti--allow-dropdown:not(.iti--separate-dial-code):not(.iti--show-selected-dial-code) input[type="tel"] { padding-left: 54px !important; }
+.ghl-form-wrap #_builder-form .form-builder--item .iti--separate-dial-code input[type="tel"],
+.ghl-form-wrap #_builder-form .form-builder--item .iti--show-selected-dial-code input[type="tel"] { padding-left: 104px !important; }
+#_builder-form .iti__selected-dial-code { color: #fff !important; }
+.iti__country-list, .iti__dropdown-content { background: #1c202a !important; color: #fff !important; border-color: #444c5c !important; }
+.iti__country.iti__highlight, .iti__country:hover { background: #303846 !important; }
+#_builder-form input[type="checkbox"], #_builder-form input[type="radio"] { accent-color: var(--sleek-pink); }
+#_builder-form .form-builder--btn-submit { margin-top: 8px !important; }
+#_builder-form button[type="submit"] {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 54px !important;
+  height: auto !important;
+  padding: 15px 18px !important;
+  background: linear-gradient(115deg, #fc01a8, #e50099) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.16) !important;
+  border-radius: 7px !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.2), 0 8px 25px rgba(0,0,0,.12) !important;
+  font: 700 14px/1.5 var(--sleek-font) !important;
+  text-align: center !important;
+  white-space: normal !important;
+  cursor: pointer;
+}
+#_builder-form button[type="submit"] .button-text,
+#_builder-form button[type="submit"] .button-text * { color: inherit !important; font: inherit !important; }
+#_builder-form button[type="submit"] .button-text p { margin: 0 !important; }
+#_builder-form button[type="submit"]:hover { background: linear-gradient(115deg, #ff23b6, #ec00a0) !important; }
+#_builder-form button[type="submit"]:focus-visible { outline: 2px solid var(--sleek-cyan) !important; outline-offset: 3px !important; }
+#_builder-form button[type="submit"]:disabled { opacity: .65 !important; cursor: wait; }
+#_builder-form .error, #_builder-form .error-message, #_builder-form .hl-error, #_builder-form [role="alert"] { color: #ffb5c5 !important; font-size: 12px !important; }
+#_builder-form a { color: var(--sleek-cyan) !important; text-underline-offset: 3px; }
