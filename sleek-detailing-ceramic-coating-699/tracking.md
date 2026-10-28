@@ -11,7 +11,7 @@
 - Native GHL submission remains intact. A page-local `form-submit.js` listens for the verified frame-specific success notification and redirects to `thank-you.html` only after successful submission. No conversion event or analytics tag added.
 - Replaces the earlier local SMS enquiry forms. Their form handlers were removed.
 
-No Google Ads, GTM, Meta pixel IDs, or separate webhook supplied or installed. No tracking copied from the reference client. The GHL script manages its own native embed messaging and any configured consent behavior.
+No Google Ads, GTM, or separate webhook supplied or installed. The user-supplied Meta Pixel below is installed only on the $699 /cc/ landing page. No tracking copied from the reference client. The GHL script manages its own native embed messaging and any configured consent behavior.
 
 Contact links use the verified business phone +15612366091.
 Google review source: https://share.google/SOXD44eWDbUgjm9hs (external attribution link, not a tracking pixel).
@@ -25,3 +25,11 @@ Google review source: https://share.google/SOXD44eWDbUgjm9hs (external attributi
 
 ## Existing homepage preserved at /
 The user requested retaining the existing $499 homepage while the new page moves to /cc/. The captured original homepage retains its own native GHL form IS1aHYqxRZLX12wHCuQe (“Ceramic Coating Form - Website”) and single native form_embed.js loader. This is the existing same-client homepage integration, not a copied client tracking ID. The $699 page and its success handler remain isolated under /cc/. No analytics IDs were added.
+
+## User-supplied Meta Pixel — October 29, 2026
+- Pixel ID: `2308601206622761`.
+- Scope: the $699 ceramic coating landing page at `https://sleek.getkoup.com/cc/` (`index.html` in this folder, published to `dist/cc/index.html`).
+- Supplied bootstrap is in the document head, loading `https://connect.facebook.net/en_US/fbevents.js` asynchronously, initializing this Pixel once and sending the supplied `PageView` event.
+- Supplied noscript image is in the body: `https://www.facebook.com/tr?id=2308601206622761&ev=PageView&noscript=1`.
+- The original $499 homepage and thank-you page do not include this Pixel. No Lead/conversion event, advanced matching, or other tracking ID was added.
+- Earlier notes stating no analytics IDs were supplied describe the pre-Pixel version and are superseded by this section.
