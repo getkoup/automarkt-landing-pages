@@ -114,3 +114,6 @@ Thank-you validation: a Node VM harness exercised both form frames, confirmed ex
 
 ## Netlify hosting
 User requested Netlify publication, disabled platform branding and sleek.getkoup.com. Created its own Netlify project, assigned the custom domain and verified built_with_badge_enabled=false. See hosting.md for the project, manual deployment workflow and exact external DNS record. Existing Hostinger DNS still needs the user's change; no DNS account edits or plan upgrades made.
+
+## Shared domain: preserve homepage and add /cc/
+User clarified that sleek.getkoup.com already has a $499 ceramic coating homepage and requested the new $699 page at /cc/. Captured its public HTML/CSS/logo/poster/video without changing copy, layout or form integration. The video retains 1920x1080, the same duration and copied AAC audio, with lighter H.264 web encoding. Build output maps original-homepage/ to the deployment root and this page to cc/. New page canonical/OG URL is https://sleek.getkoup.com/cc/. Hostinger parent DNS already contains a Netlify CNAME, but authoritative DNS reports a separate sleek.getkoup.com zone; that child zone controls the active host. See hosting.md.

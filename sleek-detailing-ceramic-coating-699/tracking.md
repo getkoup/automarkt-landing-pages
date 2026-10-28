@@ -22,3 +22,6 @@ Google review source: https://share.google/SOXD44eWDbUgjm9hs (external attributi
 - Source checked against the current public GHL widget bundle: after a successful server response, the widget emits `["set-sticky-contacts", "embedded_iframe_<iframe-id>", "<iframe-id>", "f6fUue4LeG1hdz4hZJeO", "<fingerprint>"]`.
 - Requires exact origin https://api.leadconnectorhq.com, matching source iframe window, this form ID, matching storage key/current iframe ID, correct location ID, and a nonempty fingerprint. Ignores the separate `_ud` contact-JSON message, ordinary loads/resizes, errors and unrelated frames. Duplicate notifications redirect once.
 - Thank-you page is noindex/nofollow, contains no form embed or analytics/pixels, and does not emit a conversion when visited directly. No customer data is added to its URL.
+
+## Existing homepage preserved at /
+The user requested retaining the existing $499 homepage while the new page moves to /cc/. The captured original homepage retains its own native GHL form IS1aHYqxRZLX12wHCuQe (“Ceramic Coating Form - Website”) and single native form_embed.js loader. This is the existing same-client homepage integration, not a copied client tracking ID. The $699 page and its success handler remain isolated under /cc/. No analytics IDs were added.
