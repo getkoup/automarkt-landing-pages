@@ -20,3 +20,9 @@
 - Checked the live base homepage and `/tint/`, `/ppf/`, `/auto-tint/`, `/cc/`, existing thank-you pages, and the independent 719 service subdomains. The base homepage alone was missing the supplied Google Ads/GTM tags.
 - At the user’s request, added Google Ads `AW-11364267259` and GTM `GTM-WHZLPNRQ` to the base homepage, with the noscript fallback in the body.
 - The original homepage content, assets, Elfsight widget, GHL popup, and controller were preserved byte-for-byte apart from insertion of the supplied tracking snippets. No service-page files were edited.
+
+## Shared thank-you page — 2026-10-29
+
+- At the user's request, successful submissions from `/cc/`, `/tint/`, and `/ppf/` now finish at `https://719.getkoup.com/thank-you.html`.
+- The collection's `vercel.json` temporarily redirects the three service-local `thank-you.html` destinations to the existing common page with HTTP 307. This supersedes the 2026-10-15 service-local routing decision above.
+- Service submission handlers and confirmation files remain available for the separately hosted service projects. The collection's routing applies only when this folder is the Vercel project root.

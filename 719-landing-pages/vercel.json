@@ -3,6 +3,13 @@
   "trailingSlash": true,
   "routes": [
     {
+      "src": "/(?:cc|tint|ppf)/thank-you\\.html",
+      "headers": {
+        "Location": "/thank-you.html"
+      },
+      "status": 307
+    },
+    {
       "src": "/ceramic(?:/.*)?",
       "status": 404
     }

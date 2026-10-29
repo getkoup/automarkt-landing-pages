@@ -17,3 +17,9 @@
 - Added the supplied asynchronous Google Ads loader/config and GTM bootstrap to the base `index.html` head, immediately after the charset. Added GTM’s hidden noscript iframe immediately after the opening body tag.
 - Only the base homepage required the snippets. Existing service and thank-you pages already have these tags, so no duplicate tags were added to them.
 - No explicit conversion event, new conversion label, or form behavior was added to the restored homepage.
+
+## Shared thank-you routing — 2026-10-29
+
+- At the user's request, `/cc/thank-you.html`, `/tint/thank-you.html`, and `/ppf/thank-you.html` now return HTTP 307 to `/thank-you.html` in the shared Vercel project. This supersedes the 2026-10-15 routing decision above.
+- All three services retain their existing validated GHL success checks, conversion destination, submission guard, conversion callback, and two-second navigation fallback. The redirect runs after those handlers request their service-local confirmation URL.
+- The common thank-you page and its existing Ads/GTM snippets are unchanged; no new tracking IDs or explicit conversion events were added. Separately hosted service projects retain their local confirmations.
