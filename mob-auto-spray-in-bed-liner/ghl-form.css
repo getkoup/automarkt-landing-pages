@@ -3,8 +3,8 @@
    No <style> tags. Intended for the landing page's existing dark glass card.
    Single-column native GHL form; no fields, consent or validation are hidden. */
 :root {
-  --mob-pink: #df3026;
-  --mob-cyan: #ff867a;
+  --mob-red: #d10000;
+  --mob-focus: #ff737d;
   --mob-text: #f5f7fc;
   --mob-muted: #aeb4c0;
   --mob-font: Arial, Helvetica, sans-serif;
@@ -62,7 +62,7 @@ html, body {
   border-radius: 7px !important;
   box-shadow: inset 0 1px 6px rgba(0,0,0,.05) !important;
   font: 400 16px/1.5 var(--mob-font) !important;
-  caret-color: var(--mob-cyan);
+  caret-color: var(--mob-focus);
 }
 #_builder-form textarea { min-height: 110px !important; resize: vertical; }
 #_builder-form select option { background: #202725; color: #fff; }
@@ -74,14 +74,14 @@ html, body {
 .ghl-form-wrap #_builder-form .form-builder--item input:focus-visible,
 .ghl-form-wrap #_builder-form .form-builder--item textarea:focus-visible,
 .ghl-form-wrap #_builder-form .form-builder--item select:focus-visible {
-  border-color: var(--mob-cyan) !important;
-  outline: 2px solid rgba(255,134,122,.65) !important;
+  border-color: var(--mob-focus) !important;
+  outline: 2px solid rgba(236,28,45,.65) !important;
   outline-offset: 2px !important;
 }
 .ghl-form-wrap #_builder-form .form-builder--item input[type]:-webkit-autofill {
   -webkit-text-fill-color: #fff !important;
   -webkit-box-shadow: 0 0 0 1000px #293131 inset !important;
-  caret-color: var(--mob-cyan);
+  caret-color: var(--mob-focus);
 }
 /* Keep GHL's phone country selector usable. */
 #_builder-form .iti { width: 100% !important; }
@@ -91,7 +91,7 @@ html, body {
 #_builder-form .iti__selected-dial-code { color: #fff !important; }
 .iti__country-list, .iti__dropdown-content { background: #202725 !important; color: #fff !important; border-color: #4a5951 !important; }
 .iti__country.iti__highlight, .iti__country:hover { background: #35413b !important; }
-#_builder-form input[type="checkbox"], #_builder-form input[type="radio"] { accent-color: var(--mob-pink); }
+#_builder-form input[type="checkbox"], #_builder-form input[type="radio"] { accent-color: var(--mob-red); }
 #_builder-form .form-builder--btn-submit { margin-top: 8px !important; }
 #_builder-form button[type="submit"] {
   box-sizing: border-box !important;
@@ -99,7 +99,7 @@ html, body {
   min-height: 54px !important;
   height: auto !important;
   padding: 15px 18px !important;
-  background: linear-gradient(115deg, #df3026, #c82b23) !important;
+  background: linear-gradient(115deg, #d10000, #b50000) !important;
   color: #fff !important;
   border: 1px solid rgba(255,255,255,.16) !important;
   border-radius: 7px !important;
@@ -112,8 +112,8 @@ html, body {
 #_builder-form button[type="submit"] .button-text,
 #_builder-form button[type="submit"] .button-text * { color: inherit !important; font: inherit !important; }
 #_builder-form button[type="submit"] .button-text p { margin: 0 !important; }
-#_builder-form button[type="submit"]:hover { background: linear-gradient(115deg, #ed3c30, #d12d24) !important; }
-#_builder-form button[type="submit"]:focus-visible { outline: 2px solid var(--mob-cyan) !important; outline-offset: 3px !important; }
+#_builder-form button[type="submit"]:hover { background: linear-gradient(115deg, #ec1c2d, #bd0000) !important; }
+#_builder-form button[type="submit"]:focus-visible { outline: 2px solid var(--mob-focus) !important; outline-offset: 3px !important; }
 #_builder-form button[type="submit"]:disabled { opacity: .65 !important; cursor: wait; }
-#_builder-form .error, #_builder-form .error-message, #_builder-form .hl-error, #_builder-form [role="alert"] { color: #ffb4aa !important; font-size: 12px !important; }
-#_builder-form a { color: var(--mob-cyan) !important; text-underline-offset: 3px; }
+#_builder-form .error, #_builder-form .error-message, #_builder-form .hl-error, #_builder-form [role="alert"] { color: #ffb8be !important; font-size: 12px !important; }
+#_builder-form a { color: var(--mob-focus) !important; text-underline-offset: 3px; }
