@@ -4,7 +4,7 @@ User requested Netlify hosting and confirmed **mob.getkoup.com**.
 
 - Netlify project: `mob-auto-spray-in-bed-liner`, team `sachita007`.
 - Site ID: `54e042df-4679-43f2-a90c-2b91d3b9be97`.
-- Production deploy: `6ae4b1db2ada8244843a2b87`, state `ready`.
+- Initial production deploy: `6ae4b1db2ada8244843a2b87`, state `ready`; subsequent updates use the same site.
 - Powered by Netlify badge: disabled and verified through the site API.
 - Live Netlify URL: https://mob-auto-spray-in-bed-liner.netlify.app/
 - Custom hostname: https://mob.getkoup.com/
@@ -31,7 +31,7 @@ Primary documentation: [Netlify external DNS](https://docs.netlify.com/manage/do
 
 ## Publication verification
 
-Published the public-only package after PR #30 merged. Netlify reports production state ready. An independent rendered public-page inspection showed both native GHL inline frames visible at 387px height, with Full Name, Phone, Car Details and Request Free Quote. No test lead was sent. Custom-domain DNS/HTTPS remain pending the user’s Hostinger record.
+Published the public-only package after PR #30 merged. Netlify reports production state ready. An independent rendered public-page inspection showed both native GHL inline frames visible at 387px height, with Full Name, Phone, Car Details and Request Free Quote. No test lead was sent. The user’s DNS now points to Netlify. On October 30, 2026, `https://mob.getkoup.com/` returned HTTP 200 with a verified Let’s Encrypt certificate covering `mob.getkoup.com` (expires January 28, 2027); HTTP redirects to HTTPS.
 
 Production deploy command, from this folder:
 
