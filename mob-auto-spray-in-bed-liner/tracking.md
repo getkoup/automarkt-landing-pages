@@ -9,3 +9,6 @@
 - Call buttons: tel:+18326231662.
 - No Google Ads, GTM, Analytics or Meta tracking ID supplied; none installed.
 - No test lead or ad conversion has been submitted. Rendering checks do not verify CRM delivery.
+
+## Public rendering verification
+Both inline native forms were verified visible on the production Netlify site after native initialization and automatic height adjustment. No test lead or conversion was submitted. Custom-domain DNS remains the user’s step.

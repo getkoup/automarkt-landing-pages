@@ -16,5 +16,7 @@
 
 Message format confirmed in the public widget runtime. Handler logic tested locally using synthetic events, without making a CRM submission. The widget also has its own configured short redirect; no GHL account setting was changed.
 
-## Validation limits
-Direct native widget rendering verified; the local preview browser stalled at about:blank for even a minimal cross-origin iframe, so an embedded rendering check must be repeated on the published page. No real test lead or conversion has been sent.
+## Verification
+Direct native widget rendering and the successful-submit message format were verified. The public Netlify page was independently rendered after deployment: both inline forms were visible, with native fields/button, dark/red styling and an automatically adjusted 387px frame height. The initial local inspection browser stalled on cross-origin frames; independent public-host rendering confirmed the integration works.
+
+No real test lead or conversion has been sent, so CRM delivery is not claimed as tested.

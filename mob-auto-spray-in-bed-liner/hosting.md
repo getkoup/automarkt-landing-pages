@@ -2,8 +2,11 @@
 
 User requested Netlify hosting and confirmed **mob.getkoup.com**.
 
-- Planned Netlify project: `mob-auto-spray-in-bed-liner`, team `sachita007`.
-- Planned Netlify URL: https://mob-auto-spray-in-bed-liner.netlify.app/
+- Netlify project: `mob-auto-spray-in-bed-liner`, team `sachita007`.
+- Site ID: `54e042df-4679-43f2-a90c-2b91d3b9be97`.
+- Production deploy: `6ae4b1db2ada8244843a2b87`, state `ready`.
+- Powered by Netlify badge: disabled and verified through the site API.
+- Live Netlify URL: https://mob-auto-spray-in-bed-liner.netlify.app/
 - Custom hostname: https://mob.getkoup.com/
 - Manual deployment after source reaches `main` through a GitHub PR.
 - No Hostinger DNS changes are made by the agent; the user requested records to add.
@@ -25,3 +28,14 @@ Custom-domain HTTPS can be verified only after the DNS points to Netlify. The Ne
 Run `node build.mjs` from this folder. `dist/` includes only index/thank-you HTML, page CSS/scripts, referenced images/fonts including responsive srcset variants, and font licenses. Research, CRM integration notes, native GHL Custom CSS, and local inspection files are excluded.
 
 Primary documentation: [Netlify external DNS](https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/), [Hostinger ALIAS records](https://www.hostinger.com/support/10067986-how-to-manage-alias-records-at-hostinger/).
+
+## Publication verification
+
+Published the public-only package after PR #30 merged. Netlify reports production state ready. An independent rendered public-page inspection showed both native GHL inline frames visible at 387px height, with Full Name, Phone, Car Details and Request Free Quote. No test lead was sent. Custom-domain DNS/HTTPS remain pending the user’s Hostinger record.
+
+Production deploy command, from this folder:
+
+```sh
+node build.mjs
+netlify deploy --prod --no-build --dir dist --site 54e042df-4679-43f2-a90c-2b91d3b9be97
+```
