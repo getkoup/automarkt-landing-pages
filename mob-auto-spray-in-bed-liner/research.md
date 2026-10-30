@@ -20,7 +20,7 @@ A tough, fitted finish for real truck use. Explain protection against scratches/
 User confirmed: “i will dd ghl form letter”. Provide a styled integration slot and visible call fallback. No working lead submission, no false success state, and no borrowed form IDs. Do not launch ads until GHL and conversion tracking are supplied and verified.
 
 ## Design
-Premium automotive look, charcoal, warm white and accent color to be informed by the official logo where retrievable. Official logo could not be retrieved (Cloudflare 403); the draft uses a plain text MOB wordmark with a provisional red accent, not a verified recreation of the official logo. Replace with client-supplied logo before launch. Mobile-first, prominent offer and tap-to-call, simple page navigation, focused service education, FAQ and quote panel. All assets local to this folder.
+Premium automotive look, charcoal, warm white and accent color to be informed by the official logo where retrievable. Official white/transparent logo is now stored unchanged in `assets/mob-official-logo.png`, replacing the earlier temporary text wordmark. Primary red matches the official website (#D10000), with secondary red #EC1C2D and black/white neutral surfaces. Mobile-first, prominent offer and tap-to-call, simple page navigation, focused service education, FAQ and quote panel. All assets local to this folder.
 
 ## Generated asset
 Built-in image_gen used. Hero is illustrative AI-generated marketing imagery, not a MOB installation photograph. Optimized page asset: `assets/truck-bed-hero.webp`.
@@ -66,3 +66,9 @@ Final prompt: “Premium photorealistic commercial automotive photograph of a gr
 - Existing repository Pages source confirmed as `main`, root `/`, HTTPS enabled. No hosting configuration change needed.
 - Target: https://getkoup.github.io/automarkt-landing-pages/mob-auto-spray-in-bed-liner/
 - This is a review/verification build. Forms remain clearly labeled previews pending MOB’s native GHL embed; no CRM submission or ad conversion is enabled.
+
+## Official logo and brand correction — 2026-10-30
+- User requested the actual brand logo and matching website colors. Retrieved the original PNG from https://www.mobautoboutique.com/Portals/19/logo.png through the loaded official website’s browser session, preserving its original bytes and transparency (340 × 216).
+- Source website branding: primary red #D10000, secondary red #EC1C2D, white/black. Kept the dark glass card treatment and large up to 30% off hero offer.
+- Replaced the temporary text wordmark in the header, footer, and thank-you page. The original logo also supplies the favicon. Updated native GHL custom CSS to the same red palette.
+- Verified original logo loaded at 340 × 216, preserving its aspect ratio, on desktop and 390px mobile. No horizontal overflow. Header/footer/thank-you use the original local PNG.
