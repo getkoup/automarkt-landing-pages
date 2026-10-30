@@ -13,8 +13,8 @@ Requested hostname: https://blacksheep.getkoup.com/
 - User approved publication and confirmed adding DNS. Authoritative DNS verified October 30, 2026.
 - Powered by Netlify badge disabled using the supported project setting, without a plan change.
 - Manual deployment of merged, synced `main`, through the GitHub PR workflow.
-- Production deploy: `6ae4a71b80e632901b51babe`, state `ready`, published October 30, 2026 at 14:18 UTC.
-- Deployed from merged, synced main commit `b4b1f6ddf218553e7bf7b48a162ad8a9a1f8f5a6` after PR #29 passed all checks and merged.
+- Initial production deploy: `6ae4a71b80e632901b51babe`, state `ready`, published October 30, 2026 at 14:18 UTC.
+- Initial release deployed from merged, synced main commit `b4b1f6ddf218553e7bf7b48a162ad8a9a1f8f5a6` after PR #29 passed all checks and merged.
 - Deploy dashboard: https://app.netlify.com/projects/black-sheep-ceramic-tint-299/deploys/6ae4a71b80e632901b51babe
 - Verified default Netlify HTTPS URL and custom-domain HTTP return 200 with Black Sheep content. Custom-domain HTTPS now returns 200 with normal certificate validation; the earlier issuance delay has cleared.
 

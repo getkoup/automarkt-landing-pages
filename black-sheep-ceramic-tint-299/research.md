@@ -31,7 +31,7 @@ Research date: October 30, 2026.
 
 ## Delivery and integration
 - Static HTML/CSS/JS; no build required.
-- No tracking supplied for Black Sheep; no tracking copied from DetailNow.
+- User-supplied GTM `GTM-TVXZVFZT` installed; no tracking copied from DetailNow.
 - User requested GitHub Pages publication. Native Black Sheep form `5peUzH16pwlf56CJZQhz` integrated into both existing enquiry cards.
 - Dummy forms and their preview submit handler removed after the user supplied the native GHL embed. Native form submission and success configuration retained.
 
@@ -96,3 +96,10 @@ Research date: October 30, 2026.
 - Local source filename, checksum, optimized checksum and display order are recorded in assets/sources.json.
 - Original publication PR #29 and deploy are recorded above. Custom-domain HTTPS now returns HTTP 200 with normal certificate verification; this supersedes the earlier pending-SSL notes. Corrected page will be redeployed from merged main.
 - Corrected-page QA: Chrome at 390px and 1440px verified every call and map link, absence of old Sunnyvale/phone/address text, all image loads, both native GHL frames and no horizontal overflow or page errors. No lead submitted.
+
+## User-supplied GTM — October 30, 2026
+- Added the exact supplied container ID `GTM-TVXZVFZT` to this page only, with its standard head script and body noscript fallback.
+- Corrected the supplied malformed closing comment to valid HTML. Noscript is immediately after `<body>`, per Google’s install instructions.
+- Logged the container and source in tracking.md. No additional conversion code, other-client tracking, account changes or lead submissions.
+- Publication follows the normal PR-to-main and Netlify manual deployment workflow.
+- Browser verification passed: GTM container HTTP 200, one loader request, one startup event, container global present, body noscript first, and both native GHL forms loaded without page errors/overflow. Individual tag conversions were not triggered or tested.
