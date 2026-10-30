@@ -50,3 +50,7 @@ netlify deploy --prod --no-build --dir dist --site 3ff56b19-cdcb-4b33-8ce9-af1e2
 - Chrome desktop (1440px) and mobile (390px): both supplied native GHL forms load and resize; logo and vehicle images load; no horizontal overflow or page errors.
 - No lead submitted. GHL native submission and success settings remain unchanged.
 - Local main was fast-forwarded to the merged origin/main before building and uploading. No direct main push or protection bypass.
+
+## Custom-domain HTTPS verified
+
+Normal TLS validation succeeds for `blacksheep.getkoup.com`, and HTTPS returns HTTP 200. Certificate issuer: Let's Encrypt YE2. Valid through January 28, 2027, 13:27:37 UTC; subject alternative name includes only the requested hostname. No TLS warnings bypassed. The earlier provisioning retry delay has cleared.

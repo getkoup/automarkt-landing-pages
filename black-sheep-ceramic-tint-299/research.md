@@ -95,3 +95,4 @@ Research date: October 30, 2026.
 - Replaced exactly the four gallery images with the user’s four local PNGs in supplied order (Audi, Porsche, Bronco, Corvette), optimized as WebP without generating imagery. Original logo and other page photos retained.
 - Local source filename, checksum, optimized checksum and display order are recorded in assets/sources.json.
 - Original publication PR #29 and deploy are recorded above. Custom-domain HTTPS now returns HTTP 200 with normal certificate verification; this supersedes the earlier pending-SSL notes. Corrected page will be redeployed from merged main.
+- Corrected-page QA: Chrome at 390px and 1440px verified every call and map link, absence of old Sunnyvale/phone/address text, all image loads, both native GHL frames and no horizontal overflow or page errors. No lead submitted.
