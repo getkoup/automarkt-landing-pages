@@ -1,0 +1,35 @@
+[
+  {
+    "file": "black-sheep-original-logo.jpg",
+    "url": "https://cdn.prod.website-files.com/676954c8d515a4b05d7d0982/67695718753ddb77f033d9c9_127164686_1016014998910168_2407427657024703737_n.jpg",
+    "sha256": "86d92a1b9c91d9fa9bd64b552696e90bd8099209bc1214f9e3c2a7ab447771ae"
+  },
+  {
+    "file": "website-vehicle-1.jpg",
+    "url": "https://cdn.prod.website-files.com/676954c8d515a4b05d7d0982/676954c8d515a4b05d7d0a51_407509593_850764530167678_8351851224194750153_n.jpg",
+    "sha256": "ccc0bf52fabb9b29b96c45cb43d58ab2e702b9725ed94cb1700696057dddde9d",
+    "optimized_file": "black-sheep-vehicle-1.webp",
+    "optimized_sha256": "68cc419d7a56f3b5d1cdbc8584f0d5f2582818c9a6d508d9aad63cc1cd249dd6"
+  },
+  {
+    "file": "website-vehicle-2.jpg",
+    "url": "https://cdn.prod.website-files.com/676954c8d515a4b05d7d0982/678d42c326d221b55f5a3484_fer.jpg",
+    "sha256": "6b29b7db4c760c33180f027c29fb200bb661aaaec2c6324bc194ed882483814c",
+    "optimized_file": "black-sheep-vehicle-2.webp",
+    "optimized_sha256": "08f4c1acb4ad5e70b9b118248e08ea926245f7656bac3e167459736c4f7a57b2"
+  },
+  {
+    "file": "website-vehicle-3.jpg",
+    "url": "https://cdn.prod.website-files.com/676954c8d515a4b05d7d0982/676bace820f18c880f208c50_240726766_244505317554882_1965881959529835952_n.jpg",
+    "sha256": "3abbb423d23c1d70c9de0b2748ba1d12ebf844aa633bd9a3a1f0cd177923796f",
+    "optimized_file": "black-sheep-vehicle-3.webp",
+    "optimized_sha256": "5c4f820f5613e58cf87d565dcf84cffe5dceb3c7a786859dab95f7b5db27556e"
+  },
+  {
+    "file": "website-vehicle-4.jpg",
+    "url": "https://cdn.prod.website-files.com/676954c8d515a4b05d7d0982/676bacea61721719f3031f8c_272722233_343060000824105_4883727123234381661_n.jpg",
+    "sha256": "7c8a44d1746de84e8c70ec0c1da00c253d9fb1bc6f92fd41185ddcf8c24862dc",
+    "optimized_file": "black-sheep-vehicle-4.webp",
+    "optimized_sha256": "fd2401aa27213901f0a057803892a879a6077d0d99bb8fc45d637755f63a9ea7"
+  }
+]
