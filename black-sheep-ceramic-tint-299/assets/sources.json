@@ -31,5 +31,37 @@
     "sha256": "7c8a44d1746de84e8c70ec0c1da00c253d9fb1bc6f92fd41185ddcf8c24862dc",
     "optimized_file": "black-sheep-vehicle-4.webp",
     "optimized_sha256": "fd2401aa27213901f0a057803892a879a6077d0d99bb8fc45d637755f63a9ea7"
+  },
+  {
+    "file": "gallery-audi.webp",
+    "source": "User-supplied local image, October 30, 2026",
+    "source_filename": "e09e6936-4a08-403d-bfe5-4a8d70611873.png",
+    "source_sha256": "0160bc560f0966384894110d4f1f7c482f00d88e98ed15685cadcfddd51a116a",
+    "sha256": "b0cb3859019408f908974a6ca41229c3f2ef920cf10027da6611dc0b4d249702",
+    "gallery_position": 1
+  },
+  {
+    "file": "gallery-porsche.webp",
+    "source": "User-supplied local image, October 30, 2026",
+    "source_filename": "c47bf409-764a-4236-b1d2-0556734f8ca2.png",
+    "source_sha256": "9c7f12639eb2f609b9d57126dddc9b5c0b807172706784a8290a5ed6e45146ee",
+    "sha256": "56d9a5daf8828fdd59d1933139ed8809e2b5403574914346180c4733e8fdcc4c",
+    "gallery_position": 2
+  },
+  {
+    "file": "gallery-bronco.webp",
+    "source": "User-supplied local image, October 30, 2026",
+    "source_filename": "bcaf35e3-3571-4653-8bdd-ed6bd009fbad.png",
+    "source_sha256": "6d0b1b4a9ad17119cc5b7f31b2668e4be060fae5ae6bbb375b7a2ff32cf06609",
+    "sha256": "4f8eaa6c8f8ff5acb959162e1b2e30e09117d99a74cadd19b5851bad758fe926",
+    "gallery_position": 3
+  },
+  {
+    "file": "gallery-corvette.webp",
+    "source": "User-supplied local image, October 30, 2026",
+    "source_filename": "ac0f402f-91fd-41c8-b985-299449366427.png",
+    "source_sha256": "f34e774a08673b962e350ad61f9160cac0e2c3f969e53fff9e4c3624106a4e39",
+    "sha256": "921c34d9489445cc37ff4fa32f395139aa2458005cc61e1fd4d0d19e9f3f3fd2",
+    "gallery_position": 4
   }
 ]
