@@ -12,7 +12,7 @@
 - GHL form: `5peUzH16pwlf56CJZQhz`, “Ceramic Tint (Google Ads) - $299”.
 - URL: https://api.leadconnectorhq.com/widget/form/5peUzH16pwlf56CJZQhz
 - The supplied sticky-sidebar configuration is adapted to INLINE layout inside both existing quote cards, with unique iframe IDs. Native `form_embed.js` is included once and handles frame resizing.
-- Cookie-consent attributes retained. No lead submission test performed; native GHL success/redirect settings retained.
+- Cookie-consent attributes retained. Native validation and submission are retained; the landing page now redirects on the verified successful-submit message. No real test lead submitted.
 - Custom CSS source: `ghl-form.css`; changes inside GHL must be published there to affect the iframe.
 - Direct call links: `tel:+15103916010` (510-391-6010), explicitly supplied by the user; supersedes the website’s previous number.
 - Google business link supplied by user: https://share.google/WNLOI7KssYVDi9VTj
@@ -25,3 +25,13 @@
 - Chrome local check: exactly one `gtm.js?id=GTM-TVXZVFZT` request, HTTP 200, and the container appears in `window.google_tag_manager`. One `gtm.js` startup event in dataLayer.
 - Matching noscript block is the first body element. Both native GHL forms still load; no horizontal overflow or page errors observed.
 - This verifies container loading and placement, not individual conversions, tags or account-side trigger configuration. No conversion event or test lead sent.
+
+## Successful-submit redirect and thank-you page
+
+- Local confirmation URL: https://blacksheep.getkoup.com/thank-you.html
+- Listener: `ghl-thanks.js`, loaded before the native embed loader.
+- Form ID `5peUzH16pwlf56CJZQhz`; location ID `gtMRJUK503ZFZoQA2iUy`, read from the published Black Sheep widget.
+- Verified the deployed native GHL bundle `https://stcdn.leadconnectorhq.com/_preview/cuexcqRf.js` emits `['set-sticky-contacts', 'embedded_iframe_<frame-id>', '<frame-id>', '<location-id>', '<fingerprint>']` after successful submission.
+- Listener accepts only the exact GHL origin, one of this page's two iframe windows, the expected form/frame/storage/location IDs and a nonempty fingerprint. Separate `_ud` contact-data messages, loads, resizes, errors, other origins and malformed messages are ignored. Redirect is handled once.
+- Same supplied GTM `GTM-TVXZVFZT` on the thank-you page. No new conversion tag/event, account setting or real test lead added. Direct visits do not emit a custom form-success event.
+- Redirect QA used isolated browser frame fixtures with the native message shape; no real form submission. Negative messages were rejected, both embedded forms redirected, and the thank-you page rendered at mobile/desktop widths. GTM/CRM network requests were blocked during simulated redirects to avoid synthetic conversions.

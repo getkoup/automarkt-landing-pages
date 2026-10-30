@@ -34,7 +34,7 @@ Official DNS guidance: https://docs.netlify.com/manage/domains/configure-domains
 
 ## Release package
 
-Run `node build.mjs` from this client folder to package the static page in `dist/`. The source page still works without a build. Only public HTML, CSS, JS, referenced logo/vehicle images/fonts and font licenses are copied. Research, tracking notes, original photo backups, GHL styling handoff and QA screenshots are excluded.
+Run `node build.mjs` from this client folder to package the static page in `dist/`. The source page still works without a build. Only public offer/thank-you HTML, CSS, JS, referenced logo/vehicle images/fonts and font licenses are copied. Research, tracking notes, original photo backups, GHL styling handoff and QA screenshots are excluded.
 
 ## Production command
 
@@ -54,3 +54,7 @@ netlify deploy --prod --no-build --dir dist --site 3ff56b19-cdcb-4b33-8ce9-af1e2
 ## Custom-domain HTTPS verified
 
 Normal TLS validation succeeds for `blacksheep.getkoup.com`, and HTTPS returns HTTP 200. Certificate issuer: Let's Encrypt YE2. Valid through January 28, 2027, 13:27:37 UTC; subject alternative name includes only the requested hostname. No TLS warnings bypassed. The earlier provisioning retry delay has cleared.
+
+## Native form confirmation
+
+`/thank-you.html` is included in the static package. Both native GHL embeds redirect there only on their verified frame-specific successful-submit notification. Pretty URLs remain disabled so the explicit `.html` URL is served directly.
