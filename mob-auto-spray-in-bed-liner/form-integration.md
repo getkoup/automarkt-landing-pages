@@ -14,6 +14,8 @@
 ## Success flow
 `form-config.js` contains only MOB’s verified public form/location IDs. `form-submit.js` redirects the page to its own `thank-you.html` only for a verified native frame-specific successful-submit message. Origin, iframe source, form ID, storage key, frame ID, location and nonempty fingerprint must match. Resize/load/errors and the separate contact-data message are ignored.
 
+The config and listener load synchronously in the landing-page head, before either inline frame can initialize. The listener queries the frames only when a message arrives.
+
 Message format confirmed in the public widget runtime. Handler logic tested locally using synthetic events, without making a CRM submission. The widget also has its own configured short redirect; no GHL account setting was changed.
 
 ## Verification

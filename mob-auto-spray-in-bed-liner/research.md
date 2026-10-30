@@ -85,3 +85,8 @@ Final prompt: “Premium photorealistic commercial automotive photograph of a gr
 - Verified the project’s Powered by Netlify badge is disabled. No unrelated Netlify site changed.
 - Independent public-page browser rendering confirmed both native GHL frames visible and initialized, each 387px high, with native Full Name, Phone, Car Details and Request Free Quote. No CRM submission or conversion was made.
 - Hostinger parent-zone record: CNAME `mob` → `mob-auto-spray-in-bed-liner.netlify.app`, TTL 300/default. See hosting.md for the separate-child-zone exception.
+
+## Google tags and success-flow update — 2026-10-30
+- User supplied Google Ads base tag `AW-814250742` and GTM container `GTM-KFQMB428`; installed on landing and thank-you pages with one Google tag initialization and standard GTM bootstrap/noscript. No conversion label supplied, so no standalone Ads conversion event was added.
+- Rechecked the live native GHL runtime’s frame-specific `set-sticky-contacts` success notification against the existing strict handler. Registered the listener before frames initialize. Synthetic checks cover both placements, rejection cases and one-time redirect; no live lead/conversion submitted.
+- Verified `mob.getkoup.com` now serves HTTP 200 over valid HTTPS and redirects HTTP to HTTPS.
