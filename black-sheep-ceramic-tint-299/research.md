@@ -65,3 +65,11 @@ Research date: October 30, 2026.
 - Publish through working branch `black-sheep` and a pull request to `main`; no direct push to `main`.
 - Preview screenshots are local QA artifacts excluded from Git by the page-specific `.gitignore`.
 - Current status: prepared locally; branch push awaits the explicit confirmation required by the user's global AGENTS.md rule. After approval, push the working branch, create/merge the PR once required checks permit, fast-forward the clean local main checkout, and verify the successful Pages build and live form rendering.
+
+## Netlify hosting request supersedes GitHub Pages
+- User requested a fresh main sync, Netlify deployment and DNS instructions for `blacksheep.getkoup.com`.
+- Fetched origin and merged `origin/main`; already current at `e06f29a`.
+- Added a public-only packaging script and Netlify configuration; source remains plain static HTML/CSS/JS.
+- Replaced preview-only noindex metadata with the requested custom-domain canonical.
+- Netlify team verified: `sachita007`; site creation pending explicit approval under the supplied global dangerous-command rules.
+- See `hosting.md` for publication status and the proposed DNS record. No DNS changes performed.
