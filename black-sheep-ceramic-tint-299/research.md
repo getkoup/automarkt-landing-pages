@@ -73,3 +73,10 @@ Research date: October 30, 2026.
 - Replaced preview-only noindex metadata with the requested custom-domain canonical.
 - Netlify team verified: `sachita007`; site creation pending explicit approval under the supplied global dangerous-command rules.
 - See `hosting.md` for publication status and the proposed DNS record. No DNS changes performed.
+
+## Publication approved and configured
+- User replied “yes” and confirmed adding the DNS record.
+- Created Netlify project `black-sheep-ceramic-tint-299`, site ID `3ff56b19-cdcb-4b33-8ce9-af1e23d6138f`, team `sachita007`, with custom domain `blacksheep.getkoup.com`.
+- Disabled the supported platform badge setting; no paid upgrade.
+- Verified the user's exact CNAME against `ns1.dns-parking.com` and Cloudflare public DNS. No DNS edits performed by the agent.
+- Publication PR, production upload and HTTPS verification follow. This supersedes earlier pending-approval notes.

@@ -2,26 +2,28 @@
 
 Requested hostname: https://blacksheep.getkoup.com/
 
-## Current status
+## Netlify project
 
-User changed the requested host from GitHub Pages to Netlify. Working branch `black-sheep` is synced with `origin/main` at `e06f29a`. The existing Netlify account is connected to team `sachita007`; no Black Sheep site currently exists there. Public DNS for blacksheep.getkoup.com currently has no record.
+- Project: `black-sheep-ceramic-tint-299`.
+- Site ID: `3ff56b19-cdcb-4b33-8ce9-af1e23d6138f`.
+- Team: `sachita007`.
+- Default URL: https://black-sheep-ceramic-tint-299.netlify.app/
+- Custom domain assigned: https://blacksheep.getkoup.com/
+- Admin: https://app.netlify.com/projects/black-sheep-ceramic-tint-299
+- User approved publication and confirmed adding DNS. Authoritative DNS verified October 30, 2026.
+- Powered by Netlify badge disabled using the supported project setting, without a plan change.
+- Manual deployment of merged, synced `main`, through the GitHub PR workflow.
+- First production deployment and HTTPS verification follow the publication PR merge.
 
-Local release is prepared. Site creation, domain assignment, upload and production publication have not run: the supplied global AGENTS.md requires an explicit “yes” before git push and network actions with side effects. No DNS records changed.
+## External DNS
 
-## Planned project and DNS
-
-- Proposed Netlify project: `black-sheep-ceramic-tint-299`.
-- Expected default URL, subject to name availability at creation: https://black-sheep-ceramic-tint-299.netlify.app/
-- Primary domain to assign: `blacksheep.getkoup.com`.
-- Manual deployment of merged, synced `main`, through the existing GitHub PR workflow.
-
-Expected DNS record in the **getkoup.com parent zone**, to confirm against the created site:
+Verified record in the **getkoup.com parent zone**:
 
 | Type | Host | Value | TTL |
 | --- | --- | --- | --- |
-| CNAME | blacksheep | black-sheep-ceramic-tint-299.netlify.app | Auto / default |
+| CNAME | blacksheep | black-sheep-ceramic-tint-299.netlify.app | 14400 |
 
-Netlify requires the custom hostname to be assigned to its project before external DNS is pointed there. Once the record resolves, verify Netlify-managed HTTPS and the public page. Do not present the custom hostname as live until these checks pass.
+The custom hostname is assigned to its Netlify project. The user's record is visible from the authoritative server and Cloudflare public DNS; some local resolvers may retain a prior negative lookup until their cache expires. No DNS account changes were made by the agent.
 
 If Hostinger has a separate `blacksheep.getkoup.com` DNS zone, inspect that zone before advising apex changes. Prior Sleek deployment evidence showed that a child-zone CDN record can control resolution despite a parent-zone CNAME. Preserve unrelated mail records and domain settings.
 
@@ -30,3 +32,12 @@ Official DNS guidance: https://docs.netlify.com/manage/domains/configure-domains
 ## Release package
 
 Run `node build.mjs` from this client folder to package the static page in `dist/`. The source page still works without a build. Only public HTML, CSS, JS, referenced logo/vehicle images/fonts and font licenses are copied. Research, tracking notes, original photo backups, GHL styling handoff and QA screenshots are excluded.
+
+## Production command
+
+After the source PR merges and local main is fast-forwarded, from this client folder:
+
+```sh
+node build.mjs
+netlify deploy --prod --no-build --dir dist --site 3ff56b19-cdcb-4b33-8ce9-af1e23d6138f --json
+```
