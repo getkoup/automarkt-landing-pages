@@ -3,10 +3,10 @@
 Research date: October 30, 2026.
 
 ## Brief
-- Client: Black Sheep Auto Detailing, Sunnyvale, California.
+- Client: Black Sheep Auto Detailing, Fremont, California (current location supplied by the user).
 - Service: professionally installed ceramic automotive window tint.
 - Offer: $299, supplied by the user. Included windows, film product, vehicle eligibility, removal, tax and warranty terms must be confirmed by Black Sheep before booking; no invented coverage or performance percentages.
-- Audience: Sunnyvale and Santa Clara Valley drivers seeking a cooler cabin, less glare, privacy and a cleaner appearance.
+- Audience: Fremont and East Bay drivers seeking a cooler cabin, less glare, privacy and a cleaner appearance.
 - CTA: two inline embeds of the user-supplied GHL $299 ceramic tint form; direct call alternative.
 - Reference: preserve the section order and responsive structure of `detailnow-ceramic-tint-299`, with independently copied code/fonts and Black Sheep content/assets only.
 - Original logo required. Download the existing logo from Black Sheep's official website; do not generate, trace, redraw or recolor it.
@@ -16,8 +16,8 @@ Research date: October 30, 2026.
 - Official website: https://blacksheepautodetailing.com/
 - Official contact: https://blacksheepautodetailing.com/contact-us
 - User-supplied Instagram: https://www.instagram.com/blacksheep_autodetailing/
-- Phone: (408) 915-1488; official website contact/footer.
-- Address: 1155 Reed Ave, Suite D, Sunnyvale, CA 94086; official website contact/footer. The home page contains an older Willow Ave address in narrative copy; use the contact/footer address.
+- Current phone: 510-391-6010, supplied by the user on October 30, 2026; takes precedence over the old website number.
+- Current address: 2878 Prune Ave R, Fremont, CA 94539, United States; supplied in the user’s screenshot on October 30, 2026. This supersedes the website’s older Sunnyvale address.
 - Military-owned shop serving the Santa Clara Valley; official website.
 - Website explicitly lists ceramic window tint among its installation services.
 - Other advertised services: detailing, paint protection film, ceramic coating and paint correction. These are context, not part of this offer.
@@ -80,3 +80,19 @@ Research date: October 30, 2026.
 - Disabled the supported platform badge setting; no paid upgrade.
 - Verified the user's exact CNAME against `ns1.dns-parking.com` and Cloudflare public DNS. No DNS edits performed by the agent.
 - Publication PR, production upload and HTTPS verification follow. This supersedes earlier pending-approval notes.
+
+## Production deployment
+- PR #29 merged after all checks passed: https://github.com/getkoup/automarkt-landing-pages/pull/29 .
+- Local main fast-forwarded to origin/main commit `b4b1f6ddf218553e7bf7b48a162ad8a9a1f8f5a6` before build and upload.
+- Netlify production deploy `6ae4a71b80e632901b51babe` is ready (October 30, 2026, 14:18 UTC).
+- Default Netlify HTTPS and custom-domain HTTP serve the page. Desktop/mobile live browser checks passed with both native GHL forms and no page errors/overflow; no lead submitted.
+- Custom-domain HTTPS provisioning/verification is in progress; details will be recorded in hosting.md.
+
+## User corrections — Fremont contact details and gallery
+- User supplied the current address in a screenshot: 2878 Prune Ave R, Fremont, CA 94539, United States.
+- User supplied the current phone: 510-391-6010 (`tel:+15103916010`). These details take precedence over earlier official-website research.
+- Updated page title, description, header, hero, trust strip, shop story, local-shop reason, lower quote, FAQ, footer, mobile CTA and every call/directions link. Location copy now refers to Fremont and the East Bay.
+- Replaced exactly the four gallery images with the user’s four local PNGs in supplied order (Audi, Porsche, Bronco, Corvette), optimized as WebP without generating imagery. Original logo and other page photos retained.
+- Local source filename, checksum, optimized checksum and display order are recorded in assets/sources.json.
+- Original publication PR #29 and deploy are recorded above. Custom-domain HTTPS now returns HTTP 200 with normal certificate verification; this supersedes the earlier pending-SSL notes. Corrected page will be redeployed from merged main.
+- Corrected-page QA: Chrome at 390px and 1440px verified every call and map link, absence of old Sunnyvale/phone/address text, all image loads, both native GHL frames and no horizontal overflow or page errors. No lead submitted.

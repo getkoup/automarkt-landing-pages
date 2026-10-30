@@ -8,8 +8,8 @@
 - The supplied sticky-sidebar configuration is adapted to INLINE layout inside both existing quote cards, with unique iframe IDs. Native `form_embed.js` is included once and handles frame resizing.
 - Cookie-consent attributes retained. No lead submission test performed; native GHL success/redirect settings retained.
 - Custom CSS source: `ghl-form.css`; changes inside GHL must be published there to affect the iframe.
-- Direct call links: `tel:+14089151488`, verified against the official website.
+- Direct call links: `tel:+15103916010` (510-391-6010), explicitly supplied by the user; supersedes the website’s previous number.
 - Google business link supplied by user: https://share.google/WNLOI7KssYVDi9VTj
 - Instagram supplied by user: https://www.instagram.com/blacksheep_autodetailing/
 - Official website and testimonial source: https://blacksheepautodetailing.com/
-- Directions: Google Maps query for 1155 Reed Ave Suite D, Sunnyvale, CA 94086.
+- Directions: Google Maps query for 2878 Prune Ave R, Fremont, CA 94539, explicitly supplied by the user.
