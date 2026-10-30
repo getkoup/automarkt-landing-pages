@@ -72,3 +72,16 @@ Final prompt: “Premium photorealistic commercial automotive photograph of a gr
 - Source website branding: primary red #D10000, secondary red #EC1C2D, white/black. Kept the dark glass card treatment and large up to 30% off hero offer.
 - Replaced the temporary text wordmark in the header, footer, and thank-you page. The original logo also supplies the favicon. Updated native GHL custom CSS to the same red palette.
 - Verified original logo loaded at 340 × 216, preserving its aspect ratio, on desktop and 390px mobile. No horizontal overflow. Header/footer/thank-you use the original local PNG.
+
+## Native GHL form and Netlify preparation
+- User supplied form `wemqB8SULRpq4HcFCqYb` (“Spray-in-bed - 30%”). Verified public widget location `RuEepr9TxS0kkB8ZCRie` and the exact frame-specific native success notification in its runtime.
+- Replaced both preview panels with native inline GHL iframes using unique IDs; included one embed script and retained cookie-consent settings. Guarded redirect leads to branded thank-you page only after native success.
+- Direct widget rendering shows Full Name, Phone, Car Details and Request Free Quote, styled in dark/red. No CRM lead was submitted. A minimal local iframe also stalled in the inspection browser, so embedded rendering needs public-host verification.
+- User confirmed intended hostname `mob.getkoup.com`, correcting the initial spelling. Netlify public-only build is ready; see hosting.md for the planned project and Hostinger record.
+
+## Netlify publication verified
+- Site: `54e042df-4679-43f2-a90c-2b91d3b9be97`; production deploy `6ae4b1db2ada8244843a2b87`; state ready.
+- Live: https://mob-auto-spray-in-bed-liner.netlify.app/ ; custom domain assigned: mob.getkoup.com, external DNS pending.
+- Verified the project’s Powered by Netlify badge is disabled. No unrelated Netlify site changed.
+- Independent public-page browser rendering confirmed both native GHL frames visible and initialized, each 387px high, with native Full Name, Phone, Car Details and Request Free Quote. No CRM submission or conversion was made.
+- Hostinger parent-zone record: CNAME `mob` → `mob-auto-spray-in-bed-liner.netlify.app`, TTL 300/default. See hosting.md for the separate-child-zone exception.

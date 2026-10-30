@@ -435,3 +435,11 @@
   .footer-top .brand { width: 100%; }
   .footer-top .brand-logo { width: 126px; }
 }
+
+/* Native GHL embed supplies its fields, consent, validation and dynamic height. */
+.ghl-form-slot { width: 100%; min-width: 0; }
+.ghl-form-frame { min-height: 0; margin-top: 20px; }
+.native-form-call { color: #d2d9d3; text-align: center; font-size: 11px; margin: 14px 0 19px; }
+.native-form-call a { color: #fff; font-weight: 700; white-space: nowrap; }
+.native-form-call a:hover { color: #ff737d; }
+@media(max-width:580px) { .native-form-call { font-size: 10px; } }
