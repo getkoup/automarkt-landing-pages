@@ -103,3 +103,11 @@ Research date: October 30, 2026.
 - Logged the container and source in tracking.md. No additional conversion code, other-client tracking, account changes or lead submissions.
 - Publication follows the normal PR-to-main and Netlify manual deployment workflow.
 - Browser verification passed: GTM container HTTP 200, one loader request, one startup event, container global present, body noscript first, and both native GHL forms loaded without page errors/overflow. Individual tag conversions were not triggered or tested.
+
+## Native success message and branded thank-you page
+- User requested the same successful-submit message listener used by the other landing pages, a thank-you page and redeployment.
+- Inspected Black Sheep's published widget without submitting: location ID `gtMRJUK503ZFZoQA2iUy`. The native success handler in `https://stcdn.leadconnectorhq.com/_preview/cuexcqRf.js` emits both `_ud` contact data and a frame-specific `set-sticky-contacts` notification. Only the frame-specific success payload is accepted.
+- Added `ghl-thanks.js`, guarding origin, source iframe, form ID, frame/storage IDs, location ID and nonempty fingerprint before one redirect to `thank-you.html`.
+- Added a branded dark/silver confirmation page using the original logo, current Fremont address and phone, call/back/directions links, noindex metadata and the same user-supplied GTM. It confirms an enquiry, not a booked appointment.
+- Public packaging now includes the thank-you HTML/CSS and success listener. Native form validation/submission retained; no account edits or real test leads.
+- QA: isolated browser fixtures sent the verified payload from each embedded frame origin/window; both redirected to the branded page. Negative checks covered load/resize/error/contact-data messages, wrong storage/frame/location/origin/source and empty/non-string fingerprints. Duplicate success handled once. Thank-you layouts passed at 320px, 390px and 1440px. Analytics and real CRM requests were blocked during simulations; no real lead or conversion submitted.

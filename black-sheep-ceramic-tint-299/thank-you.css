@@ -1,0 +1,48 @@
+.thank-you-page {
+  --bg: #0b0b10;
+  --surface: #13131a;
+  --text: #eeeef4;
+  --muted: #a8adb8;
+  --line: #2a2a34;
+  --accent: #d6d8db;
+  --accent-ink: #d6d8db;
+  --on-accent: #0b0b10;
+  background: var(--bg);
+  color: var(--text);
+}
+.thanks {
+  min-height: calc(100svh - 92px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-block: 65px;
+}
+.thanks-content { max-width: 690px; }
+.thanks-check {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 28px;
+  border: 1px solid #555b66;
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 25px;
+}
+.thanks .eyebrow { margin-bottom: 18px; }
+.thanks h1 { font-size: clamp(55px, 6vw, 88px); line-height: 1.05; margin-bottom: 25px; }
+.thanks h1 span { color: var(--accent); }
+.thanks p { max-width: 540px; margin: 0 auto 20px; font-size: 14px; line-height: 1.9; }
+.thanks .hero-buttons { justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+.thanks .button { background: linear-gradient(180deg, #f1f2f4, #c7cbd1); color: #101216; }
+.thanks .button:hover { background: #f5f6f8; }
+.thanks-location { margin-top: 42px; padding-top: 26px; border-top: 1px solid var(--line); }
+.thanks address { font-style: normal; font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+.thanks-location .text-link { font-size: 11px; }
+@media (max-width: 760px) {
+  .thanks { min-height: calc(100svh - 80px); padding-block: 44px; }
+  .thanks h1 { font-size: clamp(43px, 12vw, 58px); }
+  .thanks p { font-size: 13px; }
+  .thanks .hero-buttons { gap: 22px; }
+  .thanks-location { margin-top: 32px; }
+}
