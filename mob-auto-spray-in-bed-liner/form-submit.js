@@ -1,5 +1,5 @@
 // Match the native GHL flow used by the other landing pages.
-// Fail closed until MOB's own form/location and successful-submit event are verified.
+// Accept the verified native frame-specific success message only.
 (() => {
   'use strict';
   const config = window.mobFormConfig;

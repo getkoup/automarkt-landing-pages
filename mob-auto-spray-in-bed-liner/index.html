@@ -13,6 +13,7 @@
   <link rel="preload" href="assets/barlow-condensed.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/mob-official-logo.png" as="image">
   <link rel="preload" href="assets/truck-bed-hero.webp" as="image" fetchpriority="high">
+  <link rel="canonical" href="https://mob.getkoup.com/">
   <link rel="stylesheet" href="styles.css">
   <script src="form-config.js" defer></script>
   <script src="form-submit.js" defer></script>
@@ -44,16 +45,29 @@
           <div class="hero-form-top"><span class="form-kicker">YOUR TRUCK. YOUR UPGRADE.</span><span class="hero-form-offer">PERSONALIZED QUOTE</span></div>
           <h2 id="hero-form-title">LET’S GET YOUR<br>TRUCK PROTECTED.</h2>
           <p class="hero-form-intro">Your bed liner. Your personalized quote.</p>
-          <!-- GHL HERO: Replace #hero-ghl-form-slot contents with MOB's native embed. Use a unique iframe ID for this placement; load form_embed.js only once on the page. -->
+          <!-- MOB native GHL form: inline hero placement with a unique frame ID. -->
           <div id="hero-ghl-form-slot" class="ghl-form-slot">
-            <p class="form-status"><span class="status-dot"></span> Online form coming soon. Call for your offer.</p>
-            <div class="form-preview" role="group" aria-label="Quote form preview — awaiting GHL integration">
-              <div class="preview-field">Full name<span class="input-preview">Your name</span></div>
-              <div class="preview-field">Phone number<span class="input-preview">(000) 000-0000</span></div>
-              <div class="preview-field">Truck details<span class="input-preview">Year, make, model &amp; bed size</span></div>
-            </div>
-            <a class="button button-red form-call" href="tel:+18326231662"><svg aria-hidden="true"><use href="#i-phone"/></svg> Call to get my quote <span aria-hidden="true">↗</span></a>
-            <p class="form-phone">(832) 623-1662 <span>· Mon–Fri, 9am–6pm</span></p>
+            <iframe
+              class="ghl-form-frame"
+              src="https://api.leadconnectorhq.com/widget/form/wemqB8SULRpq4HcFCqYb"
+              style="width:100%;height:435px;border:none;border-radius:4px"
+              id="inline-wemqB8SULRpq4HcFCqYb-hero"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Spray-in-bed - 30%"
+              data-height="400"
+              data-layout-iframe-id="inline-wemqB8SULRpq4HcFCqYb-hero"
+              data-form-id="wemqB8SULRpq4HcFCqYb"
+              data-cookie-consent="true"
+              data-cookie-consent-provider="auto"
+              title="Spray-in-bed - 30% — hero quote"
+            ></iframe>
+            <p class="native-form-call">Prefer to talk? <a href="tel:+18326231662">Call (832) 623-1662 ↗</a></p>
           </div>
           <div class="form-footer"><svg aria-hidden="true"><use href="#i-shield"/></svg> Personalized quote. No obligation.</div>
         </aside>
@@ -96,11 +110,29 @@
     <section class="section process" id="process" aria-labelledby="process-title"><div class="container"><div class="section-heading"><div><p class="eyebrow red">FROM FIRST CALL TO FIRST HAUL</p><h2 id="process-title">A SIMPLE PLAN.<br>A TOUGHER TRUCK BED.</h2></div><a class="button button-dark" href="#quote">Start with a quote <span aria-hidden="true">↗</span></a></div><div class="steps"><article><span class="step-number">01</span><div><h3>TELL US ABOUT YOUR TRUCK</h3><p>Share the year, make, model, bed size, and how you use it. We’ll discuss the right approach.</p></div></article><article><span class="step-number">02</span><div><h3>KNOW THE DETAILS</h3><p>Confirm your price, offer eligibility, preparation needs, and expected schedule before booking.</p></div></article><article><span class="step-number">03</span><div><h3>GET LINED. GET BACK TO IT.</h3><p>Have your liner installed, then follow the team’s cure-time and care instructions before loading up.</p></div></article></div></div></section>
     <section class="quote-section" id="quote" aria-labelledby="quote-title"><div class="container quote-grid"><div class="quote-copy"><p class="eyebrow">YOUR NEXT UPGRADE STARTS HERE</p><h2 id="quote-title">BIG PROTECTION.<br>BETTER DEAL.</h2><div class="offer-type"><span>UP<br>TO</span><strong>30<span>%</span></strong><b>OFF</b></div><p class="quote-service">SPRAY-IN TRUCK BED LINERS</p><p>Give your truck the upgrade it deserves.<br>Ask the MOB team for your personalized quote.</p><p class="offer-terms">Savings vary by vehicle, bed condition, and selected service. Confirm eligibility, preparation charges, and final pricing with MOB Auto Boutique before booking.</p><div class="quote-location"><svg aria-hidden="true"><use href="#i-pin"/></svg><span>824 FM 1960 Rd · Houston, TX 77073</span></div></div>
         <div class="quote-card"><span class="form-kicker">LET’S PUT YOUR TRUCK FIRST</span><h3>GET YOUR BED LINER QUOTE</h3><p>Tell us what you drive. We’ll take it from there.</p>
-          <!-- GHL INTEGRATION: Replace ONLY the contents of #ghl-form-slot with MOB's native form embed. Include its form_embed.js once. Do not use another client's form or tracking IDs. -->
+          <!-- Same MOB native GHL form, independent lower placement. -->
           <div id="ghl-form-slot" class="ghl-form-slot">
-            <p class="form-status"><span class="status-dot"></span> Online quote form coming soon. Call for your offer.</p>
-            <fieldset disabled class="form-preview" aria-label="Preview of the quote form, not yet available"><legend class="visually-hidden">Quote form preview — awaiting GHL integration</legend><label>Full name<span class="input-preview">Your name</span></label><label>Phone number<span class="input-preview">(000) 000-0000</span></label><label>Truck details<span class="input-preview">Year, make, model & bed size</span></label></fieldset>
-            <a class="button button-red form-call" href="tel:+18326231662"><svg aria-hidden="true"><use href="#i-phone"/></svg> Call to get my quote <span aria-hidden="true">↗</span></a><p class="form-phone">(832) 623-1662 <span>· Mon–Fri, 9am–6pm</span></p>
+            <iframe
+              class="ghl-form-frame"
+              src="https://api.leadconnectorhq.com/widget/form/wemqB8SULRpq4HcFCqYb"
+              style="width:100%;height:435px;border:none;border-radius:4px"
+              id="inline-wemqB8SULRpq4HcFCqYb-quote"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Spray-in-bed - 30%"
+              data-height="400"
+              data-layout-iframe-id="inline-wemqB8SULRpq4HcFCqYb-quote"
+              data-form-id="wemqB8SULRpq4HcFCqYb"
+              data-cookie-consent="true"
+              data-cookie-consent-provider="auto"
+              title="Spray-in-bed - 30% — quote quote"
+            ></iframe>
+            <p class="native-form-call">Prefer to talk? <a href="tel:+18326231662">Call (832) 623-1662 ↗</a></p>
           </div>
           <div class="form-footer"><svg aria-hidden="true"><use href="#i-shield"/></svg> Your truck. Your quote. No obligation.</div>
         </div></div></section>
@@ -116,6 +148,7 @@
   </main>
   <footer><div class="container footer-top"><a class="brand" href="#" aria-label="Back to top"><img class="brand-logo" src="assets/mob-official-logo.png" width="340" height="216" alt="MOB Auto Boutique"></a><p>824 FM 1960 Rd<br>Houston, TX 77073</p><p>Monday–Friday: 9am–6pm<br>Saturday & Sunday: Closed</p><a class="footer-directions" href="https://www.google.com/maps/search/?api=1&amp;query=MOB+Auto+Boutique+824+FM+1960+Rd+Houston+TX+77073" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> MOB Auto Boutique. All rights reserved.</span><span>Spray-in bed liner services · Houston, TX</span></div></footer>
   <div class="mobile-actions"><a href="tel:+18326231662"><svg aria-hidden="true"><use href="#i-phone"/></svg> Call MOB</a><a href="#hero-quote">Get my quote <span aria-hidden="true">↗</span></a></div>
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
   <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="i-phone" viewBox="0 0 24 24"><path d="m7 3 3 5-2 2c1.5 3 3 4.5 6 6l2-2 5 3c-1 4-3 5-6 3C8 17 4 13 2.5 6 2 3 4 2 7 3Z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 8 3v7c0 5-8 10-8 10S4 17 4 12V5Z"/><path d="m8 11 3 3 5-6"/></symbol><symbol id="i-texture" viewBox="0 0 24 24"><path d="m3 7 9-5 9 5-9 5Z M3 12l9 5 9-5 M3 17l9 5 9-5"/></symbol><symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></symbol></svg>
 </body>
 </html>

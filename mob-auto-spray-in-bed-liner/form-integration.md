@@ -1,24 +1,20 @@
-# MOB GHL form integration
+# MOB native GHL integration
 
-Uses the same native GHL iframe approach as the other client landing pages. The current hero and lower quote fields are clearly labeled previews; no lead is submitted yet.
+## Active form
+- User supplied form: `wemqB8SULRpq4HcFCqYb`, “Spray-in-bed - 30%”.
+- Public widget location: `RuEepr9TxS0kkB8ZCRie`.
+- Hero iframe ID: `inline-wemqB8SULRpq4HcFCqYb-hero`.
+- Lower iframe ID: `inline-wemqB8SULRpq4HcFCqYb-quote`.
+- One native `https://link.msgsndr.com/js/form_embed.js` script.
+- User supplied sidebar layout adapted to inline placements. Cookie-consent attributes, native fields, validation and submission are retained. No custom lead endpoint.
 
-## Files
-- `index.html`: hero slot `#hero-ghl-form-slot` and lower slot `#ghl-form-slot`.
-- `ghl-form.css`: complete replacement CSS for MOB’s native GHL form.
-- `form-config.js`: MOB form and location configuration; deliberately empty/disabled until supplied.
-- `form-submit.js`: guarded success-message redirect, ready for verification with MOB’s actual widget.
-- `thank-you.html`: matching branded page, no advertising conversion tags installed.
+## Styling
+`ghl-form.css` is the complete form-builder Custom CSS, supplied and copied for the user. The public widget currently renders dark fields and a red submit button. Parent-page CSS supplies the glass card; it cannot style inside the cross-origin frame.
 
-## When the client supplies the embed
-1. Replace both slot contents with the supplied native iframe embed. Keep its form ID, validation, consent, CAPTCHA, and native submit behavior. Do not copy another client’s embed.
-2. Use unique iframe IDs for the two placements, e.g. `mob-bed-liner-hero` and `mob-bed-liner-quote`. Give each `class="ghl-form-frame"` and `data-form-id` matching MOB’s actual form ID. Ensure `data-layout-iframe-id` matches that placement’s iframe ID.
-3. Load GHL’s native `form_embed.js` once. Retain GHL’s automatic height handling; do not clip consent/errors.
-4. In MOB’s **GHL form builder → Advanced → Custom CSS**, select all existing Custom CSS and replace it with the complete contents of `ghl-form.css`, then Save and Publish. Paste CSS only, without style tags. Parent-page CSS cannot style fields inside a cross-origin iframe.
-5. Use a single-column form: **Full name → Phone number → Truck details**, plus any required consent/CAPTCHA fields. Suggested native submit text: **Get my bed liner quote ↗**. CSS does not change field labels or button copy.
-6. The hero and lower card both provide a dark background so the same published native form can be embedded in both places.
-7. Set only MOB’s actual `formId` and `locationId` in `form-config.js`. Keep `enableSuccessRedirect: false` until MOB’s real successful-submit notification has been verified. The handler requires the expected native origin, exact iframe source, correct form/location, frame-specific storage key and nonempty success fingerprint. Load/resize/validation-error messages do not redirect. If the widget uses a different success format, verify and adapt it before enabling.
-8. Once a public URL is supplied, a native GHL successful-submit redirect to the absolute thank-you URL is also suitable. Use one redirect mechanism.
-9. Log supplied integration and tracking details in `tracking.md`. No test lead or conversion event has been sent.
+## Success flow
+`form-config.js` contains only MOB’s verified public form/location IDs. `form-submit.js` redirects the page to its own `thank-you.html` only for a verified native frame-specific successful-submit message. Origin, iframe source, form ID, storage key, frame ID, location and nonempty fingerprint must match. Resize/load/errors and the separate contact-data message are ignored.
 
-## Validation status
-Stylesheet is adapted from the repository’s established complete native GHL stylesheet. MOB’s actual native form and CRM delivery cannot be verified until the embed is supplied. The success handler is inactive by default.
+Message format confirmed in the public widget runtime. Handler logic tested locally using synthetic events, without making a CRM submission. The widget also has its own configured short redirect; no GHL account setting was changed.
+
+## Validation limits
+Direct native widget rendering verified; the local preview browser stalled at about:blank for even a minimal cross-origin iframe, so an embedded rendering check must be repeated on the published page. No real test lead or conversion has been sent.
