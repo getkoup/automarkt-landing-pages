@@ -9,9 +9,11 @@
 @media(max-width:650px){.bf-coverage{grid-template-columns:1fr}.bf-price{font-size:3.7rem}.bf-price small{font-size:.9rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
-/* This form is always inline: skip the generic widget's off-screen startup state.
-   Keep native automatic resizing and the form's own validation/consent untouched. */
-#quote .ghl-form-frame{display:block!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;position:relative!important;left:auto!important;min-height:476px}
+/* Reserve space while GHL reveals its ready, resized iframe once.
+   Visibility stays under the native loader's control; no forced early paint. */
+#quote{min-height:610px}
+#quote .ghl-form-frame{min-height:476px}
+@media(max-width:600px){#quote{min-height:690px}}
 
 /* The offer is the hero's primary selling point. */
 .hero h1,.hero .offer-title{font-size:clamp(2.8rem,4.7vw,4rem);line-height:1.02}

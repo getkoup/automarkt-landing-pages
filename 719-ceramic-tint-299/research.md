@@ -54,3 +54,11 @@
 - Dedicated GitHub-linked Vercel project `719-ceramic-tint-299`, root directory `719-ceramic-tint-299`, static Other preset, no build/install command. Vercel’s native skip-unaffected-root deployment setting is enabled.
 - The existing shared 719 project proxies this offer prefix to `https://719-ceramic-tint-299.vercel.app/`. All page resources stay inside this folder; no sibling-file dependencies.
 - Public production origin required for this proxy. No custom domain/DNS change is needed. Existing 719 pages are preserved. No advertising tracking added.
+
+## Form reload correction — 2026-11-03
+
+- Browser network trace reproduced two document requests for the same form URL. The second request originated in the native embed loader’s layout setup when it moved the already-loaded iframe into its generated INLINE wrapper.
+- Removed the optional `data-layout` configuration so GHL uses its default inline path without reparenting the iframe. Native loader, fields, validation, consent, sizing and successful-submit handling remain in place. No iframe URL rewriting or submit API replacement.
+- Removed the prior forced-visibility CSS that exposed intermediate initialization. The iframe starts hidden and GHL reveals it after its first sizing handshake. Card space is reserved to avoid collapse while loading.
+
+- Validation: native form fields rendered at 390px with no horizontal overflow. Twelve-second browser traces showed exactly one form document request and one iframe load event on every offer, versus two requests/load events before the fix. Original IDs, loader, CTA anchors and thank-you handlers are preserved. No real lead submitted.
