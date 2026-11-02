@@ -102,3 +102,9 @@ Research date: November 2, 2026.
 - Added an allowlisted static release packager, project config, font licenses and page-local ignores for generated output/QA results. Public package checked for correct GHL embeds, six phone destinations, single fixed mobile quote CTA and all relative assets. Notes, CSS handoff and QA are excluded.
 - Source publication follows a branch → PR → main merge, with local main fast-forwarded before production upload.
 - Hostinger CNAME: host `tintlab` → `tint-lab-tint-199.netlify.app`, TTL 1800 or default, in getkoup.com. DNS initially NXDOMAIN. User will add the record; agent does not modify Hostinger. See hosting.md.
+
+## Custom-domain activation
+- User said to go ahead after the Netlify deployment/DNS handoff. Hostinger was already logged in with getkoup.com open.
+- Added the exact CNAME `tintlab` → `tint-lab-tint-199.netlify.app`, TTL 1800, in the getkoup.com parent DNS zone. Saved row, authoritative DNS and Cloudflare resolver verified. No conflicting record existed. No other DNS, mail or nameserver edits.
+- Netlify TLS provisioning requested for the assigned custom hostname. DNS caches may temporarily retain the earlier NXDOMAIN response.
+- Netlify UI DNS verification still sees the earlier missing-record state. Its own panel says it will provision Let’s Encrypt once propagation finishes. No further DNS edits are needed based on the authoritative/Cloudflare results. Custom HTTPS remains pending; no browser TLS warning bypassed.
