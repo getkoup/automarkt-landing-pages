@@ -37,7 +37,7 @@ netlify deploy --prod --no-build --dir dist --site 0ffc4433-c7b3-4e24-9709-39913
 ```
 
 ## Native form and call buttons
-Both enquiry cards embed user-supplied GHL form `yDdjh75p0NKglkWZqaoW`, using unique inline iframe IDs and one native embed script. Its configured completion action remains controlled by GHL. No test lead or CRM delivery test is part of publication.
+Both enquiry cards embed user-supplied GHL form `yDdjh75p0NKglkWZqaoW`, using unique inline iframe IDs and one native embed script. GHL owns submission; the page redirects to its branded `thank-you.html` only after its verified frame-specific success message. No GHL account edit, test lead or CRM delivery test is part of publication.
 
 Address: 14518 Hempstead Rd, Suite 5C, Houston, TX 77040, United States. All six call links use user-supplied +1 832-212-0354. The mobile sticky bar has one full-width **Get my $199 tint quote** CTA.
 
@@ -57,3 +57,8 @@ Address: 14518 Hempstead Rd, Suite 5C, Houston, TX 77040, United States. All six
 - Netlify certificate state: **issued**, covering only `tintlab.getkoup.com`, expires January 31, 2027 at 14:26:55 UTC.
 - Site API: `ssl: true`, `force_ssl: true`, `built_with_badge_enabled: false`.
 - Validated custom-hostname TLS and HTTP 200 with the expected logo/page, supplied GHL form ID and phone; no certificate verification bypass. HTTP redirects to the HTTPS URL.
+
+## Branded confirmation release
+- Public package includes `thank-you.html`, `thank-you.css` and `ghl-thanks.js` in addition to the offer page and its assets (20 public files). Pretty URLs remain disabled to preserve the explicit `.html` destination.
+- Redirect listener guards native GHL origin/window, form ID, storage/frame IDs, location ID and nonempty success fingerprint; it ignores initial loads, resize/errors and contact-data messages. No conversion tag or competing form submit handler added.
+- Both iframe success paths and 15 negative cases passed in isolated browser fixtures, with GHL requests intercepted. Confirmation layout checked at desktop/mobile widths without a real lead.
