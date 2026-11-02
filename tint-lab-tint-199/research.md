@@ -102,3 +102,19 @@ Research date: November 2, 2026.
 - Added an allowlisted static release packager, project config, font licenses and page-local ignores for generated output/QA results. Public package checked for correct GHL embeds, six phone destinations, single fixed mobile quote CTA and all relative assets. Notes, CSS handoff and QA are excluded.
 - Source publication follows a branch → PR → main merge, with local main fast-forwarded before production upload.
 - Hostinger CNAME: host `tintlab` → `tint-lab-tint-199.netlify.app`, TTL 1800 or default, in getkoup.com. DNS initially NXDOMAIN. User will add the record; agent does not modify Hostinger. See hosting.md.
+
+## Custom-domain activation
+- User said to go ahead after the Netlify deployment/DNS handoff. Hostinger was already logged in with getkoup.com open.
+- Added the exact CNAME `tintlab` → `tint-lab-tint-199.netlify.app`, TTL 1800, in the getkoup.com parent DNS zone. Saved row, authoritative DNS and Cloudflare resolver verified. No conflicting record existed. No other DNS, mail or nameserver edits.
+- Netlify TLS provisioning requested for the assigned custom hostname. DNS caches may temporarily retain the earlier NXDOMAIN response.
+- Netlify UI DNS verification still sees the earlier missing-record state. Its own panel says it will provision Let’s Encrypt once propagation finishes. No further DNS edits are needed based on the authoritative/Cloudflare results. Custom HTTPS remains pending; no browser TLS warning bypassed.
+- DNS propagation completed at the public resolvers. Netlify certificate state is now issued for tintlab.getkoup.com (expires January 31, 2027); site ssl/force_ssl true and badge false. Custom-hostname valid HTTPS 200 and HTTP redirect verified; user confirmed it works. Earlier pending-propagation notes are historical.
+
+## Branded thank-you page and verified success redirect
+- User requested the same successful-submit confirmation flow as the other landing pages.
+- Inspected the actual published GHL widget JavaScript `https://stcdn.leadconnectorhq.com/_preview/Bad1Kqw2.js`; successful submission emits `["set-sticky-contacts", "embedded_iframe_" + frameId, frameId, locationId, fingerprint]` separately from its `_ud` contact-data event.
+- Added `ghl-thanks.js`, matching the established guarded pattern with this page’s own form/location IDs. The handler requires the exact message origin, iframe window, form dataset, frame/storage IDs, location and a nonempty string fingerprint, then redirects the parent once to `thank-you.html`. It does not intercept or alter the GHL submission request and does not read/log/store contact fields.
+- Added matching dark/orange confirmation HTML/CSS with the unmodified original logo, user-supplied address/phone, call/back/directions links and noindex metadata. Text confirms a request, not an appointment booking. No tracking or conversion tags added.
+- Release packager includes the thank-you HTML/CSS and redirect handler (20 public files total). Research/QA/CSS handoff remain excluded.
+- Isolated Chrome fixture tests intercepted GHL network requests and echoed synthetic messages from real cross-origin iframe windows. Both hero and lower frames redirected to the correct thank-you URL; 15 negative cases were ignored. No real lead or conversion submitted.
+- Thank-you layouts passed at 1440px, 390px and 320px: no overflow, original logo loaded, two correct phone links, correct address, no bottom sticky-bar padding, one H1/noindex, zero scripts/iframes on the confirmation page. Desktop/mobile screenshots visually reviewed.
