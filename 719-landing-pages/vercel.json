@@ -12,6 +12,50 @@
     {
       "src": "/ceramic(?:/.*)?",
       "status": 404
+    },
+    {
+      "src": "/tint-299",
+      "headers": {
+        "Location": "/tint-299/"
+      },
+      "status": 307
+    },
+    {
+      "src": "/tint-299/(.*)",
+      "dest": "https://719-ceramic-tint-299.vercel.app/$1"
+    },
+    {
+      "src": "/full-front-ppf-1799",
+      "headers": {
+        "Location": "/full-front-ppf-1799/"
+      },
+      "status": 307
+    },
+    {
+      "src": "/full-front-ppf-1799/(.*)",
+      "dest": "https://719-full-front-ppf-1799.vercel.app/$1"
+    },
+    {
+      "src": "/partial-front-ppf-999",
+      "headers": {
+        "Location": "/partial-front-ppf-999/"
+      },
+      "status": 307
+    },
+    {
+      "src": "/partial-front-ppf-999/(.*)",
+      "dest": "https://719-partial-front-ppf-999.vercel.app/$1"
+    },
+    {
+      "src": "/bumper-ppf-499",
+      "headers": {
+        "Location": "/bumper-ppf-499/"
+      },
+      "status": 307
+    },
+    {
+      "src": "/bumper-ppf-499/(.*)",
+      "dest": "https://719-bumper-ppf-499.vercel.app/$1"
     }
   ]
 }

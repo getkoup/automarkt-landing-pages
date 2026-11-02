@@ -26,3 +26,10 @@
 - At the user's request, successful submissions from `/cc/`, `/tint/`, and `/ppf/` now finish at `https://719.getkoup.com/thank-you.html`.
 - The collection's `vercel.json` temporarily redirects the three service-local `thank-you.html` destinations to the existing common page with HTTP 307. This supersedes the 2026-10-15 service-local routing decision above.
 - Service submission handlers and confirmation files remain available for the separately hosted service projects. The collection's routing applies only when this folder is the Vercel project root.
+
+## Black Friday offer routes — 2026-11-03
+
+- User authorized publication of `/tint-299/`, `/full-front-ppf-1799/`, `/partial-front-ppf-999/` and `/bumper-ppf-499/` on the existing 719 domain.
+- Each offer keeps its isolated repository-root folder and own GitHub-linked Vercel project. Added external proxy routes to the corresponding production `vercel.app` origin, including assets and page-local thank-you destinations. The browser remains on `719.getkoup.com`.
+- Exact path redirects normalize each offer to a trailing slash so relative assets and the successful-submit redirect resolve under the right offer prefix. Existing homepage, service routes, shared old-service confirmation redirects and ceramic exclusion remain unchanged.
+- New offer/confirmation HTML carries no advertising tracking. Each offer retains its supplied GHL form, larger pricing, mobile sticky CTA and native successful-submit redirect.
