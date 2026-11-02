@@ -33,3 +33,11 @@
 - Each offer keeps its isolated repository-root folder and own GitHub-linked Vercel project. Added external proxy routes to the corresponding production `vercel.app` origin, including assets and page-local thank-you destinations. The browser remains on `719.getkoup.com`.
 - Exact path redirects normalize each offer to a trailing slash so relative assets and the successful-submit redirect resolve under the right offer prefix. Existing homepage, service routes, shared old-service confirmation redirects and ceramic exclusion remain unchanged.
 - New offer/confirmation HTML carries no advertising tracking. Each offer retains its supplied GHL form, larger pricing, mobile sticky CTA and native successful-submit redirect.
+
+## Netlify migration preparation — 2026-11-03
+
+- User requested publication of the complete shared 719 site on Netlify, retaining Vercel until the user changes DNS. Created `719-auto-customs` (`beedfc2d-b4b9-43f5-b2da-aec85ffc4ef5`) in the existing connected account, registered the existing custom domain without DNS edits and disabled the platform badge.
+- Added a static packaging script and Netlify configuration to assemble the original homepage/services plus copies of the four isolated offer pages under the agreed paths. Includes the merged single-load form correction. No Vercel configuration changes or new advertising tracking.
+- Public output excludes repository notes/configuration and preserves existing service confirmation redirects and the legacy ceramic exclusion. See `hosting-netlify.md` for deployment and exact child-zone DNS handoff.
+
+- Netlify draft validation passed for all nine landing routes, their confirmation destinations and representative assets. All four offer forms load once at desktop/mobile widths; guarded confirmation routing and sticky CTAs passed without a real submission. Original homepage content preserved.
