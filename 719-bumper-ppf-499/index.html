@@ -350,15 +350,14 @@ h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:1.08;le
       </a>
     </div>
 
-    <!-- User-supplied native GHL form, displayed inline inside the quote card. -->
+    <!-- Default inline GHL embed: no layout wrapper, so the iframe stays mounted. -->
     <div class="form-card" id="quote">
       <h2>Get Your $499 PPF Offer</h2>
       <p class="lead-in">Tell us about your vehicle. We reply the same business day.</p>
       <iframe class="ghl-form-frame"
         src="https://api.leadconnectorhq.com/widget/form/caYOK2COiUJaFolEXxQS"
-        style="display:block;width:100%;height:476px;border:none;border-radius:3px"
+        style="display:block;width:100%;height:476px;border:none;border-radius:3px;visibility:hidden;opacity:0"
         id="inline-caYOK2COiUJaFolEXxQS" height="476" loading="eager"
-        data-layout="{'id':'INLINE'}"
         data-trigger-type="alwaysShow" data-trigger-value=""
         data-activation-type="alwaysActivated" data-activation-value=""
         data-deactivation-type="neverDeactivate" data-deactivation-value=""
