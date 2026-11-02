@@ -20,7 +20,7 @@ Saved and verified in the **getkoup.com** parent DNS zone:
 
 The target has no protocol or trailing slash. Only replace an existing conflicting record for the `tintlab` host, if one exists. Preserve other hosts, nameservers and mail records. Public DNS returned NXDOMAIN for tintlab.getkoup.com when checked before deployment.
 
-The user authorized continuing setup. Using the existing logged-in Hostinger session, the agent added only the `tintlab` CNAME and verified the saved row. The authoritative nameserver and Cloudflare resolver return the exact target. Custom-domain HTTPS provisioning was requested from Netlify. If Hostinger has a separately managed `tintlab.getkoup.com` child zone, inspect it before changing its apex; earlier projects in this repository had child-zone/CDN overrides.
+The user authorized continuing setup. Using the existing logged-in Hostinger session, the agent added only the `tintlab` CNAME and verified the saved row. The authoritative nameserver and Cloudflare resolver return the exact target. Custom-domain HTTPS is issued and enabled in Netlify. If Hostinger has a separately managed `tintlab.getkoup.com` child zone, inspect it before changing its apex; earlier projects in this repository had child-zone/CDN overrides.
 
 Official sources:
 - https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/
@@ -50,4 +50,10 @@ Address: 14518 Hempstead Rd, Suite 5C, Houston, TX 77040, United States. All six
 - Production Chrome QA at 1440, 390 and 320 pixels passed: both actual native forms render and resize to 369px, all six phone links match the supplied number, one fixed mobile quote button, no page overflow or runtime exceptions. No test lead submitted.
 - Saved Hostinger record: `CNAME tintlab → tint-lab-tint-199.netlify.app`, TTL 1800. Verified through ns1.dns-parking.com and Cloudflare DNS. Other hosts, mail and nameserver settings were not changed.
 - Screenshot proof: local ignored `qa/hostinger-dns-saved.png`.
-- Netlify’s HTTPS panel currently reports **DNS verification failed / waiting on propagation**, while authoritative DNS and Cloudflare already return the correct CNAME. Google DNS retained the earlier NXDOMAIN response at verification time. Certificate issuance is pending resolver propagation; do not claim custom-domain HTTPS is live yet. The default Netlify HTTPS URL remains verified live. No certificate warning was bypassed.
+- Initial verification briefly waited on DNS propagation. Authoritative DNS, Cloudflare and Google DNS now return the correct CNAME. Netlify issued the certificate, the custom hostname serves valid HTTPS with the Tint Lab page, and force_ssl is enabled. HTTP redirects to HTTPS. No certificate warning was bypassed.
+
+## Custom-domain HTTPS verified
+- Live custom URL: https://tintlab.getkoup.com/ . User also confirmed it works.
+- Netlify certificate state: **issued**, covering only `tintlab.getkoup.com`, expires January 31, 2027 at 14:26:55 UTC.
+- Site API: `ssl: true`, `force_ssl: true`, `built_with_badge_enabled: false`.
+- Validated custom-hostname TLS and HTTP 200 with the expected logo/page, supplied GHL form ID and phone; no certificate verification bypass. HTTP redirects to the HTTPS URL.
