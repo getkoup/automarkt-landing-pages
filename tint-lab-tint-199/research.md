@@ -118,3 +118,14 @@ Research date: November 2, 2026.
 - Release packager includes the thank-you HTML/CSS and redirect handler (20 public files total). Research/QA/CSS handoff remain excluded.
 - Isolated Chrome fixture tests intercepted GHL network requests and echoed synthetic messages from real cross-origin iframe windows. Both hero and lower frames redirected to the correct thank-you URL; 15 negative cases were ignored. No real lead or conversion submitted.
 - Thank-you layouts passed at 1440px, 390px and 320px: no overflow, original logo loaded, two correct phone links, correct address, no bottom sticky-bar padding, one H1/noindex, zero scripts/iframes on the confirmation page. Desktop/mobile screenshots visually reviewed.
+
+## Nano ceramic tint revision — publication authorized
+- User requested nano ceramic tint in the top hero, more film detail and consistent nano ceramic wording across the page. Treat this as the updated material for the existing $199 starting offer and side/rear coverage.
+- Updated hero, metadata, trust strip, benefits, reasons, quote summary, FAQs, closing offer/footer and thank-you copy. Removed the old FAQ saying the offer’s film type was unspecified and the carbon/ceramic upgrade wording.
+- Copy source checked: https://www.trytintlab.com/window-tint describes the brand’s ceramic-particle film technology, heat rejection, UV protection and clarity. This supports general explanatory copy, not specifications for a particular $199 film series. No brand/series, percentage, warranty duration, windshield inclusion or installation-time guarantee added.
+- User first requested local review, then explicitly said “make it live.” Publication is authorized through the required PR-to-main and Netlify workflow. GHL account/form settings, IDs, supplied phone/address and guarded thank-you behavior are unchanged.
+
+## Approved nano ceramic release
+- User approved the locally reviewed nano ceramic tint revision for live publication.
+- Built the 20-file static release and verified the hero/metadata/benefit/FAQ/thank-you copy, all local assets, two supplied GHL embed IDs, six supplied phone links and single fixed quote CTA.
+- No form submission logic, tracking, contact details, DNS or hosting-account setting changes in this release.
