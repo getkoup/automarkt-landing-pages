@@ -129,3 +129,13 @@ Research date: November 2, 2026.
 - User approved the locally reviewed nano ceramic tint revision for live publication.
 - Built the 20-file static release and verified the hero/metadata/benefit/FAQ/thank-you copy, all local assets, two supplied GHL embed IDs, six supplied phone links and single fixed quote CTA.
 - No form submission logic, tracking, contact details, DNS or hosting-account setting changes in this release.
+
+## User-supplied Google Ads and GTM tags
+- User supplied the exact Google Ads gtag.js snippet for `AW-18046216903` and GTM container `GTM-N3DBL3RL`, and requested installation plus redeployment.
+- Added both head snippets to the landing and branded thank-you pages; added the supplied GTM noscript iframe immediately after each body opens. IDs are isolated to the Tint Lab folder and documented in tracking.md.
+- No separate conversion label/event supplied or invented; no changes inside Google Ads/GTM/GHL accounts. Prior no-analytics notes describe earlier releases.
+- Existing form submit behavior, guarded success redirect, client contact details and nano ceramic content are unchanged.
+- Placement reference: https://support.google.com/tagmanager/answer/14847097 — head loader high in the head and noscript immediately after body, on each page.
+- Inline loader sandbox checks passed on both release pages: one async Google Ads loader, one GTM startup/container insertion, exact supplied IDs and no duplicate body snippet.
+- Existing isolated success-message QA now expects the supplied base analytics loaders/configuration on the thank-you page; all external tracking requests remain blocked during simulations.
+- With tracking requests blocked, both iframe redirect simulations, 15 negative cases and thank-you layouts at 1440/390/320 passed. The supplied gtag configuration and both analytics loader elements initialize on confirmation pages without sending analytics or test leads during this check.
