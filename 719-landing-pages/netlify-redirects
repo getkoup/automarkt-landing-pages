@@ -1,0 +1,8 @@
+# Preserve the current shared confirmation for the older service pages.
+/tint/thank-you.html /thank-you.html 307!
+/ppf/thank-you.html /thank-you.html 307!
+/cc/thank-you.html /thank-you.html 307!
+
+# Preserve the shared Vercel site's intentionally excluded legacy ceramic route.
+/ceramic /404.html 404!
+/ceramic/* /404.html 404!
