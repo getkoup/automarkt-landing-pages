@@ -1,0 +1,68 @@
+[
+  {
+    "file": "sosaatintz-original-logo.jpeg",
+    "source": "https://images.squarespace-cdn.com/content/v1/65fbb6715be2e351434117dc/cfecbb22-0b22-44aa-b709-19f6bdda950e/IMG_4001.jpeg?format=1500w",
+    "sha256": "9b0ba4c5e53a9948bd7668116ccef29a240b7fd4f31f8fcf8fa67780d579a033",
+    "note": "Unmodified official logo"
+  },
+  {
+    "file": "hero-tint.webp",
+    "source": "https://images.squarespace-cdn.com/content/v1/65fbb6715be2e351434117dc/1d85c3e3-d5fd-4ee5-b642-56f030a7c607/81E81D9A-1B59-4CDA-AAE5-B05EB95280B7.jpg?format=1500w",
+    "source_sha256": "0a2d87b614230855fb14b3c0dba362eee4480cfd0742a4f27c1f914b4d4211b6",
+    "sha256": "e5989b524f13ac49285e155ec2eca1255cd43113abcd5aae34ce2a107d1098d2",
+    "dimensions": [
+      1500,
+      1200
+    ]
+  },
+  {
+    "file": "audi-tint.webp",
+    "source": "https://images.squarespace-cdn.com/content/v1/65fbb6715be2e351434117dc/191164b5-e16f-4236-9e15-7089dd7f0bf5/18C937F7-B611-4458-A035-B4715AEDD6EC.jpeg?format=1500w",
+    "source_sha256": "e25fd3032088865c227cb57b57ad0d8c36f566be41513a04c16ad6424f66a6b1",
+    "sha256": "98dbf70dbfaee999b4b6bdcded523b6b0b40855dd4856188fe971a5246d2456d",
+    "dimensions": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "precision-install.webp",
+    "source": "https://images.squarespace-cdn.com/content/v1/65fbb6715be2e351434117dc/6b951600-6360-481f-8060-895cfdcd35f9/03E35F21-8597-4A3F-B3CF-109E02B026D3.jpeg?format=1500w",
+    "source_sha256": "1c9ab7e423ef07e5c87d13f2a7c6c15ec926b5a89e4e459b39d09938d43ecca8",
+    "sha256": "ee811817fa8d52f86858c4ece4a3fdbd0987142664f0cad278cc91f4c6aaaa6c",
+    "dimensions": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "model-s-tint.webp",
+    "source": "https://images.squarespace-cdn.com/content/v1/65fbb6715be2e351434117dc/a331b5b3-6e44-4a33-8332-6fc2044fa4f3/6E3D74C3-9AEA-4210-AE21-D4D114E0BD82.jpeg?format=1500w",
+    "source_sha256": "062b3f494d86682930125318f5b568ddfa50238b19daa665dac61b6b2c7fc24f",
+    "sha256": "2e3e0e375bada4665ff8321d2fd617f5fc115336f27772736abdeb43275c1345",
+    "dimensions": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "white-tesla.webp",
+    "source": "https://images.squarespace-cdn.com/content/v1/65fbb6715be2e351434117dc/736e5438-f199-47e7-8f39-fc535ca97dc1/IMG_4628.JPG?format=1500w",
+    "source_sha256": "fa41ec4e97fa8dd1c79086d313d2ec3978749df8b7a3d3e1df9cbb74a464faf0",
+    "sha256": "e36a84ccaa919690ae18d79b747040e1baa8565a704d2b0fa1a83bff45faac6c",
+    "dimensions": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "cybertrucks.webp",
+    "source": "https://images.squarespace-cdn.com/content/v1/65fbb6715be2e351434117dc/82faf93a-8e63-4bc0-af2b-6ad18ed538d4/cybertrucks.png?format=1500w",
+    "source_sha256": "2ef5ed6e5940aa4915100ca922cf68ba19e6abb11af5e8fb2329ec05fc84262f",
+    "sha256": "57d376474d349ea2311901dbf2362b5f3dd2fecb1904b4487cbe8434e18d86a3",
+    "dimensions": [
+      1500,
+      843
+    ]
+  }
+]
