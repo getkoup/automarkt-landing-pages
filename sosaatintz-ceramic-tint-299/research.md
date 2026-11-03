@@ -76,3 +76,9 @@ Research date: November 3, 2026.
 - User requested Netlify deployment and a DNS record for sosaatintz.getkoup.com, with DNS added by the user in Hostinger.
 - Prepared production canonical and removed local-preview noindex metadata. Added public-only static packaging, Netlify configuration and hosting handoff. Native forms and loading optimization retained.
 - Source push/project creation/upload require the explicit yes mandated by the user's global command instructions. No remote mutations performed during preparation.
+
+
+## Publication approved and Netlify project created
+- User replied yes. Created Netlify project sosaatintz-ceramic-tint-299 in sachita007, site ID 3d5740d8-f419-446e-8946-0a3690bc605f; custom domain sosaatintz.getkoup.com assigned.
+- User's Hostinger CNAME verified on authoritative, Cloudflare and Google DNS. No DNS account changes performed.
+- Source release proceeds through PR to main and local main sync before production upload. Public package excludes local research, tracking notes and browser profiles.

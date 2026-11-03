@@ -1,27 +1,36 @@
-# SosaaTintz — Netlify publication
+# SosaaTintz — Netlify hosting
 
-Requested hostname: https://sosaatintz.getkoup.com/
+Custom hostname: https://sosaatintz.getkoup.com/
 
-## Prepared project
-- Planned Netlify project: sosaatintz-ceramic-tint-299.
-- Planned team: sachita007 (read-only account verification in progress).
-- Planned default URL: https://sosaatintz-ceramic-tint-299.netlify.app/
-- Custom domain to assign: sosaatintz.getkoup.com.
-- Publication status: prepared locally. No Netlify project creation, source push or upload performed yet. The user's global command rules require an explicit “yes” before these actions.
-- Release uses a GitHub PR to main, then fast-forward sync of local main, then upload of the packaged merged source. No direct main push.
+## Netlify project
+- Project: sosaatintz-ceramic-tint-299.
+- Site ID: 3d5740d8-f419-446e-8946-0a3690bc605f.
+- Team: sachita007.
+- Default URL: https://sosaatintz-ceramic-tint-299.netlify.app/
+- Custom domain assigned: sosaatintz.getkoup.com.
+- Admin: https://app.netlify.com/projects/sosaatintz-ceramic-tint-299
+- User explicitly approved publication on November 3, 2026. Project creation and custom-domain assignment succeeded.
+- Release path: GitHub PR to main, fast-forward sync of local main, then a manual upload of the public package. No direct main push.
 
-## Hostinger DNS handoff
-After the project is created and its exact name is verified, add this record in Hostinger's getkoup.com DNS zone:
+## Verified Hostinger DNS
+The user added this record in Hostinger's getkoup.com DNS zone:
 
 | Type | Name / Host | Target | TTL |
 | --- | --- | --- | --- |
-| CNAME | sosaatintz | sosaatintz-ceramic-tint-299.netlify.app | 300 or Hostinger default |
+| CNAME | sosaatintz | sosaatintz-ceramic-tint-299.netlify.app | Hostinger default |
 
-This is the proposed target until project creation is confirmed. Do not include https:// or a trailing slash in the target. The agent will configure the custom hostname in Netlify; the user will add external DNS. No nameserver or unrelated DNS changes are needed.
+Verified on ns1.dns-parking.com, Cloudflare (1.1.1.1) and Google (8.8.8.8), November 3, 2026. No further DNS or nameserver changes needed. The user manages Hostinger; no DNS account changes performed by the agent.
 
-Read-only initial lookup: getkoup.com uses ns1.dns-parking.com and ns2.dns-parking.com; no existing sosaatintz CNAME or A answer was found. If Hostinger has a separate sosaatintz.getkoup.com child zone, inspect it before making changes.
+Official guidance: https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/
 
-Official Netlify guidance: https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/
+## Public package and deployment
+Run node build.mjs in this folder. Only index.html and referenced CSS, JS, photographs, logo, fonts and license files are packaged to dist/. Research, tracking, sources.json, GHL CSS handoff, QA/browser profiles and unused original photos are excluded. Source remains plain static HTML and works without a build.
 
-## Public package
-Run node build.mjs in this folder. Only index.html and its referenced CSS, JS, photographs, logo, fonts and license files are packaged to dist/. Research, tracking, sources.json, GHL CSS handoff, QA/browser profiles and unused original photos remain excluded. The source itself remains plain static HTML with no build requirement.
+After merging the source PR and syncing local main, from this folder:
+
+```sh
+node build.mjs
+netlify deploy --prod --no-build --dir dist --site sosaatintz-ceramic-tint-299 --json
+```
+
+Verify the deployment is ready, the default Netlify URL returns this page and the custom hostname has valid HTTPS. Native GHL form rendering can be checked without submitting a lead. HighLevel owns form submission and its configured success behavior.
