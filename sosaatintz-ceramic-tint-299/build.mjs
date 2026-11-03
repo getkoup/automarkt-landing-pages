@@ -4,7 +4,7 @@ import { dirname, resolve, relative, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = dirname(fileURLToPath(import.meta.url));
 const output = resolve(root, 'dist');
-const files = new Set(['index.html', 'assets/bebas-neue-license.txt', 'assets/dm-sans-license.txt']);
+const files = new Set(['index.html', 'thank-you.html', 'assets/bebas-neue-license.txt', 'assets/dm-sans-license.txt']);
 const visited = new Set();
 function localReference(reference, from) {
   if (!reference || /^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(reference)) return null;
@@ -28,6 +28,7 @@ async function inspect(file) {
   }
 }
 await inspect('index.html');
+await inspect('thank-you.html');
 if (relative(root, output) !== 'dist') throw new Error('Unexpected output directory');
 await rm(output, { recursive: true, force: true });
 for (const file of [...files].sort()) {
