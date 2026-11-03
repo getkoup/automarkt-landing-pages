@@ -26,7 +26,11 @@
 - Larger $99 price typography applies only at widths of 1024 px and above. Existing mobile offer sizes are retained.
 
 ## Advertising tracking
-No Google Ads, GTM, GA, Meta pixels, webhooks or conversion IDs supplied or installed.
+- User supplied and authorized installation of Google Ads base tag `AW-17824235340` and Google Tag Manager container `GTM-NWR5JN89`.
+- Installed the supplied asynchronous Google tag loader, `dataLayer` / `gtag` initialization and Ads configuration in `<head>`.
+- Installed the supplied asynchronous GTM loader in `<head>` and its matching noscript iframe at the bottom of `<body>`, as requested for the footer.
+- Each supplied loader appears once. Both use the same `window.dataLayer` without resetting an existing queue.
+- No separate conversion event/label, form-success trigger, phone-click conversion, GA ID, Meta pixel or webhook was supplied or added. GTM container contents and GHL tracking settings were not edited; a deployed base tag does not verify conversion reporting or CRM delivery.
 No tags or forms copied from other clients. The native GHL widget loads its own service assets, phone-country controls, configured CAPTCHA and native form-view events.
 
 ## GHL CSS handoff
@@ -34,7 +38,7 @@ No tags or forms copied from other clients. The native GHL widget loads its own 
 
 ## Verification and publication
 Form rendering, native styles and responsive sizing are checked without filling or submitting contact data. A visible form is not proof of CRM delivery; no real/test lead was submitted.
-Netlify production hostname: https://mango-hand-car-wash-99.netlify.app/ . Requested custom hostname: https://mango.getkoup.com/; Hostinger CNAME is supplied for the user to add. The source retains its intentional campaign-page `noindex, nofollow` metadata. See hosting.md for release/DNS details. No advertising tags, test leads or GHL account edits are part of publication.
+Netlify production hostname: https://mango-hand-car-wash-99.netlify.app/ . Live custom hostname: https://mango.getkoup.com/; the user added the Hostinger CNAME and HTTPS is verified. The source retains its intentional campaign-page `noindex, nofollow` metadata. See hosting.md for release/DNS details. The supplied advertising tags are included in publication; no test leads or GHL account edits were performed.
 
 ## Loading correction
 The optional explicit INLINE layout caused the official SDK to move each loaded iframe into a generated wrapper, triggering a second document load. Omit `data-layout` so GHL uses its default inline path and the frame stays inside its original slot. Cold traces changed from four form document requests (two per card) to two total (one per card). Both cards retain native fields, validation, CAPTCHA, cookie-consent attributes and submission behavior. No form-submit APIs were replaced or tested with contact data.
