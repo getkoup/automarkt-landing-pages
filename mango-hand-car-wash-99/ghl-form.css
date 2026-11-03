@@ -1,0 +1,214 @@
+/* MANGO HAND CAR WASH — COMPLETE REPLACEMENT GHL FORM CSS
+   Select ALL existing form Custom CSS and replace it with this ENTIRE file.
+   Paste CSS only, without <style> tags, then Save and Publish.
+   Paste INSIDE the native form: Styles -> Advanced -> Custom CSS.
+
+   Matches the landing page's WHITE form cards, warm light fields, dark text,
+   orange #ff7f00 submit button, and soft 6px field corners.
+   The landing page supplies the outer white card, heading and padding.
+   Use one column: Full Name -> Phone -> Vehicle Year, Make & Model.
+   Set native button text to: Claim my $99 detail ↗
+   Inter is used only if already loaded within the form; otherwise Arial.
+   Keep native validation, consent, phone controls, CAPTCHA and submission.
+   CSS changes appearance only. Native Mango form: EBJyMhnQ0k8bKoVhscGu.
+   The user has applied this stylesheet to the published widget. */
+:root {
+  --mango-font: "Inter", Arial, Helvetica, sans-serif;
+  --mango-text: #20201c;
+  --mango-muted: #767269;
+  --mango-field: #faf9f6;
+  --mango-border: #dcd7ce;
+  --mango-orange: #ff7f00;
+}
+html, body {
+  margin: 0 !important;
+  background: transparent !important;
+}
+.hl-app, .hl_form-builder--main, .ghl-form-wrap, #_builder-form {
+  background: transparent !important;
+  color: var(--mango-text);
+  font-family: var(--mango-font) !important;
+}
+.hl_form-builder--main { padding: 0 !important; }
+.ghl-form-wrap, #_builder-form {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#_builder-form .fields-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+#_builder-form .form-field-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+}
+#_builder-form .form-builder--item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#_builder-form label, #_builder-form .field-label {
+  color: var(--mango-text) !important;
+  font-family: var(--mango-font) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+}
+#_builder-form .field-label {
+  display: block !important;
+  margin-bottom: 8px !important;
+}
+#_builder-form .field-label * {
+  color: inherit !important;
+  font: inherit !important;
+}
+/* Strong enough to override GHL's generated text-input rules. */
+html body #_builder-form .form-builder--item input[type]:is([type="text"], [type="email"], [type="tel"], [type="number"], [type="url"], [type="date"], [type="search"]),
+html body #_builder-form .form-builder--item textarea,
+html body #_builder-form .form-builder--item select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 48px !important;
+  padding: 12px 14px !important;
+  background: var(--mango-field) !important;
+  color: var(--mango-text) !important;
+  border: 1px solid var(--mango-border) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  font: 400 16px/1.5 var(--mango-font) !important;
+  caret-color: var(--mango-orange);
+}
+#_builder-form textarea { min-height: 110px !important; resize: vertical; }
+#_builder-form select option { background: var(--mango-field); color: var(--mango-text); }
+#_builder-form input::placeholder, #_builder-form textarea::placeholder {
+  color: var(--mango-muted) !important;
+  font: inherit !important;
+  opacity: 1 !important;
+}
+html body #_builder-form .form-builder--item input:focus-visible,
+html body #_builder-form .form-builder--item textarea:focus-visible,
+html body #_builder-form .form-builder--item select:focus-visible {
+  border-color: var(--mango-orange) !important;
+  outline: 2px solid var(--mango-orange) !important;
+  outline-offset: 2px !important;
+}
+html body #_builder-form .form-builder--item input[type]:-webkit-autofill {
+  -webkit-text-fill-color: var(--mango-text) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--mango-field) inset !important;
+  caret-color: var(--mango-orange);
+}
+/* Preserve the native phone flag and country-code controls. */
+#_builder-form .iti { width: 100% !important; }
+html body #_builder-form .form-builder--item .iti--allow-dropdown:not(.iti--separate-dial-code):not(.iti--show-selected-dial-code) input:is([type="tel"], [type="text"]) {
+  padding-left: 54px !important;
+}
+html body #_builder-form .form-builder--item .iti--separate-dial-code input:is([type="tel"], [type="text"]),
+html body #_builder-form .form-builder--item .iti--show-selected-dial-code input:is([type="tel"], [type="text"]) {
+  padding-left: 104px !important;
+}
+#_builder-form .iti__selected-dial-code { color: var(--mango-text) !important; }
+#_builder-form .iti__arrow { border-top-color: var(--mango-orange) !important; }
+#_builder-form .iti__arrow--up { border-bottom-color: var(--mango-orange) !important; border-top-color: transparent !important; }
+.iti__country-list, .iti__dropdown-content {
+  background: var(--mango-field) !important;
+  color: var(--mango-text) !important;
+  border-color: var(--mango-border) !important;
+}
+.iti__country.iti__highlight, .iti__country:hover { background: #fff0df !important; }
+#_builder-form input[type="checkbox"], #_builder-form input[type="radio"] {
+  accent-color: var(--mango-orange);
+}
+#_builder-form .form-builder--btn-submit { margin-top: 8px !important; }
+#_builder-form button[type="submit"] {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 15px 18px !important;
+  background: var(--mango-orange) !important;
+  color: #101010 !important;
+  border: 1px solid var(--mango-orange) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  font: 700 13px/1.5 var(--mango-font) !important;
+  text-align: center !important;
+  white-space: normal !important;
+  cursor: pointer;
+}
+#_builder-form button[type="submit"] .button-text,
+#_builder-form button[type="submit"] .button-text * {
+  color: inherit !important;
+  font: inherit !important;
+}
+#_builder-form button[type="submit"] .button-text p { margin: 0 !important; }
+#_builder-form button[type="submit"]:hover { background: #ff942d !important; }
+#_builder-form button[type="submit"]:focus-visible {
+  outline: 2px solid var(--mango-orange) !important;
+  outline-offset: 3px !important;
+}
+#_builder-form button[type="submit"]:disabled { opacity: .65 !important; cursor: wait; }
+#_builder-form .error, #_builder-form .error-message,
+#_builder-form .hl-error, #_builder-form [role="alert"] {
+  color: #b42318 !important;
+  font-size: 12px !important;
+}
+#_builder-form a { color: #9a4b00 !important; text-underline-offset: 3px; }
+
+/* Keep consent and help text readable; do not hide native elements. */
+#_builder-form .terms-and-conditions,
+#_builder-form .terms-and-conditions p,
+#_builder-form .terms-and-conditions span,
+#_builder-form .form-builder--description,
+#_builder-form .form-builder--description p {
+  color: var(--mango-muted) !important;
+  font-family: var(--mango-font) !important;
+  font-size: 11px !important;
+  line-height: 1.7 !important;
+}
+#_builder-form .iti__dial-code { color: var(--mango-muted) !important; }
+.iti__dropdown-content .iti__search-input {
+  box-sizing: border-box !important;
+  background: var(--mango-field) !important;
+  color: var(--mango-text) !important;
+  border: 1px solid var(--mango-border) !important;
+  border-radius: 6px !important;
+  font: 400 16px/1.5 var(--mango-font) !important;
+}
+
+/* Keep phone-country search and keyboard focus clear on the light background. */
+.iti__dropdown-content .iti__search-input::placeholder {
+  color: var(--mango-muted) !important;
+  opacity: 1 !important;
+}
+.iti__country-list .iti__country-name,
+.iti__dropdown-content .iti__country-name {
+  color: var(--mango-text) !important;
+}
+#_builder-form .iti__country-list a,
+#_builder-form .iti__dropdown-content a {
+  color: var(--mango-text) !important;
+}
+#_builder-form .form-builder--btn-submit button[type="submit"]:hover {
+  background: #ff942d !important;
+  border-color: #ff942d !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  #_builder-form button[type="submit"],
+  #_builder-form .form-builder--item input,
+  #_builder-form .form-builder--item textarea,
+  #_builder-form .form-builder--item select {
+    transition: none !important;
+    animation: none !important;
+  }
+}
