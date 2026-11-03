@@ -1,4 +1,4 @@
-# SosaaTintz — $299 Ceramic Window Tint
+# SosaaTintz — $399 Ceramic Window Tint
 
 Research date: November 3, 2026.
 
@@ -6,11 +6,11 @@ Research date: November 3, 2026.
 - Client: SosaaTintz LLC | PPF & Vinyl Wraps.
 - Location: 1414 Portola Ave, Livermore, CA 94551.
 - Phone: (925) 752-5705. Email: Sosaatintz18@gmail.com.
-- Service: ceramic automotive window tint. Offer: $299, supplied by the user.
+- Service: ceramic automotive window tint. Offer: $399, supplied by the user.
 - Audience: Livermore, Pleasanton, Dublin, San Ramon and Bay Area drivers seeking comfort, glare reduction, privacy and a clean finish.
 - CTA: two inline instances of the user-supplied native GHL enquiry form, plus genuine shop call links. Initial disconnected preview forms were replaced on November 3, 2026.
 - Structure: independently copied Detail Now tint layout: hero + form, trust strip, four benefits, shop story, six reasons, gallery, Google reviews, lower form, FAQs, footer and one sticky mobile CTA.
-- Package windows, film series, vehicle eligibility, old-film removal, tax and written warranty are unconfirmed. Do not imply 3M Crystalline or a windshield is included for $299.
+- Package windows, film series, vehicle eligibility, old-film removal, tax and written warranty are unconfirmed. Do not imply 3M Crystalline or a windshield is included for $399.
 
 ## Verified sources
 - User's Google listing: https://share.google/1zxap7oRTPHR8zRDK
@@ -19,20 +19,20 @@ Research date: November 3, 2026.
 - Official homepage: https://www.sosaatintz-ppf.com/
 - Official tint page: https://www.sosaatintz-ppf.com/ceramic-window-tint-livermore-ca-bay-area
 - Official Instagram: https://www.instagram.com/sosaatintz/
-- Website lists 3M Ceramic IR and Crystalline film options and lifetime warranty. Performance percentages and specific film inclusion are not carried into the $299 package.
+- Website lists 3M Ceramic IR and Crystalline film options and lifetime warranty. Performance percentages and specific film inclusion are not carried into the $399 package.
 - Website and Google hours differ; omit hours pending confirmation.
 - Real Google review excerpts inspected in the supplied listing: Jimena Rosas (ceramic tint), Raja Jain (tint + PPF), Dennis Roberts (Cybertruck tint). Short excerpts remain attributed to the actual customers and do not imply they bought this promotion.
 
 ## Brand and assets
 - Original logo downloaded from the official Squarespace site, unchanged. Black background, white car outline and silver script; use black/white/silver styling.
-- Genuine photographs downloaded from the official tint page and homepage, optimized locally as WebP. Gallery shows shop work across services, not a promise of $299 package coverage.
+- Genuine photographs downloaded from the official tint page and homepage, optimized locally as WebP. Gallery shows shop work across services, not a promise of $399 package coverage.
 - Source URLs and SHA-256 checksums in assets/sources.json. Fonts and license files copied into this folder from the existing reference.
 
 ## GHL form CSS handoff
 - Read root README, including the complete-replacement CSS and generated-selector lessons.
 - Official instructions rechecked: https://help.gohighlevel.com/support/solutions/articles/155000006727
 - Select all existing native FORM Custom CSS under Styles → Advanced → Custom CSS and replace with the complete ghl-form.css. CSS only, no style tags. Save and Publish.
-- One column: Full Name → Phone → Vehicle Year, Make & Model. Native button text: Claim my $299 tint ↗. Set top margin and outer padding to zero; page supplies outer card.
+- One column: Full Name → Phone → Vehicle Year, Make & Model. Native button text: Claim my $399 tint ↗. Set top margin and outer padding to zero; page supplies outer card.
 - Transparent wrappers, dark square fields, light text, silver submit and focus styling. DM Sans if available inside GHL; Arial fallback. Native phone-country controls, consent, CAPTCHA, hidden fields and validation retained.
 - Native form `Rm67HH8VkcRpSDQkVsSD` subsequently supplied and integrated in both cards. No GHL account edits or CRM lead submission.
 
@@ -95,3 +95,12 @@ Research date: November 3, 2026.
 - Validation: 38 isolated redirect checks passed, covering both card IDs, duplicate success, wrong origin/source/form/frame/storage/location, empty or non-string fingerprints, contact-data and load/resize/error messages.
 - Browser fixtures using the native iframe origin confirmed hero and lower success messages each reach thank-you.html. All analytics and CRM traffic blocked during simulations; no real lead submitted. Thank-you layout inspected at 320, 390 and 1440px with no overflow, correct phone/directions, one GTM startup event and one Ads config per page.
 - Public release package includes 20 files and resolves both pages' assets. Correct tags/IDs present once; no inherited client tracking; JS syntax and diff whitespace checks pass. Production verification follows PR merge and deployment.
+
+
+## Offer update — November 4, 2026
+- User requested replacing the existing live $299 offer with $399, keeping the same page/domain. Updated every landing-page price, CTA, package/FAQ mention, metadata and thank-you copy.
+- Existing source folder and Netlify project retain their historical -299 names to preserve the requested in-place update, hosting, DNS and form integration. This is not a second campaign/page.
+- Tracking IDs, native form ID, success-message guards and loading behavior retained. Native iframe button copy is owned by GHL and checked separately.
+
+- Native button verified still says Claim my $299 tint ↗. GHL editor requires sign-in in this session. User explicitly chose “Leave the GHL button for me”; native GHL form/account edits are excluded from this update. User will change/publish that button separately.
+- Static package validated: 14 new-price mentions on landing page, two on thank-you; zero old-price mentions in either HTML page; tracking IDs and success listener preserved.

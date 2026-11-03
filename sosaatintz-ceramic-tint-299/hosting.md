@@ -38,3 +38,7 @@ Verify the deployment is ready, the default Netlify URL returns this page and th
 
 ## HTTPS and thank-you page
 Custom-domain HTTPS verified November 3, 2026 with normal TLS validation. The initial certificate issuance delay has cleared. Netlify's supported badge setting is disabled. Both pages carry the user-supplied GTM/Google Ads tags; explicit thank-you.html URLs are preserved by disabled pretty URLs. Native successful-submit messages redirect the parent to /thank-you.html.
+
+
+## Current offer — November 4, 2026
+The existing live page offer is $399. Historical source folder and Netlify project retain -299 identifiers. The user is handling the native GHL button price separately; no GHL account edit performed.
