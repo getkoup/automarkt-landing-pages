@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Warm the native form before page fonts and imagery. -->
+  <link rel="preconnect" href="https://api.leadconnectorhq.com">
+  <link rel="preconnect" href="https://link.msgsndr.com">
+  <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossorigin>
+  <link rel="preconnect" href="https://backend.leadconnectorhq.com" crossorigin>
+  <link rel="preload" href="https://link.msgsndr.com/js/form_embed.js" as="script" fetchpriority="high">
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer fetchpriority="high"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>$99 Interior + Exterior Detail | Mango Hand Car Wash · Houston</title>
   <meta name="description" content="Fresh inside. Glossy outside. Get Mango Hand Car Wash’s $99 interior and exterior detail with Hyper Ceramic Wax in Houston. Call (346) 347-2866.">
@@ -12,11 +19,7 @@
   <link rel="stylesheet" href="assets/alata.css">
   <link rel="stylesheet" href="assets/inter.css">
   <link rel="stylesheet" href="page.css">
-  <link rel="preconnect" href="https://api.leadconnectorhq.com">
-  <link rel="preconnect" href="https://link.msgsndr.com">
-  <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossorigin>
   <script src="site.js" defer></script>
-  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,14 +47,13 @@
           <div class="card-topline"><span>YOUR CAR’S NEXT FRESH START</span><span class="offer-pill">$99 OFFER</span></div>
           <h2 id="form-title">Let’s make it shine.</h2>
           <p>Interior. Exterior. All the little details.</p>
-          <!-- User-supplied Mango GHL form, adapted to an inline card with a unique iframe ID. -->
+          <!-- Default inline GHL embed: keep the frame mounted to avoid a reload during native layout setup. -->
           <div id="ghl-form-slot" data-ghl-form-slot>
             <iframe
               class="ghl-form-frame"
               src="https://api.leadconnectorhq.com/widget/form/EBJyMhnQ0k8bKoVhscGu"
-              style="display:block;width:100%;height:400px;border:none;border-radius:4px"
+              style="display:block;width:100%;height:400px;border:none;border-radius:4px;visibility:hidden;opacity:0"
               id="inline-EBJyMhnQ0k8bKoVhscGu-hero"
-              data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
               data-activation-type="alwaysActivated"
@@ -111,14 +113,13 @@
           <div class="card-topline"><span>READY FOR THE MANGO TREATMENT?</span><span class="offer-pill">$99 OFFER</span></div>
           <h2 id="second-form-title">Get your $99 detail.</h2>
           <p>Interior. Exterior. All the little details.</p>
-          <!-- User-supplied Mango GHL form, adapted to an inline card with a unique iframe ID. -->
+          <!-- Default inline GHL embed: keep the frame mounted to avoid a reload during native layout setup. -->
           <div id="ghl-form-slot-second" data-ghl-form-slot>
             <iframe
               class="ghl-form-frame"
               src="https://api.leadconnectorhq.com/widget/form/EBJyMhnQ0k8bKoVhscGu"
-              style="display:block;width:100%;height:400px;border:none;border-radius:4px"
+              style="display:block;width:100%;height:400px;border:none;border-radius:4px;visibility:hidden;opacity:0"
               id="inline-EBJyMhnQ0k8bKoVhscGu-second"
-              data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
               data-activation-type="alwaysActivated"
