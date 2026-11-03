@@ -42,7 +42,7 @@ The project build configuration uses `publish = "dist"` and leaves pretty-URL re
 ## Native GHL and CTAs
 Both quote cards use user-supplied native form `EBJyMhnQ0k8bKoVhscGu`, “Wash (Google) - 99,” as inline embeds with distinct iframe IDs and one official `form_embed.js`. GHL owns fields, country selection, configured CAPTCHA, validation, submission and its configured response. No test lead or account edit is part of this release.
 
-The phone is (346) 347-2866. Mobile has one fixed Request Quote CTA; laptop/desktop offers use larger $99 typography. The second quote section stays just below the page midpoint. Six selected Google reviews have 15 matching customer photos in the scrollable carousel. No advertising tags are installed.
+The phone is (346) 347-2866. Mobile has one fixed Request Quote CTA; laptop/desktop offers use larger $99 typography. The second quote section stays just below the page midpoint. Six selected Google reviews have 15 matching customer photos in the scrollable carousel. The user-supplied Google Ads base tag `AW-17824235340` and GTM container `GTM-NWR5JN89` are installed; see tracking.md for placement and scope.
 
 ## Native form startup
 The optional `data-layout` is intentionally omitted from both GHL frames. GHL’s default inline path keeps each frame in its original slot and avoids the duplicate document load caused by explicit-layout wrapper creation. The native loader is preloaded at high priority with early service connections; slots reserve space until its sizing handshake completes. Preserve this single-load setup in later releases.
