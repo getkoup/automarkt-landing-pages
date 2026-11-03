@@ -24,7 +24,7 @@ Verified on ns1.dns-parking.com, Cloudflare (1.1.1.1) and Google (8.8.8.8), Nove
 Official guidance: https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/
 
 ## Public package and deployment
-Run node build.mjs in this folder. Only index.html and referenced CSS, JS, photographs, logo, fonts and license files are packaged to dist/. Research, tracking, sources.json, GHL CSS handoff, QA/browser profiles and unused original photos are excluded. Source remains plain static HTML and works without a build.
+Run node build.mjs in this folder. Only index.html, thank-you.html and referenced CSS, JS, photographs, logo, fonts and license files are packaged to dist/. Research, tracking, sources.json, GHL CSS handoff, QA/browser profiles and unused original photos are excluded. Source remains plain static HTML and works without a build.
 
 After merging the source PR and syncing local main, from this folder:
 
@@ -34,3 +34,7 @@ netlify deploy --prod --no-build --dir dist --site sosaatintz-ceramic-tint-299 -
 ```
 
 Verify the deployment is ready, the default Netlify URL returns this page and the custom hostname has valid HTTPS. Native GHL form rendering can be checked without submitting a lead. HighLevel owns form submission and its configured success behavior.
+
+
+## HTTPS and thank-you page
+Custom-domain HTTPS verified November 3, 2026 with normal TLS validation. The initial certificate issuance delay has cleared. Netlify's supported badge setting is disabled. Both pages carry the user-supplied GTM/Google Ads tags; explicit thank-you.html URLs are preserved by disabled pretty URLs. Native successful-submit messages redirect the parent to /thank-you.html.

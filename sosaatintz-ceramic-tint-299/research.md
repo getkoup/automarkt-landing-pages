@@ -82,3 +82,16 @@ Research date: November 3, 2026.
 - User replied yes. Created Netlify project sosaatintz-ceramic-tint-299 in sachita007, site ID 3d5740d8-f419-446e-8946-0a3690bc605f; custom domain sosaatintz.getkoup.com assigned.
 - User's Hostinger CNAME verified on authoritative, Cloudflare and Google DNS. No DNS account changes performed.
 - Source release proceeds through PR to main and local main sync before production upload. Public package excludes local research, tracking notes and browser profiles.
+
+
+## User tracking and native thank-you flow — November 3, 2026
+- User supplied GTM-KW3XR5DF and Google Ads AW-18088371755 and requested a thank-you page, native success-message redirect and redeployment.
+- Added the supplied IDs to landing and thank-you pages. GTM uses the standard initialization event and body noscript; consolidated the duplicate gtag initialization. No explicit conversion event because no conversion label was supplied.
+- Inspected the published SosaaTintz widget without submitting: location Js9PuizigDvJKsbdeqFB; provider success handler in https://stcdn.leadconnectorhq.com/_preview/CLHgssjH.js emits separate _ud contact data and a frame-specific set-sticky-contacts message. Only the latter is accepted.
+- ghl-thanks.js validates provider origin, actual sending iframe, form ID, storage key, submitted frame ID, location and fingerprint, then redirects once to thank-you.html. It does not intercept or alter native submission.
+- Branded thank-you page uses original logo, Livermore address/phone, call/back/directions links and the same user tags. Copy confirms receipt of an enquiry, not a booked appointment. Marked noindex.
+- Public packaging now includes thank-you.html, thank-you.css and ghl-thanks.js while preserving exclusions for local QA and notes.
+- Custom-domain HTTPS now returns HTTP 200 with normal certificate validation; earlier certificate delay has cleared.
+- Validation: 38 isolated redirect checks passed, covering both card IDs, duplicate success, wrong origin/source/form/frame/storage/location, empty or non-string fingerprints, contact-data and load/resize/error messages.
+- Browser fixtures using the native iframe origin confirmed hero and lower success messages each reach thank-you.html. All analytics and CRM traffic blocked during simulations; no real lead submitted. Thank-you layout inspected at 320, 390 and 1440px with no overflow, correct phone/directions, one GTM startup event and one Ads config per page.
+- Public release package includes 20 files and resolves both pages' assets. Correct tags/IDs present once; no inherited client tracking; JS syntax and diff whitespace checks pass. Production verification follows PR merge and deployment.
