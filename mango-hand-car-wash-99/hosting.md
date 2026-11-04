@@ -26,7 +26,7 @@ Official references:
 - https://docs.netlify.com/manage/projects/powered-by-netlify-badge/
 
 ## Production package and release process
-The source remains a plain static page. `node build.mjs` packages only index.html, page.css, site.js and referenced local images/fonts/font stylesheets, plus the Alata/Inter font licenses, into `dist/`. It performs no transpilation or framework build. Research, tracking notes, hosting notes, GHL CSS handoff, QA, credentials and repository tooling are excluded from the public release.
+The source remains a plain static page. `node build.mjs` packages only index.html, thank-you.html, their referenced page CSS/JS and local images/fonts/font stylesheets, plus the Alata/Inter font licenses, into `dist/`. It performs no transpilation or framework build. Research, tracking notes, hosting notes, GHL CSS handoff, QA, credentials and repository tooling are excluded from the public release.
 
 Each release must come from merged, synced `main` after the GitHub PR workflow. Never push directly to main. Netlify deployment is a CLI upload of that merged static package, matching the existing agency sites; no repository-wide build hooks were changed.
 
@@ -45,4 +45,8 @@ Both quote cards use user-supplied native form `EBJyMhnQ0k8bKoVhscGu`, “Wash (
 The phone is (346) 347-2866. Mobile has one fixed Request Quote CTA; laptop/desktop offers use larger $99 typography. The second quote section stays just below the page midpoint. Six selected Google reviews have 15 matching customer photos in the scrollable carousel. The user-supplied Google Ads base tag `AW-17824235340` and GTM container `GTM-NWR5JN89` are installed; see tracking.md for placement and scope.
 
 ## Native form startup
-The optional `data-layout` is intentionally omitted from both GHL frames. GHL’s default inline path keeps each frame in its original slot and avoids the duplicate document load caused by explicit-layout wrapper creation. The native loader is preloaded at high priority with early service connections; slots reserve space until its sizing handshake completes. Preserve this single-load setup in later releases.
+The optional `data-layout` is intentionally omitted from both GHL frames. GHL’s default inline path keeps each frame in its original slot and avoids the duplicate document load caused by explicit-layout wrapper creation. The native loader is preloaded at high priority with early service connections; slots reserve space while its sizing handshake completes, with native content allowed to render progressively. Preserve this single-load setup in later releases.
+
+
+## Thank-you and form-speed revision
+The 2026-11-04 revision adds `thank-you.html`, `thank-you.css` and `ghl-thanks.js` to the release package and changes the hero headline. After local review, the user authorized publication together with improved form loading. The hero form remains eager; the second uses native lazy loading. SDK connections/preload start before other scripts, the SDK loads asynchronously, initial iframe hiding is removed and the hero backdrop has low fetch priority. Preserve native SDK sizing and verified success navigation.
