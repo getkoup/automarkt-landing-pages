@@ -1,5 +1,28 @@
 'use strict';
 
+// GHL may temporarily move an initializing frame outside the viewport. Wake the
+// lower form from its stable card, so native lazy loading cannot strand it there.
+const lowerForm = document.querySelector('#ghl-form-slot-second .ghl-form-frame');
+const lowerCard = document.querySelector('#quote');
+if (lowerForm && lowerCard) {
+  const loadLowerForm = () => {
+    if (!lowerForm.dataset.src) return;
+    lowerForm.loading = 'eager';
+    lowerForm.src = lowerForm.dataset.src;
+    delete lowerForm.dataset.src;
+  };
+  if ('IntersectionObserver' in window) {
+    const formObserver = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      loadLowerForm();
+      formObserver.disconnect();
+    }, { rootMargin: '600px 0px' });
+    formObserver.observe(lowerCard);
+  } else {
+    loadLowerForm();
+  }
+}
+
 // Content is visible by default. Animate only when it is entering the viewport.
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 if ('IntersectionObserver' in window && !motionPreference.matches) {
