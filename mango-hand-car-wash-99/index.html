@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Start native form connections before tracking, fonts and imagery. -->
+  <link rel="preconnect" href="https://api.leadconnectorhq.com">
+  <link rel="preconnect" href="https://link.msgsndr.com">
+  <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossorigin>
+  <link rel="preconnect" href="https://backend.leadconnectorhq.com" crossorigin>
+  <link rel="preload" href="https://link.msgsndr.com/js/form_embed.js" as="script" fetchpriority="high">
+  <script src="ghl-thanks.js"></script>
+  <script src="https://link.msgsndr.com/js/form_embed.js" async fetchpriority="high"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17824235340"></script>
   <script>
@@ -17,20 +25,12 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NWR5JN89');</script>
   <!-- End Google Tag Manager -->
-  <!-- Warm the native form before page fonts and imagery. -->
-  <link rel="preconnect" href="https://api.leadconnectorhq.com">
-  <link rel="preconnect" href="https://link.msgsndr.com">
-  <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossorigin>
-  <link rel="preconnect" href="https://backend.leadconnectorhq.com" crossorigin>
-  <link rel="preload" href="https://link.msgsndr.com/js/form_embed.js" as="script" fetchpriority="high">
-  <script src="https://link.msgsndr.com/js/form_embed.js" defer fetchpriority="high"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>$99 Interior + Exterior Detail | Mango Hand Car Wash · Houston</title>
   <meta name="description" content="Fresh inside. Glossy outside. Get Mango Hand Car Wash’s $99 interior and exterior detail with Hyper Ceramic Wax in Houston. Call (346) 347-2866.">
   <meta name="theme-color" content="#111111">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="assets/logo.png" type="image/png">
-  <link rel="preload" href="assets/hero.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="assets/alata.css">
   <link rel="stylesheet" href="assets/inter.css">
   <link rel="stylesheet" href="page.css">
@@ -47,11 +47,11 @@
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-backdrop" src="assets/hero.webp" width="1280" height="853" alt="" fetchpriority="high">
+      <img class="hero-backdrop" src="assets/hero.webp" width="1280" height="853" alt="" fetchpriority="low">
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> HOUSTON’S MANGO HAND CAR WASH</div>
-          <h1 id="hero-title">A fresh start.<br><span class="mango-underline">Inside &amp; out.</span></h1>
+          <h1 class="hero-title-location" id="hero-title">The Best Hand Car Wash<br><span class="mango-underline">in Houston, TX.</span></h1>
           <p class="hero-intro">Your everyday drive. <br>That just-detailed feeling.</p>
           <div class="price-lockup"><strong><span>$</span>99</strong><div><b>INTERIOR +<br>EXTERIOR DETAIL</b><span>Hyper Ceramic Wax included</span></div></div>
           <p class="hero-description">A carefully cleaned cabin. A hand-washed finish. Give your car the Mango treatment, right here on Westheimer.</p>
@@ -67,7 +67,7 @@
             <iframe
               class="ghl-form-frame"
               src="https://api.leadconnectorhq.com/widget/form/EBJyMhnQ0k8bKoVhscGu"
-              style="display:block;width:100%;height:400px;border:none;border-radius:4px;visibility:hidden;opacity:0"
+              style="display:block;width:100%;height:400px;border:none;border-radius:4px"
               id="inline-EBJyMhnQ0k8bKoVhscGu-hero"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -133,7 +133,7 @@
             <iframe
               class="ghl-form-frame"
               src="https://api.leadconnectorhq.com/widget/form/EBJyMhnQ0k8bKoVhscGu"
-              style="display:block;width:100%;height:400px;border:none;border-radius:4px;visibility:hidden;opacity:0"
+              style="display:block;width:100%;height:400px;border:none;border-radius:4px"
               id="inline-EBJyMhnQ0k8bKoVhscGu-second"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -147,7 +147,7 @@
               data-form-id="EBJyMhnQ0k8bKoVhscGu"
               data-cookie-consent="true"
               data-cookie-consent-provider="auto"
-              loading="eager"
+              loading="lazy"
               title="Mango $99 detail quote — middle form"
             ></iframe>
           </div>

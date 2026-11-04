@@ -149,3 +149,14 @@ Alata and Inter Latin fonts downloaded from Google Fonts and served locally.
 - After-change mobile trace: exactly two form document requests and two load events over twelve seconds (one per card), versus four/two per card before. Both three-field forms render with no overflow/errors. Observed readiness was about 3.2s locally versus 5.4s on the prior live version; host/network differences mean this is diagnostic evidence, not a controlled latency guarantee.
 - Independent checks at 320 and 1440 px confirm one document load per card, original DOM parents retained, visible native forms, phone-country controls, one sticky CTA and correct quote navigation. No test lead submitted. Evidence: `qa/form-loading-profile.json` and `qa/single-load-validation.json`.
 - Hostinger authoritative DNS plus Cloudflare and Google resolvers now return the requested CNAME for mango.getkoup.com. User’s actual saved TTL is 14400 seconds. Certificate activation is handled separately from this form change.
+
+
+## Requested local revisions — 2026-11-04
+- Replace the hero headline with “The Best Hand Car Wash in Houston, TX.”, matching the supplied client screenshot. Keep the $99 offer and remaining page structure; size the longer headline to fit phones and desktops.
+- Add Mango-branded `thank-you.html` with request confirmation, $99 package reminder, next steps, shop address, call button and a return link. Clarify that the team confirms the visit; the form itself does not book an appointment.
+- Connect both native GHL frames to the local thank-you page through the verified successful-submit postMessage. See tracking.md for exact form, account and message validation.
+- Local review only. Do not push, merge, deploy or edit GHL account settings for this request. Local source: `http://localhost:4173/mango-hand-car-wash-99/`; local confirmation: `http://localhost:4173/mango-hand-car-wash-99/thank-you.html`.
+
+
+## Authorized release and form startup — 2026-11-04
+The user subsequently requested faster form loading and redeployment, authorizing publication of the reviewed headline and thank-you flow. Prioritize the first native form, load the lower form near its section, remove page-authored initial hiding and allow the official SDK to initialize asynchronously. Keep fields, phone controls, CAPTCHA, consent and submissions native. See tracking.md for trace observations and verification limits; no lead was submitted.
