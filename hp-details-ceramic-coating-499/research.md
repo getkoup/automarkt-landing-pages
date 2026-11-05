@@ -18,7 +18,7 @@ Researched 2026-11-06 from https://www.hpdetails.com/ (home, ceramic coating, fu
 DFW car, truck and enthusiast owners who want long-term gloss and easier washing without dropping the car off at a shop.
 
 ## Selling points used
-- Mobile: "we come to you" (home or work)
+- Ceramic coating is **shop-applied, not mobile** (client correction, 2026-11-06). Page copy says "done in our shop"; shop address is shared at booking (exact address not yet supplied).
 - Open 7 days, including Sundays (a review praises Sunday availability)
 - All makes and models; luxury/exotic specialty (site FAQ)
 - Fully insured (site FAQ)
