@@ -1,0 +1,108 @@
+/* HP Mobile Detailing: glass / translucent layer on top of the copied layout.
+   Brand red #be1c1e from the logo; frosted panels sit over photos and soft red glows. */
+:root{--red:#be1c1e;--red-glow:#be1c1e59;--glass-dark:rgba(18,14,15,.46);--glass-dark-strong:rgba(18,14,15,.62);--glass-edge:rgba(255,255,255,.14);--glass-shine:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 42%,rgba(255,255,255,0) 60%)}
+
+/* Header + logo */
+.sticky-header{background:rgba(11,11,12,.55);border-bottom:1px solid var(--glass-edge);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%)}
+.brand{align-items:center;gap:12px}
+.brand img{width:62px;height:62px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.12),0 6px 22px var(--red-glow)}
+.brand-name{display:flex;flex-direction:column;line-height:1.2}
+.brand-name strong{font-size:15px;letter-spacing:.02em;text-transform:uppercase;color:#fff}
+.brand-name small{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:3px}
+.footer-grid .brand img{width:72px;height:72px}
+.header-call{padding:8px 16px 8px 8px;border:1px solid var(--glass-edge);border-radius:999px;background:rgba(255,255,255,.06);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.header-call svg{border-color:#be1c1e88;background:#be1c1e22}
+
+/* Buttons: glossy red with a soft glow */
+.button{border-radius:12px;background:linear-gradient(180deg,#d62a2c,#a8171a);border-color:#e0393b55;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 26px -8px var(--red-glow)}
+.button:hover{background:linear-gradient(180deg,#e33436,#b81b1e)}
+
+/* Hero: photo + red glow, frosted form card */
+.daylight-hero::before{background:linear-gradient(90deg,#09090af2 0%,#09090ad0 38%,#09090a73 68%,#09090ab3 100%)}
+.daylight-hero::after{content:"";position:absolute;z-index:-1;width:620px;height:620px;left:-180px;top:-140px;border-radius:50%;background:radial-gradient(circle,#be1c1e55,transparent 65%);filter:blur(10px);pointer-events:none}
+.glass-pill{display:inline-block;padding:8px 14px;border:1px solid var(--glass-edge);border-radius:999px;background:rgba(255,255,255,.06);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff}
+.status-dot{box-shadow:0 0 0 4px #ff5a5c26}
+.offer-card,.quote-actions{position:relative;background:var(--glass-dark);background-image:var(--glass-shine);border:1px solid var(--glass-edge);border-top:1px solid rgba(255,255,255,.26);border-radius:20px;box-shadow:0 30px 70px -20px #000c,inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%)}
+.offer-card::before,.quote-actions::before{content:"";position:absolute;left:24px;right:24px;top:-1px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,var(--red),transparent)}
+
+/* Trust strip */
+.dark-band{position:relative;background:linear-gradient(90deg,#0b0b0c,#1a0d0e 50%,#0b0b0c);border-block:1px solid var(--glass-edge)}
+.studio-trust>div{border-left-color:var(--glass-edge)}
+
+/* Light sections: soft frosted cards over red-tinted glow */
+.light-section{position:relative;overflow:hidden;background:radial-gradient(900px 420px at 8% 0%,#be1c1e1f,transparent 70%),radial-gradient(700px 380px at 100% 100%,#be1c1e17,transparent 70%),#f7f3f3}
+.benefit{border-radius:18px;border:1px solid rgba(255,255,255,.9);background:rgba(255,255,255,.55);box-shadow:0 18px 40px -24px #4a1b1c55,inset 0 1px 0 #fff;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.benefit-icon{display:inline-grid;place-items:center;width:54px;height:54px;border-radius:14px;background:#be1c1e14;border:1px solid #be1c1e26}
+.reason{padding:24px;border:1px solid rgba(255,255,255,.9);border-top:2px solid var(--red);border-radius:16px;background:rgba(255,255,255,.5);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+/* Story band */
+.story-band{background:radial-gradient(600px 300px at 85% 50%,#be1c1e30,transparent 70%),#0b0b0c}
+.studio-statement{border-radius:22px;background:var(--glass-dark);border:1px solid var(--glass-edge);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.story-photo>span{padding:7px 12px;border-radius:999px;background:rgba(0,0,0,.35);border:1px solid var(--glass-edge);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+
+/* Portfolio */
+.dark-section{position:relative;background:radial-gradient(800px 400px at 50% 0%,#be1c1e22,transparent 70%),#0b0b0c}
+.portfolio-grid img{border-radius:16px;border-color:var(--glass-edge)}
+.portfolio-grid figure{position:relative}
+.portfolio-grid figcaption{position:absolute;left:10px;right:10px;bottom:10px;padding:9px 12px;border-radius:12px;color:#fff;background:rgba(10,8,9,.42);border:1px solid var(--glass-edge);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.portfolio-grid{margin-bottom:30px}
+
+/* Reviews: glass cards on a red-tinted backdrop */
+.reviews-section{background:radial-gradient(700px 360px at 0% 30%,#be1c1e1c,transparent 70%),radial-gradient(600px 300px at 100% 80%,#be1c1e14,transparent 70%),#f6f2f2}
+.review-card{background:rgba(255,255,255,.6);border-color:rgba(255,255,255,.95);box-shadow:0 18px 40px -26px #4a1b1c66;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.review-version-cards .review-card{border-radius:18px}
+.review-author .avatar.initial{display:grid;place-items:center;font-size:14px;font-weight:700;color:#fff;background:linear-gradient(145deg,#d62a2c,#8f1214)}
+.stars{color:#c48a0a}
+
+/* Repeat offer: frosted panel over a blurred photo */
+.quote-band{overflow:hidden;isolation:isolate}
+.quote-backdrop{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;filter:blur(6px) brightness(.45);transform:scale(1.08)}
+.quote-band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,#0b0b0ce6,#2a0b0c99 60%,#0b0b0cd9)}
+.quote-layout{border-radius:24px;background:rgba(255,255,255,.05);background-image:var(--glass-shine);border:1px solid var(--glass-edge);backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%)}
+
+/* FAQ */
+details{border-top-color:#be1c1e26}
+
+/* Footer + mobile CTA */
+.site-footer{background:linear-gradient(180deg,#0b0b0c,#140a0b)}
+.footer-hours{display:block;font-size:11px;color:var(--muted)}
+.footer-grid>div:last-child .text-link{display:table}
+.mobile-cta{background:rgba(11,11,12,.6);border-top:1px solid var(--glass-edge);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%)}
+
+@media(max-width:760px){
+  .brand img{width:50px;height:50px}
+  .brand-name strong{font-size:12px}
+  .brand-name small{font-size:8px}
+  .header-call{padding:6px 12px 6px 6px}
+  .why-grid{grid-template-columns:1fr}
+  .portfolio-grid figcaption{font-size:9px;padding:7px 9px}
+  .glass-pill{padding:6px 10px}
+}
+@media(max-width:420px){
+  .brand-name{display:none}
+}
+
+/* GHL iframe: keep it transparent so the glass card shows through. */
+.ghl-form-frame{background:transparent!important;color-scheme:normal}
+
+/* Google review photos: main customer photo + thumbnails from the same review. */
+.review-gallery{position:relative;margin-bottom:18px}
+.review-gallery .review-photo{width:100%;height:220px;aspect-ratio:auto;object-fit:cover;border-radius:12px;margin:0;background:#e8dfdf}
+.review-thumbs{position:absolute;left:10px;bottom:10px;display:flex;gap:6px;padding:5px;border-radius:12px;background:rgba(255,255,255,.28);border:1px solid rgba(255,255,255,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.review-thumb{width:38px;height:38px;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;cursor:pointer;background:none;opacity:.75;transition:opacity .2s,border-color .2s}
+.review-thumb img{width:100%;height:100%;object-fit:cover}
+.review-thumb.is-active,.review-thumb:hover{opacity:1;border-color:#fff}
+.review-thumb:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.review-author .avatar{object-fit:cover}
+.review-version-cards .review-summary p{display:block;font-size:12px;line-height:1.6;margin-top:8px}
+@media(max-width:600px){.review-gallery .review-photo{height:200px}}
+
+/* GHL loading skeleton: shown over the reserved slot until the native form appears. */
+.ghl-form-slot{position:relative}
+.ghl-form-slot:not(.is-ready){min-height:340px}
+.form-loading{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;gap:41px;padding-top:30px;pointer-events:none;transition:opacity .35s ease}
+.form-loading i,.form-loading b{display:block;height:48px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(100deg,rgba(255,255,255,.05) 30%,rgba(255,255,255,.13) 50%,rgba(255,255,255,.05) 70%) 0 0/250% 100%;animation:hp-skeleton 1.3s linear infinite}
+.form-loading b{height:52px;margin-top:-23px;background-color:#be1c1e55;border-color:#e0393b40}
+.ghl-form-slot.is-ready .form-loading{opacity:0;visibility:hidden}
+@keyframes hp-skeleton{from{background-position:100% 0}to{background-position:-150% 0}}
+@media (prefers-reduced-motion: reduce){.form-loading i,.form-loading b{animation:none}}
