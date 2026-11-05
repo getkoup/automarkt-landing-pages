@@ -13,6 +13,9 @@ Requested hostname: https://hpdetails.getkoup.com/
 - Powered by Netlify badge disabled through the site API (`built_with_badge_enabled: false`), verified 2026-11-06.
 - Pretty URLs disabled so `/thank-you.html` is served directly.
 - Manual deployment of merged, synced `main`, through the GitHub PR workflow.
+- Initial production deploy `6aece2bb036f71ad7a3a42c6` (2026-11-06) from merge `eec862b` of PR #51.
+- Custom-domain CNAME added by the user and verified 2026-11-06: authoritative DNS and 1.1.1.1 resolve to Netlify; HTTPS returns 200 with a valid certificate.
+- `_headers` caches `/assets/*` for 7 days (CSS/JS 1 hour). Asset names are not hashed, so rename an image when replacing it.
 
 ## External DNS (Hostinger, getkoup.com zone)
 
