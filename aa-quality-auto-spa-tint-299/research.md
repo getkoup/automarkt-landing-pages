@@ -86,3 +86,7 @@ Researched 2026-10-15 before page implementation.
 - Added `thank-you.html` with the existing page’s local CSS, font, logo, shop photo, navy/gold header and footer, phone number and Richmond address. Confirmation explains follow-up and does not promise an appointment before the team confirms it.
 - Both embedded forms navigate to this page after GHL’s verified submission-success message. Confirmed A&A location ID from the current form configuration and the frame-specific message from the current GHL runtime; no GHL account setting changes or test lead needed.
 - Installed the user’s Google Ads/GTM header and noscript body snippets on the landing page and thank-you page. IDs and source are recorded in `tracking.md`.
+
+## Offer coverage (2026-11-07)
+
+User confirmed the tint offer covers the **side windows + rear windshield** (front windshield not included), matching the Tint Lab page. Shown under the hero price, in the quote price block, the offer FAQ, reason card, fine print and meta description.

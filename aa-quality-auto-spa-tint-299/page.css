@@ -343,3 +343,7 @@ details p a { text-decoration: underline; }
 .portfolio-grid img{aspect-ratio:4/3}
 .footer-legal{display:flex;gap:18px;flex-wrap:wrap}
 @media(max-width:760px){.daylight-offer strong{font-size:86px}.studio-statement>img{height:330px}.daylight-card{scroll-margin-top:16px}.quote-panel{scroll-margin-top:16px}.review-card.text-only blockquote{font-size:16px}.review-author>div{font-size:11px}.daylight-offer span{font-size:11px}}
+
+/* Offer coverage line under the hero price */
+.daylight-copy .coverage{margin:-12px 0 18px;font-size:15px;font-weight:700;letter-spacing:.01em;color:inherit}
+@media (max-width:760px){.daylight-copy .coverage{font-size:13px;margin:-8px 0 16px}}

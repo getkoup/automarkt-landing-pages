@@ -111,3 +111,7 @@ Research date: October 30, 2026.
 - Added a branded dark/silver confirmation page using the original logo, current Fremont address and phone, call/back/directions links, noindex metadata and the same user-supplied GTM. It confirms an enquiry, not a booked appointment.
 - Public packaging now includes the thank-you HTML/CSS and success listener. Native form validation/submission retained; no account edits or real test leads.
 - QA: isolated browser fixtures sent the verified payload from each embedded frame origin/window; both redirected to the branded page. Negative checks covered load/resize/error/contact-data messages, wrong storage/frame/location/origin/source and empty/non-string fingerprints. Duplicate success handled once. Thank-you layouts passed at 320px, 390px and 1440px. Analytics and real CRM requests were blocked during simulations; no real lead or conversion submitted.
+
+## Offer coverage (2026-11-07)
+
+User confirmed the tint offer covers the **side windows + rear windshield** (front windshield not included), matching the Tint Lab page. Shown under the hero price, in the quote price block, the offer FAQ, reason card, fine print and meta description.
