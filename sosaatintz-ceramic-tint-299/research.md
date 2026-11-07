@@ -104,3 +104,7 @@ Research date: November 3, 2026.
 
 - Native button verified still says Claim my $299 tint ↗. GHL editor requires sign-in in this session. User explicitly chose “Leave the GHL button for me”; native GHL form/account edits are excluded from this update. User will change/publish that button separately.
 - Static package validated: 14 new-price mentions on landing page, two on thank-you; zero old-price mentions in either HTML page; tracking IDs and success listener preserved.
+
+## Offer coverage (2026-11-07)
+
+User confirmed the tint offer covers the **side windows + rear windshield** (front windshield not included), matching the Tint Lab page. Shown under the hero price, in the quote price block, the offer FAQ, reason card, fine print and meta description.

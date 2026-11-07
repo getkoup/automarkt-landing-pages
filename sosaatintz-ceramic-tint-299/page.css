@@ -468,3 +468,7 @@ h1,h2{font-family:'Bebas Neue','Arial Narrow',sans-serif;font-weight:400!importa
 .ghl-form-slot { min-height: 468px; position: relative; }
 
 .form-loading { position: absolute; inset: 84px 0 auto; color: #a8adb8; font-size: 12px; text-align: center; pointer-events: none; }
+
+/* Offer coverage line under the hero price */
+.daylight-copy .coverage{margin:-12px 0 18px;font-size:15px;font-weight:700;letter-spacing:.01em;color:inherit}
+@media (max-width:760px){.daylight-copy .coverage{font-size:13px;margin:-8px 0 16px}}
