@@ -1,22 +1,30 @@
-// Register before GHL initializes either frame. Navigate only on native success.
+// Register before GHL initializes the calendar. Size it early; navigate only on native booking success.
 (() => {
   'use strict';
-  const formId = 'f6FWaSNC0ithZ1X8UcYj';
-  const locationId = 'todSFcSuIugBi4Ef9kmv';
+  const calendarId = 'fQbFw7UUsWoBTrc2705c';
   let redirected = false;
+
+  // GHL shows its own spinner once the frame document loads; hide ours then.
+  document.addEventListener('load', event => {
+    if (event.target && event.target.id === 'mango-booking-calendar') {
+      event.target.parentElement?.classList.add('is-loaded');
+    }
+  }, true);
 
   window.addEventListener('message', event => {
     if (redirected || event.origin !== 'https://api.leadconnectorhq.com' ||
         !Array.isArray(event.data)) return;
-    const frame = [...document.querySelectorAll('iframe.ghl-form-frame')]
-      .find(candidate => candidate.contentWindow === event.source);
-    if (!frame || frame.dataset.formId !== formId) return;
+    const frame = document.getElementById('mango-booking-calendar');
+    if (!frame || frame.contentWindow !== event.source) return;
 
-    const [action, storageKey, frameId, submittedLocationId, fingerprint] = event.data;
-    if (action !== 'set-sticky-contacts' ||
-        storageKey !== `embedded_iframe_${frame.id}` || frameId !== frame.id ||
-        submittedLocationId !== locationId ||
-        typeof fingerprint !== 'string' || !fingerprint.trim()) return;
+    const [action, booking] = event.data;
+    // Size the calendar from its own height message; form_embed.js may arrive later.
+    if (action === 'highlevel.setHeight' && booking && Number(booking.height) > 200) {
+      frame.style.height = `${Math.ceil(Number(booking.height)) + 30}px`;
+      return;
+    }
+    if (action !== 'msgsndr-booking-complete' || !booking ||
+        booking.calendarId !== calendarId) return;
 
     redirected = true;
     window.location.assign(new URL('thank-you.html', window.location.href).href);

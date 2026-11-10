@@ -33,3 +33,7 @@
 
 ## Detailing photos (added 2026-11-10)
 From Mango's own website uploads, resized and cropped to WebP: `hero-detail.webp` (DJI_20251125163801_0070_D.jpg), `detail-cabin-light.webp` (IMG_7887), `detail-wheels.webp` (DJI_20251126094304_0101_D.jpg), `detail-hand-finish.webp` (DJI_20251126094254_0100_D.jpg), `detail-cabin-dark.webp` (IMG_9014), `detail-technician.webp` (DJI_20251126094248_0098_D.jpg). They replace the wash-bay photos copied from the $99 page. Vehicles shown may have received different packages.
+
+## Booking calendar in the hero (2026-11-11)
+The user reverted the local page to the live version, then asked for changes one at a time: removed the photo gallery, the care section and the second (orange) form section; replaced the review cards with a simple 4.7 / 442 Google reviews rating; replaced the hero GHL quote form with booking calendar `fQbFw7UUsWoBTrc2705c`. Booking CTAs now read "Book your $29 detail" and "Book Now · $29". The thank-you page says the visit is booked.
+- Follow-up (2026-11-11): the user said the page loaded slowly and asked for Book Now instead of call buttons. The call buttons in the hero, booking card, package and FAQ are now Book Now buttons. The header, footer and upgrade rows keep the phone number. The calendar now appears as soon as GHL renders it, with a loading placeholder.
