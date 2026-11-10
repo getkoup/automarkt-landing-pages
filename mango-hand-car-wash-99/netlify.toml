@@ -4,3 +4,10 @@
 
 [build.processing.html]
   pretty_urls = false
+
+# $29 detail page lives in its own Netlify project.
+[[redirects]]
+  from = "/detail-29/*"
+  to = "https://mango-hand-car-wash-detail-29.netlify.app/:splat"
+  status = 200
+  force = true
