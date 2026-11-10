@@ -1,0 +1,30 @@
+.thank-you-page{min-height:100svh;background:#121212;color:#fff;display:flex;flex-direction:column}
+.thank-you-page .site-header{background:#121212}
+.thank-you-main{flex:1;position:relative;isolation:isolate;display:grid;align-items:center;padding-block:72px 88px;overflow:hidden}
+.thank-you-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15;z-index:-2}
+.thank-you-main:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#121212 8%,#121212a6);z-index:-1}
+.thank-you-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;align-items:center;gap:90px}
+.thank-you-check{display:grid;place-items:center;width:62px;height:62px;background:#ff7f001a;border:1px solid #ff7f0059;color:var(--orange);border-radius:50%;margin-bottom:26px}
+.thank-you-check svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.thank-you-copy h1{font-family:var(--heading);font-size:clamp(48px,5.6vw,76px);letter-spacing:-.045em;line-height:1.08;font-weight:400;margin:0}
+.thank-you-copy h1 span{color:var(--orange)}
+.thank-you-copy>p{max-width:470px;font-size:16px;line-height:1.8;color:#c6c5c1;margin:25px 0 28px}
+.thank-you-actions{display:flex;align-items:center;flex-wrap:wrap;gap:24px}
+.thank-you-actions .text-link{color:#fff;font-size:12px}
+.thank-you-card{background:var(--cream);color:var(--ink);border:1px solid #fff3;border-radius:14px;padding:32px;box-shadow:0 25px 65px #0004}
+.thank-you-card .eyebrow{font-size:9px;color:#895013;margin-bottom:19px}
+.thank-you-price{display:flex;align-items:center;gap:18px;padding-bottom:25px;border-bottom:1px solid #dcd6ce}
+.thank-you-price strong{font-size:79px;letter-spacing:-.075em;line-height:1;color:#e26900}
+.thank-you-price strong span{font-size:32px;vertical-align:top;line-height:1.5}
+.thank-you-price b{font-size:11px;line-height:1.6;letter-spacing:.035em}
+.thank-you-card h2{font-size:27px;letter-spacing:-.025em;line-height:1.25;margin:25px 0 17px}
+.thank-you-steps{list-style:none;padding:0;margin:0;counter-reset:next}
+.thank-you-steps li{counter-increment:next;display:grid;grid-template-columns:25px 1fr;gap:12px;margin-top:18px;font-size:12px;line-height:1.7;color:#646460}
+.thank-you-steps li:before{content:'0' counter(next);font-size:10px;color:#aa5710;padding-top:3px}
+.thank-you-steps strong{display:block;color:#20201c;font-size:13px;margin-bottom:3px}
+.thank-you-address{margin:25px 0 0;padding-top:21px;border-top:1px solid #dcd6ce;font-size:11px;line-height:1.8;font-style:normal;color:#646460}
+.thank-you-address a{color:#8d4507;text-decoration:underline;text-underline-offset:3px}
+.thank-you-page .site-footer{padding-bottom:0}
+.thank-you-page .footer-bottom{border-top:1px solid #ffffff1a}
+@media(max-width:1000px){.thank-you-grid{gap:40px;grid-template-columns:minmax(0,1fr) 325px}.thank-you-card{padding:27px}.thank-you-copy h1{font-size:57px}}
+@media(max-width:700px){.thank-you-main{padding-block:38px 50px}.thank-you-grid{grid-template-columns:1fr;gap:35px}.thank-you-check{width:51px;height:51px;margin-bottom:23px}.thank-you-copy h1{font-size:clamp(44px,10.8vw,63px)}.thank-you-copy>p{font-size:14px;margin-block:21px 24px}.thank-you-actions{gap:21px}.thank-you-actions .button{width:100%;justify-content:center}.thank-you-card{padding:27px;max-width:480px;width:100%;justify-self:center}.thank-you-price strong{font-size:76px}.thank-you-page .footer-bottom{padding-bottom:26px}}

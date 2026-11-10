@@ -50,3 +50,6 @@ The optional `data-layout` is intentionally omitted from both GHL frames. GHL’
 
 ## Thank-you and form-speed revision
 The 2026-11-04 revision adds `thank-you.html`, `thank-you.css` and `ghl-thanks.js` to the release package and changes the hero headline. After local review, the user authorized publication together with improved form loading. The hero form remains eager; the second uses native lazy loading. SDK connections/preload start before other scripts, the SDK loads asynchronously, initial iframe hiding is removed and the hero backdrop has low fetch priority. Preserve native SDK sizing and verified success navigation.
+
+## /detail-29 proxy
+`netlify.toml` proxies `mango.getkoup.com/detail-29/*` to the separate `mango-hand-car-wash-detail-29` project. Redeploy this project for changes to that rule to take effect.
