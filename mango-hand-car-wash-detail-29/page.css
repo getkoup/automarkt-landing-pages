@@ -137,3 +137,54 @@
 }
 .hero h1.hero-title-location{font-size:clamp(48px,4.5vw,65px);line-height:1.08}
 @media(max-width:700px){.hero h1.hero-title-location{font-size:clamp(38px,9.8vw,58px)}}
+/* Simple Google rating: score, stars and total reviews. */
+.rating-wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:48px;flex-wrap:wrap}
+.google-rating{display:flex;align-items:center;gap:26px;padding:6px 0;color:var(--ink);text-decoration:none}
+.rating-score{font-family:var(--heading);font-size:132px;line-height:.8;letter-spacing:-.06em;font-weight:400}
+.rating-meta{display:grid;gap:9px;padding-left:26px;border-left:1px solid #17171726}
+.rating-stars{color:var(--orange);font-size:27px;letter-spacing:.1em;line-height:1}
+.rating-source{display:flex;align-items:center;gap:9px;font-size:16px}
+.rating-source b{font-weight:700}
+.g-logo{width:20px;height:20px;flex:none}
+.rating-link{font-size:13px;color:#84501c;font-weight:600}
+@media(hover:hover){.google-rating:hover .rating-link{text-decoration:underline}}
+@media(max-width:700px){
+  .rating-wrap{display:grid;gap:30px}
+  .google-rating{gap:18px}
+  .rating-score{font-size:92px}
+  .rating-meta{padding-left:18px;gap:7px}
+  .rating-stars{font-size:21px}
+  .rating-source{font-size:14px}
+}
+/* Hero: offer on one row, wide booking calendar under it (GHL's short 3-column layout). */
+.hero-grid{grid-template-columns:1fr;gap:36px;align-items:start;padding-block:46px 64px}
+.hero-copy{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:end}
+.hero-copy h1{font-size:clamp(48px,4.5vw,66px)}
+.hero-offer .price-lockup{margin-top:0}
+.booking-card{padding:24px 26px 12px;border-radius:14px}
+.booking-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}
+.form-card .booking-head h2{font-size:30px}
+.form-card .booking-head p{margin:6px 0 0;font-size:13px}
+.booking-card .booking-frame{display:block;width:100%;min-height:560px;border:0;overflow:hidden}
+@media(max-width:900px){
+  .hero-copy{grid-template-columns:1fr;gap:0}
+  .hero-offer .price-lockup{margin-top:25px}
+  .booking-card .booking-frame{min-height:640px}
+}
+@media(max-width:700px){
+  .hero-copy h1{font-size:clamp(40px,10.6vw,62px)}
+  .booking-card{padding:20px 8px 8px}
+  .booking-head{padding-inline:12px}
+  .form-card .booking-head h2{font-size:26px}
+}
+/* Show the calendar as soon as GHL renders it, without waiting for form_embed.js. */
+.booking-frame-wrap{position:relative;margin-bottom:14px;border-radius:8px;background:#f6f5f1}
+.booking-loading{position:absolute;top:120px;left:0;right:0;text-align:center;font-size:13px;font-weight:600;color:#84501c}
+.booking-loading:before{content:'';display:block;width:26px;height:26px;margin:0 auto 12px;border:3px solid #ff7f0033;border-top-color:var(--orange);border-radius:50%;animation:booking-spin .8s linear infinite}
+@keyframes booking-spin{to{transform:rotate(1turn)}}
+.booking-card #mango-booking-calendar{position:relative!important;left:auto!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;z-index:1;margin:0}
+.book-button .call-number{font-weight:700}
+.booking-frame-wrap.is-loaded{background:transparent}
+/* GHL pads the top of its wide layout; tuck that blank band under the card heading. */
+@media(min-width:1180px){.booking-frame-wrap{overflow:hidden}.booking-card #mango-booking-calendar{margin-top:-46px!important}}
+.booking-frame-wrap.is-loaded .booking-loading{display:none}
