@@ -1,0 +1,55 @@
+/* Call-only additions on top of page.css (copied from the $29 booking page). */
+/* page.css stacks a wide calendar under the hero; a call card fits beside the copy instead. */
+@media(min-width:1000px){
+  .hero-grid{grid-template-columns:minmax(0,1fr) 400px;gap:64px;align-items:center;padding-block:56px 64px}
+  .hero-copy{display:block}
+  .hero-offer .price-lockup{margin-top:28px}
+}
+@media(max-width:999px){.call-card{width:100%;max-width:520px;justify-self:center}}
+.call-card .booking-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.call-card .booking-head p{font-size:13px;margin-top:9px}
+.call-card-button{width:100%;min-height:58px !important;margin-block:20px 18px !important;font-size:14px !important;justify-content:center}
+.call-card-button .call-number{font-size:15px !important}
+.call-card-list{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:10px;font-size:13px;color:var(--muted)}
+.call-card-list li{position:relative;padding-left:24px;line-height:1.5}
+.call-card-list li::before{content:"✓";position:absolute;left:0;top:0;color:var(--orange);font-weight:800}
+.call-card-list strong{color:var(--ink)}
+.call-card-google{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:12px;color:var(--muted);transition:border-color .2s}
+.call-card-google:hover{border-color:var(--orange)}
+.call-card-google strong{color:var(--ink);margin-right:4px}
+.call-card-google .stars{color:#f5a400;letter-spacing:1px}
+.call-card-google>span:last-child{margin-left:auto;color:var(--ink)}
+.call-card .card-location{display:flex;align-items:center;gap:10px;margin-top:14px;border-top:1px solid var(--line);font-size:12px}
+.call-card address{font-style:normal;color:var(--muted)}
+
+.call-reviews .rating-wrap{padding:0;margin-bottom:46px}
+.cr-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.cr-card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.cr-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;flex:none}
+.cr-body{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.review-stars{color:#f5a400;letter-spacing:2px;font-size:15px}
+.cr-card blockquote{margin:0;font-size:15px;line-height:1.55;color:var(--ink);flex:1}
+.review-who{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:12px;border-top:1px solid var(--line);padding-top:12px}
+.review-who span{color:var(--muted)}
+.reviews-cta{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:40px}
+
+.why-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
+.why-grid>div{padding:28px 26px 30px 0;border-bottom:1px solid var(--line)}
+.why-grid span{display:block;font-size:11px;font-weight:700;color:#84501c;letter-spacing:.1em;margin-bottom:12px}
+.why-grid strong{display:block;font-family:var(--heading);font-weight:400;font-size:22px;letter-spacing:-.02em;margin-bottom:6px}
+.why-grid p{font-size:14px}
+
+@media(max-width:1100px){.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cr-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){
+  .call-reviews .rating-wrap{margin-bottom:30px}
+  .cr-cards{grid-template-columns:1fr;gap:14px}
+  .cr-card img{aspect-ratio:16/10}
+  .cr-body{padding:16px}
+  .cr-card blockquote{font-size:14px}
+  .review-who{flex-direction:column;gap:2px}
+  .reviews-cta{flex-direction:column;align-items:stretch;gap:18px}
+  .reviews-cta .button{justify-content:center}
+  .why-grid{grid-template-columns:1fr}
+  .why-grid>div{padding:22px 0}
+  .mobile-cta .call-button .call-number{font-size:13px}
+}
