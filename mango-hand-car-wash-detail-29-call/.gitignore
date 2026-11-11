@@ -1,0 +1,4 @@
+/dist/
+/.netlify/
+/.qa-runtime/
+/qa/

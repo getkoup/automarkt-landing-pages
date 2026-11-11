@@ -11,3 +11,10 @@
   to = "https://mango-hand-car-wash-detail-29.netlify.app/:splat"
   status = 200
   force = true
+
+# $29 call-only special lives in its own Netlify project.
+[[redirects]]
+  from = "/interior-exterior-29/*"
+  to = "https://mango-hand-car-wash-detail-29-call.netlify.app/:splat"
+  status = 200
+  force = true
