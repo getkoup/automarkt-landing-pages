@@ -8,8 +8,11 @@
 - Supplied as a sticky sidebar; embedded inline in the hero with unique frame ID `inline-xnJMKy0NsimlyrFvLWx5`. Trigger, activation, deactivation and cookie-consent attributes kept.
 - ghl-thanks.js redirects to thank-you.html only on GHL's frame-specific successful-submit message (set-sticky-contacts with matching frame ID, location ID and a fingerprint). Same logic as the $399 page.
 
-## Ad tags
-- None yet. The user has not supplied GTM / Google Ads / Meta IDs for this page. The $399 page's GTM-KW3XR5DF and AW-18088371755 were deliberately NOT copied; add them (or new ones) only when the user asks.
+## Ad tags (user-supplied, Nov 12, 2026)
+- Google Tag Manager: GTM-KW3XR5DF
+- Google Ads: AW-18088371755 (gtag.js, `gtag('config', 'AW-18088371755')`)
+- Both in the <head> of index.html and thank-you.html, placed after the GHL form scripts so the form loads first.
+- The pasted GTM snippet loaded gtm.js without the `gtm.start` dataLayer event; that event was added, because GTM's page-view triggers wait for it.
 
 ## Success signal check — November 12, 2026 (no real lead submitted)
 - Published form setting: on submit = show GHL message ("Thank you for taking the time to complete this form."), no GHL redirect URL.
