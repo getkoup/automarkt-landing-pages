@@ -93,7 +93,7 @@ svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
 .coverage{display:inline-block;margin-top:8px;padding:8px 16px;background:linear-gradient(180deg,rgba(246,247,249,.95),rgba(185,190,198,.9));color:var(--ink);font-weight:800;font-size:15px;letter-spacing:.04em;text-transform:uppercase;border-radius:10px;box-shadow:inset 0 1px 0 #fff}
 .sub{max-width:520px;color:#cfd0da;margin:20px 0 16px}
 .hero-rating{display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px;margin-bottom:22px}
-.stars{color:var(--silver);letter-spacing:2px}
+.stars{color:#fbbc04;letter-spacing:2px}
 
 /* Sections */
 .section{padding:84px 0}
@@ -176,6 +176,12 @@ svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
 .review .who{font-weight:700;font-size:14px;margin-top:auto}
 .review .who small{display:block;font-weight:500;color:var(--muted)}
 .review .who a{border-bottom:1px solid var(--glass-line)}
+/* Reviews on the light background: white cards, dark text. */
+.light .stars-line a{border-bottom-color:rgba(19,19,26,.25)}
+.light .review{background:#fff;border-color:rgba(19,19,26,.08);box-shadow:0 6px 16px rgba(19,19,26,.07)}
+.light .review p{color:#13131a}
+.light .review .who small{color:#5b6070}
+.light .review .who a{border-bottom-color:rgba(19,19,26,.25)}
 @media (hover:none){.marquee{overflow-x:auto;scrollbar-width:none}.marquee::-webkit-scrollbar{display:none}.marquee-track{animation:none}}
 @media (prefers-reduced-motion:reduce){.marquee{overflow-x:auto}.marquee-track,.sk-label,.sk-field,.sk-button{animation:none}html{scroll-behavior:auto}}
 
