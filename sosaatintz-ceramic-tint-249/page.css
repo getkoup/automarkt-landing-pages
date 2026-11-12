@@ -237,8 +237,8 @@ svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
   .coverage{font-size:13px}
   .form-card{padding:20px 12px 10px;border-radius:18px}
   /* GHL never grows the frame on phones, so reserve room for the whole form. */
-  .ghl-form-slot{min-height:610px}
-  .ghl-form-frame{height:610px!important}
+  .ghl-form-slot{min-height:490px}
+  .ghl-form-frame{height:490px!important}
   .shade-controls{padding:20px}
   .section{padding:60px 0}
   .stats-row,.rail,.gallery{grid-template-columns:1fr}
