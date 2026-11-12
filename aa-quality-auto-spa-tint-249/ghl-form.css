@@ -1,0 +1,186 @@
+/* A&A QUALITY AUTO SPA $249 (/249-tint): COMPLETE REPLACEMENT FORM CSS.
+   Form: "Ceramic Tint - (google) - 249" (egn94NzYW422dhzBVdoP).
+   Select ALL existing form Custom CSS and replace it with this entire file.
+   Paste CSS only, without <style> tags, then Save and Publish.
+   Built for the page's white form card: transparent wrappers, light rounded
+   fields, navy text, a gold focus ring and a gold button.
+   Fields, validation, consent, CAPTCHA and native submission stay intact.
+   The 36px top padding is intentional: the landing page shifts the frame up
+   24px, which leaves a 12px gap under the card heading. */
+:root {
+  --aa-font: "Manrope", Arial, Helvetica, sans-serif;
+  --aa-text: #172238;
+  --aa-label: #26324a;
+  --aa-muted: #7a8396;
+  --aa-field: #f3f5f9;
+  --aa-field-focus: #ffffff;
+  --aa-border: #dde2eb;
+  --aa-radius: 12px;
+  --aa-gold: #e0b75e;
+  --aa-gold-hi: #f6dc96;
+  --aa-gold-lo: #cf9f45;
+}
+html, body {
+  margin: 0 !important;
+  background: transparent !important;
+}
+.hl-app, .hl_form-builder--main, .ghl-form-wrap, #_builder-form {
+  background: transparent !important;
+  color: var(--aa-text);
+  font-family: var(--aa-font) !important;
+}
+.hl_form-builder--main { padding: 0 !important; }
+.ghl-form-wrap, #_builder-form {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#_builder-form { padding-top: 36px !important; }
+/* On phones the page card is narrow, so the form adds its own side gutter. */
+@media (max-width: 420px) {
+  #_builder-form { padding-left: 10px !important; padding-right: 10px !important; }
+}
+#_builder-form .fields-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+#_builder-form .form-field-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+}
+#_builder-form .form-builder--item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#_builder-form label, #_builder-form .field-label {
+  color: var(--aa-label) !important;
+  font-family: var(--aa-font) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+}
+#_builder-form .field-label {
+  display: block !important;
+  margin-bottom: 7px !important;
+}
+#_builder-form .field-label * {
+  color: inherit !important;
+  font: inherit !important;
+}
+/* Strong enough to override GHL's generated text-input rules. */
+html body #_builder-form .form-builder--item input[type]:is([type="text"], [type="email"], [type="tel"], [type="number"], [type="url"], [type="date"], [type="search"]),
+html body #_builder-form .form-builder--item textarea,
+html body #_builder-form .form-builder--item select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 50px !important;
+  padding: 12px 14px !important;
+  background: var(--aa-field) !important;
+  color: var(--aa-text) !important;
+  border: 1px solid var(--aa-border) !important;
+  border-radius: var(--aa-radius) !important;
+  box-shadow: none !important;
+  font: 500 16px/1.5 var(--aa-font) !important;
+  caret-color: var(--aa-gold-lo);
+  transition: border-color .15s, background .15s;
+}
+#_builder-form textarea { min-height: 110px !important; resize: vertical; }
+#_builder-form select option { background: #fff; color: var(--aa-text); }
+#_builder-form input::placeholder, #_builder-form textarea::placeholder {
+  color: var(--aa-muted) !important;
+  font: inherit !important;
+  opacity: 1 !important;
+}
+html body #_builder-form .form-builder--item input:focus,
+html body #_builder-form .form-builder--item textarea:focus,
+html body #_builder-form .form-builder--item select:focus {
+  background: var(--aa-field-focus) !important;
+  border-color: var(--aa-gold) !important;
+  outline: 3px solid rgba(224, 183, 94, .28) !important;
+  outline-offset: 0 !important;
+}
+html body #_builder-form .form-builder--item input[type]:-webkit-autofill {
+  -webkit-text-fill-color: var(--aa-text) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--aa-field) inset !important;
+  caret-color: var(--aa-gold-lo);
+}
+/* Preserve the native phone flag and country-code controls. */
+#_builder-form .iti { width: 100% !important; }
+html body #_builder-form .form-builder--item .iti--allow-dropdown:not(.iti--separate-dial-code):not(.iti--show-selected-dial-code) input[type="tel"] {
+  padding-left: 54px !important;
+}
+html body #_builder-form .form-builder--item .iti--separate-dial-code input[type="tel"],
+html body #_builder-form .form-builder--item .iti--show-selected-dial-code input[type="tel"] {
+  padding-left: 104px !important;
+}
+#_builder-form .iti__selected-dial-code { color: var(--aa-text) !important; }
+#_builder-form .iti__arrow { border-top-color: var(--aa-label) !important; }
+#_builder-form .iti__arrow--up { border-bottom-color: var(--aa-label) !important; border-top-color: transparent !important; }
+.iti__country-list, .iti__dropdown-content {
+  background: #fff !important;
+  color: var(--aa-text) !important;
+  border-color: var(--aa-border) !important;
+  border-radius: var(--aa-radius) !important;
+}
+.iti__country.iti__highlight, .iti__country:hover { background: #fbf4e3 !important; }
+/* Consent text and checkbox. */
+#_builder-form input[type="checkbox"], #_builder-form input[type="radio"] {
+  accent-color: var(--aa-gold-lo);
+  width: 18px !important;
+  height: 18px !important;
+}
+#_builder-form .terms-and-conditions, #_builder-form .terms-and-conditions *,
+#_builder-form .sms-consent, #_builder-form .sms-consent * {
+  color: #5d6572 !important;
+  font-family: var(--aa-font) !important;
+  font-size: 12px !important;
+  line-height: 1.55 !important;
+}
+#_builder-form .form-builder--btn-submit { margin-top: 6px !important; }
+#_builder-form button[type="submit"] {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 54px !important;
+  height: auto !important;
+  padding: 15px 18px !important;
+  background: linear-gradient(180deg, var(--aa-gold-hi) 0%, var(--aa-gold) 55%, var(--aa-gold-lo) 100%) !important;
+  color: #11192a !important;
+  border: 1px solid var(--aa-gold-lo) !important;
+  border-radius: var(--aa-radius) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55), 0 3px 8px rgba(207, 159, 69, .25) !important;
+  font: 800 16px/1.4 var(--aa-font) !important;
+  letter-spacing: -.01em;
+  text-align: center !important;
+  white-space: normal !important;
+  cursor: pointer;
+  transition: filter .15s, transform .15s;
+}
+#_builder-form button[type="submit"] .button-text,
+#_builder-form button[type="submit"] .button-text * {
+  color: inherit !important;
+  font: inherit !important;
+}
+#_builder-form button[type="submit"] .button-text p { margin: 0 !important; }
+#_builder-form button[type="submit"]:hover { filter: brightness(1.05); transform: translateY(-1px); }
+#_builder-form button[type="submit"]:focus-visible {
+  outline: 3px solid rgba(224, 183, 94, .45) !important;
+  outline-offset: 3px !important;
+}
+#_builder-form button[type="submit"]:disabled { opacity: .65 !important; cursor: wait; transform: none; }
+#_builder-form .error, #_builder-form .error-message,
+#_builder-form .hl-error, #_builder-form [role="alert"] {
+  color: #c62f3b !important;
+  font-size: 12px !important;
+}
+#_builder-form a { color: #a87a22 !important; text-underline-offset: 3px; }

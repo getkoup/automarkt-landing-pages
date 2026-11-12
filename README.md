@@ -50,6 +50,7 @@ Repeat for each folder: one Vercel project per landing page.
 | `sleek-detailing-ceramic-coating-699` | Sleek Detailing (Boynton Beach, FL) | Ceramic coating · $699 10-year | [sleek.getkoup.com/cc](https://sleek.getkoup.com/cc/) · [Netlify](https://sleek-detailing-ceramic-coating-699.netlify.app/cc/) | Netlify shared-domain build: preserved $499 homepage at `/`, new $699 page at `/cc/`; custom-domain HTTPS verified with HTTP redirect; badge disabled; native forms and thank-you page |
 | `power-pro-ceramic-coating-599` | Power Pro Studios (Northglenn, CO) | Ceramic coating · $599 10-year | [Netlify](https://power-pro-ceramic-coating-599.netlify.app) | Netlify hosting; `powerpro.getkoup.com` configured (external DNS required); native GHL form and verified Google reviews |
 | `aa-quality-auto-spa-tint-299` | A&A Quality Auto Spa (Richmond, TX) | HITEK Ceramic IR window tint · $299 for sedans | [aaquality.getkoup.com](https://aaquality.getkoup.com/) · [Vercel](https://aa-quality-auto-spa-tint-299.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/aa-quality-auto-spa-tint-299/) | Live on Vercel and GitHub Pages; custom domain HTTPS verified; user-supplied GHL form `Vvz6NYhE1pelkUjTVOGo`; matching thank-you page; Google Ads `AW-18361539514` + GTM `GTM-NFRKT6JQ` |
+| `aa-quality-auto-spa-tint-249` | A&A Quality Auto Spa (Richmond, TX) | HITEK Ceramic IR window tint · $249 · side windows + rear windshield | [aaquality.getkoup.com/249-tint](https://aaquality.getkoup.com/249-tint/) · [Netlify](https://aa-quality-auto-spa-tint-249.netlify.app/) | Own Netlify project, proxied from the $299 Netlify site (manual CLI deploys); SosaaTintz $249 layout with all copy from A&A's site; navy/gold design with white form card; native GHL form `egn94NzYW422dhzBVdoP` (Ceramic Tint - (google) - 249); thank-you redirect; no ad tags yet; [hosting plan](aa-quality-auto-spa-tint-249/hosting.md) |
 | `coast2city-ceramic-coating-499` | Coast 2 City Detailing & Ceramic Coatings (Wilmington, NC) | Ceramic coating · $499 5-year | [coast2city.getkoup.com](https://coast2city.getkoup.com/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/coast2city-ceramic-coating-499/) | Live; GHL form + Google Ads/GTM tags |
 | `detailnow-taylor-ceramic-coating-599` | Detail Now – Taylor Ceramic Coatings (Taylor, TX) | Ceramic coating · $599 10-year | [detailnow.getkoup.com](https://detailnow.getkoup.com/) · [Vercel](https://detailnow-taylor-ceramic-coating-59.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/detailnow-taylor-ceramic-coating-599/) | Live; GHL form + Google Ads/GTM tags |
 | `detailnow-ceramic-tint-299` | Detail Now (Taylor, TX) | Ceramic window tint · $299 | [detailnow.getkoup.com/tint](https://detailnow.getkoup.com/tint/) · [Vercel](https://detailnow-ceramic-tint-299.vercel.app/) | Vercel; own static project with shared-domain routing through the coating project; supplied GHL form `CT04c62yNk47Gkfgmq1C`; success-message redirect to branded thank-you page; Google Ads `AW-11146644582` + GTM `GTM-KVP98TG2` |
@@ -73,6 +74,18 @@ The complete replacement stylesheet is [sosaatintz-ceramic-tint-299/ghl-form.css
 ### SosaaTintz $249 GHL CSS handoff
 
 The complete replacement stylesheet for form `xnJMKy0NsimlyrFvLWx5` ("Ceremic Tint - 249 (google)") is [sosaatintz-ceramic-tint-249/ghl-form.css](sosaatintz-ceramic-tint-249/ghl-form.css). In that form's **Styles → Advanced → Custom CSS**, select all existing CSS, replace it with the **entire file** (CSS only, no `<style>` tags), then **Save and Publish**. It only changes the $249 form; the $399 form keeps its own CSS. It matches the page's dark frosted-glass card: transparent wrappers, translucent rounded fields, light labels and a glossy silver button. Set the form's top margin and outer padding to 0. Verified by injecting it into a saved copy of the published widget; not applied in GHL by the agent.
+
+### A&A Quality $249 GHL CSS handoff
+
+The complete replacement stylesheet for form `egn94NzYW422dhzBVdoP` ("Ceramic Tint - (google) - 249") is [aa-quality-auto-spa-tint-249/ghl-form.css](aa-quality-auto-spa-tint-249/ghl-form.css). In that form's **Styles → Advanced → Custom CSS**, select all existing CSS, replace it with the **entire file** (CSS only, no `<style>` tags), then **Save and Publish**. It only changes the $249 form. It matches the page's white form card:
+- transparent wrappers
+- light rounded fields with navy text
+- a gold focus ring
+- a gold `#e0b75e` button
+
+Fields: **First Name → Car Details → Phone**, with button text **Claim my $249 ceramic tint ↗**. The stylesheet sets a 36px top padding, which the page's -24px frame offset relies on, and adds a 10px side gutter on phones. Native consent, phone-country controls, validation and submission are kept.
+
+Verification: injected into the published widget in a local headless Chrome at 360px and 1280px. It has not been applied in GHL by the agent.
 
 ### Mango GHL CSS handoff
 
