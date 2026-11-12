@@ -42,3 +42,6 @@ Custom-domain HTTPS verified November 3, 2026 with normal TLS validation. The in
 
 ## Current offer — November 4, 2026
 The existing live page offer is $399. Historical source folder and Netlify project retain -299 identifiers. The user is handling the native GHL button price separately; no GHL account edit performed.
+
+## /249-tint/ proxy — November 12, 2026
+netlify.toml proxies /249-tint/* to the separate Netlify project sosaatintz-ceramic-tint-249 (source folder sosaatintz-ceramic-tint-249). Adding or changing that path means redeploying this project.
