@@ -1,0 +1,2 @@
+# The $249 tint page lives in its own Netlify project.
+/249-tint/*  https://aa-quality-auto-spa-tint-249.netlify.app/:splat  200!
