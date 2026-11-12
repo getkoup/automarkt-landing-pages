@@ -210,13 +210,10 @@ svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
 .foot img{width:72px;height:auto;border-radius:6px}
 .foot a:hover{color:var(--text)}
 
-/* Mobile sticky CTA */
-.mobile-cta{display:none}
-
 /* Browsers without backdrop-filter get solid dark panels instead of see-through glass. */
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
   .form-card{background:#15161c}
-  .topbar,.mobile-cta{background:rgba(5,5,8,.96)}
+  .topbar{background:rgba(5,5,8,.96)}
 }
 
 @media (max-width:960px){
@@ -230,7 +227,6 @@ svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
   .final-logo{display:none}
 }
 @media (max-width:640px){
-  body{padding-bottom:78px}
   .wrap{padding-inline:18px}
   .topbar .wrap{min-height:68px}
   .brand img{width:88px;height:50px}
@@ -252,7 +248,4 @@ svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
   .cta-bar .wrap{flex-direction:column;align-items:stretch;text-align:center}
   .bar-actions{flex-direction:column}
   .bar-call{justify-content:center}
-  .mobile-cta{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(5,5,8,.6);border-top:1px solid rgba(255,255,255,.1);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur)}
-  .mobile-cta .pkg-cta{flex:1}
-  .mc-call{display:grid;place-items:center;width:52px;height:52px;border:1px solid var(--glass-line);border-radius:12px;background:rgba(255,255,255,.06);flex-shrink:0}
 }
