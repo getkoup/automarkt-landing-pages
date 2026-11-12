@@ -1,0 +1,10 @@
+.thanks{min-height:calc(100svh - 85px);display:grid;place-items:center;text-align:center;padding-block:60px}
+.thanks-content{max-width:660px}
+.thanks-check{display:grid;place-items:center;width:56px;height:56px;margin:0 auto 26px;border:1px solid rgba(224,183,94,.5);border-radius:50%;color:var(--gold);font-size:26px}
+.thanks h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,6vw,64px);line-height:1.05;letter-spacing:-.045em;margin-bottom:22px}
+.thanks h1 span{background:linear-gradient(180deg,#fff4d6,#dcaa4c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.thanks p{color:var(--muted);max-width:540px;margin:0 auto 16px}
+.thanks-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.thanks-location{margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.thanks address{font-style:normal;font-size:14px;color:var(--muted);margin-bottom:10px}
+.thank-you-page{padding-bottom:0}
