@@ -4,3 +4,10 @@
 
 [build.processing.html]
   pretty_urls = false
+
+# $249 tint page lives in its own Netlify project.
+[[redirects]]
+  from = "/249-tint/*"
+  to = "https://sosaatintz-ceramic-tint-249.netlify.app/:splat"
+  status = 200
+  force = true
