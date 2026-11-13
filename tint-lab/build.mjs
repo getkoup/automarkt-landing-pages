@@ -11,7 +11,7 @@ const assets = [...new Set([
   ...[...html.matchAll(/(?:src|href)="(assets\/[^"?#]+)"/g)].map(m => m[1]),
   ...[...css.matchAll(/url\(['"]?(assets\/[^)'"?#]+)['"]?\)/g)].map(m => m[1]),
 ])];
-const files = ['index.html', 'page.css', 'site.js', ...assets, 'assets/dm-sans-license.txt', 'assets/bebas-neue-license.txt'];
+const files = ['index.html', 'page.css', 'site.js', 'ghl-thanks.js', ...assets, 'assets/dm-sans-license.txt', 'assets/bebas-neue-license.txt'];
 await rm(output, { recursive: true, force: true });
 for (const file of files) {
   if (file.includes('..') || file.startsWith('/')) throw new Error(`Invalid asset path: ${file}`);
