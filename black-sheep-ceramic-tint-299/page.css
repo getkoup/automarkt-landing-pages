@@ -427,6 +427,8 @@ h1,h2{font-family:'Bebas Neue','Arial Narrow',sans-serif;font-weight:400!importa
 .ghl-form-frame { display: block; width: 100%; border: 0; background: transparent; }
 /* form_embed.js parks hidden iframes at left:-9999px; keep them in place so the lazy lower form can load. */
 .ghl-form-frame { left: auto !important; }
+/* Contain the hidden absolutely-positioned iframe inside its wrapper so it can’t widen the page on mobile. */
+.ep-wrapper { position: relative; }
 
 /* Offer coverage line under the hero price */
 .daylight-copy .coverage{margin:-12px 0 18px;font-size:15px;font-weight:700;letter-spacing:.01em;color:inherit}
