@@ -1,0 +1,28 @@
+[build]
+  command = "node build.mjs"
+  publish = "dist"
+
+[build.processing.html]
+  pretty_urls = false
+
+# tintlab.getkoup.com serves this hub at /. Each location page is its own
+# Netlify project, proxied under a path so visitors stay on one domain.
+# netlify/edge-functions/location-slash.js adds the trailing slash first,
+# because the location pages use relative asset paths.
+[[redirects]]
+  from = "/jersey-village/*"
+  to = "https://tint-lab-tint-199.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/memorial/*"
+  to = "https://tint-lab-memorial-tint-199.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/galleria/*"
+  to = "https://tint-lab-galleria-tint-199.netlify.app/:splat"
+  status = 200
+  force = true
