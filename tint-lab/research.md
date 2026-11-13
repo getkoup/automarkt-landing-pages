@@ -5,7 +5,7 @@ Research date: November 14, 2026.
 ## Brief
 - User asked for a main landing page listing all three Tint Lab locations, alongside the per-location pages.
 - Offer: **Get Full Vehicle Nano Ceramic Tint Starting At $199 (Side Windows + Rear Windshield)**.
-- CTA: choose a location. Each location card links to that location’s landing page (which has the quote form), plus call, directions and Google listing. The hub has no form of its own.
+- CTA: choose a location. Each location card links to that location’s landing page (which has the quote form), plus call, directions and Google listing. The hub hero also has the Memorial GHL form (leads go to Memorial). No mobile bottom bar (removed on all pages, 2026-11-14).
 
 ## Locations
 | Location | Address | Phone | Hours | Google listing | Page folder |
