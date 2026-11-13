@@ -66,3 +66,11 @@ Normal TLS validation succeeds for `blacksheep.getkoup.com`, and HTTPS returns H
 - The lower form is now `loading="lazy"`, so it loads only when the visitor scrolls near it. Previously it loaded twice at page start alongside the top form.
 - Added preconnects for `stcdn.leadconnectorhq.com`, `backend.leadconnectorhq.com` and `challenges.cloudflare.com`.
 - Headless Chrome on a 1.6 Mbps connection: page start went from 4 form loads / 5.8–8.9MB to 2 form loads / ~5.3MB.
+
+### Follow-up: no more reload (November 14, 2026)
+
+- `form_embed.js` skips the move when the iframe's parent already has the ID `<iframe-id>-wrapper`. That's the path it uses itself after its own reload. Both iframes are now pre-wrapped in `<div id="<id>-div"><div id="<id>-wrapper" class="ep-wrapper">`, so each form loads once and is shown as soon as it finishes the `fetch-query-params` handshake.
+- Don't add the `ep-iFrameContainer` class to the outer div: GHL's CSS hides it (`display:none`) and only un-hides it on the move path.
+- GHL hides iframes at `left:-9999px` until they're ready, which stopped the lazy lower form from ever loading (the bug shipped in PR #68). `page.css` now forces `.ghl-form-frame { left: auto !important; }` so the hidden lower iframe stays in place and lazy-loads on scroll.
+- Verified in headless Chrome: the top form makes 1 document request (was 2) and shows at 369px. The lower form loads once when scrolled into view. Both frames receive GHL's `query-params` message with `gclid`/`utm_*` and the page URL. No horizontal overflow. No real lead submitted.
+- 1.6 Mbps throttle: the live page showed a blank box once GHL started the reload, with the reloaded form painting about 3.0–3.9s after the first form request. The fix shows an already-painted form about 2.5–3.5s after its first request. Unthrottled runs on the live page had seen the reload as late as 15–17s.
