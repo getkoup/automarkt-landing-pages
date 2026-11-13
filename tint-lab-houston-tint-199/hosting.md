@@ -12,12 +12,12 @@
 | `/memorial/*` | `tint-lab-memorial-tint-199` (71145615-d3c1-4cde-8903-dc1825483ca3) |
 | `/galleria/*` | `tint-lab-galleria-tint-199` (d83777d7-4da4-45d5-8679-5174483726cd) |
 
-Proxies are status-200 rewrites, so visitors stay on `tintlab.getkoup.com`. `netlify/edge-functions/location-slash.js` 301s `/memorial` → `/memorial/` (etc.) and keeps the query string (gclid/utm). It exists because Netlify redirect rules ignore trailing slashes and the location pages use relative asset paths. Adding a location means a new proxy rule, a new path in the edge function, and redeploying this hub.
+Proxies are status-200 rewrites, so visitors stay on `tintlab.getkoup.com`. Netlify redirect rules ignore trailing slashes, so a slash redirect here would loop. The Memorial and Galleria pages add a missing slash with an inline script; the Jersey Village page is unchanged, so **always link and advertise `/jersey-village/` with the trailing slash**. (An edge function was tried but dropped: the Netlify CLI's Deno download stalled.) Adding a location means a new proxy rule and redeploying this hub.
 
 **Before the move, Jersey Village's Google Ads used `https://tintlab.getkoup.com/` as the final URL. Change them to `https://tintlab.getkoup.com/jersey-village/`.** Until then those clicks land on this hub, where Jersey Village is the first location.
 
 ## Deploy (manual; merging does not deploy)
-From synced `main`, in this folder (the CLI also packages the edge function):
+From synced `main`, in this folder:
 
 ```sh
 node build.mjs
