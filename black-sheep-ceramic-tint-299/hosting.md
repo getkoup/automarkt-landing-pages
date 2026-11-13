@@ -58,3 +58,11 @@ Normal TLS validation succeeds for `blacksheep.getkoup.com`, and HTTPS returns H
 ## Native form confirmation
 
 `/thank-you.html` is included in the static package. Both native GHL embeds redirect there only on their verified frame-specific successful-submit notification. Pretty URLs remain disabled so the explicit `.html` URL is served directly.
+
+## Form load speed (November 13, 2026)
+
+- GHL's `form_embed.js` moves each iframe into wrapper divs once the form has booted, even with the INLINE layout. Moving an iframe reloads it, so every embedded form loads twice. This is how GHL's script works; the first load can't be skipped while keeping the script, which provides auto-height and UTM/gclid attribution.
+- Each GHL form also loads a Cloudflare Turnstile captcha (~1.5–1.8MB). The old form `5peUzH16pwlf56CJZQhz` and the new form `bIVvIxFknypyGKzqLq2V` are identical in weight (~2.47MB each when loaded on their own).
+- The lower form is now `loading="lazy"`, so it loads only when the visitor scrolls near it. Previously it loaded twice at page start alongside the top form.
+- Added preconnects for `stcdn.leadconnectorhq.com`, `backend.leadconnectorhq.com` and `challenges.cloudflare.com`.
+- Headless Chrome on a 1.6 Mbps connection: page start went from 4 form loads / 5.8–8.9MB to 2 form loads / ~5.3MB.
