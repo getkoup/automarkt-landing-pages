@@ -9,8 +9,8 @@
 - No synthetic conversion event or test lead sent.
 - No DetailNow tracking, forms, reviews or contact details copied into this page.
 - Both enquiry panels embed the user-supplied native GHL form. Dummy fields and preview-only submit handlers have been removed. Native GHL validation, consent and submission remain unchanged.
-- GHL form: `5peUzH16pwlf56CJZQhz`, “Ceramic Tint (Google Ads) - $299”.
-- URL: https://api.leadconnectorhq.com/widget/form/5peUzH16pwlf56CJZQhz
+- GHL form: `bIVvIxFknypyGKzqLq2V`, “Ceramic Tint (Google) - 299”, supplied by the user on November 13, 2026. Replaces the earlier form `5peUzH16pwlf56CJZQhz` (“Ceramic Tint (Google Ads) - $299”, location `gtMRJUK503ZFZoQA2iUy`).
+- URL: https://api.leadconnectorhq.com/widget/form/bIVvIxFknypyGKzqLq2V
 - The supplied sticky-sidebar configuration is adapted to INLINE layout inside both existing quote cards, with unique iframe IDs. Native `form_embed.js` is included once and handles frame resizing.
 - Cookie-consent attributes retained. Native validation and submission are retained; the landing page now redirects on the verified successful-submit message. No real test lead submitted.
 - Custom CSS source: `ghl-form.css`; changes inside GHL must be published there to affect the iframe.
@@ -30,7 +30,7 @@
 
 - Local confirmation URL: https://blacksheep.getkoup.com/thank-you.html
 - Listener: `ghl-thanks.js`, loaded before the native embed loader.
-- Form ID `5peUzH16pwlf56CJZQhz`; location ID `gtMRJUK503ZFZoQA2iUy`, read from the published Black Sheep widget.
+- Form ID `bIVvIxFknypyGKzqLq2V`; location ID `FmAd0QLqa1tTJD2hp0EM`, read from the published widget on November 13, 2026 (the new form is in a different GHL location than the old one).
 - Verified the deployed native GHL bundle `https://stcdn.leadconnectorhq.com/_preview/cuexcqRf.js` emits `['set-sticky-contacts', 'embedded_iframe_<frame-id>', '<frame-id>', '<location-id>', '<fingerprint>']` after successful submission.
 - Listener accepts only the exact GHL origin, one of this page's two iframe windows, the expected form/frame/storage/location IDs and a nonempty fingerprint. Separate `_ud` contact-data messages, loads, resizes, errors, other origins and malformed messages are ignored. Redirect is handled once.
 - Same supplied GTM `GTM-TVXZVFZT` on the thank-you page. No new conversion tag/event, account setting or real test lead added. Direct visits do not emit a custom form-success event.
