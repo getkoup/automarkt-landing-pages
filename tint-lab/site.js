@@ -1,15 +1,5 @@
 (() => {
   'use strict';
-  // Location buttons open each location's own landing page.
-  const local = ['localhost', '127.0.0.1'].includes(location.hostname);
-  document.querySelectorAll('[data-location-page]').forEach(link => {
-    // Live: same-domain paths (/jersey-village/, /memorial/, /galleria/) proxied by netlify.toml.
-    // Local preview from the repo root: the sibling folders.
-    const live = link.dataset.liveUrl;
-    if (local) link.href = `/${link.dataset.locationPage}/`;
-    else if (live) link.href = live;
-  });
-
   const track = document.getElementById('review-track');
   const previous = document.getElementById('review-prev');
   const next = document.getElementById('review-next');

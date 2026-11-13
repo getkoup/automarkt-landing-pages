@@ -10,9 +10,9 @@ Research date: November 14, 2026.
 ## Locations
 | Location | Address | Phone | Hours | Google listing | Page folder |
 |---|---|---|---|---|---|
-| Jersey Village | 14518 Hempstead Rd, Suite 5C, Houston, TX 77040 | (832) 212-0354 | Not confirmed (shown as “Call for appointment availability”) | https://share.google/XYLd88qdMgYyPmSMh | `tint-lab-tint-199` |
-| Memorial | 8700 Long Point Rd, Unit 403, Houston, TX 77055 | (713) 829-5969 | Daily 9 am – 6 pm | https://share.google/9rgH7sDfVdy6m1trN | `tint-lab-memorial-tint-199` |
-| Galleria | 2611 Briarhurst Dr, Houston, TX 77057 | (713) 829-5969 | Daily 9 am – 6 pm | https://share.google/R9hTU3BrWwgqrK8RZ | `tint-lab-galleria-tint-199` |
+| Jersey Village | 14518 Hempstead Rd, Suite 5C, Houston, TX 77040 | (832) 212-0354 | Daily 9 am – 6 pm (Google listing, confirmed 2026-11-14) | https://share.google/XYLd88qdMgYyPmSMh | `jersey-village/` |
+| Memorial | 8700 Long Point Rd, Unit 403, Houston, TX 77055 | (713) 829-5969 | Daily 9 am – 6 pm | https://share.google/9rgH7sDfVdy6m1trN | `memorial/` |
+| Galleria | 2611 Briarhurst Dr, Houston, TX 77057 | (713) 829-5969 | Daily 9 am – 6 pm | https://share.google/R9hTU3BrWwgqrK8RZ | `galleria/` |
 
 - Jersey Village details come from that page’s research.md (user-confirmed). Memorial and Galleria come from their Google listings, checked November 14, 2026.
 
@@ -20,7 +20,7 @@ Research date: November 14, 2026.
 - Copy, photos, logo and offer wording come from the Jersey Village page (sourced from Tint Lab’s website). Hero heading: “Get Full Vehicle / Nano Ceramic Tint / at 3 Houston locations”.
 
 ## Location links
-- `site.js` sets each `[data-location-page]` link. On localhost it links to `/<folder>/` (preview served from the repo root). Live, it uses `data-live-url`: `/jersey-village/`, `/memorial/`, `/galleria/` on the same domain (see hosting.md).
+- Plain relative links (`jersey-village/`, `memorial/`, `galleria/`), so they work locally and live with no JS. All pages share one Netlify site (see hosting.md).
 
 ## Reviews
 - 7 verbatim Google review excerpts, mixed across locations, each tagged with its location. Jersey Village: Calvin Nguyen, Brandon Tran, Ethan Pham (listing 5.0★, 6 reviews). Memorial: Ayomide Sofunwa, Javier Guerra. Galleria: Cynthia Falcon, Emanuel Hernandez. Collected 2026-11-14.

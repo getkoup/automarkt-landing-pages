@@ -1,6 +1,6 @@
 # Tint Lab — Netlify hosting
 
-> **Update 2026-11-14:** `tintlab.getkoup.com` moved to the hub project `tint-lab-houston-tint-199`. This page is now public at **https://tintlab.getkoup.com/jersey-village/**, proxied by the hub (see `tint-lab-houston-tint-199/hosting.md`). This project's files did not change. Google Ads final URLs should use `/jersey-village/`. Deploy commands below are unchanged. The custom-domain sections below describe the original setup.
+> **Update 2026-11-14:** this page now lives in `tint-lab/jersey-village/` and is deployed as part of the single `tint-lab` site at **https://tintlab.getkoup.com/jersey-village/**. See `../hosting.md`. The page files did not change. The deploy and custom-domain notes below describe the original standalone setup and are historical.
 
 ## Project
 - Netlify project: `tint-lab-tint-199`.

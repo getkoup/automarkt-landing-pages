@@ -1,0 +1,9 @@
+[build]
+  command = "node build.mjs"
+  publish = "dist"
+
+# One Netlify site for all of tintlab.getkoup.com: / is the hub, and each
+# location is a subfolder (/jersey-village/, /memorial/, /galleria/).
+# Pretty URLs stay off so thank-you.html keeps its exact path.
+[build.processing.html]
+  pretty_urls = false
