@@ -7,8 +7,8 @@
 
 # tintlab.getkoup.com serves this hub at /. Each location page is its own
 # Netlify project, proxied under a path so visitors stay on one domain.
-# netlify/edge-functions/location-slash.js adds the trailing slash first,
-# because the location pages use relative asset paths.
+# Link with the trailing slash (/memorial/). Memorial and Galleria add a missing
+# slash themselves; Jersey Village's page is left unchanged, so always use /jersey-village/.
 [[redirects]]
   from = "/jersey-village/*"
   to = "https://tint-lab-tint-199.netlify.app/:splat"
