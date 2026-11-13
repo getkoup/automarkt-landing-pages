@@ -2,8 +2,8 @@
 // Its separate contact-data, load, resize and error messages are not success.
 (() => {
   'use strict';
-  const formId = '5peUzH16pwlf56CJZQhz';
-  const locationId = 'gtMRJUK503ZFZoQA2iUy';
+  const formId = 'bIVvIxFknypyGKzqLq2V';
+  const locationId = 'FmAd0QLqa1tTJD2hp0EM';
   let redirected = false;
 
   window.addEventListener('message', event => {
