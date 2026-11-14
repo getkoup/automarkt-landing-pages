@@ -5,9 +5,16 @@
 [build.processing.html]
   pretty_urls = false
 
-# $249 tint page lives in its own Netlify project.
+# $299 side+rear tint page (folder sosaatintz-ceramic-tint-249) lives in its own Netlify project.
 [[redirects]]
-  from = "/249-tint/*"
+  from = "/299-tint/*"
   to = "https://sosaatintz-ceramic-tint-249.netlify.app/:splat"
   status = 200
+  force = true
+
+# Old path: the offer moved from $249 to $299 on 2026-11-14. Keep old ad/bookmark links working.
+[[redirects]]
+  from = "/249-tint/*"
+  to = "/299-tint/:splat"
+  status = 301
   force = true

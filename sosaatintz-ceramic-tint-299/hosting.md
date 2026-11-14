@@ -45,3 +45,6 @@ The existing live page offer is $399. Historical source folder and Netlify proje
 
 ## /249-tint/ proxy — November 12, 2026
 netlify.toml proxies /249-tint/* to the separate Netlify project sosaatintz-ceramic-tint-249 (source folder sosaatintz-ceramic-tint-249). Adding or changing that path means redeploying this project.
+
+## /299-tint/ path — November 14, 2026
+The side+rear offer changed from $249 to $299, so its path moved: `/299-tint/*` now proxies to the sosaatintz-ceramic-tint-249 Netlify project, and `/249-tint/*` 301-redirects to `/299-tint/` (query strings such as gclid are kept). Deploy this site after changing netlify.toml.
