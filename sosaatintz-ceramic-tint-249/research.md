@@ -50,3 +50,7 @@ Sources (fetched Nov 12, 2026):
 Removed because it wasn't SosaaTintz content: "Cheap tint turns purple" section, California tint-law labels in the shade picker, 719-derived step copy and FAQs.
 Remaining text that isn't SosaaTintz wording is plain interface text: button labels, "Preview only: the photo is darkened to suggest each shade", the form loading text, the $249 FAQ answer built from the user's offer, and the thank-you confirmation sentence.
 Not used: website hours (they differ from Google), mobile service (unclear for this offer), 3M brand name (the $249 film is unconfirmed; the ceramic-line figures are SosaaTintz's own claims and the page attributes them).
+
+## Offer update — 2026-11-14
+- User asked to change this page's offer from $249 to $299. Every visible price in `index.html` and `thank-you.html` (title, meta, form heading, hero price, CTA bars, process step, FAQ, final CTA, thank-you copy) now says $299. Coverage unchanged: side windows + rear windshield.
+- Kept the folder name, the `/249-tint/` URL path, the Netlify project and the GHL form `xnJMKy0NsimlyrFvLWx5` unchanged, so ads, the proxy and the form keep working. Button text inside the GHL form is set in GHL, not here.
