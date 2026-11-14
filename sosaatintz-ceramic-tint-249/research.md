@@ -54,3 +54,4 @@ Not used: website hours (they differ from Google), mobile service (unclear for t
 ## Offer update — 2026-11-14
 - User asked to change this page's offer from $249 to $299. Every visible price in `index.html` and `thank-you.html` (title, meta, form heading, hero price, CTA bars, process step, FAQ, final CTA, thank-you copy) now says $299. Coverage unchanged: side windows + rear windshield.
 - Kept the folder name, the `/249-tint/` URL path, the Netlify project and the GHL form `xnJMKy0NsimlyrFvLWx5` unchanged, so ads, the proxy and the form keep working. Button text inside the GHL form is set in GHL, not here.
+- Later the same day the user asked for the link to say 299 too. Live URL is now https://sosaatintz.getkoup.com/299-tint/ (canonical updated). The old `/249-tint/` path 301-redirects there. Folder, Netlify project and form stay the same.

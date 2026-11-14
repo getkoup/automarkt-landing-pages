@@ -1,6 +1,6 @@
 # SosaaTintz $249 — hosting plan
 
-Target: https://sosaatintz.getkoup.com/249-tint/
+Target: https://sosaatintz.getkoup.com/299-tint/ (was /249-tint/ until 2026-11-14; old path 301-redirects)
 
 Same pattern as mango.getkoup.com sub-pages:
 1. Create a separate Netlify project for this folder, e.g. `sosaatintz-ceramic-tint-249`. Deploy: `node build.mjs` then `netlify deploy --prod --no-build --dir dist --site <id>`.
