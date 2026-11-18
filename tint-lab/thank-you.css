@@ -9,8 +9,4 @@
 .thanks .thanks-note{font-size:12px;color:#b3ada7;max-width:470px}
 .thanks-actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:24px;margin-top:29px}
 .thanks .text-link{color:#ece5de;border-color:#716052}
-.thanks-location{margin-top:42px;padding-top:28px;border-top:1px solid #393530}
-.thanks-location .eyebrow{font-size:9px;margin-bottom:12px}
-.thanks-location address{font-style:normal;font-size:12px;line-height:1.8;color:#b3ada7;margin-bottom:13px}
-.thanks-location .text-link{font-size:11px}
-@media(max-width:760px){body.thank-you-page{padding-bottom:0}.thanks{min-height:calc(100svh - 82px);padding-block:42px}.thanks h1{font-size:clamp(44px,12vw,62px)}.thanks p{font-size:13px}.thanks .thanks-note{font-size:11px}.thanks-check{width:50px;height:50px;font-size:24px;margin-bottom:22px}.thanks-actions{flex-direction:column;gap:20px}.thanks-location{margin-top:32px}}
+@media(max-width:760px){body.thank-you-page{padding-bottom:0}.thanks{min-height:calc(100svh - 82px);padding-block:42px}.thanks h1{font-size:clamp(44px,12vw,62px)}.thanks p{font-size:13px}.thanks .thanks-note{font-size:11px}.thanks-check{width:50px;height:50px;font-size:24px;margin-bottom:22px}.thanks-actions{flex-direction:column;gap:20px}}

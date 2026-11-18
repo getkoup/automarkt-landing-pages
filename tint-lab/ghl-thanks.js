@@ -20,6 +20,6 @@
         typeof fingerprint !== 'string' || !fingerprint.trim()) return;
 
     redirected = true;
-    window.location.assign(new URL('memorial/thank-you.html', window.location.href).href);
+    window.location.assign(new URL('thank-you', window.location.origin).href);
   });
 })();
