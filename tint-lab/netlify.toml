@@ -4,6 +4,6 @@
 
 # One Netlify site for all of tintlab.getkoup.com: / is the hub, and each
 # location is a subfolder (/jersey-village/, /memorial/, /galleria/).
-# Pretty URLs stay off so thank-you.html keeps its exact path.
+# The published _redirects file serves the shared /thank-you URL.
 [build.processing.html]
   pretty_urls = false
