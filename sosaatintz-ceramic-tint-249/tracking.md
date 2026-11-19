@@ -19,3 +19,6 @@
 - GHL's current bundle (https://stcdn.leadconnectorhq.com/_preview/BuCXqppA.js) posts `["set-sticky-contacts", "embedded_iframe_<iFrameId>", <iFrameId>, <locationId>, <fingerprint>]` to the parent inside its success handler, which runs only after the submission request returns successfully.
 - ghl-thanks.js was tested with a fake form frame from a second local origin: the frame-specific success message went to the thank-you page; the `_ud` contact-data message alone and a wrong location ID were ignored.
 - Bundle file names change when GHL deploys; re-check if the redirect ever stops working.
+
+## Thank-you page update — November 19, 2026
+- thank-you.html now uses the same tag layout as the $399 thank-you page: the standard GTM-KW3XR5DF snippet (with the noscript iframe) and gtag.js for AW-18088371755. Same IDs as before; no new tracking added.
