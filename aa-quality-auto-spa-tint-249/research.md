@@ -12,9 +12,14 @@
 ## Sources
 - Home and window-tint pages on aaqualityautospa.com: hero text, process steps, why-us points, HITEK Ceramic IR specs (99% UV, up to 75% IR, signal-safe, lifetime transferable warranty).
 - Photos: AA's own site and the existing `aa-quality-auto-spa-tint-299` assets.
+- Shade simulator photo (`assets/urus-studio.webp`): red Urus studio shot supplied by the user on 2026-11-19, cropped to 3:2.
 - Reviews: five Google reviews, taken from `aa-quality-auto-spa-tint-299/assets/sources.json`.
 
 ## Assumptions to confirm
 - The AA site lists Ceramic IR at $299 for a sedan. This page presents $249 as ceramic tint for side windows + rear windshield.
 - Sedan pricing; trucks and SUVs are quoted per vehicle (stated in the FAQ).
 - Rating shown as "5.0 / 5" only; the user asked not to show a review count.
+
+## Copy decisions (2026-11-19)
+- Say "ceramic" / "Ceramic Window Tint", never "nano-ceramic" (user request).
+- Section headlines carry the location: "Trusted Window Tinting Service in Richmond, TX" (Why A&A), plus Richmond, TX headlines on the gallery, reviews, FAQ and final CTA.
