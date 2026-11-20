@@ -115,3 +115,7 @@ Research date: October 30, 2026.
 ## Offer coverage (2026-11-07)
 
 User confirmed the tint offer covers the **side windows + rear windshield** (front windshield not included), matching the Tint Lab page. Shown under the hero price, in the quote price block, the offer FAQ, reason card, fine print and meta description.
+
+## Offer update (2026-11-20)
+
+User changed the offer to **$349 (Side Windows + Rear Windshield) Nano Ceramic Tint**. Every visible $299 became $349, and offer copy now says "nano ceramic" (title, meta description, hero eyebrow/H1/price/copy, both form-card headings, trust strip, fine print, reason cards, review note, quote price, offer and warranty FAQs, footer, mobile CTA and thank-you page). Front windshield is still excluded. The GHL form name `Ceramic Tint (Google) - 299` stays in the embed attributes because it must match GHL; its button reads "Claim Offer", with no price. The folder name keeps `-299` because the Netlify site and links depend on it.
