@@ -22,4 +22,4 @@ A change to the proxy rule needs a redeploy of the $99 project (see `mango-hand-
 ## Forms and confirmation
 - GHL form `Zol7Aux9eVRdqN5ddAmM` is embedded in the hero and lower cards.
 - `ghl-thanks.js` sends a visitor to the shared https://mango.getkoup.com/thank-you (the $99 project's page) after a real GHL submission. This project has no thank-you page of its own since 2026-11-21 (details in `tracking.md`).
-- No ad or analytics tags are installed.
+- Google tag `AW-17824235340` in `<head>` (see `tracking.md`).
