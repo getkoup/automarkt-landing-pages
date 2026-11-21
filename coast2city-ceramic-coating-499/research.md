@@ -61,3 +61,6 @@ Warm black #0d0c0b · gold #e3a33b / #cd952a · copper #a36624 · chrome #d4d4d4
 ## Lead form & tracking
 - Lead form: GHL "Ceramic Coating (Google) - 499" (form H9RhuH2sBTiS099kT9G1, location t5M0EkA7AvyHxGLkEtXB), embedded in hero + #quote. On submit → thank-you.html.
 - Tracking: Google Ads AW-11444469400 + GTM-MK5FGXVX on both pages. See tracking.md.
+
+## Sub-pages on this domain
+- `tint-299/`: $299 window tint (side windows + rear windshield), planned at `/tint-299/`. Self-contained, with its own research, tracking, form and thank-you page. Added 2026-11-21.

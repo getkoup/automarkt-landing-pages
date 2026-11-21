@@ -1,0 +1,181 @@
+/* COAST 2 CITY $299 TINT — COMPLETE REPLACEMENT FORM CSS for GHL form "Tint (Google) - 299 " (PVMTWRl0VEx4W43xKIhg).
+   In GHL: Sites → Forms → "Tint (Google) - 299 " → Styles → Custom CSS.
+   Select ALL existing Custom CSS (it was copied from the $499 coating form) and replace it with this entire file.
+   Paste CSS only, without <style> tags, then Save and Publish.
+   Also set the submit button text to: Claim My $299 Tint ↗
+   Designed for the dark quote cards on coast2city.getkoup.com/tint-299/. The form sits flat inside the card (no second box).
+   No @import: Google Fonts imports block the form from rendering, so it uses the device's system font.
+   Fields: Full Name, Phone, Car Details. Validation, consent, CAPTCHA and native submission stay intact. */
+:root {
+  --c2c-font: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --c2c-text: #e2dedb;
+  --c2c-muted: #aaa39d;
+  --c2c-field: #272421;
+  --c2c-border: #4b4641;
+  --c2c-gold: #e3a33b;
+}
+html, body {
+  margin: 0 !important;
+  background: #191919 !important; /* same as the page's quote card */
+}
+.hl-app, .hl_form-builder--main, .ghl-form-wrap, #_builder-form {
+  background: transparent !important;
+  color: var(--c2c-text);
+  font-family: var(--c2c-font) !important;
+}
+.hl_form-builder--main { padding: 0 !important; }
+.ghl-form-wrap, #_builder-form {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#_builder-form .fields-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+#_builder-form .form-field-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+}
+#_builder-form .form-builder--item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#_builder-form label, #_builder-form .field-label {
+  color: var(--c2c-text) !important;
+  font-family: var(--c2c-font) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+}
+#_builder-form .field-label {
+  display: block !important;
+  margin-bottom: 8px !important;
+}
+#_builder-form .field-label * {
+  color: inherit !important;
+  font: inherit !important;
+}
+/* Strong enough to override GHL's generated text-input rules. */
+html body #_builder-form .form-builder--item input[type]:is([type="text"], [type="email"], [type="tel"], [type="number"], [type="url"], [type="date"], [type="search"]),
+html body #_builder-form .form-builder--item textarea,
+html body #_builder-form .form-builder--item select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 48px !important;
+  padding: 12px 14px !important;
+  background: var(--c2c-field) !important;
+  color: var(--c2c-text) !important;
+  border: 1px solid var(--c2c-border) !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  font: 400 16px/1.5 var(--c2c-font) !important;
+  caret-color: var(--c2c-gold);
+}
+#_builder-form textarea { min-height: 110px !important; resize: vertical; }
+#_builder-form select option { background: var(--c2c-field); color: var(--c2c-text); }
+#_builder-form input::placeholder, #_builder-form textarea::placeholder {
+  color: var(--c2c-muted) !important;
+  font: inherit !important;
+  opacity: 1 !important;
+}
+html body #_builder-form .form-builder--item input:focus-visible,
+html body #_builder-form .form-builder--item textarea:focus-visible,
+html body #_builder-form .form-builder--item select:focus-visible {
+  border-color: var(--c2c-gold) !important;
+  outline: 2px solid var(--c2c-gold) !important;
+  outline-offset: 2px !important;
+}
+html body #_builder-form .form-builder--item input[type]:-webkit-autofill {
+  -webkit-text-fill-color: var(--c2c-text) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--c2c-field) inset !important;
+  caret-color: var(--c2c-gold);
+}
+/* Preserve the native phone flag and country-code controls. */
+#_builder-form .iti { width: 100% !important; }
+html body #_builder-form .form-builder--item .iti--allow-dropdown:not(.iti--separate-dial-code):not(.iti--show-selected-dial-code) input[type="tel"] {
+  padding-left: 54px !important;
+}
+html body #_builder-form .form-builder--item .iti--separate-dial-code input[type="tel"],
+html body #_builder-form .form-builder--item .iti--show-selected-dial-code input[type="tel"] {
+  padding-left: 104px !important;
+}
+#_builder-form .iti__selected-dial-code { color: var(--c2c-text) !important; }
+#_builder-form .iti__arrow { border-top-color: var(--c2c-gold) !important; }
+#_builder-form .iti__arrow--up { border-bottom-color: var(--c2c-gold) !important; border-top-color: transparent !important; }
+.iti__country-list, .iti__dropdown-content {
+  background: var(--c2c-field) !important;
+  color: var(--c2c-text) !important;
+  border-color: var(--c2c-border) !important;
+}
+.iti__country.iti__highlight, .iti__country:hover { background: #403329 !important; }
+#_builder-form input[type="checkbox"], #_builder-form input[type="radio"] {
+  accent-color: var(--c2c-gold);
+}
+#_builder-form .form-builder--btn-submit { margin-top: 8px !important; }
+#_builder-form button[type="submit"] {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 15px 18px !important;
+  background: var(--c2c-gold) !important;
+  color: #101010 !important;
+  border: 1px solid var(--c2c-gold) !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  font: 700 13px/1.5 var(--c2c-font) !important;
+  text-align: center !important;
+  white-space: normal !important;
+  cursor: pointer;
+}
+#_builder-form button[type="submit"] .button-text,
+#_builder-form button[type="submit"] .button-text * {
+  color: inherit !important;
+  font: inherit !important;
+}
+#_builder-form button[type="submit"] .button-text p { margin: 0 !important; }
+#_builder-form button[type="submit"]:hover { background: #f2bb55 !important; border-color: #f2bb55 !important; }
+#_builder-form button[type="submit"]:focus-visible {
+  outline: 2px solid var(--c2c-gold) !important;
+  outline-offset: 3px !important;
+}
+#_builder-form button[type="submit"]:disabled { opacity: .65 !important; cursor: wait; }
+#_builder-form .error, #_builder-form .error-message,
+#_builder-form .hl-error, #_builder-form [role="alert"] {
+  color: #ffb5ad !important;
+  font-size: 12px !important;
+}
+#_builder-form a { color: var(--c2c-gold) !important; text-underline-offset: 3px; }
+
+/* Keep consent and help text readable; do not hide native elements. */
+#_builder-form .terms-and-conditions,
+#_builder-form .terms-and-conditions p,
+#_builder-form .terms-and-conditions span,
+#_builder-form .form-builder--description,
+#_builder-form .form-builder--description p {
+  color: var(--c2c-muted) !important;
+  font-family: var(--c2c-font) !important;
+  font-size: 11px !important;
+  line-height: 1.7 !important;
+}
+#_builder-form .iti__dial-code { color: var(--c2c-muted) !important; }
+.iti__dropdown-content .iti__search-input {
+  box-sizing: border-box !important;
+  background: var(--c2c-field) !important;
+  color: var(--c2c-text) !important;
+  border: 1px solid var(--c2c-border) !important;
+  border-radius: 3px !important;
+  font: 400 16px/1.5 var(--c2c-font) !important;
+}

@@ -1,0 +1,12 @@
+{
+  "note": "Photos downloaded from Coast 2 City's own window tint page (https://www.coast2citydetail.com/window-tint) on 2026-11-21, resized and converted to WebP. sha256 is of the original download.",
+  "images": [
+    {"file": "hero-lancer-tint.webp", "source": "https://framerusercontent.com/images/9ubfP9UTUOwc5MTvmAYH4LedwE.jpg", "sha256": "8cb44234a9a6005feed956f94e69dfa5ff97480b603d132e79b3750c8ba89b76", "use": "hero backdrop"},
+    {"file": "studio-tint-install.webp", "source": "https://framerusercontent.com/images/O3YKeGSD7SH2awadZlbdG4OVDM.jpg", "sha256": "dd017aae1c7a0034a58d8bd5e80b052976d6c0a59c3ed0c4c0121770aa3d98cf", "use": "studio section"},
+    {"file": "gallery-white-suv.webp", "source": "https://framerusercontent.com/images/1lH4FqWdU7MeCoCbx9iPt4PNw.jpg", "sha256": "de3196bac94abb63c767d8e724e40303c2f71c9b0c882fe07c61d3e724844f63", "use": "gallery 01"},
+    {"file": "gallery-silver-sedan.webp", "source": "https://framerusercontent.com/images/3psFBqX0Ej4NLADO25ceSJScPw.jpg", "sha256": "b092dcbf64b2025150572c6b4f101ded506e6153d1bc1ceb1883953f7daf5147", "use": "gallery 02"},
+    {"file": "gallery-white-truck.webp", "source": "https://framerusercontent.com/images/d7qJLvYJAgtNA4CAZVzJQMwqw.jpg", "sha256": "54a95ac714f1c33944d7e83e014bb20147388d820d899d778707ae12247859d9", "use": "gallery 03"},
+    {"file": "gallery-blue-corvette.webp", "source": "https://framerusercontent.com/images/uUYDtfxdnUIfSqVJsgFvkSKc8c.png", "sha256": "1a3a222f35e8e5e50793aa64311596247960fc322b5d50a49af67478d729eb9a", "use": "gallery 04"},
+    {"file": "coast2city-logo.png", "source": "copied from coast2city-ceramic-coating-499/assets (logo from the client's site header)", "use": "header, footer, favicon, thank-you"}
+  ]
+}
