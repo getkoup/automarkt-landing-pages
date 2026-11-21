@@ -120,3 +120,6 @@ No film brand; heat-rejection or UV percentages; warranty; shade/VLT availabilit
 ## GHL form added (2026-11-21)
 - User supplied the "Ceramic Tint (Google) - 199" GHL form (`zfOdPPvu5muNqoDfDwlR`). It replaces the call-first placeholders in both quote cards; call and directions links stay under each form.
 - Details, verification and the Custom CSS handoff: `tracking.md`.
+
+## 2026-11-21 update
+The page's own `thank-you.html` / `thank-you.css` were removed. The user asked for the same thank-you page as the main Mango page, so leads now land on https://mango.getkoup.com/thank-you (see `tracking.md`). Older notes above about this folder's thank-you page are history.

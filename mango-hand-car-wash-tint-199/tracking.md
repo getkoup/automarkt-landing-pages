@@ -1,7 +1,7 @@
 # Mango $199 Nano Ceramic Tint: tracking and lead capture
 
 ## Ads / analytics
-- No tracking supplied for this page. No GTM, Google Ads, GA, Meta pixel, analytics or conversion tag is installed, including on `thank-you.html`.
+- No tracking supplied for this page. No GTM, Google Ads, GA, Meta pixel, analytics or conversion tag is installed on this page. Leads finish on the shared Mango thank-you page, which carries Mango's existing tags (see below).
 - Do not copy the $99 Mango page's GTM/Ads tags or any other page's IDs into this page.
 
 ## GHL form (supplied by the user 2026-11-21)
@@ -12,7 +12,7 @@
 - Each iframe is pre-wrapped in `<id>-div > <id>-wrapper.ep-wrapper`, so `form_embed.js` does not move and reload it. Verified: one form document request per iframe.
 - Script order: `ghl-thanks.js`, `site.js`, then `form_embed.js`, all `defer`. When `form_embed.js` loaded `async` in `<head>`, it could run before the frames existed. GHL's auto-height never attached, the frames stayed at 369px, and the form scrolled inside the frame on phones (user report 2026-11-21). With `defer`, every frame gets GHL's `[iFrameSizer]…init` and grows to fit the form (tested: +260px of form content gave a 629px frame).
 - `site.js` adds `.is-ready` (clickable) when GHL posts `["iframeLoaded"]`, with a 4 s fallback after the frame's load event. The page shows a "Loading your quote form…" note until then.
-- `ghl-thanks.js` loads before `form_embed.js` and redirects to `thank-you.html` only on GHL's native `set-sticky-contacts` message for this form ID, this frame and this location. Not tested with a real lead.
+- `ghl-thanks.js` loads before `form_embed.js` and redirects to the shared https://mango.getkoup.com/thank-you only on GHL's native `set-sticky-contacts` message for this form ID, this frame and this location. Not tested with a real lead.
 - Form cards use the same pattern as the main Mango $99 card: topline + offer pill, heading, one line, form, outline "Call (346) 347-2866" button, address row linking to Google Maps directions.
 - No sticky mobile bar (removed at the user's request, 2026-11-21).
 - Self-correcting height (`site.js`):
@@ -32,3 +32,8 @@
 ## Links
 - Calls: `tel:+13463472866`. Directions: https://www.google.com/maps/dir/?api=1&destination=6166+Westheimer+Rd+Houston+TX+77057
 - Google listing: https://share.google/qQOD1Eu1YHwjxboAc. Review cards link to each reviewer's Google contributor page; no Google widget or review script is loaded.
+
+## Shared thank-you page (2026-11-21)
+- At the user's request ("use same Thank you page"), this page no longer has its own thank-you page. After a real GHL submission, `ghl-thanks.js` sets `sessionStorage['mango-thank-you-offer'] = 'tint-199'` and goes to https://mango.getkoup.com/thank-you, the $99 project's `thank-you.html`.
+- That page keeps its URL and its Mango Google Ads `AW-17824235340` + GTM `GTM-NWR5JN89` tags, so these leads count on the same conversion page. The key swaps its wording to the $199 Nano Ceramic Tint offer and points "Back to the offer" at `tint-199/`.
+- On the `*.netlify.app` project URL the redirect still goes to mango.getkoup.com, which is a different origin, so the thank-you page shows the $99 wording there. Real visitors use the domain.

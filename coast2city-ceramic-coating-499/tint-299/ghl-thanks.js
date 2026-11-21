@@ -20,7 +20,9 @@
         typeof fingerprint !== 'string' || !fingerprint.trim()) return;
 
     redirected = true;
-    // This page's own thank-you page (/tint-299/thank-you.html), not the coating page's.
-    window.location.assign(new URL('thank-you.html', window.location.href).href);
+    // Shared Coast 2 City thank-you page (coast2city.getkoup.com/thank-you). The key tells it
+    // to show the $299 tint wording instead of the $499 coating wording.
+    try { sessionStorage.setItem('c2c-thank-you-offer', 'tint-299'); } catch {}
+    window.location.assign(new URL('/thank-you', window.location.href).href);
   });
 })();

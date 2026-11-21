@@ -19,6 +19,9 @@
         typeof fingerprint !== 'string' || !fingerprint.trim()) return;
 
     redirected = true;
-    window.location.assign(new URL('thank-you.html', window.location.href).href);
+    // Shared Mango thank-you page (mango.getkoup.com/thank-you, served by the $99 project).
+    // The key tells it to show this offer's wording instead of the $99 detail.
+    try { sessionStorage.setItem('mango-thank-you-offer', 'tint-199'); } catch {}
+    window.location.assign('https://mango.getkoup.com/thank-you');
   });
 })();

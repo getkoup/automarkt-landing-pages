@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 const root = dirname(fileURLToPath(import.meta.url));
 const output = resolve(root, 'dist');
 const files = new Set([
-  'index.html', 'thank-you.html',
+  'index.html',
   'assets/alata-license.txt', 'assets/inter-license.txt',
 ]);
 const visited = new Set();
@@ -45,7 +45,6 @@ async function inspect(file) {
 }
 
 await inspect('index.html');
-await inspect('thank-you.html');
 if (relative(root, output) !== 'dist') throw new Error('Unexpected output directory');
 await rm(output, { recursive: true, force: true });
 for (const file of [...files].sort()) {

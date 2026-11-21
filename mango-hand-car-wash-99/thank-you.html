@@ -52,6 +52,25 @@
         <address class="thank-you-address">6166 Westheimer Rd · Houston, TX 77057<br><a href="https://share.google/3DIqCQqzxVgTvKx6Z" target="_blank" rel="noopener noreferrer">Get directions ↗</a></address>
       </aside>
     </div>
+    <script>
+      // Shared thank-you page for / ($99), /tint-199/ and /ceramic-coating-399/.
+      // Those pages set this key just before redirecting here; without it the $99 wording stays.
+      (() => {
+        const offers = {
+          'tint-199': { service: '$199 Nano Ceramic Tint', price: '199', label: 'NANO CERAMIC TINT<br>Side windows + rear windshield', back: 'tint-199/' },
+          'ceramic-coating-399': { service: '$399 Ceramic Coating', price: '399', label: 'CERAMIC COATING<br>Houston, TX', back: 'ceramic-coating-399/' },
+        };
+        let key = null;
+        try { key = sessionStorage.getItem('mango-thank-you-offer'); } catch {}
+        const offer = offers[key];
+        if (!offer) return;
+        document.querySelector('.thank-you-copy p').textContent = `Your request has been sent. The Mango team will be in touch to confirm your vehicle, answer your questions and arrange your ${offer.service}.`;
+        const back = document.querySelector('.thank-you-actions .text-link');
+        back.setAttribute('href', offer.back);
+        back.firstChild.textContent = 'Back to the offer ';
+        document.querySelector('.thank-you-price').innerHTML = `<strong><span>$</span>${offer.price}</strong><b>${offer.label}</b>`;
+      })();
+    </script>
   </main>
   <footer class="site-footer"><div class="container footer-bottom"><span>© 2026 Mango Hand Car Wash. All rights reserved.</span><span>HOUSTON, TEXAS · ALL HAND. ALL MANGO.</span></div></footer>
   <!-- Google Tag Manager (noscript) -->
