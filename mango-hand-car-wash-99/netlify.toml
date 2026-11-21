@@ -18,3 +18,17 @@
   to = "https://mango-hand-car-wash-detail-29-call.netlify.app/:splat"
   status = 200
   force = true
+
+# $199 Nano Ceramic Tint lives in its own Netlify project.
+[[redirects]]
+  from = "/tint-199/*"
+  to = "https://mango-hand-car-wash-tint-199.netlify.app/:splat"
+  status = 200
+  force = true
+
+# $399 Ceramic Coating lives in its own Netlify project.
+[[redirects]]
+  from = "/ceramic-coating-399/*"
+  to = "https://mango-hand-car-wash-ceramic-coating-399.netlify.app/:splat"
+  status = 200
+  force = true
