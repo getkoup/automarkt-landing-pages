@@ -1,8 +1,13 @@
 # Mango $199 Nano Ceramic Tint: tracking and lead capture
 
 ## Ads / analytics
-- No tracking supplied for this page. No GTM, Google Ads, GA, Meta pixel, analytics or conversion tag is installed on this page. Leads finish on the shared Mango thank-you page, which carries Mango's existing tags (see below).
-- Do not copy the $99 Mango page's GTM/Ads tags or any other page's IDs into this page.
+| Tag | ID | Placement | Pages |
+|---|---|---|---|
+| Google tag (Google Ads) | `AW-17824235340` | `<head>`, right after the trailing-slash script | `index.html` |
+
+- Supplied by the user 2026-11-21 for the Mango pages, pasted as given: `gtm.js?id=AW-17824235340` loader + `gtag('js', new Date())`. The snippet has no `gtag('config')` line. The Google tag applies its own config: a headless check showed page hits for 17824235340 (`viewthroughconversion`, `rmkt/collect`, `ccm/collect`).
+- It's the same Google Ads account as the $99 page. No GTM container, GA, Meta pixel or custom conversion event on this page.
+- Conversions: leads finish on the shared https://mango.getkoup.com/thank-you, which loads `AW-17824235340` + GTM `GTM-NWR5JN89` (see below).
 
 ## GHL form (supplied by the user 2026-11-21)
 - Form: "Ceramic Tint (Google) - 199", ID `zfOdPPvu5muNqoDfDwlR`, Mango GHL location `todSFcSuIugBi4Ef9kmv` (confirmed in the form's own HTML; same location as the other Mango pages).
