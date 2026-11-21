@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://api.leadconnectorhq.com">
   <link rel="preconnect" href="https://link.msgsndr.com">
   <script>
-    // GHL form submission → thank-you.html.
+    // GHL form submission → the shared /thank-you page (also used by /tint-299/).
     // On a successful submit the GHL iframe posts ["set-sticky-contacts", userDataKey, frameIdOrContactJSON, locationId, fingerprint]
     // (format taken from GHL's own form_embed.js). Slot 2 is either our iframe id or a JSON string of the new contact,
     // depending on the GHL version, so both are accepted. Clicks, loads and resizes never redirect.
@@ -26,7 +26,8 @@
       if (!submitted) return;
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'ghl_form_submit', formId: frame.dataset.formId });
-      window.location.assign(new URL('thank-you.html', window.location.href).href);
+      try { sessionStorage.removeItem('c2c-thank-you-offer'); } catch {}
+      window.location.assign(new URL('/thank-you', window.location.href).href);
     });
   </script>
   <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>

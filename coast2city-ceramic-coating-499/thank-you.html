@@ -58,5 +58,16 @@
       <div class="hero-buttons"><a class="button" href="tel:+19109017361">(910) 901-7361 <span aria-hidden="true">↗</span></a><a class="text-link" href="index.html">Back to the offer ↗</a></div>
     </div>
   </main>
+  <script>
+    // Shared thank-you page for / ($499 coating) and /tint-299/ ($299 tint).
+    // The tint page sets this key just before redirecting here.
+    (() => {
+      let offer = null;
+      try { offer = sessionStorage.getItem('c2c-thank-you-offer'); } catch {}
+      if (offer !== 'tint-299') return;
+      document.querySelector('.thanks p').textContent = 'We got your request for the $299 window tint for your side windows and rear windshield. The Coast 2 City team will reach out shortly, Monday to Saturday, 8 AM to 6 PM. Need us sooner? Call or text.';
+      document.querySelector('.thanks .text-link').setAttribute('href', 'tint-299/');
+    })();
+  </script>
 </body>
 </html>

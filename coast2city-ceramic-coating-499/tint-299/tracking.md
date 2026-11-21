@@ -7,7 +7,7 @@ Served at `coast2city.getkoup.com/tint-299/` (planned) as a subfolder of the Coa
 - GHL location `t5M0EkA7AvyHxGLkEtXB`. This is the same location as the coating form; confirmed from the form's own `fetch-sticky-contacts` message in a local test.
 - The user pasted a STICKY_SIDEBAR embed. It is shown as an INLINE form inside both quote cards (same approach as `719-ceramic-tint-299`). Fields, validation, consent and submission stay managed by GHL.
 - Hero: `inline-PVMTWRl0VEx4W43xKIhg` (eager). Lower card: `inline-PVMTWRl0VEx4W43xKIhg-lower` (`loading="lazy"`). Both are pre-wrapped (`<id>-div > <id>-wrapper.ep-wrapper`) so `form_embed.js` doesn't reload them. `page.css` keeps hidden iframes in place (`left:auto`) and contained (`.ep-wrapper{position:relative}`).
-- `ghl-thanks.js` matches this form ID and location ID and only acts on GHL's frame-specific `set-sticky-contacts` success message. It then goes to this folder's own `thank-you.html` (`/tint-299/thank-you.html`), not the coating page's thank-you.
+- `ghl-thanks.js` matches this form ID and location ID and only acts on GHL's frame-specific `set-sticky-contacts` success message. Since 2026-11-21 it then goes to the shared https://coast2city.getkoup.com/thank-you page (the coating page's `thank-you.html`, which shows $299 tint wording for these leads; see the parent folder's `tracking.md`).
 - **To do in GHL (user):**
   1. Replace the form's Custom CSS with `ghl-form.css` from this folder. The current CSS was copied from the $499 coating form: it draws a second bordered box inside the quote card, its light inputs stay light (GHL's own input rules win), and its Google Fonts `@import` delays the form.
   2. Change the submit button text from "Claim My $499 Coating ↗" to "Claim My $299 Tint ↗".
@@ -21,7 +21,7 @@ Served at `coast2city.getkoup.com/tint-299/` (planned) as a subfolder of the Coa
 
 ## Ads / analytics
 **None installed yet.** Add tags only when the user supplies them for this page, then log them here.
-- No GTM, Google Ads or Meta pixel on `index.html` or `thank-you.html`.
+- No GTM, Google Ads or Meta pixel on `index.html`. The shared thank-you page carries Coast 2 City's existing Ads/GTM tags, so tint leads count there.
 - The coating page at `/` uses Google Ads `AW-11444469400` and GTM `GTM-MK5FGXVX` (see `../tracking.md`). They were not added here; ask the user before reusing them on the tint page.
 
 ## Other links

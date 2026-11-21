@@ -48,3 +48,6 @@ Location: `coast2city-ceramic-coating-499/tint-299/`, planned URL `https://coast
 ## Local QA (2026-11-21)
 - Headless Chrome at 320, 390 and 1440 px: no horizontal overflow, all images load, no console errors. Thank-you page checked at 390 px.
 - After the move to `/tint-299/` (served locally from the coating folder): each GHL form document loads once (no reload), both iframes are pre-wrapped, the form reports location `t5M0EkA7AvyHxGLkEtXB`, and there is no horizontal overflow at 390 or 1440 px and no console errors. Headless Chrome takes about 15 s to reveal GHL forms; the live Memorial page behaves the same.
+
+## 2026-11-21 update
+This subfolder's own `thank-you.html`, `thank-you.css` and `thank-you-base.css` were removed. The user asked for both Coast 2 City pages to use https://coast2city.getkoup.com/thank-you (see `tracking.md`).
