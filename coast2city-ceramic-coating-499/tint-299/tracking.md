@@ -14,7 +14,7 @@ Served at `coast2city.getkoup.com/tint-299/` (planned) as a subfolder of the Coa
 - Form speed (page side, 2026-11-21):
   - `page.css` shows GHL's pre-rendered form as soon as it paints instead of waiting for `form_embed.js` to reveal it.
   - The quote card holds the form's 369px height with a "Loading your quote form…" note behind it, so nothing jumps.
-  - Clicks are enabled only when GHL's app is running: `site.js` adds `.is-ready` on GHL's `iframeLoaded` message, with a 4 s fallback after the frame's load event.
+  - Clicks are enabled only when GHL's app is running: `site.js` adds `.is-ready` on GHL's `["iframeLoaded"]` message (an array), with a 4 s fallback after the frame's load event.
   - This is needed because `form_embed.js` only reveals a form after a resize message, and a form whose height never changes (like this one with `ghl-form.css`) may never send one.
   - Local test with `ghl-form.css` simulated: the form shows at about 4 s (it was about 6 s; the live Memorial page takes about 7.6 s), and both forms are clickable by about 4 s.
 - No test lead submitted.

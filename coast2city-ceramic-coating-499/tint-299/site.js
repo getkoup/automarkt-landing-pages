@@ -42,7 +42,9 @@
   const frames = [...document.querySelectorAll('iframe.ghl-form-frame')];
   const ready = frame => frame.classList.add('is-ready');
   window.addEventListener('message', event => {
-    if (event.origin !== 'https://api.leadconnectorhq.com' || event.data !== 'iframeLoaded') return;
+    // GHL posts this as ["iframeLoaded"]; accept the bare string too.
+    const action = Array.isArray(event.data) ? event.data[0] : event.data;
+    if (event.origin !== 'https://api.leadconnectorhq.com' || action !== 'iframeLoaded') return;
     const frame = frames.find(f => f.contentWindow === event.source);
     if (frame) ready(frame);
   });
