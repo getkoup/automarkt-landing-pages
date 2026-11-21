@@ -53,3 +53,6 @@ The 2026-11-04 revision adds `thank-you.html`, `thank-you.css` and `ghl-thanks.j
 
 ## /detail-29 proxy
 `netlify.toml` proxies `mango.getkoup.com/detail-29/*` to the separate `mango-hand-car-wash-detail-29` project. Redeploy this project for changes to that rule to take effect.
+
+## /tint-199 and /ceramic-coating-399 proxies (2026-11-21)
+`netlify.toml` also proxies `mango.getkoup.com/tint-199/*` to the `mango-hand-car-wash-tint-199` project (site `693c662a-f25b-41ed-be91-38cd64ee480c`) and `/ceramic-coating-399/*` to the `mango-hand-car-wash-ceramic-coating-399` project (site `4931c64e-b36f-43c0-8e68-94c2f7a2164d`). Each page deploys from its own folder. Redeploy this project when a proxy rule changes.
