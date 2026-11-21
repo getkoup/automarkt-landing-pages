@@ -94,3 +94,6 @@ Both photos are optimized WebP with explicit HTML dimensions; the below-fold sho
 ## GHL form added (2026-11-21)
 - User supplied the "Ceramic Coating (Google) - 399" GHL form (`Zol7Aux9eVRdqN5ddAmM`). It replaces the call-first placeholders in both quote cards; call and directions links stay under each form.
 - Details, verification and the Custom CSS handoff: `tracking.md`.
+
+## 2026-11-21 update
+The page's own `thank-you.html` / `thank-you.css` were removed. The user asked for the same thank-you page as the main Mango page, so leads now land on https://mango.getkoup.com/thank-you (see `tracking.md`). Older notes above about this folder's thank-you page are history.
