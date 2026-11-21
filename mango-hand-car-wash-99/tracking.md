@@ -61,3 +61,8 @@ The optional explicit INLINE layout caused the official SDK to move each loaded 
 
 ## Deferred-form wake-up
 A stable-card IntersectionObserver switches the lower iframe to eager loading 600px before its card enters view. This avoids intermittent native lazy-loading stalls when GHL positions an initializing iframe outside the viewport. The lower iframe initially uses `about:blank` with its native URL in `data-src`. The observer sets eager loading, assigns that URL once and removes `data-src`. This avoids browser-dependent lazy thresholds and guarantees the lower GHL document does not compete at startup. The iframe stays mounted; its native URL is assigned only once. The native SDK discovers it through its own iframeLoaded message. Browsers without IntersectionObserver load it eagerly as a fallback.
+
+## Shared thank-you page (2026-11-21)
+- `thank-you.html` (https://mango.getkoup.com/thank-you) is also the thank-you page for `/tint-199/` and `/ceramic-coating-399/`, at the user's request. Its Ads/GTM tags therefore fire for those leads too.
+- Those pages set `sessionStorage['mango-thank-you-offer']` to `tint-199` or `ceramic-coating-399` before redirecting. An inline script at the end of `<main>` then swaps the request line, the price card and the "Back to the offer" link. With no key it shows the $99 wording, unchanged.
+- This page's own `ghl-thanks.js` clears the key before redirecting, so a $99 lead always sees the $99 wording.

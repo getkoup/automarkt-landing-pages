@@ -19,6 +19,8 @@
         typeof fingerprint !== 'string' || !fingerprint.trim()) return;
 
     redirected = true;
+    // Clear the offer key left by /tint-199/ or /ceramic-coating-399/ so this lead sees the $99 wording.
+    try { sessionStorage.removeItem('mango-thank-you-offer'); } catch {}
     window.location.assign(new URL('thank-you.html', window.location.href).href);
   });
 })();
