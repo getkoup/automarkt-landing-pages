@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const output = resolve(root, 'dist');
-const entries = ['index.html', 'thank-you.html'];
+const entries = ['index.html'];
 const files = new Set([...entries, 'assets/alata-license.txt', 'assets/inter-license.txt']);
 const visited = new Set();
 
@@ -18,7 +18,7 @@ function localReference(reference, from) {
   }
   let file = posix.normalize(posix.join(posix.dirname(from), path));
   if (file === '.' || path.endsWith('/')) file = posix.join(file, 'index.html');
-  if (!/^(?:index\.html|thank-you\.html|page\.css|thank-you\.css|site\.js|ghl-thanks\.js|assets\/[a-z\d-]+\.(?:css|woff2|webp|png))$/.test(file)) {
+  if (!/^(?:index\.html|page\.css|site\.js|ghl-thanks\.js|assets\/[a-z\d-]+\.(?:css|woff2|webp|png))$/.test(file)) {
     throw new Error(`Unexpected public dependency: ${file}`);
   }
   return file;
