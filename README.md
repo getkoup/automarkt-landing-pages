@@ -63,6 +63,7 @@ Repeat for each folder: one Vercel project per landing page.
 | `719-full-front-ppf-1799` | 719 Auto Customs (Colorado Springs, CO) | Black Friday · Full Front PPF · $1,799 (regularly $2,499); complimentary door cups + door strips | [719.getkoup.com/full-front-ppf-1799](https://719.getkoup.com/full-front-ppf-1799/) | Live on Vercel; Netlify migration includes the single-load form fix, matching GHL form and dedicated thank-you page; mobile sticky CTA; no ad tracking |
 | `719-partial-front-ppf-999` | 719 Auto Customs (Colorado Springs, CO) | Black Friday · Partial Front PPF · $999 (regularly $1,299); complimentary door cups + door strips | [719.getkoup.com/partial-front-ppf-999](https://719.getkoup.com/partial-front-ppf-999/) | Live on Vercel; Netlify migration includes the single-load form fix, matching GHL form and dedicated thank-you page; mobile sticky CTA; no ad tracking |
 | `719-bumper-ppf-499` | 719 Auto Customs (Colorado Springs, CO) | Black Friday · Bumper PPF · $499 (regularly $799); complimentary door cups + door strips | [719.getkoup.com/bumper-ppf-499](https://719.getkoup.com/bumper-ppf-499/) | Live on Vercel; Netlify migration includes the single-load form fix, matching GHL form and dedicated thank-you page; mobile sticky CTA; no ad tracking |
+| `dapper-pros-ppf-499` | Dapper Pros Northern Utah (Ogden, UT) | Front bumper PPF · $499 | [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/dapper-pros-ppf-499/) | GitHub Pages from `main`; no Vercel project yet; 719 bumper PPF structure restyled in Dapper purple/black with glass panels and animations; Dapper's own photos and logo; Google profile details (5.0 · 153 reviews, (385) 334-3653, Mon–Fri 9–5, checked 2026-11-24); 3 Google reviews + 2 unverified site PPF testimonials; native GHL form `BKB6FnXXEL6EUkaAqjao` (PPF (Meta) - 499) inline in the hero card with a loading skeleton, then a guarded redirect to `thank-you.html` after submit; [complete GHL form CSS](dapper-pros-ppf-499/ghl-form.css) applied; no ad tracking yet |
 | `719-landing-pages` | 719 Auto Customs (Colorado Springs, CO) | Original homepage, existing services + four Black Friday offers | [719.getkoup.com](https://719.getkoup.com/) · [Netlify preview](https://719-auto-customs.netlify.app/) · [Vercel](https://719-landing-pages.vercel.app/) | Vercel remains live; complete Netlify migration prepared, pending user DNS cutover; includes single-load offer forms; [DNS handoff](719-landing-pages/hosting-netlify.md) |
 | `719-landing-pages/tint` | 719 Auto Customs (Colorado Springs, CO) | LLumar ceramic window tint · vehicle quote | [719tint.getkoup.com](https://719tint.getkoup.com/) · [Vercel](https://719-tint.vercel.app/) · [GitHub Pages](https://getkoup.github.io/automarkt-landing-pages/719-landing-pages/tint/) | Live; GHL Tint (Google) form + original Google Ads tag + thank-you page |
 | `719-landing-pages/auto-tint` | 719 Auto Customs (Colorado Springs, CO) | Premium full vehicle tint starting at $249 · side windows + rear windshield | [719.getkoup.com/auto-tint](https://719.getkoup.com/auto-tint/) | Live on shared 719 site; supplied GHL $249 form `dSQWLbhJ81Ee7vepKlz5`; native GHL thank-you redirect; Google Ads `AW-11364267259` + GTM `GTM-WHZLPNRQ` |
@@ -131,7 +132,55 @@ The complete replacement stylesheet is [tint-lab/jersey-village/ghl-form.css](ti
 
 The complete replacement stylesheet is [hp-details-ceramic-coating-499/ghl-form.css](hp-details-ceramic-coating-499/ghl-form.css). In the native form's **Styles → Advanced → Custom CSS**, select all existing CSS, replace it with the entire file (CSS only, no `<style>` tags), then **Save and Publish**. It matches the HP page's frosted-glass cards: transparent outer wrapper, translucent glass inputs, light text, a red focus ring and a glossy red `#be1c1e` button. Use a single column with **Full Name → Phone → Car Details** (as published), and set the native button text to **Get my $499 quote ↗**. Both page cards embed user-supplied form `oGnO4LrgOwh6ZgCoFWTM` (“Ceramic Coating  - 499”) as inline iframes with unique IDs and one `form_embed.js` loader; a guarded frame-specific success listener shows GHL's message for 1.2s, then redirects to `thank-you.html`. No real test lead submitted. The CSS was checked locally against saved native GHL widget markup; it has not been applied in GHL or submission-tested.
 
+### Dapper Pros GHL CSS handoff
 
+The complete replacement stylesheet is [dapper-pros-ppf-499/ghl-form.css](dapper-pros-ppf-499/ghl-form.css). In the native form's **Styles → Advanced → Custom CSS**, select all existing CSS, replace it with the **entire file** (CSS only, no `<style>` tags), then **Save and Publish**. It matches the page's dark purple frosted-glass form card:
+- transparent wrappers
+- translucent glass fields with white text
+- lavender uppercase labels
+- a lilac `#b58cf0` focus ring
+- a purple gradient pill button (`#6b34aa` → `#582a8d`) with a soft sheen, which is switched off for reduced motion
+
+Use a single column with **Full Name → Phone → Vehicle Year, Make & Model**, and set the native button text to **Claim My $499 PPF ↗**. In **Styles → Layout**, set the form's top margin and outer padding to **0**; the landing page supplies the card and heading. Poppins is used if it is available inside the form; otherwise Arial is the fallback. Native consent, phone-country controls, validation and submission are kept.
+
+Verification: rendered locally in headless Chrome at 390px and 1280px against mock GHL markup that includes GHL's strong `input[type=text][class=form-control]` white-field rule. The user then applied it to form `BKB6FnXXEL6EUkaAqjao` (“PPF  (Meta) - 499”). The published widget contains it, and the live embed was rendered at 390px and 1440px. The published fields are **First Name → Phone → Car Details** and the button reads **Claim My $499 Offer**. Embed, loading and redirect details are in [tracking.md](dapper-pros-ppf-499/tracking.md). No real lead has been submitted.
+
+### Fix: GHL form shows an inner scrollbar or a gap below the button
+
+This applies to any page with an inline GHL form iframe. Dapper Pros (`dapper-pros-ppf-499`) is the working example: see its `form-ui.js` and the `.form-slot` / `.ghl-form-frame` CSS in `index.html`.
+
+**Symptoms**
+- A scrollbar inside the form card on phones.
+- Or a big empty gap under the submit button.
+
+**Why it happens**
+- `form_embed.js` runs iframe-resizer with `scrolling:true`. After load it rewrites the iframe to `scrolling="yes"` and `overflow:auto`, so a `scrolling="no"` attribute in our HTML gets **overridden**.
+- iframe-resizer sizes the frame from `body.offsetHeight`. That was about 5px more than the content in local tests. On some real phones the form renders taller than GHL measures (screenshots showed about 70px of empty, unmeasured space under the button), so the frame is too short and scrolls.
+- A gap under the button means we reserved more height (`min-height`, `height`, `data-height`) than the form needs.
+
+**Fix**
+1. **Measure the real form height.** Open `https://api.leadconnectorhq.com/widget/form/<FORM_ID>` at the card's inner width and read `document.querySelector('#_builder-form').scrollHeight`. For Dapper's 3-field form with our CSS it was 358px, and GHL sized the frame to 363px.
+2. **Reserve slightly more than that** on the iframe and its slot. Keep the frame's inline `height`, the `height` attribute and `data-height` the same. Give phones extra room, and drop the slot's reservation once the form shows, so no gap is left:
+   ```css
+   .form-slot{position:relative;min-height:376px}
+   .form-slot.is-ready{min-height:0}
+   .ghl-form-frame{display:block;width:100%;height:376px;min-height:376px;overflow:hidden;border:0}
+   @media(max-width:560px){.form-slot,.ghl-form-frame{min-height:392px}} /* after the rule above */
+   ```
+3. **Keep scrolling off after GHL turns it back on.** Put this in a deferred page script:
+   ```js
+   const frame = document.querySelector('iframe.ghl-form-frame');
+   const noScroll = () => {
+     if (frame.getAttribute('scrolling') !== 'no') frame.setAttribute('scrolling', 'no');
+     if (frame.style.overflow !== 'hidden') frame.style.overflow = 'hidden';
+   };
+   noScroll();
+   new MutationObserver(noScroll).observe(frame, { attributes: true, attributeFilter: ['scrolling', 'style'] });
+   ```
+   This is safe because min-height does not cap the frame: when validation errors make the form longer, GHL still grows it.
+4. **Verify.** Render at 390px and 1440px with real scrollbars on (no `--hide-scrollbars`). To simulate the phone problem, inject unmeasured content into the form frame, e.g. `body{position:relative} body::after{content:"";position:absolute;top:100%;height:70px;width:1px}`. There should be no scrollbar, the full button should show, and the gap under it should be small. Headless `--virtual-time-budget` screenshots can show an empty card for cross-origin iframes; wait in real time instead (Chrome DevTools Protocol or `--timeout`).
+
+Use the inline embed (no `data-layout`) even when the user pastes a sticky-sidebar or popup snippet, so the iframe stays mounted in the card and loads once.
 
 The 719 collection is grouped under `719-landing-pages/`, with independent `tint/`, `ppf/`, and `ceramic/` source folders. At the user's request, `index.html` restores the original Hostinger $599 PPF homepage rather than the temporary service chooser. Its original styles, script, images, and promotional video are isolated in `assets/homepage/`; the original GHL quote popup and Elfsight reviews embed are retained. Each service keeps its own assets, media, lead script, research, and tracking notes; no page references sibling-folder files. The common `thank-you.html` has separate collection-local imagery in `assets/`.
 
