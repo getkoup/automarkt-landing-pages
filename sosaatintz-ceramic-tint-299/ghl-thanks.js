@@ -20,6 +20,7 @@
         typeof fingerprint !== 'string' || !fingerprint.trim()) return;
 
     redirected = true;
+    try { sessionStorage.removeItem('sosaatintz-thank-you-offer'); } catch {}
     window.location.assign(new URL('thank-you.html', window.location.href).href);
   });
 })();

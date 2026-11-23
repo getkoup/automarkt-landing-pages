@@ -5,6 +5,13 @@
 [build.processing.html]
   pretty_urls = false
 
+# The $299 page has no thank-you page of its own; send old links to the shared one.
+[[redirects]]
+  from = "/299-tint/thank-you*"
+  to = "/thank-you"
+  status = 301
+  force = true
+
 # $299 side+rear tint page (folder sosaatintz-ceramic-tint-249) lives in its own Netlify project.
 [[redirects]]
   from = "/299-tint/*"

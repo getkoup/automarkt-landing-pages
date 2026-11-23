@@ -22,3 +22,7 @@
 
 ## Thank-you page update — November 19, 2026
 - thank-you.html now uses the same tag layout as the $399 thank-you page: the standard GTM-KW3XR5DF snippet (with the noscript iframe) and gtag.js for AW-18088371755. Same IDs as before; no new tracking added.
+
+## 2026-11-23: shared thank-you page
+- This page no longer has its own thank-you page. On a successful submit, ghl-thanks.js sets sessionStorage `sosaatintz-thank-you-offer` = `299-tint` and goes to https://sosaatintz.getkoup.com/thank-you (served by the $399 project, same GTM-KW3XR5DF + AW-18088371755 tags), so every SosaaTintz lead converts on one URL.
+- Old /299-tint/thank-you* links 301 to /thank-you (rule in the $399 project's netlify.toml).

@@ -60,3 +60,6 @@ Not used: website hours (they differ from Google), mobile service (unclear for t
 - User asked for the $299 thank-you page to use the same structure as the $399 page (https://sosaatintz.getkoup.com/thank-you), with $399 changed to $299. They want this thank-you structure used from now on.
 - `thank-you.html` is now a copy of `sosaatintz-ceramic-tint-299/thank-you.html` with $299 in the description and body, its own canonical, and links back to `./`.
 - Styles copied into this folder: `thank-you-base.css` (copy of the $399 `page.css`) and `thank-you.css` (copy of the $399 `thank-you.css`). The offer page still uses `page.css`.
+
+## 2026-11-23: one thank-you page for the brand
+- User asked for every SosaaTintz page to use the main https://sosaatintz.getkoup.com/thank-you page, with no price on it. This folder's thank-you.html, thank-you.css and thank-you-base.css were removed.

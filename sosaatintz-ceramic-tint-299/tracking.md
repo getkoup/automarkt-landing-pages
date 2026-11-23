@@ -18,3 +18,8 @@
 - No GHL account edits, real test leads, SMS/email automation changes or fabricated native success messages sent to the real widget. Redirect tests use isolated fixtures with analytics blocked.
 
 Outbound contact links use the verified shop phone, official website, Instagram and user-supplied Google listing.
+
+## 2026-11-23: shared thank-you page
+- /thank-you is now the only SosaaTintz thank-you page. The $299 page (/299-tint/) redirects here too. The copy no longer shows a price ("our ceramic tint offer").
+- If sessionStorage `sosaatintz-thank-you-offer` = `299-tint`, an inline script points "Back to the offer" at /299-tint/. This page's own ghl-thanks.js clears the key.
+- netlify.toml 301s old /299-tint/thank-you* links to /thank-you.
