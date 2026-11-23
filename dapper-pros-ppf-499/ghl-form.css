@@ -1,0 +1,214 @@
+/* DAPPER PROS NORTHERN UTAH — $499 FRONT BUMPER PPF — COMPLETE REPLACEMENT FORM CSS.
+   Select ALL existing form Custom CSS and replace it with this entire file.
+   Paste CSS only, without <style> tags, then Save and Publish.
+   Designed for the page's dark purple frosted-glass form card: transparent
+   wrappers, translucent glass fields, lavender uppercase labels, a lilac
+   focus ring and a purple gradient pill button with a soft sheen.
+   Fields, validation, consent, CAPTCHA and native submission stay intact. */
+:root {
+  --dp-font: "Poppins", Arial, Helvetica, sans-serif;
+  --dp-text: #ffffff;
+  --dp-label: #e3d9f5;
+  --dp-muted: rgba(228, 220, 245, .55);
+  --dp-field: rgba(255, 255, 255, .07);
+  --dp-field-focus: rgba(255, 255, 255, .11);
+  --dp-field-solid: #1d1530;
+  --dp-border: rgba(255, 255, 255, .18);
+  --dp-lilac: #b58cf0;
+  --dp-violet: #6b34aa;
+  --dp-purple: #582a8d;
+  --dp-radius: 12px;
+}
+html, body {
+  margin: 0 !important;
+  background: transparent !important;
+}
+.hl-app, .hl_form-builder--main, .ghl-form-wrap, #_builder-form {
+  background: transparent !important;
+  color: var(--dp-text);
+  font-family: var(--dp-font) !important;
+}
+.hl_form-builder--main { padding: 0 !important; }
+.ghl-form-wrap, #_builder-form {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#_builder-form .fields-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+#_builder-form .form-field-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+}
+#_builder-form .form-builder--item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* Labels: small lavender uppercase, like the page's field labels. */
+#_builder-form label, #_builder-form .field-label {
+  color: var(--dp-label) !important;
+  font-family: var(--dp-font) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: .06em !important;
+  line-height: 1.5 !important;
+  text-transform: uppercase !important;
+}
+#_builder-form .field-label {
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+#_builder-form .field-label * {
+  color: inherit !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+}
+/* Consent / checkbox text stays normal case and readable. */
+#_builder-form .terms-and-conditions, #_builder-form .terms-and-conditions *,
+#_builder-form .option label, #_builder-form .checkbox-container label {
+  color: var(--dp-muted) !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.55 !important;
+  text-transform: none !important;
+}
+/* Strong enough to override GHL's generated text-input rules. */
+html body #_builder-form .form-builder--item input[type]:is([type="text"], [type="email"], [type="tel"], [type="number"], [type="url"], [type="date"], [type="search"]),
+html body #_builder-form .form-builder--item textarea,
+html body #_builder-form .form-builder--item select {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 50px !important;
+  padding: 12px 14px !important;
+  background: var(--dp-field) !important;
+  color: var(--dp-text) !important;
+  border: 1px solid var(--dp-border) !important;
+  border-radius: var(--dp-radius) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06) !important;
+  font: 400 16px/1.5 var(--dp-font) !important;
+  caret-color: var(--dp-lilac);
+  transition: border-color .2s, background-color .2s, box-shadow .2s;
+}
+#_builder-form textarea { min-height: 110px !important; resize: vertical; }
+#_builder-form select option { background: var(--dp-field-solid); color: var(--dp-text); }
+#_builder-form input::placeholder, #_builder-form textarea::placeholder {
+  color: var(--dp-muted) !important;
+  font: inherit !important;
+  opacity: 1 !important;
+}
+html body #_builder-form .form-builder--item input:focus,
+html body #_builder-form .form-builder--item textarea:focus,
+html body #_builder-form .form-builder--item select:focus {
+  outline: none !important;
+  border-color: var(--dp-lilac) !important;
+  background: var(--dp-field-focus) !important;
+  box-shadow: 0 0 0 4px rgba(181, 140, 240, .2) !important;
+}
+html body #_builder-form .form-builder--item input[type]:-webkit-autofill {
+  -webkit-text-fill-color: var(--dp-text) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--dp-field-solid) inset !important;
+  caret-color: var(--dp-lilac);
+}
+/* Preserve the native phone flag and country-code controls. */
+#_builder-form .iti { width: 100% !important; }
+html body #_builder-form .form-builder--item .iti--allow-dropdown:not(.iti--separate-dial-code):not(.iti--show-selected-dial-code) input[type="tel"] {
+  padding-left: 54px !important;
+}
+html body #_builder-form .form-builder--item .iti--separate-dial-code input[type="tel"],
+html body #_builder-form .form-builder--item .iti--show-selected-dial-code input[type="tel"] {
+  padding-left: 104px !important;
+}
+#_builder-form .iti__selected-dial-code { color: var(--dp-text) !important; }
+#_builder-form .iti__arrow { border-top-color: var(--dp-lilac) !important; }
+#_builder-form .iti__arrow--up { border-bottom-color: var(--dp-lilac) !important; border-top-color: transparent !important; }
+.iti__country-list, .iti__dropdown-content {
+  background: var(--dp-field-solid) !important;
+  color: var(--dp-text) !important;
+  border-color: var(--dp-border) !important;
+  border-radius: var(--dp-radius) !important;
+}
+.iti__country.iti__highlight, .iti__country:hover { background: #2d2145 !important; }
+#_builder-form input[type="checkbox"], #_builder-form input[type="radio"] {
+  accent-color: var(--dp-lilac);
+}
+/* Submit: purple gradient pill with a soft moving sheen. */
+#_builder-form .form-builder--btn-submit { margin-top: 6px !important; padding-bottom: 14px !important; }
+#_builder-form button[type="submit"] {
+  position: relative !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 14px 22px !important;
+  background: linear-gradient(180deg, var(--dp-violet), var(--dp-purple)) !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 10px 20px -8px rgba(88, 42, 141, .7) !important;
+  font: 600 15px/1.4 var(--dp-font) !important;
+  letter-spacing: .04em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  white-space: normal !important;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+#_builder-form button[type="submit"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transform: skewX(-20deg);
+  animation: dp-sheen 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes dp-sheen {
+  0%, 55% { left: -60%; }
+  100% { left: 130%; }
+}
+#_builder-form button[type="submit"] .button-text,
+#_builder-form button[type="submit"] .button-text * {
+  color: inherit !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+}
+#_builder-form button[type="submit"] .button-text p { margin: 0 !important; }
+#_builder-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 22px -8px rgba(88, 42, 141, .8) !important;
+}
+#_builder-form button[type="submit"]:focus-visible {
+  outline: 3px solid var(--dp-lilac) !important;
+  outline-offset: 3px !important;
+}
+#_builder-form button[type="submit"]:disabled { opacity: .65 !important; cursor: wait; }
+@media (prefers-reduced-motion: reduce) {
+  #_builder-form button[type="submit"]::after { animation: none; display: none; }
+  #_builder-form button[type="submit"]:hover { transform: none; }
+}
+#_builder-form .error, #_builder-form .error-message,
+#_builder-form .hl-error, #_builder-form [role="alert"] {
+  color: #ffb3c7 !important;
+  font-size: 12px !important;
+}
+#_builder-form a { color: var(--dp-lilac) !important; text-underline-offset: 3px; }
