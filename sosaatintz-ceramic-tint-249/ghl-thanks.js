@@ -20,6 +20,9 @@
         typeof fingerprint !== 'string' || !fingerprint.trim()) return;
 
     redirected = true;
-    window.location.assign(new URL('thank-you.html', window.location.href).href);
+    // Shared SosaaTintz thank-you page (sosaatintz.getkoup.com/thank-you, served by the $399 project).
+    // The key points its "Back to the offer" link at /299-tint/.
+    try { sessionStorage.setItem('sosaatintz-thank-you-offer', '299-tint'); } catch {}
+    window.location.assign('https://sosaatintz.getkoup.com/thank-you');
   });
 })();
