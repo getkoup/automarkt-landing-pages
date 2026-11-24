@@ -80,3 +80,15 @@
 /* form_embed.js parks hidden iframes at left:-9999px; keep them in place and contained. */
 .ghl-form-frame{left:auto!important}
 .ep-wrapper{position:relative}
+/* Hub is call-only (2026-11-25): hero call card replaces the form. */
+.call-card h2{margin-bottom:2px}
+.call-card-button{width:100%;min-height:60px;font-size:15px;margin-top:2px}
+.call-card-button .phone-icon{width:20px;height:20px}
+.call-card-hours{font-size:11px;color:#c9c3bd;margin-top:12px;text-align:center}
+.call-steps{list-style:none;margin:20px 0 0;padding:18px 0 0;border-top:1px solid #39332e;display:grid;gap:11px}
+.call-steps li{display:flex;align-items:baseline;gap:12px;font-size:12px;line-height:1.5;color:#e2dedb}
+.call-steps b{color:#fa9a71;font-size:10px;letter-spacing:.12em}
+.loc-cta.call-button{white-space:normal;text-align:center;gap:10px}
+.final-cta .final-actions .text-link{font-size:11px}
+@media(max-width:760px){.call-card-button{font-size:14px}}
+@media(max-width:380px){.call-card-button{font-size:13px;padding-inline:12px}}
