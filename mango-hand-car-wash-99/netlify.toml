@@ -32,3 +32,10 @@
   to = "https://mango-hand-car-wash-ceramic-coating-399.netlify.app/:splat"
   status = 200
   force = true
+
+# $1,299 Full Front End PPF (Meta) lives in its own Netlify project.
+[[redirects]]
+  from = "/1299-ppf/*"
+  to = "https://mango-hand-car-wash-ppf-1299.netlify.app/:splat"
+  status = 200
+  force = true

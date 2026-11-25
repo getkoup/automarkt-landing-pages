@@ -58,3 +58,6 @@ The 2026-11-04 revision adds `thank-you.html`, `thank-you.css` and `ghl-thanks.j
 `netlify.toml` also proxies `mango.getkoup.com/tint-199/*` to the `mango-hand-car-wash-tint-199` project (site `693c662a-f25b-41ed-be91-38cd64ee480c`) and `/ceramic-coating-399/*` to the `mango-hand-car-wash-ceramic-coating-399` project (site `4931c64e-b36f-43c0-8e68-94c2f7a2164d`). Each page deploys from its own folder. Redeploy this project when a proxy rule changes.
 
 Since 2026-11-21 `thank-you.html` is the shared thank-you page for all three form pages (see `tracking.md`).
+
+## /1299-ppf proxy (2026-11-25)
+`netlify.toml` also proxies `mango.getkoup.com/1299-ppf/*` to the `mango-hand-car-wash-ppf-1299` project ($1,299 Full Front End PPF, Meta traffic). That page shows its own thank-you modal and does not use this project's `thank-you.html`. No page in this project changed.
