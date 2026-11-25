@@ -4,7 +4,7 @@
 
 ## GHL form (supplied by the user 2026-11-25)
 - Form "PPF (Meta) - 1299", ID `JVf4YIQ8z0ZBsPf6LWIi`, Mango GHL location `todSFcSuIugBi4Ef9kmv` (read from the published form; same location as the other Mango pages).
-- Published fields: Full Name *, Phone *, Car Details * (placeholder "Enter your vehicle year/model/make"). The button still reads **REQUEST FREE QUOTE** (checked 2026-11-25); change it to **Get My $1,299 Offer** in GHL. The Custom CSS from `ghl-form.css` is already live on the form.
+- Published fields: Full Name *, Phone *, Car Details * (placeholder "Enter your vehicle year/model/make"). The button reads **Get My $1,299 Offer** (seen live 2026-11-25). The Custom CSS from `ghl-form.css` is already live on the form.
 - Embedded once, inline in the hero `#quote` card as iframe `inline-JVf4YIQ8z0ZBsPf6LWIi` (Dapper pattern). The supplied STICKY_SIDEBAR layout was dropped so the frame stays in the card and loads once. `data-cookie-consent` attributes were left out, matching the other Mango embeds.
 - Fast load: preconnects to the GHL hosts, high-priority preload of `form_embed.js`, eager iframe. `form-ui.js` shows a shimmer skeleton until GHL reveals the form, shows it anyway 2.5 s after load, and shows a call fallback after 8 s. It also keeps `scrolling="no"` so no inner scrollbar appears.
 - Frame height 376 px (392 px at ≤560 px). Chrome check 2026-11-25 at 1440, 390 and 320 px: one form document request, form revealed, inner scrollHeight = frame height (no inner scroll), no page overflow. Console errors seen were from GHL's Cloudflare CAPTCHA inside the frame.

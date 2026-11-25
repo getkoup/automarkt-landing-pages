@@ -13,13 +13,13 @@
 - Restyled in Mango's brand: orange `#ff7f00` / `#ff9c38`, ink `#111111` / `#1c1c1a`, Alata headings + Inter body (local font files), original Mango logo. Dark glass top bar because the logo is designed for dark backgrounds.
 
 ## Copy sources
+- Wording rule (user, 2026-11-25): never write bare "PPF" in page copy; write "Paint Protection Film (PPF)". The URL `/1299-ppf/` and the GHL form name are unchanged.
 - Ad (above): headline line, price, crossed-out price, coverage panels, "takes the hits so your paint doesn't", "original finish stays clean and glossy".
 - https://mangohandcarwash.com/paint-protection-film-houston-tx/ (fetched 2026-11-25): Houston hazards (I-10 rocks, Beltway 8 gravel, construction debris, bug splatter, bird droppings, parking lots), "no wax or coating can match", virtually invisible polyurethane film, self-healing, preserve factory paint/resale, install process (wheel cleaning, hand wash, clay bar + iron decon, drying, paint inspection/polish, computer-cut film, final inspection), full front taking 1–2 days, 5–10 year life, removable without damage, PPF vs ceramic coating, service areas, "No Booking Required — Stop By Today".
 
 ## Pending confirmation / known conflicts
 - **Coverage vs. the website's packages.** Mango's site lists "Front End Protection" from $1,500 (full hood, front bumper, headlights) and "Full Front Protection" from $3,500 (adds fenders and mirrors). The ad's $1,299 "full front end" lists bumper, hood, fenders and mirrors, with no headlights and no full/partial detail. The page follows the ad and does not quote the website's package prices. Confirm whether hood/fenders are full or partial and whether headlights are included.
 - Film brand, warranty, offer expiry and vehicle-size limits: none supplied, none shown.
-- Form button text: still "REQUEST FREE QUOTE" in GHL; should be "Get My $1,299 Offer".
 - Tracking: none supplied for this page (see `tracking.md`).
 
 ## Photos
