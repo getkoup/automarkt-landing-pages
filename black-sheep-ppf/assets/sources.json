@@ -1,0 +1,103 @@
+[
+  {
+    "file": "assets/vw-jetta.webp",
+    "source": "Image supplied by the user in chat on 2026-11-25 for the PPF and ceramic coating pages",
+    "original_name": "f5c3887c-19fd-4ace-87ee-d4373623f655.png",
+    "original_sha256": "848356556dfdb5c1468400d32524846909bf4ba63b29ff0417da4908067853de",
+    "edit": "Cropped to rows 0-884 to remove the Google Gemini sparkle mark at bottom right; converted to WebP q82",
+    "size": [
+      731,
+      884
+    ],
+    "sha256": "370f86462b2cdd22d6a4af6ccc085fb9a5b80390f52dee3830096a47e5a0a1c3"
+  },
+  {
+    "file": "assets/mercedes-glc.webp",
+    "source": "Image supplied by the user in chat on 2026-11-25 for the PPF and ceramic coating pages",
+    "original_name": "e219c80f-5c57-41c3-a443-dcdd01eac96f.png",
+    "original_sha256": "ece735139263ad7ed3673367e8c212c67e7be44d4347f443969e63a60b9645b0",
+    "edit": "Cropped to rows 0-884 to remove the Google Gemini sparkle mark at bottom right; converted to WebP q82",
+    "size": [
+      731,
+      884
+    ],
+    "sha256": "6ccb818917c2a1996cadb2a7acf059aa2c055112214bd70f1c235ec9691378f4"
+  },
+  {
+    "file": "assets/audi-wax-is-dead.webp",
+    "source": "Image supplied by the user in chat on 2026-11-25 for the PPF and ceramic coating pages",
+    "original_name": "e09e6936-4a08-403d-bfe5-4a8d70611873 (1).png",
+    "original_sha256": "0160bc560f0966384894110d4f1f7c482f00d88e98ed15685cadcfddd51a116a",
+    "edit": "Cropped to rows 0-884 to remove the Google Gemini sparkle mark at bottom right; converted to WebP q82",
+    "size": [
+      731,
+      884
+    ],
+    "sha256": "b2614138851154ecbeb28d7c7363c93acaf0f0ee02b08331843d9b6589d6d11a"
+  },
+  {
+    "file": "assets/bronco.webp",
+    "source": "Image supplied by the user in chat on 2026-11-25 for the PPF and ceramic coating pages",
+    "original_name": "bcaf35e3-3571-4653-8bdd-ed6bd009fbad (1).png",
+    "original_sha256": "6d0b1b4a9ad17119cc5b7f31b2668e4be060fae5ae6bbb375b7a2ff32cf06609",
+    "edit": "Cropped to rows 34-884 to remove the Google Gemini sparkle mark at bottom right and the screenshot border at top; converted to WebP q82",
+    "size": [
+      731,
+      850
+    ],
+    "sha256": "ca713470563488f91a89fd24b4161242f885ea82d9eefe46fd2835d5a44224ed"
+  },
+  {
+    "file": "assets/corvette.webp",
+    "source": "Image supplied by the user in chat on 2026-11-25 for the PPF and ceramic coating pages",
+    "original_name": "ac0f402f-91fd-41c8-b985-299449366427 (1).png",
+    "original_sha256": "f34e774a08673b962e350ad61f9160cac0e2c3f969e53fff9e4c3624106a4e39",
+    "edit": "Cropped to rows 0-884 to remove the Google Gemini sparkle mark at bottom right; converted to WebP q82",
+    "size": [
+      731,
+      884
+    ],
+    "sha256": "ff40d363b868394252ebc8c3ae0685ea1cdfba3948611ea6bd65d79b7f26dbe5"
+  },
+  {
+    "file": "assets/black-sheep-original-logo.jpg",
+    "source": "Copied from black-sheep-ceramic-tint-299/assets (original logo from blacksheepautodetailing.com)",
+    "sha256": "86d92a1b9c91d9fa9bd64b552696e90bd8099209bc1214f9e3c2a7ab447771ae"
+  },
+  {
+    "file": "assets/hero-ppf-2560.webp",
+    "source": "Client website https://blacksheep.automarktninja.com/sunnyvale-paint-protection-film (Black Sheep media library)",
+    "original_name": "7e95f6c2-df54-4b7a-a940-6f4c4cd88c36.png",
+    "original_sha256": "2bed96dd9b286977c3fc5fdafd397df58e4a314c4e5103076bac8d16a2102cab",
+    "edit": "AI outpaint (Codex ImageGen, 2026-11-26) of the original to 16:9 at 2560x1440: same car, angle and shop, frame widened, no people or text added; WebP q80",
+    "size": [
+      2560,
+      1440
+    ],
+    "sha256": "12fd56c0a9f30f72a5e6c2bf015914c07d9a50271d9fb51e4301a7a5db84570f"
+  },
+  {
+    "file": "assets/hero-ppf.webp",
+    "source": "Client website https://blacksheep.automarktninja.com/sunnyvale-paint-protection-film (Black Sheep media library)",
+    "original_name": "7e95f6c2-df54-4b7a-a940-6f4c4cd88c36.png",
+    "original_sha256": "2bed96dd9b286977c3fc5fdafd397df58e4a314c4e5103076bac8d16a2102cab",
+    "edit": "AI outpaint (Codex ImageGen, 2026-11-26) of the original to 16:9 at 2560x1440: same car, angle and shop, frame widened, no people or text added; resized to 1920x1080, WebP q82",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "ccf08e0df2b77980b7934e00082b047fbc56c17e7a642cf476b4d2ad24be0e3e"
+  },
+  {
+    "file": "assets/hero-ppf-mobile.webp",
+    "source": "Client website https://blacksheep.automarktninja.com/sunnyvale-paint-protection-film (Black Sheep media library)",
+    "original_name": "81dfadac-1730-4c0d-9324-c59ce5f2a647.png",
+    "original_sha256": "875551d9e78bf66adb3fea360ed2bb75bc9177b15d986626442effb401a0dc05",
+    "edit": "Portrait crop of the original (blue Lamborghini Urus in the shop), light sharpening, WebP q82",
+    "size": [
+      1005,
+      1340
+    ],
+    "sha256": "db67f0ae4b2066ae068b54b07098bc577ae21eec52cc3a73e9c2ab12df8810f8"
+  }
+]

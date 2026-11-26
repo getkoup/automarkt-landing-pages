@@ -1,0 +1,109 @@
+[
+  {
+    "file": "assets/detail-foam-wash.webp",
+    "source": "User-supplied (WhatsApp, 2026-11-25)",
+    "note": "Detailing photo sent by the user on 2026-11-25 (Chevrolet Corvette covered in foam during a hand wash).",
+    "original_sha256": "0aa8b3878f75afe4007441579ad4fb19c1456617a222e2813e8501a191c90d30",
+    "size": [
+      906,
+      1024
+    ],
+    "sha256": "62d82a9d2b7f77f4a88debf8584b5de4f4d56eecdf8615c18c7ff16272d7f4d0"
+  },
+  {
+    "file": "assets/detail-porsche-cayman.webp",
+    "source": "User-supplied (WhatsApp, 2026-11-25)",
+    "note": "Detailing photo sent by the user on 2026-11-25 (yellow Porsche 718 Cayman; also drops a black screenshot bar at the bottom). Cropped to rows 0-1030 to remove the Google Gemini sparkle mark at the bottom right.",
+    "original_sha256": "397c710092794c01a11f2b6e7e6bc77dc94afbc7e28ec9d9e65009157d841a64",
+    "size": [
+      864,
+      1030
+    ],
+    "sha256": "be00d4e5ae12a6bee6bfff1c56f226da6ac89ba34c64639fda9dab81aadce501"
+  },
+  {
+    "file": "assets/detail-corvette-blue.webp",
+    "source": "User-supplied (WhatsApp, 2026-11-25)",
+    "note": "Detailing photo sent by the user on 2026-11-25 (blue Chevrolet Corvette in the studio). Cropped to rows 0-1030 to remove the Google Gemini sparkle mark at the bottom right.",
+    "original_sha256": "e6df76ea82f2ecfabdebeb4287e667b4f1d84308a538e78ac25589b3ce5bb6a3",
+    "size": [
+      864,
+      1030
+    ],
+    "sha256": "fc64c1fad38c2f4f09f083b3c09ccc761f336f4bf208f7fb626754235e063ffa"
+  },
+  {
+    "file": "assets/detail-amg-matte.webp",
+    "source": "User-supplied (WhatsApp, 2026-11-25)",
+    "note": "Detailing photo sent by the user on 2026-11-25 (matte black Mercedes-AMG coupe in the studio). Cropped to rows 0-1030 to remove the Google Gemini sparkle mark at the bottom right.",
+    "original_sha256": "94040b1cd433dddd446dd09ef21cfcdd8ef68b237490c0fb65d0d495ae911edd",
+    "size": [
+      864,
+      1030
+    ],
+    "sha256": "f9f0c3e16c94c393ee54f9b82c890afdbd63c6ecd94fdb62dd06bddf8d552c75"
+  },
+  {
+    "file": "assets/detail-corvette-white.webp",
+    "source": "User-supplied (WhatsApp, 2026-11-25)",
+    "note": "Detailing photo sent by the user on 2026-11-25 (white Chevrolet Corvette in the studio). Cropped to rows 0-1030 to remove the Google Gemini sparkle mark at the bottom right.",
+    "original_sha256": "428224923427ae5b83226485b971675d89388980018ad4399f3bda1752d2ec34",
+    "size": [
+      864,
+      1030
+    ],
+    "sha256": "53078d0ebbae8ec2d2ef6c754bcdf88e527e3f94f39a222a091cece3fc142e06"
+  },
+  {
+    "file": "assets/detail-ferrari.webp",
+    "source": "User-supplied (WhatsApp, 2026-11-25)",
+    "note": "Detailing photo sent by the user on 2026-11-25 (red Ferrari in front of the Wax is Dead sign). Cropped to rows 0-1030 to remove the Google Gemini sparkle mark at the bottom right.",
+    "original_sha256": "88e6a197b0ed39fdd06be4948f73c1da6f619fd0c8f3492c4e9ac9254e429d5c",
+    "size": [
+      896,
+      1030
+    ],
+    "sha256": "e07284e9e3f5ca2fab12a9e5786e1d956ba147d076dca17881d3ee8f52ad15ac"
+  },
+  {
+    "file": "assets/black-sheep-original-logo.jpg",
+    "source": "Copied from black-sheep-ceramic-tint-299/assets (original logo from blacksheepautodetailing.com)",
+    "sha256": "86d92a1b9c91d9fa9bd64b552696e90bd8099209bc1214f9e3c2a7ab447771ae"
+  },
+  {
+    "file": "assets/hero-detailing-2560.webp",
+    "source": "Client website https://blacksheep.automarktninja.com/ceramic-coating-service (Black Sheep media library)",
+    "original_name": "653a1e93c3c1a1003e6954db.png",
+    "original_sha256": "ccb14b8d9bf63a6cefdcb481a12c0ca712cc5a43626025f3b288dbe36540bfd8",
+    "edit": "AI outpaint (Codex ImageGen, 2026-11-26) of the original to 16:9 at 2560x1440: same car, angle and shop, frame widened, no people or text added; WebP q80",
+    "size": [
+      2560,
+      1440
+    ],
+    "sha256": "335ef77d213535194a813cf7f1b90a3ca66a2a0351fd3921c0c3b6fcd7ddb0fb"
+  },
+  {
+    "file": "assets/hero-detailing.webp",
+    "source": "Client website https://blacksheep.automarktninja.com/ceramic-coating-service (Black Sheep media library)",
+    "original_name": "653a1e93c3c1a1003e6954db.png",
+    "original_sha256": "ccb14b8d9bf63a6cefdcb481a12c0ca712cc5a43626025f3b288dbe36540bfd8",
+    "edit": "AI outpaint (Codex ImageGen, 2026-11-26) of the original to 16:9 at 2560x1440: same car, angle and shop, frame widened, no people or text added; resized to 1920x1080, WebP q82",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "97c83498152d9add6e658c8d7b8b839d210c7849892413ab1607d5af20c154f8"
+  },
+  {
+    "file": "assets/hero-detailing-mobile.webp",
+    "source": "Client website https://blacksheep.automarktninja.com/ceramic-coating-service (Black Sheep media library)",
+    "original_name": "653a1e93c3c1a1003e6954db.png",
+    "original_sha256": "ccb14b8d9bf63a6cefdcb481a12c0ca712cc5a43626025f3b288dbe36540bfd8",
+    "edit": "AI outpaint (Codex ImageGen, 2026-11-26) of the original to 16:9 at 2560x1440: same car, angle and shop, frame widened, no people or text added; 3:4 portrait crop around the car at 1080x1440, WebP q80",
+    "size": [
+      1080,
+      1440
+    ],
+    "sha256": "7dc47bbc75d0f9ab72d9e427aeef2b78b614499ae018aa0196e1792685e18a08"
+  }
+]
