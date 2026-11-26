@@ -4,3 +4,24 @@
 
 [build.processing.html]
   pretty_urls = false
+
+# Up to 30% off page (folder `black-sheep-ceramic-coating`) lives in its own Netlify project.
+[[redirects]]
+  from = "/ceramic-coating-30/*"
+  to = "https://black-sheep-ceramic-coating.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Up to 30% off page (folder `black-sheep-ppf`) lives in its own Netlify project.
+[[redirects]]
+  from = "/ppf-30/*"
+  to = "https://black-sheep-ppf.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Up to 30% off page (folder `black-sheep-auto-detailing`) lives in its own Netlify project.
+[[redirects]]
+  from = "/auto-detailing-30/*"
+  to = "https://black-sheep-auto-detailing.netlify.app/:splat"
+  status = 200
+  force = true

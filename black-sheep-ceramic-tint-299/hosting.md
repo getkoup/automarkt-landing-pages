@@ -76,3 +76,15 @@ Normal TLS validation succeeds for `blacksheep.getkoup.com`, and HTTPS returns H
 - 1.6 Mbps throttle: the live page showed a blank box once GHL started the reload, with the reloaded form painting about 3.0–3.9s after the first form request. The fix shows an already-painted form about 2.5–3.5s after its first request. Unthrottled runs on the live page had seen the reload as late as 15–17s.
 
 - Regression fix (November 14, 2026): with `left:auto`, the hidden lower iframe (position:absolute) was sized and placed against the page instead of its card, so the 390px mobile layout was 432px wide. `.ep-wrapper { position: relative; }` contains it. Verified: no element extends past 390px.
+
+## Proxied offer pages (2026-11-26)
+
+`netlify.toml` forwards three paths on `blacksheep.getkoup.com` to their own Netlify projects (status 200 rewrites, so the URL stays on this domain):
+
+| Path | Folder | Netlify project |
+| --- | --- | --- |
+| `/ceramic-coating-30/` | `black-sheep-ceramic-coating` | https://black-sheep-ceramic-coating.netlify.app |
+| `/ppf-30/` | `black-sheep-ppf` | https://black-sheep-ppf.netlify.app |
+| `/auto-detailing-30/` | `black-sheep-auto-detailing` | https://black-sheep-auto-detailing.netlify.app |
+
+The tint page itself is unchanged. All three pages redirect successful GHL submits to this project's `/thank-you.html`, which now shows the Sunnyvale address and (408) 915-1488.

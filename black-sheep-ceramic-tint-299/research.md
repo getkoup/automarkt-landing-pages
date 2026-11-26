@@ -119,3 +119,10 @@ User confirmed the tint offer covers the **side windows + rear windshield** (fro
 ## Offer update (2026-11-20)
 
 User changed the offer to **$349 (Side Windows + Rear Windshield) Nano Ceramic Tint**. Every visible $299 became $349, and offer copy now says "nano ceramic" (title, meta description, hero eyebrow/H1/price/copy, both form-card headings, trust strip, fine print, reason cards, review note, quote price, offer and warranty FAQs, footer, mobile CTA and thank-you page). Front windshield is still excluded. The GHL form name `Ceramic Tint (Google) - 299` stays in the embed attributes because it must match GHL; its button reads "Claim Offer", with no price. The folder name keeps `-299` because the Netlify site and links depend on it.
+
+## Shared thank-you page (2026-11-25)
+
+- User decision: every Black Sheep landing page (tint, ceramic coating, PPF, auto detailing and future pages) sends successful GHL submits to one thank-you page: https://blacksheep.getkoup.com/thank-you.html, served from this folder.
+- `thank-you.html` is now service-neutral: no tint or $349 wording, "Back to the offer" points to the referring Black Sheep page (falls back to the official website).
+- Contact details on the thank-you page changed to Sunnyvale, 1155 Reed Ave Ste D, (408) 915-1488, matching the official website, the Google profile the user referenced and the three new pages. This tint landing page itself still shows the Fremont address/phone from Oct 30; waiting for the user to confirm whether to switch it.
+- Still all black, same GTM `GTM-TVXZVFZT`, noindex.
