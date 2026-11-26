@@ -129,5 +129,6 @@ User changed the offer to **$349 (Side Windows + Rear Windshield) Nano Ceramic T
 
 ## Phone number — 2026-11-26
 
-- User supplied a new number: (408) 404-5965 (`tel:+14084045965`). It replaces 510-391-6010 on the tint page and (408) 915-1488 on the shared thank-you page. Every visible number and call link was updated.
+- User supplied a new number for the Fremont tint page: (408) 404-5965 (`tel:+14084045965`). It replaces 510-391-6010 on this tint page only.
+- The shared thank-you page and the three 30% pages keep (408) 915-1488; the user confirmed this (they were briefly switched to the new number by mistake, then reverted).
 - CallRail swap.js swaps numbers on the new pages (not on the tint page or the thank-you page). CallRail only swaps numbers that match the target number set in the CallRail account.
