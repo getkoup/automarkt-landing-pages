@@ -16,7 +16,7 @@ Research date: October 30, 2026.
 - Official website: https://blacksheepautodetailing.com/
 - Official contact: https://blacksheepautodetailing.com/contact-us
 - User-supplied Instagram: https://www.instagram.com/blacksheep_autodetailing/
-- Current phone: 510-391-6010, supplied by the user on October 30, 2026; takes precedence over the old website number.
+- Current phone: (408) 404-5965, supplied by the user on 2026-11-26. It replaces 510-391-6010 (supplied October 30, 2026).
 - Current address: 2878 Prune Ave R, Fremont, CA 94539, United States; supplied in the user’s screenshot on October 30, 2026. This supersedes the website’s older Sunnyvale address.
 - Military-owned shop serving the Santa Clara Valley; official website.
 - Website explicitly lists ceramic window tint among its installation services.
@@ -126,3 +126,8 @@ User changed the offer to **$349 (Side Windows + Rear Windshield) Nano Ceramic T
 - `thank-you.html` is now service-neutral: no tint or $349 wording, "Back to the offer" points to the referring Black Sheep page (falls back to the official website).
 - Contact details on the thank-you page changed to Sunnyvale, 1155 Reed Ave Ste D, (408) 915-1488, matching the official website, the Google profile the user referenced and the three new pages. This tint landing page itself still shows the Fremont address/phone from Oct 30; waiting for the user to confirm whether to switch it.
 - Still all black, same GTM `GTM-TVXZVFZT`, noindex.
+
+## Phone number — 2026-11-26
+
+- User supplied a new number: (408) 404-5965 (`tel:+14084045965`). It replaces 510-391-6010 on the tint page and (408) 915-1488 on the shared thank-you page. Every visible number and call link was updated.
+- CallRail swap.js swaps numbers on the new pages (not on the tint page or the thank-you page). CallRail only swaps numbers that match the target number set in the CallRail account.

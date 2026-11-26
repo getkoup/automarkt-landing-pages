@@ -14,7 +14,7 @@
 - The supplied sticky-sidebar configuration is adapted to INLINE layout inside both existing quote cards, with unique iframe IDs. Native `form_embed.js` is included once and handles frame resizing.
 - Cookie-consent attributes retained. Native validation and submission are retained; the landing page now redirects on the verified successful-submit message. No real test lead submitted.
 - Custom CSS source: `ghl-form.css`; changes inside GHL must be published there to affect the iframe.
-- Direct call links: `tel:+15103916010` (510-391-6010), explicitly supplied by the user; supersedes the website’s previous number.
+- Direct call links: `tel:+14084045965` (408) 404-5965, supplied by the user on 2026-11-26. Replaces 510-391-6010 on the tint page and (408) 915-1488 on the thank-you page.
 - Google business link supplied by user: https://share.google/WNLOI7KssYVDi9VTj
 - Instagram supplied by user: https://www.instagram.com/blacksheep_autodetailing/
 - Official website and testimonial source: https://blacksheepautodetailing.com/
