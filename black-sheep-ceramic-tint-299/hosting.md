@@ -88,3 +88,5 @@ Normal TLS validation succeeds for `blacksheep.getkoup.com`, and HTTPS returns H
 | `/auto-detailing-30/` | `black-sheep-auto-detailing` | https://black-sheep-auto-detailing.netlify.app |
 
 The tint page itself is unchanged. All three pages redirect successful GHL submits to this project's `/thank-you.html`, which now shows the Sunnyvale address and (408) 915-1488.
+
+Since 2026-11-26 the Fremont tint page redirects to its own `/thank-you-fremont.html` (Fremont address, (408) 404-5965). `/thank-you.html` remains the Sunnyvale page for the three 30% pages. `build.mjs` packages both.
