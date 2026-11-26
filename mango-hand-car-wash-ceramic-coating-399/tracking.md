@@ -4,9 +4,11 @@
 | Tag | ID | Placement | Pages |
 |---|---|---|---|
 | Google tag (Google Ads) | `AW-17824235340` | `<head>`, right after the trailing-slash script | `index.html` |
+| Google Tag Manager | `GTM-NWR5JN89` | standard loader in `<head>` right after the Google tag; noscript iframe right after `<body>` | `index.html` |
 
 - Supplied by the user 2026-11-21 for the Mango pages, pasted as given: `gtm.js?id=AW-17824235340` loader + `gtag('js', new Date())`. The snippet has no `gtag('config')` line. The Google tag applies its own config: a headless check showed page hits for 17824235340 (`viewthroughconversion`, `rmkt/collect`, `ccm/collect`).
-- It's the same Google Ads account as the $99 page. No GTM container, GA, Meta pixel or custom conversion event on this page.
+- It's the same Google Ads account as the $99 page. No GA, Meta pixel or custom conversion event on this page.
+- GTM `GTM-NWR5JN89` added 2026-11-26 at the user's request (same Mango container as the $99, $29 call and thank-you pages). The user pasted it as a gtag-style snippet (`gtm.js?id=GTM-NWR5JN89` + `gtag('js')`), which skips the `gtm.start` event. The standard GTM loader + noscript for the same container was used instead, as on `mango-hand-car-wash-detail-29-call`. The `AW-17824235340` block was re-pasted identically and is unchanged.
 - Conversions: leads finish on the shared https://mango.getkoup.com/thank-you, which loads `AW-17824235340` + GTM `GTM-NWR5JN89` (see below).
 
 ## GHL form (supplied by the user 2026-11-21)
