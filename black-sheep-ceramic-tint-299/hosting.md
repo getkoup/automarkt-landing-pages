@@ -87,4 +87,4 @@ Normal TLS validation succeeds for `blacksheep.getkoup.com`, and HTTPS returns H
 | `/ppf-30/` | `black-sheep-ppf` | https://black-sheep-ppf.netlify.app |
 | `/auto-detailing-30/` | `black-sheep-auto-detailing` | https://black-sheep-auto-detailing.netlify.app |
 
-The tint page itself is unchanged. All three pages redirect successful GHL submits to this project's `/thank-you.html`, which now shows the Sunnyvale address and (408) 915-1488.
+The tint page itself is unchanged. All three pages redirect successful GHL submits to this project's `/thank-you.html`, which now shows the Sunnyvale address and (408) 404-5965.
