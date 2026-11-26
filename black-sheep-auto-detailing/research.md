@@ -13,7 +13,7 @@ Research date: November 25, 2026.
 - Planned URL: https://blacksheep.getkoup.com/auto-detailing-30/ (own Netlify project, proxied from the tint project; see hosting.md).
 
 ## Contact details (Sunnyvale)
-- 1155 Reed Ave Ste D, Sunnyvale, CA 94086 · (408) 915-1488 (`tel:+14089151488`).
+- 1155 Reed Ave Ste D, Sunnyvale, CA 94086 · (408) 404-5965 (`tel:+14084045965`; was (408) 915-1488 until 2026-11-26).
 - Sources: the user said the Google profile (https://share.google/9e2gfD24Ua6pyx4op) shows Sunnyvale; the official website https://blacksheepautodetailing.com/ footer and all three example pages list this address and number. The share link could not be read from here (Google captcha).
 - The website body also mentions "1170 Willow Ave #7"; the footer and examples use Reed Ave, so Reed Ave is used.
 - The tint page (`black-sheep-ceramic-tint-299`) still shows the Fremont address/phone the user supplied on Oct 30, 2026. Not changed here; awaiting the user's call.
@@ -69,3 +69,8 @@ Research date: November 25, 2026.
 ## Tracking — 2026-11-26
 
 - Installed the user-supplied GTM `GTM-TVXZVFZT`, Google Ads `AW-10980273710` and CallRail swap.js. Details and the fixes made to the supplied snippets are in `tracking.md`.
+
+## Phone number — 2026-11-26
+
+- User supplied a new number: (408) 404-5965 (`tel:+14084045965`). It replaces (408) 915-1488 on this page. Every visible number and call link was updated.
+- CallRail swap.js swaps numbers on the new pages (installed here). CallRail only swaps numbers that match the target number set in the CallRail account.
