@@ -4,7 +4,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = dirname(fileURLToPath(import.meta.url));
 const output = resolve(root, 'dist');
-const pages = ['index.html', 'thank-you.html'];
+const pages = ['index.html', 'thank-you.html', 'thank-you-fremont.html'];
 const html = (await Promise.all(pages.map(page => readFile(resolve(root, page), 'utf8')))).join('\n');
 const css = (await Promise.all(['page.css', 'thank-you.css'].map(file => readFile(resolve(root, file), 'utf8')))).join('\n');
 const assets = [...new Set([

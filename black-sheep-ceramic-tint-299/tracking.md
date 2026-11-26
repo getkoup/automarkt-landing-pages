@@ -28,10 +28,11 @@
 
 ## Successful-submit redirect and thank-you page
 
-- Local confirmation URL: https://blacksheep.getkoup.com/thank-you.html
+- Confirmation URL for this tint page (since 2026-11-26): https://blacksheep.getkoup.com/thank-you-fremont.html (Fremont address, (408) 404-5965). It replaces `/thank-you.html` for this page. `/thank-you.html` is still served here, with the Sunnyvale details, for the three 30% pages.
+- If a GTM/Ads conversion trigger matches the thank-you URL, "contains thank-you" covers both pages, but "equals /thank-you.html" does not cover the Fremont page.
 - Listener: `ghl-thanks.js`, loaded before the native embed loader.
 - Form ID `bIVvIxFknypyGKzqLq2V`; location ID `FmAd0QLqa1tTJD2hp0EM`, read from the published widget on November 13, 2026 (the new form is in a different GHL location than the old one).
 - Verified the deployed native GHL bundle `https://stcdn.leadconnectorhq.com/_preview/cuexcqRf.js` emits `['set-sticky-contacts', 'embedded_iframe_<frame-id>', '<frame-id>', '<location-id>', '<fingerprint>']` after successful submission.
 - Listener accepts only the exact GHL origin, one of this page's two iframe windows, the expected form/frame/storage/location IDs and a nonempty fingerprint. Separate `_ud` contact-data messages, loads, resizes, errors, other origins and malformed messages are ignored. Redirect is handled once.
-- Same supplied GTM `GTM-TVXZVFZT` on the thank-you page. No new conversion tag/event, account setting or real test lead added. Direct visits do not emit a custom form-success event.
+- Same supplied GTM `GTM-TVXZVFZT` on both thank-you pages. No new conversion tag/event, account setting or real test lead added. Direct visits do not emit a custom form-success event.
 - Redirect QA used isolated browser frame fixtures with the native message shape; no real form submission. Negative messages were rejected, both embedded forms redirected, and the thank-you page rendered at mobile/desktop widths. GTM/CRM network requests were blocked during simulated redirects to avoid synthetic conversions.

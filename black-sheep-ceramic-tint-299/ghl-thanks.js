@@ -20,6 +20,6 @@
         typeof fingerprint !== 'string' || !fingerprint.trim()) return;
 
     redirected = true;
-    window.location.assign(new URL('thank-you.html', window.location.href).href);
+    window.location.assign(new URL('thank-you-fremont.html', window.location.href).href);
   });
 })();

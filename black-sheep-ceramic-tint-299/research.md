@@ -132,3 +132,9 @@ User changed the offer to **$349 (Side Windows + Rear Windshield) Nano Ceramic T
 - User supplied a new number for the Fremont tint page: (408) 404-5965 (`tel:+14084045965`). It replaces 510-391-6010 on this tint page only.
 - The shared thank-you page and the three 30% pages keep (408) 915-1488; the user confirmed this (they were briefly switched to the new number by mistake, then reverted).
 - CallRail swap.js swaps numbers on the new pages (not on the tint page or the thank-you page). CallRail only swaps numbers that match the target number set in the CallRail account.
+
+## Fremont thank-you page — 2026-11-26
+
+- The Fremont tint page and the three Sunnyvale 30% pages all used the shared `/thank-you.html`, so Fremont leads saw the Sunnyvale address and number.
+- With the user's approval, the tint page now sends successful submits to `/thank-you-fremont.html`: 2878 Prune Ave R, Fremont, CA 94539, (408) 404-5965, with directions to Fremont. Same layout and GTM as the shared page.
+- `/thank-you.html` is unchanged: Sunnyvale, (408) 915-1488.
