@@ -9,5 +9,5 @@
 - GHL form (supplied 2026-11-26): `snpiCh0sGT758ayq0v3I`, "Auto Detaling (Google) - 30%" (name as spelled in GHL), location `gtMRJUK503ZFZoQA2iUy` (Black Sheep's main GHL location, read from the published form). Embedded in both cards: hero `#claim` iframe `inline-snpiCh0sGT758ayq0v3I` (eager) and lower `#quote-form` iframe `inline-snpiCh0sGT758ayq0v3I-lower` (lazy), each with `data-location-id`. One `form_embed.js` in the head.
 - Embed pattern copied from `black-sheep-ceramic-tint-299`: `<id>-div` > `<id>-wrapper.ep-wrapper` > `iframe.ghl-form-frame`, so GHL does not move or reload the iframe. Initial height 462px (from the supplied embed); GHL resizes it.
 - Successful submit: `ghl-thanks.js` redirects to the shared Black Sheep thank-you page https://blacksheep.getkoup.com/thank-you.html (served by `black-sheep-ceramic-tint-299`). It reads the form and location IDs from the iframe's `data-form-id` / `data-location-id`, and only accepts GHL's frame-specific `set-sticky-contacts` success message from one of this page's frames.
-- Call links: `tel:+14084045965` (408) 404-5965 (was (408) 915-1488 until 2026-11-26).
+- Call links: `tel:+14089151488` (408) 915-1488.
 - Google profile link supplied by the user: https://share.google/9e2gfD24Ua6pyx4op
