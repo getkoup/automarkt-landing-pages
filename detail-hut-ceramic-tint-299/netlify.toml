@@ -1,0 +1,7 @@
+[build]
+  command = "node build.mjs"
+  publish = "dist"
+
+# Serve /thank-you.html as-is (ghl-thanks.js redirects there after a GHL submission).
+[build.processing.html]
+  pretty_urls = false
