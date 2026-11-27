@@ -13,7 +13,7 @@ Created 2026-11-27 at the user's request: a copy of the Fremont tint page (`blac
 
 ## What changed from the Fremont page
 
-- Hero heading: "Nano ceramic tint / in Sunnyvale." (Fremont: "Nano ceramic / tint."). Changed on 2026-11-27 at the user's request from "Sunnyvale / ceramic tint." so the heading says nano ceramic tint. Eyebrow: "Nano ceramic tint offer · Sunnyvale, CA".
+- Hero heading: "Nano ceramic / tint.", the same as the Fremont page (user request, 2026-11-27, after trying "Sunnyvale / ceramic tint." and "Nano ceramic tint / in Sunnyvale."). Sunnyvale stays in the eyebrow above it: "Nano ceramic tint offer · Sunnyvale, CA".
 - Every Fremont mention, the address, directions links, the mobile bar and the footer now point to Sunnyvale. "East Bay" became "South Bay".
 - Title and meta description name Sunnyvale. Canonical: https://blacksheep.getkoup.com/sunnyvale-tint/
 - A trailing-slash redirect was added to the head (same as the 30% pages), because the page will be served under `/sunnyvale-tint/` with relative asset paths.
