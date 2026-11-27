@@ -25,3 +25,10 @@
   to = "https://black-sheep-auto-detailing.netlify.app/:splat"
   status = 200
   force = true
+
+# $349 Sunnyvale tint page (folder `black-sheep-sunnyvale-ceramic-tint-349`) lives in its own Netlify project.
+[[redirects]]
+  from = "/sunnyvale-tint/*"
+  to = "https://black-sheep-sunnyvale-ceramic-tint-349.netlify.app/:splat"
+  status = 200
+  force = true
