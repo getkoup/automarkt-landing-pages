@@ -17,7 +17,6 @@
   .check{animation:pop .7s cubic-bezier(.2,1.4,.4,1) .3s both}
 }
 @media(max-width:760px){
-  body.thank-you-page{padding-bottom:0}
   .thanks{min-height:calc(100svh - 70px);padding-block:36px}
   .thanks-card{padding:28px 20px;border-radius:18px}
   .thanks h1{font-size:38px}
