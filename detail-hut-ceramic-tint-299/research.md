@@ -31,6 +31,7 @@ There are no percentages or brand specs. Customers are told to ask for the exact
 - Phone: **(510) 455-4554** (`tel:+15104554554`).
 - Hours: **open daily, 9 am – 6 pm**. Google warned that Black Friday might change the hours.
 - Rating: **4.8★ from 66 Google reviews** (63 five-star, 3 one-star).
+  - Client request (2026-11-27): show the **4.8★ rating only**, never the review count, anywhere on the page.
 - Website: https://www.thedetailhut.com/. Email: thedetailhut@gmail.com. Instagram: @thedetailhut (4.3K followers).
 - Website claims used on the page: since 2018; focus on Teslas and luxury cars; STEK certified installer; "Five stars since 2018". The shop accepts Affirm, but the client asked for copy focused on ceramic tint, so Affirm was removed from the page on 2026-11-27.
 - Second location: Roseville (new, no phone yet). It is not mentioned on this page.
