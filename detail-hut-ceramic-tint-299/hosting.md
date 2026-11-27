@@ -26,6 +26,11 @@ The user adds this record. The agent makes no DNS account changes.
 - Leave all other hosts and mail records alone.
 - Netlify issues the Let's Encrypt certificate after the CNAME resolves.
 
+**Status (2026-11-27): live.** The user added the CNAME. It resolves on ns1.dns-parking.com, 1.1.1.1 and 8.8.8.8. Netlify issued a Let's Encrypt certificate (CN `detailhut.getkoup.com`, valid to 2027-02-25). The checks gave:
+- `https://detailhut.getkoup.com/` returns 200.
+- `/thank-you.html` returns 200.
+- `http://` redirects (301) to `https://`.
+
 Official guidance: https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/
 
 ## Public package and deployment
